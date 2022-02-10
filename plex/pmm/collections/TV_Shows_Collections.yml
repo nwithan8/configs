@@ -88,8 +88,8 @@ collections:
 
   Channel 4:
     template: { name: Network,
-                network: "Channel 4, E4, More4, 4Seven, Film4"
-                  poster: https://theposterdb.com/api/assets/113139 }
+                network: "Channel 4, E4, More4, 4Seven, Film4",
+                poster: https://theposterdb.com/api/assets/113139 }
     summary: Shows Aired on Channel 4
 
 
