@@ -1,0 +1,35 @@
+collection:
+  ### Custom
+  "Documentaries":
+    summary: "You might learn something"
+    smart_filter:
+      all:
+        genre: Documentary
+
+  ### Trending
+  "What Everyone Is Watching":
+    summary: "What other subscribers are checking out"
+    libraries: "Movies"
+    sync_mode: sync
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+  "At The Box Office":
+    summary: "Now playing on a screen near you"
+    imdb_chart: box_office
+    collection_order: custom
+    sync_mode: sync
+  "Trending Now":
+    summary: "The hottest movies right now"
+    imdb_chart: popular_movies
+    collection_order: custom
+    sync_mode: sync
+
+  ### Top Rated
+  "Best Of All Time":
+    summary: "Dive into the best films ever made"
+    imdb_chart: top_movies
+    collection_order: custom
+    sync_mode: sync
