@@ -6,6 +6,9 @@ collection:
     smart_filter:
       all:
         genre: Documentary
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "What a Twist!":
     summary: "Bet you didn't see THAT coming..."
@@ -13,6 +16,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
       collection_order: custom
       sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Based On A True Story":
     summary: ""
@@ -20,6 +26,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
       collection_order: custom
       sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   ### Trending
   "What Everyone Is Watching":
@@ -32,6 +41,9 @@ collection:
       list_days: 30
       list_size: 15
       list_minimum: 2
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "At The Box Office":
     summary: "Now playing on a screen near you"
@@ -39,6 +51,9 @@ collection:
     imdb_chart: box_office
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Trending Now":
     summary: "The hottest movies right now"
@@ -46,6 +61,9 @@ collection:
     imdb_chart: popular_movies
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: true
+    visible_library: true
 
   ### Top Rated
   "Best Of All Time":
@@ -54,6 +72,9 @@ collection:
     imdb_chart: top_movies
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 70s":
     summary: "IMDb's top movies of the 1970s"
@@ -62,6 +83,9 @@ collection:
       url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
     sync_mode: sync
     collection_order: custom
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 80s":
     summary: "RottenTomatoes' top movies of the 1980s"
@@ -69,6 +93,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 90s":
     summary: "RottenTomatoes' top movies of the 1990s"
@@ -76,6 +103,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 2000s":
     summary: "RottenTomatoes' top movies of the 2000s"
@@ -83,6 +113,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 2010s":
     summary: "RottenTomatoes' top movies of the 2010s"
@@ -90,6 +123,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Best of the 2020s":
     summary: "IMDb's top movies of the 2020s"
@@ -98,6 +134,9 @@ collection:
       url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "The 100 Club":
     summary: "RottenTomatoes' movies with a perfect score"
@@ -105,6 +144,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Just The Worst":
     summary: "Razzie Award-winning movies"
@@ -112,6 +154,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   # Genres
   "Spoofs and Parodies":
@@ -120,6 +165,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Slam Dunk":
     summary: "The best sports movies, ever."
@@ -127,6 +175,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "Get In, Get Out":
     summary: "Don't forget about the getaway driver out front"
@@ -134,6 +185,9 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   "On The Edge Of Your Seat":
     summary: "The suspense is killing us!"
@@ -154,5 +208,29 @@ collection:
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
     collection_order: custom
     sync_mode: sync
+    visible_home: false
+    visible_shared: false
+    visible_library: true
 
   ### Seasonal
+  "2022 Best Picture Nominees":
+    summary: "Who will take home the trophy?"
+    sort_title: +++++Oscars01
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "2022 Best Actor Nominees":
+    summary: "Who will take home the trophy?"
+    sort_title: +++++Oscars02
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "2022 Best Actress Nominees":
+    summary: "Who will take home the trophy?"
+    sort_title: +++++Oscars03
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
