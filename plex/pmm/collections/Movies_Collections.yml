@@ -14,8 +14,8 @@ collection:
     summary: "Bet you didn't see THAT coming..."
     sort_title:
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
-      collection_order: custom
-      sync_mode: sync
+    collection_order: custom
+    sync_mode: sync
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -24,8 +24,8 @@ collection:
     summary: ""
     sort_title:
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
-      collection_order: custom
-      sync_mode: sync
+    collection_order: custom
+    sync_mode: sync
     visible_home: false
     visible_shared: false
     visible_library: true
@@ -81,8 +81,8 @@ collection:
     sort_title:
     imdb_list:
       url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
-    sync_mode: sync
     collection_order: custom
+    sync_mode: sync
     visible_home: false
     visible_shared: false
     visible_library: true

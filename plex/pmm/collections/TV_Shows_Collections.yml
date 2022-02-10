@@ -217,6 +217,7 @@ collections:
     template: { name: Network,
                 network: "Sky 1, Sky Arts, Sky Atlantic, Sky Atlantic (UK), Sky Cinema, Sky Crime, Sky Documentaries, Sky Living, Sky Max, Sky Nature, Sky One, Sky Sports, Sky Two, Sky Witness, Sky1",
                 poster: https://i.imgur.com/qBS4e5P.jpg }
+    summary: Shows Aired on Sky
 
   Starz:
     template: { name: Studio,
@@ -240,4 +241,5 @@ collections:
     template: { name: Network,
                 network: "YouTube, YouTube Premium",
                 poster: https://theposterdb.com/api/assets/113301 }
+    summary: Shows Aired on YouTube
 
