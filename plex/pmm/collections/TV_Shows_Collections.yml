@@ -18,7 +18,50 @@ collections:
   "From The Top":
     summary: "Let's start this from the beginning"
     collection_level: episode
+    collection_order: alpha
     plex_pilots: true
+
+  "Previously On...":
+    summary: "Catch up on last week's episodes"
+    sort_title:
+    collection_level: episode
+    smart_filter:
+      all:
+        # Episode aired in the last 8 days
+        episode_air_date: 8
+    collection_order: release
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  ### New Content
+  "Added This Week":
+    summary: "Episodes added this week on Plex"
+    sort_title:
+    collection_level: episode
+    smart_filter:
+      all:
+        # Episode added in the last 7 days
+        episode_added: 7
+    collection_order: release
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "Now On Plex":
+    summary: "Shows now playing on Plex"
+    sort_title:
+    smart_filter:
+      all:
+        # Shows added in the last 30 days
+        added: 30
+    collection_order: release
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
 
   ### Trending
   "What Everyone Is Watching":

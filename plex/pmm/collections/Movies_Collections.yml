@@ -30,6 +30,20 @@ collections:
     visible_shared: false
     visible_library: true
 
+  ### New Content
+  "Added This Week":
+    summary: "Movies now playing on Plex"
+    sort_title:
+    smart_filter:
+      all:
+        # Movie added in the last 7 days
+        added: 7
+    collection_order: release
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
   ### Trending
   "What Everyone Is Watching":
     summary: "What other subscribers are checking out"
