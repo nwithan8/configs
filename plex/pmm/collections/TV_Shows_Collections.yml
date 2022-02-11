@@ -9,6 +9,7 @@ templates:
   Network:
     sort_title: ~<<collection_name>>
     smart_filter:
+      type: shows
       sort_by: title.desc
       validate: false
       any:
@@ -32,9 +33,10 @@ collections:
     collection_level: episode
     smart_filter:
       all:
+        type: episodes
         # Episode aired in the last 8 days
         episode_air_date: 8
-    collection_order: release
+        sort_by: release.desc
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -47,9 +49,10 @@ collections:
     collection_level: episode
     smart_filter:
       all:
+        type: episodes
         # Episode added in the last 7 days
         episode_added: 7
-    collection_order: release
+        sort_by: release.desc
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -60,9 +63,10 @@ collections:
     sort_title:
     smart_filter:
       all:
+        type: shows
         # Shows added in the last 30 days
         added: 30
-    collection_order: release
+        sort_by: release.desc
     sync_mode: sync
     visible_library: true
     visible_home: true
@@ -98,9 +102,10 @@ collections:
     collection_level: episode
     smart_filter:
       all:
+        type: episodes
         title.is: "The Simpsons"
         episode_title.contains: "Treehouse"
-    collection_order: release
+        sort_by: release.asc
     sync_mode: sync
     visible_library: true
     visible_home: false

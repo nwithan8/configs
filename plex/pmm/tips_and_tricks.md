@@ -30,3 +30,13 @@ Prefix suggestions:
 - https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#sort-options
 - If a collection is made of multiple lists, can't use `custom`
   - Recommend sorting instead by `popularity.desc`
+- Can't use `collection_order` for Plex `smart_filter` rules. Replacements:
+  - `collection_order: release` -> `sort_by: release.desc`
+  - `collection_order: alpha` -> `sort_by: title.desc`
+  - `collection_order: custom` -> `sort_by: ??`
+
+
+## Filters
+- Type restrictions 
+  - Plex `smart_filter`/`plex_search`: Use, i.e. `type: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#special-attributes)
+  - All other rules: Use, i.e., `collection_level: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)

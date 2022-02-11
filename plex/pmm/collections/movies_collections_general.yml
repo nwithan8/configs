@@ -19,6 +19,7 @@ templates:
     sort_title: <<level>>+01_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: daily
     visible_library: true
 
   Holiday:
@@ -27,6 +28,7 @@ templates:
     sort_title: <<level>>+02_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: never
     visible_library: true
 
   Studio:
@@ -35,6 +37,7 @@ templates:
     sort_title: <<level>>+03_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: daily
     visible_library: true
 
   Genre:
@@ -108,9 +111,10 @@ collections:
     summary: "Movies now playing on Plex"
     smart_filter:
       all:
+        type: movies
         # Movie added in the last 7 days
         added: 7
-    collection_order: release
+        sort_by: release.desc
     visible_home: true
     visible_shared: true
 
@@ -249,6 +253,7 @@ collections:
     summary: "You might learn something"
     smart_filter:
       all:
+        type: movies
         genre: Documentary
     visible_home: false
     visible_shared: false
