@@ -26,4 +26,7 @@ Prefix suggestions:
 - Save time by updating lesser-important collections and playlists less frequently:
   - ex. `schedule: weekly(wednesday), weekly(sunday)`
 
-
+## Sorting
+- https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#sort-options
+- If a collection is made of multiple lists, can't use `custom`
+  - Recommend sorting instead by `popularity.desc`
