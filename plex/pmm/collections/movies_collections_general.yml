@@ -381,3 +381,13 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "Disney Channel Original Movies":
+    template: { name: Collection,
+                level: "+++" }
+    summary: "You're watching Disney Channel"
+    imdb_list:
+      - url: https://www.imdb.com/list/ls093405279/
+    collection_order: release
+    visible_home: false
+    visible_shared: false
+

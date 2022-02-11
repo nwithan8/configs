@@ -19,6 +19,7 @@ templates:
     sort_title: <<level>>+01_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: daily
     visible_library: true
 
   Holiday:
@@ -27,6 +28,7 @@ templates:
     sort_title: <<level>>+02_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: never
     visible_library: true
 
   Studio:
@@ -35,6 +37,7 @@ templates:
     sort_title: <<level>>+03_<<collection_name>>
     sync_mode: sync
     collection_order: custom
+    schedule: daily
     visible_library: true
 
   Genre:
@@ -113,6 +116,17 @@ collections:
       list_minimum: 2
     visible_home: false
     visible_shared: true
+
+  ### Categorical
+  "Best Picture Winners":
+    template: { name: Award,
+                level: "+++" }
+    summary: "Previous Best Picture Winners"
+    imdb_list:
+      - url: https://www.imdb.com/search/title/?count=1000&groups=oscar_best_picture_winners&sort=year%2Cdesc
+    schedule: yearly(04/01), yearly(01/01) # in case list wasn't updated in April, check again in January next year
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
 
   ### Seasonal
   "2022 Best Picture Nominees":
