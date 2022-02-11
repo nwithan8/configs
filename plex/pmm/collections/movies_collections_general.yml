@@ -101,30 +101,6 @@ templates:
     visible_library: true
 
 collections:
-  ### Custom
-  "Documentaries":
-    template: { name: Genre }
-    summary: "You might learn something"
-    smart_filter:
-      all:
-        genre: Documentary
-    visible_home: false
-    visible_shared: false
-
-  "What a Twist!":
-    template: { name: Genre }
-    summary: "Bet you didn't see THAT coming..."
-    mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
-    visible_home: false
-    visible_shared: false
-
-  "Based On A True Story":
-    template: { name: Genre }
-    summary: ""
-    mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
-    visible_home: false
-    visible_shared: false
-
   ### New Content
   "Added This Week":
     template: { name: Chart,
@@ -239,8 +215,7 @@ collections:
 
   # Genres
   "Spoofs and Parodies":
-    template: { name: Genre,
-                level: "+" }
+    template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
     schedule: weekly(wednesday), weekly(sunday)
@@ -248,27 +223,47 @@ collections:
     visible_shared: false
 
   "Slam Dunk":
-    template: { name: Genre,
-                level: "+" }
+    template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     visible_home: false
     visible_shared: false
 
   "Get In, Get Out":
-    template: { name: Genre,
-                level: "+" }
+    template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     visible_home: false
     visible_shared: false
 
   "On The Edge Of Your Seat":
-    template: { name: Genre,
-                level: "+" }
+    template: { name: Genre }
     summary: "The suspense is killing us!"
     imdb_list:
       url: https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    visible_home: false
+    visible_shared: false
+
+  "Documentaries":
+    template: { name: Genre }
+    summary: "You might learn something"
+    smart_filter:
+      all:
+        genre: Documentary
+    visible_home: false
+    visible_shared: false
+
+  "What a Twist!":
+    template: { name: Genre }
+    summary: "Bet you didn't see THAT coming..."
+    mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
+    visible_home: false
+    visible_shared: false
+
+  "Based On A True Story":
+    template: { name: Genre }
+    summary: ""
+    mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
     visible_home: false
     visible_shared: false
 
@@ -338,7 +333,7 @@ collections:
     visible_home: range(03/10-03/18)
     visible_shared: range(03/10-03/18)
 
-  ### Series
+  ### Series and Collections
   "Bond. James Bond.":
     template: { name: Collection,
                 level: "+" }
@@ -366,4 +361,13 @@ collections:
     collection_order: release
     visible_home: false
     visible_shared: false
+
+  "The Criterion Collection":
+    template: { name: Collection,
+                level: "+++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    visible_home: true
+    visible_shared: true
 
