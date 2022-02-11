@@ -6,3 +6,7 @@
 ## Visibility
 - `visible_library`, `visible_home` and `visible_shared`
   - `true`, `false` or [schedule](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Schedule-Detail) available for all options
+
+## Scheduling
+- Save time by updating lesser-important collections and playlists less frequently:
+  - ex. `schedule: weekly(wednesday), weekly(sunday)`

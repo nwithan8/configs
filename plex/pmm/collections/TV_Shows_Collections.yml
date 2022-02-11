@@ -1,3 +1,5 @@
+# Collections specific to TV Shows
+
 templates:
   Studio:
     sort_title: ~<<collection_name>>
@@ -20,6 +22,9 @@ collections:
     collection_level: episode
     collection_order: alpha
     plex_pilots: true
+    visible_library: true
+    visible_home: false
+    visible_shared: true
 
   "Previously On...":
     summary: "Catch up on last week's episodes"
@@ -59,9 +64,9 @@ collections:
         added: 30
     collection_order: release
     sync_mode: sync
+    visible_library: true
     visible_home: true
     visible_shared: true
-    visible_library: true
 
   ### Trending
   "What Everyone Is Watching":
@@ -73,12 +78,33 @@ collections:
       list_days: 30
       list_size: 15
       list_minimum: 2
+    visible_library: true
+    visible_home: false
+    visible_shared: true
 
   "Trending Now":
     summary: "The hottest shows right now"
     imdb_chart: popular_shows
     collection_order: custom
     sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  ### Topical
+  "Treehouse of Horror":
+    summary: "All the Simpsons' Treehouse of Horror episodes"
+    sort_title:
+    collection_level: episode
+    smart_filter:
+      all:
+        title.is: "The Simpsons"
+        episode_title.contains: "Treehouse"
+    collection_order: release
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   #### Studios
   ABC:
@@ -86,203 +112,304 @@ collections:
                 network: "ABC, ABC (AU), ABS (US), ABC Comedy, ABC Family, ABC Me, ABC Spark, ABC.com, ABC1, ABC3" ,
                 poster: https://theposterdb.com/api/assets/113115 }
     summary: Shows Aired on ABC
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Adult Swim:
     template: { name: Network,
                 network: "Adult Swim",
                 poster: https://theposterdb.com/api/assets/113116 }
     summary: Shows Aired on Adult Swim
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   A&E:
     template: { name: Network,
                 network: "A&E",
                 poster: https://theposterdb.com/api/assets/113113 }
     summary: Shows Aired on A&E
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   AMC:
     template: { name: Network,
                 network: "AMC, AMC+",
                 poster: https://theposterdb.com/api/assets/113118 }
     summary: Shows Aired on AMC
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   "Apple TV+":
     template: { name: Network,
                 network: "Apple TV+, Apple Music",
                 poster: https://theposterdb.com/api/assets/113121 }
     summary: "Apple TV+ Original Shows"
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   BBC:
     template: { name: Network,
                 network: "BBC, BBC America, BBC Choice, BBC First, BBC Four, BBC HD, BBC iPlayer, BBC One, BBC Two, BBC Three, BBC UKTV, CBBC, Cbeebies",
                 poster: https://theposterdb.com/api/assets/113123 }
     summary: BBC Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Cartoon Network:
     template: { name: Network,
                 network: "Cartoon Network",
                 poster: https://theposterdb.com/api/assets/113135 }
     summary: Shows Aired on Cartoon Network
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   CBS:
     template: { name: Network,
                 network: "CBS, CBS All Access, CBS Reality, CBS Reality (UK), CBS.com",
                 poster: https://theposterdb.com/api/assets/113138 }
     summary: Shows Aired on CBS
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Channel 4:
     template: { name: Network,
                 network: "Channel 4, E4, More4, 4Seven, Film4",
                 poster: https://theposterdb.com/api/assets/113139 }
     summary: Shows Aired on Channel 4
-
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Cinemax:
     template: { name: Network,
                 network: "Cinemax",
                 poster: https://theposterdb.com/api/assets/113140 }
     summary: Shows Aired on Cinemax
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Comedy Central:
     template: { name: Network,
                 network: "Comedy Central, Comedy Central (UK)",
                 poster: https://theposterdb.com/api/assets/113146 }
     summary: Shows Aired on Comedy Central
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Discovery Channel:
     template: { name: Network,
                 network: "Discovery, Discovery Channel, Discovery Channel (AU), Discovery Channel (CA), Discovery Channel (UK), Discovery Health Channel, Discovery Kids, Discovery Life, Discovery Real Time, Discovery Turbo, Discovery Turbo UK, Discovery+",
                 poster: https://theposterdb.com/api/assets/113157 }
     summary: Shows Aired on Discovery Channel
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   "Disney+":
     template: { name: Network,
                 network: "Disney Channel, Disney Channel (UK), Disney Junior, Disney XD, Disney+, Disney+ Hostar",
                 poster: https://theposterdb.com/api/assets/113161 }
     summary: "Disney+ Original Shows"
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   ESPN:
     template: { name: Network,
                 network: "ESPN, ESPN2, ESPN3, ESPNU, ESPN+, ESPNU+",
                 poster: https://theposterdb.com/api/assets/113167 }
     summary: Shows Aired on ESPN
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   FOX:
     template: { name: Network,
                 network: "FX, FOX, Fox Action Movies, Fox Business Network, Fox Kids, Fox Premium Series, FOX Sports 1, Fox Sports Networks",
                 poster: https://theposterdb.com/api/assets/113173 }
     summary: Shows Aired on FOX
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   HBO:
     template: { name: Network,
                 network: "HBO, HBO Canada, HBO Europe, HBO Max",
                 poster: https://theposterdb.com/api/assets/113186 }
     summary: HBO Orginal Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   History Channel:
     template: { name: Network,
                 network: "History, History (CA), History (UK), History Channel, History Channel (AU)",
                 poster: https://theposterdb.com/api/assets/113187 }
     summary: Shows Aired on History Channel
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   HGTV:
     template: { name: Network,
                 network: "HGTV, HGTV (AU), HGTV Canada",
                 poster: https://theposterdb.com/api/assets/113183 }
     summary: Shows Aired on HGTV
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Hulu:
     template: { name: Network,
                 network: "Hulu",
                 poster: https://theposterdb.com/api/assets/113188 }
     summary: Hulu Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   ITV:
     template: { name: Network,
                 network: "ITV, ITV2, ITV3, ITV4, ITVBe, CITV",
                 poster: https://theposterdb.com/api/assets/113192 }
     summary: Shows Aired on ITV
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   MTV:
     template: { name: Network,
                 network: "MTV, MTV (AU/NZ), MTV (UK), MTV2, MTV3",
                 poster: https://theposterdb.com/api/assets/113202 }
     summary: Shows Aired on MTV
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   National Geographic:
     template: { name: Network,
                 network: "National Geographic, National Geographic (UK), National Geographic Brasil, National Geographic Channel, National Geographic Wild",
                 poster: https://theposterdb.com/api/assets/113206 }
     summary: Shows Aired on National Geographic
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   NBC:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113217 }
     tmdb_network: 6
     summary: Shows Aired on NBC
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   NBCUniversal:
     template: { name: Network,
                 network: "Bravo, CNBC, E!, MSNBC, NBC, Oxygen, Peacock, SyFy",
                 poster: https://theposterdb.com/api/assets/113217 }
     summary: NBCUniversal Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Netflix:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113218 }
     tmdb_network: 213
     summary: Netflix Orginal Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Nickelodeon:
     template: { name: Network,
                 network: "Nick Jr., Nickelodeon, Nicktoons, TeenNick",
                 poster: https://theposterdb.com/api/assets/113231 }
     summary: Shows Aired on Nickelodeon
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   PBS:
     template: { name: Network,
                 network: "PBS, PBS Kids",
                 poster: https://theposterdb.com/api/assets/113244 }
     summary: Shows Aired on PBS
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Prime Video:
     template: { name: Network,
                 network: "Amazon, Amazon Prime Video, Prime Video",
                 poster: https://theposterdb.com/api/assets/113247 }
     summary: Prime Video Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Showtime:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113257 }
     tmdb_network: 67
     summary: Showtime Orginal Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Sky:
     template: { name: Network,
                 network: "Sky 1, Sky Arts, Sky Atlantic, Sky Atlantic (UK), Sky Cinema, Sky Crime, Sky Documentaries, Sky Living, Sky Max, Sky Nature, Sky One, Sky Sports, Sky Two, Sky Witness, Sky1",
                 poster: https://i.imgur.com/qBS4e5P.jpg }
     summary: Shows Aired on Sky
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   Starz:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113265 }
     tmdb_network: 318
     summary: Starz Orginal Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   SyFy:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113267 }
     tmdb_network: 77
     summary: Shows Aired on SYFY
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   TBS:
     template: { name: Network,
                 network: "TBS",
                 poster: https://theposterdb.com/api/assets/113267 }
     summary: TBS Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   YouTube:
     template: { name: Network,
                 network: "YouTube, YouTube Premium",
                 poster: https://theposterdb.com/api/assets/113301 }
     summary: Shows Aired on YouTube
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 

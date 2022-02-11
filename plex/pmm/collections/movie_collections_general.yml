@@ -1,0 +1,241 @@
+# General collections for any movie library (will be replicated for each movie library)
+
+collections:
+  ### Custom
+  "Documentaries":
+    summary: "You might learn something"
+    sort_title:
+    smart_filter:
+      all:
+        genre: Documentary
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "What a Twist!":
+    summary: "Bet you didn't see THAT coming..."
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Based On A True Story":
+    summary: ""
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  ### New Content
+  "Added This Week":
+    summary: "Movies now playing on Plex"
+    sort_title:
+    smart_filter:
+      all:
+        # Movie added in the last 7 days
+        added: 7
+    collection_order: release
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  ### Trending
+  "What Everyone Is Watching":
+    summary: "What other subscribers are checking out"
+    sort_title:
+    libraries: "Movies"
+    sync_mode: sync
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  "At The Box Office":
+    summary: "Now playing on a screen near you"
+    sort_title:
+    imdb_chart: box_office
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  "Trending Now":
+    summary: "The hottest movies right now"
+    sort_title:
+    imdb_chart: popular_movies
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  ### Top Rated
+  "Best Of All Time":
+    summary: "Dive into the best films ever made"
+    sort_title:
+    imdb_chart: top_movies
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  "Best of the 70s":
+    summary: "IMDb's top movies of the 1970s"
+    sort_title:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Best of the 80s":
+    summary: "RottenTomatoes' top movies of the 1980s"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Best of the 90s":
+    summary: "RottenTomatoes' top movies of the 1990s"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Best of the 2000s":
+    summary: "RottenTomatoes' top movies of the 2000s"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Best of the 2010s":
+    summary: "RottenTomatoes' top movies of the 2010s"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Best of the 2020s":
+    summary: "IMDb's top movies of the 2020s"
+    sort_title:
+    imdb_list:
+      url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "The 100 Club":
+    summary: "RottenTomatoes' movies with a perfect score"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Just The Worst":
+    summary: "Razzie Award-winning movies"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  # Genres
+  "Spoofs and Parodies":
+    summary: "Imitation is the sincerest form of flattery"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Slam Dunk":
+    summary: "The best sports movies, ever."
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Get In, Get Out":
+    summary: "Don't forget about the getaway driver out front"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
+    collection_order: custom
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "On The Edge Of Your Seat":
+    summary: "The suspense is killing us!"
+    sort_title:
+    imdb_list:
+      url: https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  ### Series
+  "Bond. James Bond.":
+    summary: "007 forever"
+    sort_title:
+    mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
