@@ -107,7 +107,6 @@ collections:
                 level: "++" }
     summary: "What other subscribers are checking out"
     libraries: "Movies"
-    collection_order: custom
     tautulli_popular:
       list_days: 30
       list_size: 15
@@ -120,6 +119,7 @@ collections:
     template: { name: Holiday,
                 level: "+++++" }
     summary: "Who will take home the trophy?"
+    schedule: never
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
@@ -128,6 +128,7 @@ collections:
     template: { name: Holiday,
                 level: "++++" }
     summary: "Who will take home the trophy?"
+    schedule: never
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
@@ -136,6 +137,7 @@ collections:
     template: { name: Holiday,
                 level: "++++" }
     summary: "Who will take home the trophy?"
+    schedule: never
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
