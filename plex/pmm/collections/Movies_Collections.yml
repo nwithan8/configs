@@ -1,24 +1,141 @@
 # Collections specific to Movies
 
+# PREFIXES
+#   +01_ = Charts
+#   +02_ = Holidays
+#   +03_ = Studios or Network
+#   +04_ = Genres
+#   +05_ = Countries
+#   +06_ = Awards
+#   +07_ = Collections
+#   +08_ = Decades
+#   +09_ = People
+#   +10_ = General
+
+templates:
+  Chart:
+    default:
+      level: ""
+    sort_title: <<level>>+01_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    visible_library: true
+
+  Holiday:
+    default:
+      level: ""
+    sort_title: <<level>>+02_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    visible_library: true
+
+  Studio:
+    default:
+      level: ""
+    sort_title: <<level>>+03_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    visible_library: true
+
+  Genre:
+    default:
+      level: ""
+    sort_title: <<level>>+04_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Country:
+    default:
+      level: ""
+    sort_title: <<level>>+05_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Award:
+    default:
+      level: ""
+    sort_title: <<level>>+06_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Collection:
+    default:
+      level: ""
+    sort_title: <<level>>+07_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Decade:
+    default:
+      level: ""
+    sort_title: <<level>>+08_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  People:
+    default:
+      level: ""
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  General:
+    default:
+      level: ""
+    sort_title: <<level>>+10_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
 collections:
+  ### Trending
+  "What Everyone Is Watching":
+    template: { name: Chart,
+                level: "++" }
+    summary: "What other subscribers are checking out"
+    libraries: "Movies"
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+    visible_home: false
+    visible_shared: true
+
   ### Seasonal
   "2022 Best Picture Nominees":
+    template: { name: Holiday,
+                level: "+++++" }
     summary: "Who will take home the trophy?"
-    sort_title: +++++Oscars01
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
   "2022 Best Actor Nominees":
+    template: { name: Holiday,
+                level: "++++" }
     summary: "Who will take home the trophy?"
-    sort_title: +++++Oscars02
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
   "2022 Best Actress Nominees":
+    template: { name: Holiday,
+                level: "++++" }
     summary: "Who will take home the trophy?"
-    sort_title: +++++Oscars03
     visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
