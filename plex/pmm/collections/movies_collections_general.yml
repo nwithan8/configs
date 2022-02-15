@@ -88,10 +88,19 @@ templates:
   People:
     default:
       level: ""
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: random
+      validate: false
+      tmdb_person: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_library: true
 
   General:
@@ -303,7 +312,6 @@ collections:
     visible_home: range(11/01-11/28)
     visible_shared: range(11/01-11/28)
 
-
   "This is Christmas":
     template: { name: Holiday,
                 level: "+" }
@@ -316,7 +324,6 @@ collections:
     schedule: range(11/29-12/31)
     visible_home: range(11/29-12/31)
     visible_shared: range(11/29-12/31)
-
 
   "This is Valentine's Day":
     template: { name: Holiday,
@@ -344,6 +351,24 @@ collections:
     visible_shared: range(03/10-03/18)
 
   ### Series and Collections
+  "1001 Movies You Must See Before You Die":
+    template: { name: Collection,
+                level: "+++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    visible_home: true
+    visible_shared: true
+
+  "The Criterion Collection":
+    template: { name: Collection,
+                level: "+++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    visible_home: true
+    visible_shared: true
+
   "Bond. James Bond.":
     template: { name: Collection,
                 level: "+" }
@@ -372,22 +397,56 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "The Criterion Collection":
-    template: { name: Collection,
-                level: "+++" }
-    # summary provided by Trakt
-    trakt_list_details:
-      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
-    visible_home: true
-    visible_shared: true
-
   "Disney Channel Original Movies":
     template: { name: Collection,
-                level: "+++" }
+                level: "+" }
     summary: "You're watching Disney Channel"
     imdb_list:
       - url: https://www.imdb.com/list/ls093405279/
     collection_order: release
     visible_home: false
     visible_shared: false
+
+  "To Boldly Go":
+    summary: "The Star Trek collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list:
+      - https://trakt.tv/users/dgw/lists/star-trek-canon
+    url_background: https://i.redd.it/vz20prnp8v551.jpg
+    visible_home: false
+    visible_shared: false
+
+  "In A Galaxy Far, Far Away":
+    summary: "The Star Wars collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline
+      - https://trakt.tv/users/darkman1498/lists/star-wars
+    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    visible_home: false
+    visible_shared: false
+
+  "Bears. Beets. Battlestar Galactica":
+    summary: "The Battlestar Galactica collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
+    url_background: https://wallpapercave.com/wp/vPJGO64.jpg
+    url_poster: https://theposterdb.com/api/assets/160915
+    visible_home: false
+    visible_shared: false
+
+  "To Be Or Not To Be":
+    summary: "The Shakespeare collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
+    url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
+    visible_home: false
+    visible_shared: false
+
 

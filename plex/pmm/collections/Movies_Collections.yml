@@ -88,10 +88,19 @@ templates:
   People:
     default:
       level: ""
+    smart_filter:
+      any:
+        actor: tmdb
+        director: tmdb
+        writer: tmdb
+        producer: tmdb
+      sort_by: random
+      validate: false
+      tmdb_person: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_library: true
 
   General:
@@ -118,41 +127,382 @@ collections:
     visible_shared: true
 
   ### Categorical
+  "Oscar Winners":
+    summary: "Oscar Winning Movies"
+    template: { name: Award,
+                level: "+" }
+    imdb_list: "https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner"
+    schedule: yearly(03/28)
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
   "Best Picture Winners":
     template: { name: Award,
-                level: "+++" }
-    summary: "Previous Best Picture Winners"
+                level: "++" }
+    summary: "Previous Oscar Best Picture Winners"
     imdb_list:
-      - url: https://www.imdb.com/search/title/?count=1000&groups=oscar_best_picture_winners&sort=year%2Cdesc
+      - url: https://www.imdb.com/search/title/?count=250&groups=oscar_best_picture_winners&sort=year%2Cdesc
     schedule: yearly(04/01), yearly(01/01) # in case list wasn't updated in April, check again in January next year
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
   ### Seasonal
+
+  ### Awards
   "2022 Best Picture Nominees":
-    template: { name: Holiday,
+    # NEED TO BUILD MANUALLY
+    template: { name: Award,
                 level: "+++++" }
     summary: "Who will take home the trophy?"
     schedule: never
-    visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
   "2022 Best Actor Nominees":
-    template: { name: Holiday,
+    # NEED TO BUILD MANUALLY
+    template: { name: Award,
                 level: "++++" }
     summary: "Who will take home the trophy?"
     schedule: never
-    visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
   "2022 Best Actress Nominees":
+    # NEED TO BUILD MANUALLY
     template: { name: Holiday,
                 level: "++++" }
     summary: "Who will take home the trophy?"
     schedule: never
-    visible_library: range(02/01-03/31)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+
+  "2022 Oscar Nominations":
+    summary: "Who will take home the trophy?"
+    template: { name: Award,
+                level: "+++" }
+    trakt_list:
+      # NEED TO REPLACE MANUALLY
+      - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
+    schedule: yearly(02/20)
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "Cannes - Palme d'or":
+    summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
+    template: { name: Award,
+                level: "++++" }
+    trakt_list: https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
+    schedule: yearly(06/01)
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+
+  "Cesar":
+    summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
+    template: { name: Award,
+                level: "++++" }
+    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
+    schedule: yearly(03/14)
+    visible_home: range(03/14-03/31)
+    visible_shared: range(03/14-03/31)
+
+  "Berlinale":
+    summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
+    template: { name: Award,
+                level: "++++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    schedule: yearly(02/21)
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+
+  "BAFTA Best Film":
+    summary: "The EE British Academy Film Awards or BAFTA Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA) to honour the best British and international contributions to film."
+    template: { name: Award,
+                level: "++++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+    schedule: yearly(02/21)
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+
+  "Venice":
+    summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"
+    template: { name: Award,
+                level: "++++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    schedule: yearly(02/21)
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+
+  ### People
+  Adam Sandler:
+    template: { name: People, person: 19292 }
+  Al Pacino:
+    template: { name: People, person: 1158 }
+  Alfred Hitchcock:
+    template: { name: People, person: 2636 }
+  Amy Adams:
+    template: { name: People, person: 9273 }
+  Angelina Jolie:
+    template: { name: People, person: 11701 }
+  Anne Hathaway:
+    template: { name: People, person: 1813 }
+  Anthony Hopkins:
+    template: { name: People, person: 4173 }
+  Antonio Banderas:
+    template: { name: People, person: 3131 }
+  Arnold Schwarzenegger:
+    template: { name: People, person: 1100 }
+  Ben Affleck:
+    template: { name: People, person: 880 }
+  Ben Stiller:
+    template: { name: People, person: 7399 }
+  Bill Murray:
+    template: { name: People, person: 1532 }
+  Brad Pitt:
+    template: { name: People, person: 287 }
+  Brendan Fraser:
+    template: { name: People, person: 18269 }
+  Bruce Lee:
+    template: { name: People, person: 19429 }
+  Bruce Willis:
+    template: { name: People, person: 62 }
+  Cameron Diaz:
+    template: { name: People, person: 6941 }
+  Carrie Fisher:
+    template: { name: People, person: 4 }
+  Cate Blanchett:
+    template: { name: People, person: 112 }
+  "Catherine Zeta-Jones":
+    template: { name: People, person: 1922 }
+  Channing Tatum:
+    template: { name: People, person: 38673 }
+  Charlie Chaplin:
+    template: { name: People, person: 13848 }
+  Charlize Theron:
+    template: { name: People, person: 6885 }
+  Christian Bale:
+    template: { name: People, person: 3894 }
+  Chris Evans:
+    template: { name: People, person: 16828 }
+  Chris Hemsworth:
+    template: { name: People, person: 74568 }
+  Chris Pratt:
+    template: { name: People, person: 73457 }
+  Chris Rock:
+    template: { name: People, person: 2632 }
+  Christopher Nolan:
+    template: { name: People, person: 525 }
+  Christopher Walken:
+    template: { name: People, person: 4690 }
+  Chuck Norris:
+    template: { name: People, person: 51576 }
+  Clint Eastwood:
+    template: { name: People, person: 190 }
+  Coen Brothers:
+    template: { name: People, person: "1223, 1224" }
+  Daniel Craig:
+    template: { name: People, person: 8784 }
+  Dave Bautista:
+    template: { name: People, person: 543530 }
+  Dave Chappelle:
+    template: { name: People, person: 4169 }
+  Denzel Washington:
+    template: { name: People, person: 5292 }
+  Diane Keaton:
+    template: { name: People, person: 3092 }
+  Don Cheadle:
+    template: { name: People, person: 1896 }
+  Dustin Hoffman:
+    template: { name: People, person: 4483 }
+  Dwayne Johnson:
+    template: { name: People, person: 18918 }
+  Eddie Murphy:
+    template: { name: People, person: 776 }
+  Edward Norton:
+    template: { name: People, person: 819 }
+  Elliot Page:
+    template: { name: People, person: 27578 }
+  Emma Stone:
+    template: { name: People, person: 54693 }
+  Emma Watson:
+    template: { name: People, person: 10990 }
+  Ewan McGregor:
+    template: { name: People, person: 3061 }
+  George Clooney:
+    template: { name: People, person: 1461 }
+  Gerard Butler:
+    template: { name: People, person: 17276 }
+  Harrison Ford:
+    template: { name: People, person: 3 }
+  Hayao Miyazaki:
+    template: { name: People, person: 608 }
+  Hugh Jackman:
+    template: { name: People, person: 6968 }
+  Ian McKellen:
+    template: { name: People, person: 1327 }
+  Ice Cube:
+    template: { name: People, person: 9778 }
+  "J.J. Abrams":
+    template: { name: People, person: 15344 }
+  Jack Black:
+    template: { name: People, person: 70851 }
+  Jackie Chan:
+    template: { name: People, person: 18897 }
+  James Cameron:
+    template: { name: People, person: 2710 }
+  James Franco:
+    template: { name: People, person: 17051 }
+  Jamie Foxx:
+    template: { name: People, person: 134 }
+  Jason Bateman:
+    template: { name: People, person: 23532 }
+  Jason Statham:
+    template: { name: People, person: 976 }
+  Jeff Bridges:
+    template: { name: People, person: 1229 }
+  Jeff Goldblum:
+    template: { name: People, person: 4785 }
+  Jennifer Aniston:
+    template: { name: People, person: 4491 }
+  Jennifer Lawrence:
+    template: { name: People, person: 72129 }
+  Jesse Eisenberg:
+    template: { name: People, person: 44735 }
+  Jessica Alba:
+    template: { name: People, person: 56731 }
+  Jet Li:
+    template: { name: People, person: 1336 }
+  Jim Carrey:
+    template: { name: People, person: 206 }
+  John Candy:
+    template: { name: People, person: 7180 }
+  John Travolta:
+    template: { name: People, person: 8891 }
+  John Wayne:
+    template: { name: People, person: 4165 }
+  Johnny Depp:
+    template: { name: People, person: 85 }
+  Julia Roberts:
+    template: { name: People, person: 1204 }
+  Kevin Bacon:
+    template: { name: People, person: 4724 }
+  Kevin Costner:
+    template: { name: People, person: 1269 }
+  Kevin Hart:
+    template: { name: People, person: 55638 }
+  Kevin Smith:
+    template: { name: People, person: 19303 }
+  Leonardo DiCaprio:
+    template: { name: People, person: 6193 }
+  Liam Neeson:
+    template: { name: People, person: 3896 }
+  Lucy Liu:
+    template: { name: People, person: 140 }
+  "M. Night Shyamalan":
+    template: { name: People, person: 11614 }
+  Mark Wahlberg:
+    template: { name: People, person: 13240 }
+  Matt Damon:
+    template: { name: People, person: 1892 }
+  Matthew McConaughey:
+    template: { name: People, person: 10297 }
+  Megan Fox:
+    template: { name: People, person: 19537 }
+  Mel Brooks:
+    template: { name: People, person: 14639 }
+  Mel Gibson:
+    template: { name: People, person: 2461 }
+  Melissa McCarthy:
+    template: { name: People, person: 55536 }
+  Meryl Streep:
+    template: { name: People, person: 5064 }
+  Michael Bay:
+    template: { name: People, person: 865 }
+  Michael Caine:
+    template: { name: People, person: 3895 }
+  Michael Keaton:
+    template: { name: People, person: 2232 }
+  Mike Myers:
+    template: { name: People, person: 12073 }
+  Mila Kunis:
+    template: { name: People, person: 18973 }
+  Milla Jovovich:
+    template: { name: People, person: 63 }
+  Morgan Freeman:
+    template: { name: People, person: 192 }
+  Natalie Portman:
+    template: { name: People, person: 524 }
+  Nicolas Cage:
+    template: { name: People, person: 2963 }
+  Nicole Kidman:
+    template: { name: People, person: 2227 }
+  Orlando Bloom:
+    template: { name: People, person: 114 }
+  Owen Wilson:
+    template: { name: People, person: 887 }
+  Patrick Stewart:
+    template: { name: People, person: 2387 }
+  Quentin Tarantino:
+    template: { name: People, person: 138 }
+  Reese Witherspoon:
+    template: { name: People, person: 368 }
+  Ridley Scott:
+    template: { name: People, person: 578 }
+  Robert De Niro:
+    template: { name: People, person: 380 }
+  "Robert Downey Jr.":
+    template: { name: People, person: 3223 }
+  Robin Williams:
+    template: { name: People, person: 2157 }
+  Rosario Dawson:
+    template: { name: People, person: 5916 }
+  Ryan Reynolds:
+    template: { name: People, person: 10859 }
+  "Samuel L. Jackson":
+    template: { name: People, person: 2231 }
+  Sandra Bullock:
+    template: { name: People, person: 18277 }
+  Sacha Baron Cohen:
+    template: { name: People, person: 6730 }
+  Scarlett Johansson:
+    template: { name: People, person: 1245 }
+  Sean Connery:
+    template: { name: People, person: 738 }
+  Seth Rogen:
+    template: { name: People, person: 19274 }
+  Shia LaBeouf:
+    template: { name: People, person: 10959 }
+  Steve Buscemi:
+    template: { name: People, person: 884 }
+  Steve Carell:
+    template: { name: People, person: 4495 }
+  Steve Martin:
+    template: { name: People, person: 67773 }
+  Steven Seagal:
+    template: { name: People, person: 23880 }
+  Steven Spielberg:
+    template: { name: People, person: 488 }
+  Sylvester Stallone:
+    template: { name: People, person: 16483 }
+  Tim Burton:
+    template: { name: People, person: 510 }
+  Tom Cruise:
+    template: { name: People, person: 500 }
+  Tom Hanks:
+    template: { name: People, person: 31 }
+  Tommy Lee Jones:
+    template: { name: People, person: 2176 }
+  Vin Diesel:
+    template: { name: People, person: 12835 }
+  Vince Vaughn:
+    template: { name: People, person: 4937 }
+  Wesley Snipes:
+    template: { name: People, person: 10814 }
+  Will Ferrell:
+    template: { name: People, person: 23659 }
+  Will Smith:
+    template: { name: People, person: 2888 }
+  Woody Harrelson:
+    template: { name: People, person: 57755 }
+  Zack Snyder:
+    template: { name: People, person: 15217 }
 
