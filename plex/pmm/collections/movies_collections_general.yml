@@ -159,7 +159,7 @@ collections:
                 level: "+" }
     summary: "IMDb's top movies of the 1970s"
     imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
+      - https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
     schedule: weekly(wednesday), weekly(sunday)
     visible_home: false
     visible_shared: false
@@ -205,7 +205,7 @@ collections:
                 level: "+" }
     summary: "IMDb's top movies of the 2020s"
     imdb_list:
-      url: https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
+      - https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
     schedule: weekly(wednesday), weekly(sunday)
     visible_home: false
     visible_shared: false
@@ -253,7 +253,7 @@ collections:
     template: { name: Genre }
     summary: "The suspense is killing us!"
     imdb_list:
-      url: https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+      - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
     visible_home: false
     visible_shared: false
 
@@ -402,7 +402,7 @@ collections:
                 level: "+" }
     summary: "You're watching Disney Channel"
     imdb_list:
-      - url: https://www.imdb.com/list/ls093405279/
+      - https://www.imdb.com/list/ls093405279
     collection_order: release
     visible_home: false
     visible_shared: false

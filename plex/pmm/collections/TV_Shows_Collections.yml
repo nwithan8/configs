@@ -364,6 +364,17 @@ collections:
     visible_home: false
     visible_shared: false
 
+  Quibi:
+    template: { name: Studio,
+                poster: https://theposterdb.com/api/assets/115020 }
+    imdb_list:
+      - https://www.imdb.com/list/ls085112163
+    summary: Quibi Original Shows
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+
   Showtime:
     template: { name: Studio,
                 poster: https://theposterdb.com/api/assets/113257 }

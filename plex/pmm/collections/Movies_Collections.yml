@@ -131,7 +131,8 @@ collections:
     summary: "Oscar Winning Movies"
     template: { name: Award,
                 level: "+" }
-    imdb_list: "https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner"
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
     schedule: yearly(03/28)
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
@@ -141,7 +142,7 @@ collections:
                 level: "++" }
     summary: "Previous Oscar Best Picture Winners"
     imdb_list:
-      - url: https://www.imdb.com/search/title/?count=250&groups=oscar_best_picture_winners&sort=year%2Cdesc
+      - https://www.imdb.com/search/title/?count=250&groups=oscar_best_picture_winners&sort=year%2Cdesc
     schedule: yearly(04/01), yearly(01/01) # in case list wasn't updated in April, check again in January next year
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
