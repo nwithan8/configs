@@ -100,7 +100,6 @@ templates:
     sort_title: <<level>>+09_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: monthly(1)
     visible_library: true
 
   General:

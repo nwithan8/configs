@@ -25,6 +25,7 @@ Prefix suggestions:
 ## Scheduling
 - Save time by updating lesser-important collections and playlists less frequently:
   - ex. `schedule: weekly(wednesday), weekly(sunday)`
+- Don't need to schedule a `smart_filter` because Plex auto-updates the list itself
 
 ## Sorting
 - https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#sort-options
