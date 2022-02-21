@@ -241,20 +241,12 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "Just The Worst":
-    template: { name: Award }
-    summary: "Razzie Award-winning movies"
-    mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
-    schedule: weekly(wednesday), weekly(sunday)
-    visible_home: false
-    visible_shared: false
-
   # Genres
   "Spoofs and Parodies":
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: yearly(01/01)
     visible_home: false
     visible_shared: false
 
@@ -262,6 +254,7 @@ collections:
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
+    schedule: yearly(01/01)
     visible_home: false
     visible_shared: false
 
@@ -307,7 +300,7 @@ collections:
   ### Seasonal
   "This is Halloween":
     template: { name: Holiday,
-                level: "+" }
+                level: "+++" }
     summary: "Boo!"
     trakt_list:
       - https://trakt.tv/users/29zombies/lists/halloween
@@ -323,7 +316,7 @@ collections:
 
   "This is Thanksgiving":
     template: { name: Holiday,
-                level: "+" }
+                level: "+++" }
     summary: "Gobble gobble!"
     trakt_list:
       - https://trakt.tv/users/galacticboy/lists/thanksgiving-movies
@@ -337,7 +330,7 @@ collections:
 
   "This is Christmas":
     template: { name: Holiday,
-                level: "+" }
+                level: "+++" }
     summary: "Cozy up with some Christmas classics"
     trakt_list:
       - https://trakt.tv/users/movistapp/lists/christmas-movies
@@ -348,9 +341,20 @@ collections:
     visible_home: range(11/29-12/31)
     visible_shared: range(11/29-12/31)
 
+  "The Hallmark Christmas Collection":
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Christmas movies with extra-sap"
+    trakt_list:
+      - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
+    collection_order: audience_rating.desc
+    schedule: range(11/29-12/31)
+    visible_home: range(11/29-12/31)
+    visible_shared: range(11/29-12/31)
+
   "This is Valentine's Day":
     template: { name: Holiday,
-                level: "+" }
+                level: "+++" }
     summary: "Love me tender, love me sweet"
     trakt_list:
       - https://trakt.tv/users/movie-pal/lists/valentine-s-day
@@ -363,7 +367,7 @@ collections:
 
   "This is St. Patrick's Day":
     template: { name: Holiday,
-                level: "+" }
+                level: "+++" }
     summary: "Kiss me, I'm Irish"
     trakt_list:
       - https://trakt.tv/users/triadcool/lists/irish
@@ -376,7 +380,7 @@ collections:
   ### Series and Collections
   "1001 Movies You Must See Before You Die":
     template: { name: Collection,
-                level: "+++" }
+                level: "++" }
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
@@ -385,7 +389,7 @@ collections:
 
   "The Criterion Collection":
     template: { name: Collection,
-                level: "+++" }
+                level: "++" }
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
