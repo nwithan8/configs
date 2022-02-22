@@ -96,7 +96,7 @@ templates:
     tmdb_crew: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
     sync_mode: sync
-    collection_order: custom
+    collection_order: release
     visible_library: true
 
   Actor:
@@ -142,11 +142,11 @@ collections:
                 level: "++" }
     summary: "Movies now playing on Plex"
     smart_filter:
+      type: movies
+      sort_by: release.desc
       all:
-        type: movies
         # Movie added in the last 7 days
         added: 7
-        sort_by: release.desc
     visible_home: true
     visible_shared: true
 
@@ -277,8 +277,9 @@ collections:
     template: { name: Genre }
     summary: "You might learn something"
     smart_filter:
+      type: movies
+      sort_by: critic_rating.desc
       all:
-        type: movies
         genre: Documentary
     visible_home: false
     visible_shared: false

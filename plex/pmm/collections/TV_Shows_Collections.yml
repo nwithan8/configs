@@ -32,11 +32,11 @@ collections:
     sort_title:
     collection_level: episode
     smart_filter:
+      type: episodes
+      sort_by: release.desc
       all:
-        type: episodes
         # Episode aired in the last 8 days
         episode_air_date: 8
-        sort_by: release.desc
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -48,11 +48,11 @@ collections:
     sort_title:
     collection_level: episode
     smart_filter:
+      type: episodes
+      sort_by: release.desc
       all:
-        type: episodes
         # Episode added in the last 7 days
         episode_added: 7
-        sort_by: release.desc
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -62,11 +62,11 @@ collections:
     summary: "Shows now playing on Plex"
     sort_title:
     smart_filter:
+      type: shows
+      sort_by: release.desc
       all:
-        type: shows
         # Shows added in the last 30 days
         added: 30
-        sort_by: release.desc
     sync_mode: sync
     visible_library: true
     visible_home: true
@@ -101,11 +101,11 @@ collections:
     sort_title:
     collection_level: episode
     smart_filter:
+      type: episodes
+      sort_by: release.asc
       all:
-        type: episodes
         title.is: "The Simpsons"
         episode_title.contains: "Treehouse"
-        sort_by: release.asc
     sync_mode: sync
     visible_library: true
     visible_home: false

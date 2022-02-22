@@ -35,9 +35,21 @@ Prefix suggestions:
   - `collection_order: release` -> `sort_by: release.desc`
   - `collection_order: alpha` -> `sort_by: title.desc`
   - `collection_order: custom` -> `sort_by: ??`
+- Needs to be one level above `all`/`any` criteria list. Ex.:
+  - `smart_filter`:
+    - sort_by: `release.desc`
+    - any:
+      - criteria1
+      - criteria2
 
 
 ## Filters
 - Type restrictions 
   - Plex `smart_filter`/`plex_search`: Use, i.e. `type: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#special-attributes)
+    - Needs to be one level above `all`/`any` criteria list. Ex.:
+    - `smart_filter`:
+      - type: `episodes`
+      - any:
+        - criteria1
+        - criteria2
   - All other rules: Use, i.e., `collection_level: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
