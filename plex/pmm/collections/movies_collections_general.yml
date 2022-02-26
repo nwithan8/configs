@@ -184,6 +184,7 @@ collections:
     summary: "Our top picks"
     trakt_list:
       - https://trakt.tv/users/nwithan8/recommendations?sort=rank,asc
+      - https://trakt.tv/users/nwithan8/lists/recommendations-custom
     collection_order: release
     visible_home: false
     visible_shared: true
