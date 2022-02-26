@@ -95,7 +95,7 @@ templates:
     tmdb_director: <<person>>
     tmdb_crew: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
-    sync_mode: sync
+    sync_mode: append
     collection_order: release
     visible_library: true
 
@@ -104,7 +104,7 @@ templates:
       level: ""
     tmdb_actor_details: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
-    sync_mode: sync
+    sync_mode: append
     collection_order: custom
     visible_library: true
 
@@ -113,7 +113,7 @@ templates:
       level: ""
     tmdb_director_details: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
-    sync_mode: sync
+    sync_mode: append
     collection_order: custom
     visible_library: true
 
@@ -122,7 +122,7 @@ templates:
       level: ""
     tmdb_producer_details: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
-    sync_mode: sync
+    sync_mode: append
     collection_order: custom
     visible_library: true
 
