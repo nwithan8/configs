@@ -1,3 +1,168 @@
 # General collections for any show library (will be replicated for each show library)
 
+# PREFIXES
+#   +01_ = Charts
+#   +02_ = Holidays
+#   +03_ = Studios or Network
+#   +04_ = Genres
+#   +05_ = Countries
+#   +06_ = Awards
+#   +07_ = Collections
+#   +08_ = Decades
+#   +09_ = Person
+#   +09_ = Actor
+#   +09_ = Director
+#   +09_ = Producer
+#   +10_ = General
+
+templates:
+  Chart:
+    default:
+      level: ""
+    sort_title: <<level>>+01_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: daily
+    visible_library: true
+
+  Holiday:
+    default:
+      level: ""
+    sort_title: <<level>>+02_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: never
+    visible_library: true
+
+  Studio:
+    default:
+      level: ""
+    sort_title: <<level>>+03_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: daily
+    visible_library: true
+
+  Genre:
+    default:
+      level: ""
+    sort_title: <<level>>+04_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Country:
+    default:
+      level: ""
+    sort_title: <<level>>+05_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Award:
+    default:
+      level: ""
+    sort_title: <<level>>+06_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Collection:
+    default:
+      level: ""
+    sort_title: <<level>>+07_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Best Of:
+    default:
+      level: ""
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: <<level>>+08+_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+
+  Decade:
+    default:
+      level: ""
+    sort_title: <<level>>+08_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Person:
+    default:
+      level: ""
+    tmdb_actor: <<person>>
+    tmdb_director: <<person>>
+    tmdb_crew: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: release
+    visible_library: true
+
+  Actor:
+    default:
+      level: ""
+    tmdb_actor_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Director:
+    default:
+      level: ""
+    tmdb_director_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Producer:
+    default:
+      level: ""
+    tmdb_producer_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  General:
+    default:
+      level: ""
+    sort_title: <<level>>+10_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+
 collections:
+  "A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True Crime Documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: release
+    visible_home: false
+    visible_shared: true
+
+  "Editor's Choice":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Our top picks"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/recommendations?sort=rank,asc
+    collection_order: release
+    visible_home: false
+    visible_shared: true

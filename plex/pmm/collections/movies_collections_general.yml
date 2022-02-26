@@ -79,6 +79,17 @@ templates:
     schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
 
+  Best Of:
+    default:
+      level: ""
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
+    sort_title: <<level>>+08+_Best of <<year>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<year>>
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+
   Decade:
     default:
       level: ""
@@ -167,6 +178,17 @@ collections:
     visible_home: false
     visible_shared: true
 
+  "Editor's Choice":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Our top picks"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/recommendations?sort=rank,asc
+    collection_order: release
+    visible_home: false
+    visible_shared: true
+
+
   ### Top Rated
   "Best Of All Time":
     template: { name: Award,
@@ -183,7 +205,7 @@ collections:
     summary: "IMDb's top movies of the 1970s"
     imdb_list:
       - https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
@@ -192,7 +214,7 @@ collections:
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1980s"
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
@@ -201,7 +223,7 @@ collections:
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1990s"
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
@@ -210,7 +232,7 @@ collections:
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2000s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
@@ -219,7 +241,7 @@ collections:
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2010s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
@@ -237,11 +259,20 @@ collections:
     template: { name: Award }
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: monthly(1)
     visible_home: false
     visible_shared: false
 
   # Genres
+  "What's The Deal With Airplane Food?":
+    template: { name: Genre }
+    summary: "Some of the best stand-up you'll ever see."
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
+    collection_order: audience_rating.desc
+    visible_home: true
+    visible_shared: true
+
   "Spoofs and Parodies":
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
@@ -298,6 +329,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True Crime Documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: release
+    visible_home: false
+    visible_shared: true
+
   ### Seasonal
   "This is Halloween":
     template: { name: Holiday,
@@ -314,6 +354,18 @@ collections:
     schedule: range(10/01-10/31)
     visible_home: range(10/01-10/31)
     visible_shared: range(10/01-10/31)
+
+  # TODO: Replace for 2022
+  "31 Days of Horror":
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Do you dare?"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2021
+    collection_order: custom
+    schedule: range(09/30-10/31)
+    visible_home: false
+    visible_shared: range(09/30-10/31)
 
   "This is Thanksgiving":
     template: { name: Holiday,
@@ -379,6 +431,62 @@ collections:
     visible_shared: range(03/10-03/18)
 
   ### Series and Collections
+  Best of 2014:
+    template: { name: Best of, year: 2014 }
+    schedule: yearly(1)
+
+  Best of 2015:
+    template: { name: Best of, year: 2015 }
+    schedule: yearly(1)
+
+  Best of 2016:
+    template: { name: Best of, year: 2016 }
+    schedule: yearly(1)
+
+  Best of 2017:
+    template: { name: Best of, year: 2017 }
+    schedule: yearly(1)
+
+  Best of 2018:
+    template: { name: Best of, year: 2018 }
+    schedule: monthly(1)
+
+  Best of 2019:
+    template: { name: Best of, year: 2019 }
+    schedule: monthly(1)
+
+  Best of 2020:
+    template: { name: Best of, year: 2020 }
+    schedule: monthly(1)
+
+  Best of 2021:
+    template: { name: Best of, year: 2021 }
+    schedule: monthly(1)
+
+  Best of 2022:
+    template: { name: Best of, year: 2021 }
+    schedule: monthly(1)
+
+  "How Did This Get Made?":
+    template: { name: Collection,
+                level: "++" }
+    summary: "The films of the podcast 'How Did This Get Made?'"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
+    collection_order: audience_rating.desc
+    visible_home: false
+    visible_shared: true
+
+  "Rom-com Central":
+    template: { name: Collection,
+                level: "++" }
+    summary: "Rotten Tomatoes' best romantic comedies of all time"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    collection_order: audience_rating.desc
+    visible_home: false
+    visible_shared: true
+
   "1001 Movies You Must See Before You Die":
     template: { name: Collection,
                 level: "++" }
