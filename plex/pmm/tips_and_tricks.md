@@ -41,7 +41,8 @@ Prefix suggestions:
     - any:
       - criteria1
       - criteria2
-
+- Collections display on home screen in order of creation
+  - Recommend having library-specific collections loaded first in config before general collections
 
 ## Filters
 - Type restrictions 

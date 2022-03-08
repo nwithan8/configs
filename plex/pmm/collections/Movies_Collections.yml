@@ -91,12 +91,16 @@ templates:
   Person:
     default:
       level: ""
-    tmdb_actor: <<person>>
-    tmdb_director: <<person>>
-    tmdb_crew: <<person>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    tmdb_person: <<person>>
     sort_title: <<level>>+09_<<collection_name>>
     sync_mode: append
-    collection_order: release
     visible_library: true
 
   Actor:
@@ -540,7 +544,7 @@ collections:
     template: { name: Person, person: 15217 }
   Alan Arkin:
     template: { name: Person, person: 1903 }
-  Alan rickman:
+  Alan Rickman:
     template: { name: Person, person: 4566 }
   Albert Finney:
     template: { name: Person, person: 3926 }
