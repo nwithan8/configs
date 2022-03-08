@@ -189,7 +189,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
     collection_order: release
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
 
@@ -489,6 +489,26 @@ collections:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     collection_order: audience_rating.desc
     visible_home: false
+    visible_shared: true
+
+  "Best Movie Ever":
+    template: { name: Collection,
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_home: true
+    visible_shared: true
+
+  "Worst Movie Ever":
+    template: { name: Collection,
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_home: true
     visible_shared: true
 
   "1001 Movies You Must See Before You Die":
