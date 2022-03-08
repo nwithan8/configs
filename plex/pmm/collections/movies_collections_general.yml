@@ -187,8 +187,7 @@ collections:
                 level: "++" }
     summary: "Our top picks"
     trakt_list:
-      - https://trakt.tv/users/nwithan8/recommendations?sort=rank,asc
-      - https://trakt.tv/users/nwithan8/lists/recommendations-custom
+      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
     collection_order: release
     visible_home: false
     visible_shared: true
