@@ -424,15 +424,15 @@ collections:
   ### Series and Collections
   Best of 2014:
     template: { name: Best Of, year: 2014 }
-    schedule: yearly(01/01)
+    schedule: monthly(1)
 
   Best of 2015:
     template: { name: Best Of, year: 2015 }
-    schedule: yearly(01/01)
+    schedule: monthly(1)
 
   Best of 2016:
     template: { name: Best Of, year: 2016 }
-    schedule: yearly(01/01)
+    schedule: monthly(1)
 
   Best of 2017:
     template: { name: Best Of, year: 2017 }
