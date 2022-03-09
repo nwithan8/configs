@@ -178,7 +178,7 @@ collections:
       sort_by: release.asc
       all:
         title.is: "The Simpsons"
-        episode_title.contains: "Treehouse"
+        episode_title: "Treehouse"
     sync_mode: sync
     visible_library: true
     visible_home: false
