@@ -505,6 +505,7 @@ collections:
     schedule: monthly(1)
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    collection_order: critic_rating.desc
     visible_home: true
     visible_shared: true
 
@@ -514,6 +515,7 @@ collections:
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    collection_order: critic_rating.desc
     visible_home: true
     visible_shared: true
 
