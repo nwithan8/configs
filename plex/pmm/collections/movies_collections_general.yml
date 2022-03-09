@@ -502,6 +502,7 @@ collections:
     template: { name: Collection,
                 level: "++" }
     # summary provided by Trakt
+    schedule: monthly(1)
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
     visible_home: true
