@@ -1,6 +1,23 @@
 # Collections specific to TV Shows
 
 templates:
+  Chart:
+    default:
+      level: ""
+    sort_title: <<level>>+01_<<collection_name>>
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+
+  Holiday:
+    default:
+      level: ""
+    sort_title: <<level>>+02_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: never
+    visible_library: true
+
   Studio:
     sort_title: ~<<collection_name>>
     collection_order: alpha
@@ -15,6 +32,101 @@ templates:
       any:
         network: <<network>>
     url_poster: <<poster>>
+
+  Genre:
+    default:
+      level: ""
+    sort_title: <<level>>+04_<<collection_name>>
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Country:
+    default:
+      level: ""
+    sort_title: <<level>>+05_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Award:
+    default:
+      level: ""
+    sort_title: <<level>>+06_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Collection:
+    default:
+      level: ""
+    sort_title: <<level>>+07_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Decade:
+    default:
+      level: ""
+    sort_title: <<level>>+08_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
+  Person:
+    default:
+      level: ""
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    tmdb_person: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    visible_library: true
+
+  Actor:
+    default:
+      level: ""
+    tmdb_actor_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Director:
+    default:
+      level: ""
+    tmdb_director_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Producer:
+    default:
+      level: ""
+    tmdb_producer_details: <<person>>
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  General:
+    default:
+      level: ""
+    sort_title: <<level>>+10_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
 
 collections:
   ### Custom
@@ -42,36 +154,6 @@ collections:
     visible_shared: true
     visible_library: true
 
-  ### New Content
-  "Added This Week":
-    summary: "Episodes added this week on Plex"
-    sort_title:
-    collection_level: episode
-    smart_filter:
-      type: episodes
-      sort_by: release.desc
-      all:
-        # Episode added in the last 7 days
-        episode_added: 7
-    sync_mode: sync
-    visible_home: true
-    visible_shared: true
-    visible_library: true
-
-  "Now On Plex":
-    summary: "Shows now playing on Plex"
-    sort_title:
-    smart_filter:
-      type: shows
-      sort_by: release.desc
-      all:
-        # Shows added in the last 30 days
-        added: 30
-    sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-
   ### Trending
   "What Everyone Is Watching":
     summary: "What other BigBox users are checking out"
@@ -82,15 +164,6 @@ collections:
       list_days: 30
       list_size: 15
       list_minimum: 2
-    visible_library: true
-    visible_home: false
-    visible_shared: true
-
-  "Trending Now":
-    summary: "The hottest shows right now"
-    imdb_chart: popular_shows
-    collection_order: custom
-    sync_mode: sync
     visible_library: true
     visible_home: false
     visible_shared: true
@@ -111,7 +184,7 @@ collections:
     visible_home: false
     visible_shared: false
 
-  #### Studios
+  ### Studios
   ABC:
     template: { name: Network,
                 network: "ABC, ABC (AU), ABS (US), ABC Comedy, ABC Family, ABC Me, ABC Spark, ABC.com, ABC1, ABC3" ,

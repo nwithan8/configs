@@ -1,27 +1,11 @@
 # General collections for any movie library (will be replicated for each movie library)
 
-# PREFIXES
-#   +01_ = Charts
-#   +02_ = Holidays
-#   +03_ = Studios or Network
-#   +04_ = Genres
-#   +05_ = Countries
-#   +06_ = Awards
-#   +07_ = Collections
-#   +08_ = Decades
-#   +09_ = Person
-#   +09_ = Actor
-#   +09_ = Director
-#   +09_ = Producer
-#   +10_ = General
-
 templates:
   Chart:
     default:
       level: ""
     sort_title: <<level>>+01_<<collection_name>>
     sync_mode: sync
-    collection_order: custom
     schedule: daily
     visible_library: true
 
@@ -48,7 +32,6 @@ templates:
       level: ""
     sort_title: <<level>>+04_<<collection_name>>
     sync_mode: sync
-    collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
 
@@ -171,6 +154,7 @@ collections:
                 level: "+++" }
     summary: "Now playing on a screen near you"
     imdb_chart: box_office
+    collection_order: custom
     visible_home: false
     visible_shared: true
 
@@ -179,6 +163,7 @@ collections:
                 level: "+++" }
     summary: "The hottest movies right now"
     imdb_chart: popular_movies
+    collection_order: custom
     visible_home: false
     visible_shared: true
 
@@ -323,6 +308,7 @@ collections:
     template: { name: Genre }
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
+    collection_order: custom
     visible_home: false
     visible_shared: false
 
@@ -330,6 +316,7 @@ collections:
     template: { name: Genre }
     summary: ""
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
+    collection_order: custom
     visible_home: false
     visible_shared: false
 
@@ -338,7 +325,7 @@ collections:
     summary: "True Crime Documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
-    collection_order: release
+    collection_order: custom
     visible_home: false
     visible_shared: true
 
@@ -436,39 +423,39 @@ collections:
 
   ### Series and Collections
   Best of 2014:
-    template: { name: Best of, year: 2014 }
+    template: { name: Best Of, year: 2014 }
     schedule: yearly(1)
 
   Best of 2015:
-    template: { name: Best of, year: 2015 }
+    template: { name: Best Of, year: 2015 }
     schedule: yearly(1)
 
   Best of 2016:
-    template: { name: Best of, year: 2016 }
+    template: { name: Best Of, year: 2016 }
     schedule: yearly(1)
 
   Best of 2017:
-    template: { name: Best of, year: 2017 }
+    template: { name: Best Of, year: 2017 }
     schedule: yearly(1)
 
   Best of 2018:
-    template: { name: Best of, year: 2018 }
+    template: { name: Best Of, year: 2018 }
     schedule: monthly(1)
 
   Best of 2019:
-    template: { name: Best of, year: 2019 }
+    template: { name: Best Of, year: 2019 }
     schedule: monthly(1)
 
   Best of 2020:
-    template: { name: Best of, year: 2020 }
+    template: { name: Best Of, year: 2020 }
     schedule: monthly(1)
 
   Best of 2021:
-    template: { name: Best of, year: 2021 }
+    template: { name: Best Of, year: 2021 }
     schedule: monthly(1)
 
   Best of 2022:
-    template: { name: Best of, year: 2021 }
+    template: { name: Best Of, year: 2021 }
     schedule: monthly(1)
 
   "How Did This Get Made?":
@@ -583,7 +570,6 @@ collections:
                 level: "+" }
     trakt_list_details:
       - https://trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline
-      - https://trakt.tv/users/darkman1498/lists/star-wars
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
     visible_home: false
     visible_shared: false

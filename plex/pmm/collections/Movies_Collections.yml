@@ -1,20 +1,5 @@
 # Collections specific to Movies
 
-# PREFIXES
-#   +01_ = Charts
-#   +02_ = Holidays
-#   +03_ = Studios or Network
-#   +04_ = Genres
-#   +05_ = Countries
-#   +06_ = Awards
-#   +07_ = Collections
-#   +08_ = Decades
-#   +09_ = Person
-#   +09_ = Actor
-#   +09_ = Director
-#   +09_ = Producer
-#   +10_ = General
-
 templates:
   Chart:
     default:

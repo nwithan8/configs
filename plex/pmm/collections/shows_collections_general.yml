@@ -1,20 +1,5 @@
 # General collections for any show library (will be replicated for each show library)
 
-# PREFIXES
-#   +01_ = Charts
-#   +02_ = Holidays
-#   +03_ = Studios or Network
-#   +04_ = Genres
-#   +05_ = Countries
-#   +06_ = Awards
-#   +07_ = Collections
-#   +08_ = Decades
-#   +09_ = Person
-#   +09_ = Actor
-#   +09_ = Director
-#   +09_ = Producer
-#   +10_ = General
-
 templates:
   Chart:
     default:
@@ -79,17 +64,6 @@ templates:
     schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
 
-  Best Of:
-    default:
-      level: ""
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<year>>
-    sort_title: <<level>>+08+_Best of <<year>>
-    sync_mode: sync
-    summary: Rotten Tomatoes Best Movies of <<year>>
-    collection_order: release
-    collection_minimum: 3
-    delete_below_minimum: true
-
   Decade:
     default:
       level: ""
@@ -151,12 +125,43 @@ templates:
 
 
 collections:
-  "A Real-Life Whodunnit":
-    template: { name: Genre }
-    summary: "True Crime Documentaries"
-    trakt_list:
-      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
-    collection_order: release
+  ### New Content
+  "Added This Week":
+    summary: "Episodes added this week on Plex"
+    sort_title:
+    collection_level: episode
+    smart_filter:
+      type: episodes
+      sort_by: release.desc
+      all:
+        # Episode added in the last 7 days
+        episode_added: 7
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "Now On Plex":
+    summary: "Shows now playing on Plex"
+    sort_title:
+    smart_filter:
+      type: shows
+      sort_by: release.desc
+      all:
+        # Shows added in the last 30 days
+        added: 30
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  ### Trending
+  "Trending Now":
+    summary: "The hottest shows right now"
+    imdb_chart: popular_shows
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
     visible_home: false
     visible_shared: true
 
@@ -165,8 +170,17 @@ collections:
                 level: "++" }
     summary: "Our top picks"
     trakt_list:
-      - https://trakt.tv/users/nwithan8/recommendations?sort=rank,asc
-      - https://trakt.tv/users/nwithan8/lists/recommendations-custom
+      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
+    collection_order: release
+    visible_home: true
+    visible_shared: true
+
+  ### Genres
+  "A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True Crime Documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
     collection_order: release
     visible_home: false
     visible_shared: true
