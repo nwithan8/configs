@@ -142,7 +142,6 @@ collections:
   "Previously On...":
     summary: "Catch up on last week's episodes"
     sort_title:
-    collection_level: episode
     smart_filter:
       type: episodes
       sort_by: release.desc
@@ -172,7 +171,6 @@ collections:
   "Treehouse of Horror":
     summary: "All the Simpsons' Treehouse of Horror episodes"
     sort_title:
-    collection_level: episode
     smart_filter:
       type: episodes
       sort_by: release.asc

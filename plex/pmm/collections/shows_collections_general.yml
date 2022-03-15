@@ -129,7 +129,6 @@ collections:
   "Added This Week":
     summary: "Episodes added this week on Plex"
     sort_title:
-    collection_level: episode
     smart_filter:
       type: episodes
       sort_by: release.desc
