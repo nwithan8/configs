@@ -282,6 +282,7 @@ collections:
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
+    schedule: yearly(01/01)
     visible_home: false
     visible_shared: false
 
