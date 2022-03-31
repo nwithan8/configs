@@ -836,9 +836,10 @@ collections:
 #  Zooey Deschanel:
 #    template: { name: Person, person: 11664 }
 
-dynamic_collections:
-  "PER-ACTOR COLLECTION": # mapping name does not matter just needs to be unique
-    type: actor
-    data:
-      depth: 5  # must be in top X billed actors for a given movie for the movie to be added
-      minimum: 10 # actor must be in at least X movies to have a collection made
+# disabled until CommentedMap is fixed
+# dynamic_collections:
+#  "PER-ACTOR COLLECTION": # mapping name does not matter just needs to be unique
+#    type: actor
+#    data:
+#      depth: 5  # must be in top X billed actors for a given movie for the movie to be added
+#      minimum: 10 # actor must be in at least X movies to have a collection made
