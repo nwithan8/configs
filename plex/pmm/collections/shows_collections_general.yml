@@ -126,33 +126,6 @@ templates:
 
 collections:
   ### New Content
-  "Added This Week":
-    summary: "Episodes added this week on Plex"
-    sort_title:
-    smart_filter:
-      type: episodes
-      sort_by: release.desc
-      all:
-        # Episode added in the last 7 days
-        episode_added: 7
-    sync_mode: sync
-    visible_home: true
-    visible_shared: true
-    visible_library: true
-
-  "Now On Plex":
-    summary: "Shows now playing on Plex"
-    sort_title:
-    smart_filter:
-      type: shows
-      sort_by: release.desc
-      all:
-        # Shows added in the last 30 days
-        added: 30
-    sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
   ### Trending
   "Trending Now":
