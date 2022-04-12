@@ -413,7 +413,7 @@ collections:
 
   Best of 2017:
     template: { name: Best Of, year: 2017 }
-    schedule: yearly(01/01)
+    schedule: monthly(1)
 
   Best of 2018:
     template: { name: Best Of, year: 2018 }
