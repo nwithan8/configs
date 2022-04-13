@@ -177,6 +177,35 @@ collections:
     visible_home: true
     visible_shared: true
 
+  ### For the User
+  "Something New":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Let's try something new"
+    smart_filter:
+      type: movies
+      all:
+        # Movie released in the last 10 years
+        release: 3650
+        unplayed: true
+      visible_home: true
+      visible_shared: true
+
+  "Spin The Wheel!":
+    template: { name: Chart,
+                level: "+" }
+    summary: "New releases for you to take a chance on!"
+    smart_filter:
+      type: movies
+      all:
+        # Movie released in the last 5 months
+        release: 150
+        # Movie added in the last 2 months
+        added: 60
+      limit: 30
+      visible_home: true
+      visible_shared: true
+
   ### Top Rated
   "Best Of All Time":
     template: { name: Award,
