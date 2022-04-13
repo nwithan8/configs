@@ -45,6 +45,6 @@ templates:
 
 collections:
   "Gilbert Gottfried - In Memoriam":
-    template: { name: Actor, person: 15832 }
+    template: { name: Actor, tmdb_id: 15832 }
 
 
