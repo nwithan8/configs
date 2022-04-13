@@ -188,6 +188,7 @@ collections:
         # Movie released in the last 10 years
         release: 3650
         unplayed: true
+      limit: 10
       visible_home: true
       visible_shared: true
 
