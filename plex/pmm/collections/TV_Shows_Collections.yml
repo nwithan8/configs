@@ -139,6 +139,20 @@ collections:
     visible_home: false
     visible_shared: true
 
+  "Previously On...":
+    summary: "Catch up on last week's episodes"
+    sort_title:
+    smart_filter:
+      type: episodes
+      sort_by: release.desc
+      all:
+        # Episode aired in the last 8 days
+        episode_air_date: 8
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
   ### Trending
   "What Everyone Is Watching":
     summary: "What other BigBox users are checking out"
@@ -152,6 +166,21 @@ collections:
     visible_library: true
     visible_home: false
     visible_shared: true
+
+  ### Topical
+  "Treehouse of Horror":
+    summary: "All the Simpsons' Treehouse of Horror episodes"
+    sort_title:
+    smart_filter:
+      type: episodes
+      sort_by: release.asc
+      all:
+        title.is: "The Simpsons"
+        episode_title: "Treehouse"
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   ### Studios
   NBC:
