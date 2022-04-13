@@ -189,8 +189,8 @@ collections:
         release: 3650
         unplayed: true
       limit: 10
-      visible_home: true
-      visible_shared: true
+    visible_home: true
+    visible_shared: true
 
   "Spin The Wheel!":
     template: { name: Chart,
@@ -204,8 +204,8 @@ collections:
         # Movie added in the last 2 months
         added: 60
       limit: 30
-      visible_home: true
-      visible_shared: true
+    visible_home: true
+    visible_shared: true
 
   ### Top Rated
   "Best Of All Time":

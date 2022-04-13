@@ -11,9 +11,9 @@ templates:
       tmdb_person: <<tmdb_id>>
       sort_title: <<level>>+02_<<collection_name>>
       sync_mode: append
-      visible_library: true
-      visible_shared: true
-      visible_home: true
+    visible_library: true
+    visible_shared: true
+    visible_home: true
 
   Director:
     default:
@@ -25,9 +25,9 @@ templates:
       tmdb_person: <<tmdb_id>>
       sort_title: <<level>>+02_<<collection_name>>
       sync_mode: append
-      visible_library: true
-      visible_shared: true
-      visible_home: true
+    visible_library: true
+    visible_shared: true
+    visible_home: true
 
   Producer:
     default:
@@ -39,9 +39,9 @@ templates:
       tmdb_person: <<tmdb_id>>
       sort_title: <<level>>+02_<<collection_name>>
       sync_mode: append
-      visible_library: true
-      visible_shared: true
-      visible_home: true
+    visible_library: true
+    visible_shared: true
+    visible_home: true
 
 collections:
   "Gilbert Gottfried - In Memoriam":
