@@ -135,6 +135,18 @@ templates:
 
 collections:
   ### New Content
+  "Added This Week":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Movies now playing on Plex"
+    smart_filter:
+      type: movies
+      sort_by: release.desc
+      all:
+        # Movie added in the last 7 days
+        added: 7
+    visible_home: true
+    visible_shared: true
 
   ### Trending
   "At The Box Office":
@@ -278,6 +290,17 @@ collections:
     summary: "The suspense is killing us!"
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    visible_home: false
+    visible_shared: false
+
+  "Documentaries":
+    template: { name: Genre }
+    summary: "You might learn something"
+    smart_filter:
+      type: movies
+      sort_by: critic_rating.desc
+      all:
+        genre: Documentary
     visible_home: false
     visible_shared: false
 
