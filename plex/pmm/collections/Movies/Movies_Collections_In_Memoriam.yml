@@ -1,50 +1,25 @@
 # In Memoriam collections for the Movies section
 
 templates:
-  Actor:
+  Person:
     default:
       level: ""
+    tmdb_person: <<tmdb_id>>
     smart_filter:
       sort_by: release.desc
       any:
         actor: tmdb
-      tmdb_person: <<tmdb_id>>
-      sort_title: <<level>>+02_<<collection_name>>
-      sync_mode: append
-    visible_library: true
-    visible_shared: true
-    visible_home: true
-
-  Director:
-    default:
-      level: ""
-    smart_filter:
-      sort_by: release.desc
-      any:
         director: tmdb
-      tmdb_person: <<tmdb_id>>
-      sort_title: <<level>>+02_<<collection_name>>
-      sync_mode: append
-    visible_library: true
-    visible_shared: true
-    visible_home: true
-
-  Producer:
-    default:
-      level: ""
-    smart_filter:
-      sort_by: release.desc
-      any:
         producer: tmdb
-      tmdb_person: <<tmdb_id>>
+        writer: tmdb
       sort_title: <<level>>+02_<<collection_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
     visible_home: true
-
+    
 collections:
   "Gilbert Gottfried - In Memoriam":
-    template: { name: Actor, tmdb_id: 15832 }
+    template: { name: Person, tmdb_id: 15832 }
 
 
