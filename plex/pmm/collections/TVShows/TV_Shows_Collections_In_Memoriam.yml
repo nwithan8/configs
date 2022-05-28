@@ -19,5 +19,3 @@ templates:
     visible_home: true
     
 collections:
-  "Gilbert Gottfried - In Memoriam":
-    template: { name: Person, tmdb_id: 15832 }

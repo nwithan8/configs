@@ -145,6 +145,7 @@ collections:
       all:
         # Movie added in the last 7 days
         added: 7
+        content_rating.not: NC-17, UR, Unrated
     visible_home: true
     visible_shared: true
 
