@@ -19,5 +19,7 @@ templates:
     visible_home: true
     
 collections:
+  "#JusticeForJohnny":
+    template: { name: Person, tmdb_id: 85 }
 
 
