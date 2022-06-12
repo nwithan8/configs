@@ -1,7 +1,7 @@
 # In Memoriam collections for the TV Shows section
 
 templates:
-  Person:
+  Actor:
     default:
       level: ""
     tmdb_person: <<tmdb_id>>
@@ -9,9 +9,19 @@ templates:
       sort_by: release.desc
       any:
         actor: tmdb
+      sort_title: <<level>>+02_<<collection_name>>
+      sync_mode: append
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+  Director:
+    default:
+      level: ""
+    tmdb_person: <<tmdb_id>>
+    smart_filter:
+      sort_by: release.desc
+      any:
         director: tmdb
-        producer: tmdb
-        writer: tmdb
       sort_title: <<level>>+02_<<collection_name>>
       sync_mode: append
     visible_library: true
