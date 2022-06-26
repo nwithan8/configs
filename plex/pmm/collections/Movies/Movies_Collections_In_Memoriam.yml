@@ -29,7 +29,5 @@ templates:
     visible_home: true
     
 collections:
-  "#JusticeForJohnny":
-    template: { name: Actor, tmdb_id: 85 }
 
 
