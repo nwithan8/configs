@@ -29,6 +29,6 @@ templates:
     visible_home: true
     
 collections:
-  "James Caan - In Memoriam":
-    template: { name: Actor, tmdb_id: 3085 }
+  "Paul Sorvino - In Memoriam":
+    template: { name: Actor, tmdb_id: 7004 }
 
