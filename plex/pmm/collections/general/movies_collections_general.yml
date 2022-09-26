@@ -275,9 +275,21 @@ collections:
     visible_shared: false
 
   "The 100 Club":
-    template: { name: Award }
+    template: { name: Award,
+                level: "+" }
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: false
+
+  "Just the Worst":
+    template: { name: Award }
+    summary: "The worst movies of all time."
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
+      - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
+    collection_order: audience_rating.desc
     schedule: monthly(1)
     visible_home: false
     visible_shared: false
