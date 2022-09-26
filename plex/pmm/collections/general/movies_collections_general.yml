@@ -288,7 +288,7 @@ collections:
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
-    collection_order: audience_rating.desc
+    collection_order: release
     visible_home: true
     visible_shared: true
 

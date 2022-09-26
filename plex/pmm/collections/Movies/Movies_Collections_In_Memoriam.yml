@@ -29,6 +29,4 @@ templates:
     visible_home: true
     
 collections:
-  "Paul Sorvino - In Memoriam":
-    template: { name: Actor, tmdb_id: 7004 }
 
