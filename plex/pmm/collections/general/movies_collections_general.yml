@@ -72,6 +72,8 @@ templates:
     collection_order: release
     collection_minimum: 3
     delete_below_minimum: true
+    visible_library: true
+    visible_shared: false
 
   Decade:
     default:
@@ -372,6 +374,15 @@ collections:
     visible_home: false
     visible_shared: true
 
+  "Kick Back and Relax":
+    template: { name: Genre }
+    summary: "The best movies for a lazy weekend afternoon"
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
+    collection_order: audience_rating.desc
+    visible_home: weekly(saturday), weekly(sunday)
+    visible_shared: weekly(saturday), weekly(sunday)
+
   ### Seasonal
   "This is Halloween":
     template: { name: Holiday,
@@ -385,8 +396,8 @@ collections:
       # - https://trakt.tv/users/jayinftl/lists/halloween
       # - https://trakt.tv/users/roswellgeek/lists/halloween
     collection_order: audience_rating.desc
-    schedule: range(10/01-10/31)
-    visible_home: range(10/01-10/31)
+    schedule: range(09/30-10/31)
+    visible_home: range(09/30-10/31)
     visible_shared: range(10/01-10/31)
 
   # TODO: Replace for 2022
@@ -398,7 +409,29 @@ collections:
       - https://trakt.tv/users/lish408/lists/31-days-of-horror-2021
     collection_order: custom
     schedule: range(09/30-10/31)
-    visible_home: false
+    visible_home: range(09/30-10/31)
+    visible_shared: range(09/30-10/31)
+
+  "Trick or Treat!":
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Family-friendly Halloween movies"
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
+    collection_order: custom
+    schedule: range(09/30-10/31)
+    visible_home: range(09/30-10/31)
+    visible_shared: range(09/30-10/31)
+
+  "He's Right Behind You!":
+    template: { name: Holiday,
+                level: "++" }
+    summary: "Classic slasher films"
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
+    collection_order: custom
+    schedule: range(09/30-10/31)
+    visible_home: range(09/30-10/31)
     visible_shared: range(09/30-10/31)
 
   "This is Thanksgiving":
@@ -467,39 +500,40 @@ collections:
   ### Series and Collections
   Best of 2014:
     template: { name: Best Of, year: 2014 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2015:
     template: { name: Best Of, year: 2015 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2016:
     template: { name: Best Of, year: 2016 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2017:
     template: { name: Best Of, year: 2017 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2018:
     template: { name: Best Of, year: 2018 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2019:
     template: { name: Best Of, year: 2019 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2020:
     template: { name: Best Of, year: 2020 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2021:
     template: { name: Best Of, year: 2021 }
-    schedule: monthly(1)
+    schedule: yearly(1)
 
   Best of 2022:
     template: { name: Best Of, year: 2022 }
     schedule: monthly(1)
+    visible_shared: true
 
   "How Did This Get Made?":
     template: { name: Collection,
