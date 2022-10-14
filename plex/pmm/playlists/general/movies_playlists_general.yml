@@ -1,4 +1,7 @@
 # General playlists for any movie library
 
+external_templates:
+  - file: templates/playlists.yml
+
 playlists:
 

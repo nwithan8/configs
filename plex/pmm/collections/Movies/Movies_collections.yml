@@ -1,0 +1,7 @@
+# Collections specific to Movies
+
+external_templates:
+  - file: templates/collections.yml
+
+collections:
+

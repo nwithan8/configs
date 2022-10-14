@@ -1,0 +1,6 @@
+# In Memoriam collections for the all movies sections
+
+external_templates:
+  - file: templates/collections.yml
+
+collections:

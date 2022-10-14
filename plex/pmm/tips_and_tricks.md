@@ -54,3 +54,42 @@ Prefix suggestions:
         - criteria1
         - criteria2
   - All other rules: Use, i.e., `collection_level: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
+
+## Templates
+- As of v1.16.4, you can define templates in an external file. This allows you to define your templates in one central place, rather than having to copy-paste them into each file.
+  - Import your templates with the `external_templates` key
+
+## Collection vs Playlist
+- A collection is an unordered group of content from the same Library (Movies, TV Shows, 4K Movies, etc.)
+  - Collection configs exist inside metadata configs
+  - For each Plex library, define a list of "metadata_path" config files
+  - You can technically group multiple Plex libraries into one "metadata" section, but it's not recommended (too confusing)
+- A playlist is an ordered list of content of the same type (all movies, all shows, all music, etc.)
+  - Import a list of "playlist" config files. A "show" playlist file will execute on all shows (and only on shows)
+
+## Overlays
+- You can add custom overlay configurations for specific Plex libraries
+  - Similar to collection/metadata, define a list of "overlay_path" config files for each Plex library
+
+
+## Collections Import Flow
+1. We define a "Movies" section under "libraries" in the `config.yml` file. (The name "Movies" is purely descriptive and doesn't have to match the name of the Plex library)
+2. In the "Movies" section, we define:
+   - the "library_name" as "Movies" (this is the name of the Plex library, this does matter)
+   - the "metadata_path" list of metadata config files. These can come from local files/folders, the Configs repo, or a custom repo.
+     - In our case, all our config files come from a custom repo.
+3. Each metadata config file is parsed and executed
+   - Each config file imports templates from another file (from the custom repo) via the `external_templates` key
+   - The main template file imports templates from the Configs repo via the `external_templates` key
+     - This means that every metadata config file has access to all templates (user-defined and Configs repo-defined)
+   - Each config entry is parsed and executed (if needed), using items from the "Movies" library.
+
+## Collections vs Dynamic Collections
+- Let's say I wanted to make a collection of each actor's movies.
+- Thankfully, with templates, we don't have to manually define every single setting/parameter for each actor's collection.
+- I can make an "actor" template, and then define an "Adam Sandler", "Mike Myers" or "Justin Timberlake" collection and have it reuse the settings from the "actor" template.
+- The problem is, I still need to manually define a collection for each actor. That's where dynamic collections come in.
+- A dynamic collection is useful when you don't know the input data (when we don't know what actors to define)
+- A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result, make a collection using the "actor" template.
+- Schedule a dynamic collection (visibility, update frequency, etc.) via the template
+
