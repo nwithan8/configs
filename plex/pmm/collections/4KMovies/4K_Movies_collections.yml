@@ -1,6 +1,6 @@
 # Collections specific to Movies (4K)
 
 external_templates:
-  - file: templates/collections.yml
+  - repo: templates/collections.yml
 
 collections:

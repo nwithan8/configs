@@ -1,7 +1,7 @@
 # General collections for any movie library (will be replicated for each movie library)
 
 external_templates:
-  - file: templates/collections.yml
+  - repo: templates/collections.yml
 
 templates:
   # Dynamic Collections Templates

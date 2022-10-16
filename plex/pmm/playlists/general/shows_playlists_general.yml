@@ -1,6 +1,6 @@
 # General playlists for any show library
 
 external_templates:
-  - file: templates/playlists.yml
+  - repo: templates/playlists.yml
 
 playlists:
