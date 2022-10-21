@@ -423,11 +423,6 @@ collections:
     visible_shared: range(03/10-03/18)
 
   ### Series and Collections
-  Best of 2022:
-    template: { name: Best Of, year: 2022 }
-    schedule: monthly(1)
-    visible_shared: true
-
   "How Did This Get Made?":
     template: { name: Collection,
                 level: "++" }
