@@ -1,7 +1,7 @@
 # General collections for any show library (will be replicated for each show library)
 
 external_templates:
-  - repo: templates/collections.yml
+  - repo: templates/collections
 
 collections:
 

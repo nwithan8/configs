@@ -1,5 +1,5 @@
 external_templates:
-  - repo: templates/collections.yml
+  - repo: templates/collections
 
 templates:
   # Normal Templates
