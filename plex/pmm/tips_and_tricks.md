@@ -1,9 +1,11 @@
 ## Promotion
-- Use sort_title to promote and demote certain collections 
-  - start with `+` to promote to top of library
-  - start with `~` to demote to bottom of a library
+
+- Use sort_title to promote and demote certain collections
+    - start with `+` to promote to top of library
+    - start with `~` to demote to bottom of a library
 
 Prefix suggestions:
+
 ```
 # Prefixes for (Movie) Collections:
 #   +01_ = Charts
@@ -19,77 +21,106 @@ Prefix suggestions:
 ```
 
 ## Visibility
+
 - `visible_library`, `visible_home` and `visible_shared`
-  - `true`, `false` or [schedule](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Schedule-Detail) available for all options
+    - `true`, `false` or [schedule](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Schedule-Detail) available for
+      all options
+- Visibility does not dictate when a playlist/collection is updated:
+    - When setting visibility to a certain time-frame, make sure the playlist/collection itself is scheduled to update
+      at
+      least one day longer than the visibility time-frame. Otherwise, the playlist/collection will not update again and
+      the
+      visibility will not change.
+        - Example: Halloween collection, `visible_shared: (10/01-10/31)`, `schedule: (10/01-11/01)`
+    - You also need to schedule the playlist to update on the first day of visibility. Otherwise, the playlist will not
+      update and the visibility will not change.
+    - If you can spare the processing, the best thing to do would be to have the playlist/collection update every day,
+      so you don't have to worry about specifically updating it to trigger visibility changes.
 
 ## Scheduling
+
 - Save time by updating lesser-important collections and playlists less frequently:
-  - ex. `schedule: weekly(wednesday), weekly(sunday)`
+    - ex. `schedule: weekly(wednesday), weekly(sunday)`
 - Don't need to schedule a `smart_filter` because Plex auto-updates the list itself
 
 ## Sorting
+
 - https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#sort-options
 - If a collection is made of multiple lists, can't use `custom`
-  - Recommend sorting instead by `popularity.desc`
+    - Recommend sorting instead by `popularity.desc`
 - Can't use `collection_order` for Plex `smart_filter` rules. Replacements:
-  - `collection_order: release` -> `sort_by: release.desc`
-  - `collection_order: alpha` -> `sort_by: title.desc`
-  - `collection_order: custom` -> `sort_by: ??`
+    - `collection_order: release` -> `sort_by: release.desc`
+    - `collection_order: alpha` -> `sort_by: title.desc`
+    - `collection_order: custom` -> `sort_by: ??`
 - Needs to be one level above `all`/`any` criteria list. Ex.:
-  - `smart_filter`:
-    - sort_by: `release.desc`
-    - any:
-      - criteria1
-      - criteria2
+    - `smart_filter`:
+        - sort_by: `release.desc`
+        - any:
+            - criteria1
+            - criteria2
 - Collections display on home screen in order of creation
-  - Recommend having library-specific collections loaded first in config before general collections
+    - Recommend having library-specific collections loaded first in config before general collections
 
 ## Filters
-- Type restrictions 
-  - Plex `smart_filter`/`plex_search`: Use, i.e. `type: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#special-attributes)
-    - Needs to be one level above `all`/`any` criteria list. Ex.:
-    - `smart_filter`:
-      - type: `episodes`
-      - any:
-        - criteria1
-        - criteria2
-  - All other rules: Use, i.e., `collection_level: episodes`, to limit collection to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
+
+- Type restrictions
+    - Plex `smart_filter`/`plex_search`: Use, i.e. `type: episodes`, to limit collection
+      to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#special-attributes)
+        - Needs to be one level above `all`/`any` criteria list. Ex.:
+        - `smart_filter`:
+            - type: `episodes`
+            - any:
+                - criteria1
+                - criteria2
+    - All other rules: Use, i.e., `collection_level: episodes`, to limit collection
+      to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
 
 ## Templates
-- As of v1.16.4, you can define templates in an external file. This allows you to define your templates in one central place, rather than having to copy-paste them into each file.
-  - Import your templates with the `external_templates` key
+
+- As of v1.16.4, you can define templates in an external file. This allows you to define your templates in one central
+  place, rather than having to copy-paste them into each file.
+    - Import your templates with the `external_templates` key
 
 ## Collection vs Playlist
+
 - A collection is an unordered group of content from the same Library (Movies, TV Shows, 4K Movies, etc.)
-  - Collection configs exist inside metadata configs
-  - For each Plex library, define a list of "metadata_path" config files
-  - You can technically group multiple Plex libraries into one "metadata" section, but it's not recommended (too confusing)
+    - Collection configs exist inside metadata configs
+    - For each Plex library, define a list of "metadata_path" config files
+    - You can technically group multiple Plex libraries into one "metadata" section, but it's not recommended (too
+      confusing)
 - A playlist is an ordered list of content of the same type (all movies, all shows, all music, etc.)
-  - Import a list of "playlist" config files. A "show" playlist file will execute on all shows (and only on shows)
+    - Import a list of "playlist" config files. A "show" playlist file will execute on all shows (and only on shows)
 
 ## Overlays
-- You can add custom overlay configurations for specific Plex libraries
-  - Similar to collection/metadata, define a list of "overlay_path" config files for each Plex library
 
+- You can add custom overlay configurations for specific Plex libraries
+    - Similar to collection/metadata, define a list of "overlay_path" config files for each Plex library
 
 ## Collections Import Flow
-1. We define a "Movies" section under "libraries" in the `config.yml` file. (The name "Movies" is purely descriptive and doesn't have to match the name of the Plex library)
+
+1. We define a "Movies" section under "libraries" in the `config.yml` file. (The name "Movies" is purely descriptive and
+   doesn't have to match the name of the Plex library)
 2. In the "Movies" section, we define:
-   - the "library_name" as "Movies" (this is the name of the Plex library, this does matter)
-   - the "metadata_path" list of metadata config files. These can come from local files/folders, the Configs repo, or a custom repo.
-     - In our case, all our config files come from a custom repo.
+    - the "library_name" as "Movies" (this is the name of the Plex library, this does matter)
+    - the "metadata_path" list of metadata config files. These can come from local files/folders, the Configs repo, or a
+      custom repo.
+        - In our case, all our config files come from a custom repo.
 3. Each metadata config file is parsed and executed
-   - Each config file imports templates from another file (from the custom repo) via the `external_templates` key
-   - The main template file imports templates from the Configs repo via the `external_templates` key
-     - This means that every metadata config file has access to all templates (user-defined and Configs repo-defined)
-   - Each config entry is parsed and executed (if needed), using items from the "Movies" library.
+    - Each config file imports templates from another file (from the custom repo) via the `external_templates` key
+    - The main template file imports templates from the Configs repo via the `external_templates` key
+        - This means that every metadata config file has access to all templates (user-defined and Configs repo-defined)
+    - Each config entry is parsed and executed (if needed), using items from the "Movies" library.
 
 ## Collections vs Dynamic Collections
+
 - Let's say I wanted to make a collection of each actor's movies.
-- Thankfully, with templates, we don't have to manually define every single setting/parameter for each actor's collection.
-- I can make an "actor" template, and then define an "Adam Sandler", "Mike Myers" or "Justin Timberlake" collection and have it reuse the settings from the "actor" template.
+- Thankfully, with templates, we don't have to manually define every single setting/parameter for each actor's
+  collection.
+- I can make an "actor" template, and then define an "Adam Sandler", "Mike Myers" or "Justin Timberlake" collection and
+  have it reuse the settings from the "actor" template.
 - The problem is, I still need to manually define a collection for each actor. That's where dynamic collections come in.
 - A dynamic collection is useful when you don't know the input data (when we don't know what actors to define)
-- A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result, make a collection using the "actor" template.
+- A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result,
+  make a collection using the "actor" template.
 - Schedule a dynamic collection (visibility, update frequency, etc.) via the template
 
