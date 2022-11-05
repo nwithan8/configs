@@ -18,7 +18,7 @@ collections:
     summary: "Catch up on last week's episodes"
     sort_title:
     smart_filter:
-      type: episodes
+      type: episode
       sort_by: release.desc
       all:
         # Episode aired in the last 8 days
@@ -28,9 +28,10 @@ collections:
     visible_shared: true
     visible_library: true
 
-  ### Trending
   "What Everyone Is Watching":
-    summary: "What other BigBox users are checking out"
+    template: { name: Chart,
+                level: "++" }
+    summary: "What other subscribers are checking out"
     libraries: "TV Shows"
     sync_mode: sync
     collection_order: custom
@@ -66,7 +67,7 @@ collections:
     summary: "Episodes added this week on Plex"
     sort_title:
     smart_filter:
-      type: episodes
+      type: episode
       sort_by: release.desc
       all:
         # Episode added in the last 7 days
@@ -80,7 +81,7 @@ collections:
     summary: "Shows now playing on Plex"
     sort_title:
     smart_filter:
-      type: shows
+      type: show
       sort_by: release.desc
       all:
         # Shows added in the last 30 days
@@ -105,7 +106,7 @@ collections:
     summary: "All the Simpsons' Treehouse of Horror episodes"
     sort_title:
     smart_filter:
-      type: episodes
+      type: episode
       sort_by: release.asc
       all:
         title.is: "The Simpsons"

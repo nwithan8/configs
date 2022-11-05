@@ -64,10 +64,13 @@ collections:
                 level: "++" }
     summary: "What other subscribers are checking out"
     libraries: "Movies"  # Only consider movies in the Movies library (even when building this collection for 4K Movies)
+    sync_mode: sync
+    collection_order: custom
     tautulli_popular:
       list_days: 30
       list_size: 15
       list_minimum: 2
+    visible_library: true
     visible_home: false
     visible_shared: true
 
