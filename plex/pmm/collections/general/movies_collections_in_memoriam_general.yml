@@ -5,4 +5,4 @@ external_templates:
 
 collections:
   "Kevin Conroy - In Memoriam":
-    template: { name: Actor, tmdb_id: 34947 }
+    template: { name: InMemoriamActor, tmdb_id: 34947 }

@@ -2,7 +2,7 @@ external_templates:
   git: PMM/collections
 
 templates:
-  Chart:
+  New:
     default:
       level: ""
     optional:
@@ -13,19 +13,35 @@ templates:
     visible_library: true
     url_poster: <<poster_url>>
 
-  Holiday:
+  InMemoriamActor:
     default:
       level: ""
-    optional:
-      - poster_url
-    sort_title: <<level>>+02_<<collection_name>>
-    sync_mode: sync
-    collection_order: custom
-    schedule: never
+    tmdb_person: <<tmdb_id>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+      sort_title: <<level>>+02_<<collection_name>>
+      sync_mode: append
     visible_library: true
-    url_poster: <<poster_url>>
+    visible_shared: true
+    visible_home: true
 
-  Studio:
+  InMemoriamDirector:
+    default:
+      level: ""
+    tmdb_person: <<tmdb_id>>
+    smart_filter:
+      sort_by: release.desc
+      any:
+        director: tmdb
+      sort_title: <<level>>+02_<<collection_name>>
+      sync_mode: append
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+
+  Holiday:
     default:
       level: ""
     optional:
@@ -33,22 +49,22 @@ templates:
     sort_title: <<level>>+03_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: daily
+    schedule: never
     visible_library: true
     url_poster: <<poster_url>>
 
-  Genre:
+  Chart:
     default:
       level: ""
     optional:
       - poster_url
     sort_title: <<level>>+04_<<collection_name>>
     sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule: daily
     visible_library: true
     url_poster: <<poster_url>>
 
-  Country:
+  Award:
     default:
       level: ""
     optional:
@@ -60,36 +76,12 @@ templates:
     visible_library: true
     url_poster: <<poster_url>>
 
-  Award:
-    default:
-      level: ""
-    optional:
-      - poster_url
-    sort_title: <<level>>+06_<<collection_name>>
-    sync_mode: sync
-    collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
-    visible_library: true
-    url_poster: <<poster_url>>
-
   Collection:
     default:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+07_<<collection_name>>
-    sync_mode: sync
-    collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
-    visible_library: true
-    url_poster: <<poster_url>>
-
-  Decade:
-    default:
-      level: ""
-    optional:
-      - poster_url
-    sort_title: <<level>>+08_<<collection_name>>
+    sort_title: <<level>>+06_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
@@ -107,7 +99,7 @@ templates:
         producer: tmdb
         writer: tmdb
     tmdb_person: <<person>>
-    sort_title: <<level>>+09_<<collection_name>>
+    sort_title: <<level>>+07_<<collection_name>>
     sync_mode: append
     visible_library: true
 
@@ -115,7 +107,7 @@ templates:
     default:
       level: ""
     tmdb_actor_details: <<person>>
-    sort_title: <<level>>+09_<<collection_name>>
+    sort_title: <<level>>+07_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -124,7 +116,7 @@ templates:
     default:
       level: ""
     tmdb_director_details: <<person>>
-    sort_title: <<level>>+09_<<collection_name>>
+    sort_title: <<level>>+07_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -133,43 +125,76 @@ templates:
     default:
       level: ""
     tmdb_producer_details: <<person>>
-    sort_title: <<level>>+09_<<collection_name>>
+    sort_title: <<level>>+07_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
 
-  General:
+  Decade:
     default:
       level: ""
-    sort_title: <<level>>+10_<<collection_name>>
+    optional:
+      - poster_url
+    sort_title: <<level>>+08_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
+    url_poster: <<poster_url>>
 
-  InMemoriamActor:
+  Genre:
     default:
       level: ""
-    tmdb_person: <<tmdb_id>>
-    smart_filter:
-      sort_by: release.desc
-      any:
-        actor: tmdb
-      sort_title: <<level>>+02_<<collection_name>>
-      sync_mode: append
+    optional:
+      - poster_url
+    sort_title: <<level>>+09_<<collection_name>>
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
-    visible_shared: true
-    visible_home: true
-  InMemoriamDirector:
+    url_poster: <<poster_url>>
+
+  Studio:
     default:
       level: ""
-    tmdb_person: <<tmdb_id>>
-    smart_filter:
-      sort_by: release.desc
-      any:
-        director: tmdb
-      sort_title: <<level>>+02_<<collection_name>>
-      sync_mode: append
+    optional:
+      - poster
+    sort_title: <<level>>+10_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: daily
     visible_library: true
-    visible_shared: true
-    visible_home: true
+    url_poster: <<poster>>
+
+  Network:
+    default:
+      level: ""
+    optional:
+      - poster
+    sort_title: <<level>>+10_<<collection_name>>
+    smart_filter:
+      sort_by: title.desc
+      validate: false
+      any:
+        network: <<network>>
+    url_poster: <<poster>>
+
+  Country:
+    default:
+      level: ""
+    optional:
+      - poster_url
+    sort_title: <<level>>+11_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+    url_poster: <<poster_url>>
+
+  General:
+    default:
+      level: ""
+    sort_title: <<level>>+12_<<collection_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true

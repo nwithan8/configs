@@ -24,7 +24,7 @@ templates:
 collections:
   ### New Content
   "Added This Week":
-    template: { name: Chart,
+    template: { name: New,
                 level: "++" }
     summary: "Movies now playing on Plex"
     smart_filter:
@@ -40,7 +40,7 @@ collections:
   ### Trending
   # Box Office
   "At The Box Office":
-    template: { name: Chart,
+    template: { name: New,
                 level: "+++" }
     summary: "Now playing on a screen near you"
     imdb_chart: box_office
@@ -99,7 +99,7 @@ collections:
   # Random list of 10 movies released in the last 10 years
   # Regenerates every time the user visits the page
   "Something New":
-    template: { name: Chart,
+    template: { name: New,
                 level: "++" }
     summary: "Let's try something new"
     smart_filter:
@@ -115,7 +115,7 @@ collections:
   # Random list of 30 movies released in the last 5 months and added in the last 2 months
   # Regenerates every time the user visits the page
   "Spin The Wheel!":
-    template: { name: Chart,
+    template: { name: New,
                 level: "+" }
     summary: "New releases for you to take a chance on!"
     smart_filter:
@@ -142,7 +142,7 @@ collections:
 
   # Top 70s movies via IMDB, updated monthly
   "Best of the 70s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "IMDb's top movies of the 1970s"
     imdb_list:
@@ -153,7 +153,7 @@ collections:
 
   # Top 80s movies via RottenTomatoes, updated monthly
   "Best of the 80s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1980s"
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
@@ -163,7 +163,7 @@ collections:
 
   # Top 90s movies via RottenTomatoes, updated monthly
   "Best of the 90s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1990s"
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
@@ -173,7 +173,7 @@ collections:
 
   # Top 2000s movies via RottenTomatoes, updated monthly
   "Best of the 2000s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2000s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
@@ -183,7 +183,7 @@ collections:
 
   # Top 2010s movies via RottenTomatoes, updated monthly
   "Best of the 2010s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2010s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
@@ -193,7 +193,7 @@ collections:
 
   # Top 2020s movies via IMDB, updated twice a week
   "Best of the 2020s":
-    template: { name: Award,
+    template: { name: Decade,
                 level: "+" }
     summary: "IMDb's top movies of the 2020s"
     imdb_list:
@@ -309,122 +309,6 @@ collections:
     collection_order: audience_rating.desc
     visible_home: weekly(saturday), weekly(sunday)
     visible_shared: weekly(saturday), weekly(sunday)
-
-    ### Seasonal
-    ## All seasonal collections are only updated and visible during the season
-  "This is Halloween":
-    template: { name: Holiday,
-                level: "+++" }
-    summary: "Boo!"
-    trakt_list:
-      - https://trakt.tv/users/29zombies/lists/halloween
-      - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
-      # - https://trakt.tv/users/kairbear08/lists/halloween
-      # - https://trakt.tv/users/mybicycle/lists/halloween
-      # - https://trakt.tv/users/jayinftl/lists/halloween
-      # - https://trakt.tv/users/roswellgeek/lists/halloween
-    collection_order: audience_rating.desc
-    schedule: range(09/30-11/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(09/30-10/31)
-    visible_shared: range(09/30-10/31)
-
-  # TODO: Replace for 2023
-  "31 Days of Horror":
-    template: { name: Holiday,
-                level: "++" }
-    summary: "Do you dare?"
-    trakt_list:
-      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2022
-    collection_order: custom
-    schedule: range(09/30-11/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(09/30-10/31)
-    visible_shared: range(09/30-10/31)
-
-  "Trick or Treat!":
-    template: { name: Holiday,
-                level: "++" }
-    summary: "Family-friendly Halloween movies"
-    trakt_list:
-      - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
-    collection_order: custom
-    schedule: range(09/30-11/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(09/30-10/31)
-    visible_shared: range(09/30-10/31)
-
-
-  "He's Right Behind You!":
-    template: { name: Holiday,
-                level: "++" }
-    summary: "Classic slasher films"
-    trakt_list:
-      - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
-    collection_order: custom
-    schedule: range(09/30-11/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(09/30-10/31)
-    visible_shared: range(09/30-10/31)
-
-  "This is Thanksgiving":
-    template: { name: Holiday,
-                level: "+++" }
-    summary: "Gobble gobble!"
-    trakt_list:
-      - https://trakt.tv/users/galacticboy/lists/thanksgiving-movies
-      - https://trakt.tv/users/shahid1296/lists/thanksgiving
-      - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
-      - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
-    collection_order: audience_rating.desc
-    schedule: range(11/01-12/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(11/01-11/30)
-    visible_shared: range(11/01-11/30)
-
-  "This is Christmas":
-    template: { name: Holiday,
-                level: "+++" }
-    summary: "Cozy up with some Christmas classics"
-    trakt_list:
-      - https://trakt.tv/users/movistapp/lists/christmas-movies
-      - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
-      - https://trakt.tv/users/littlestella3/lists/christmas
-    collection_order: audience_rating.desc
-    schedule: range(11/29-01/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(11/29-12/31)
-    visible_shared: range(11/29-12/31)
-
-  "The Hallmark Christmas Collection":
-    template: { name: Holiday,
-                level: "++" }
-    summary: "Christmas movies with extra-sap"
-    trakt_list:
-      - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
-    collection_order: audience_rating.desc
-    schedule: range(11/29-01/01) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(11/29-12/31)
-    visible_shared: range(11/29-12/31)
-
-  "This is Valentine's Day":
-    template: { name: Holiday,
-                level: "+++" }
-    summary: "Love me tender, love me sweet"
-    trakt_list:
-      - https://trakt.tv/users/movie-pal/lists/valentine-s-day
-      - https://trakt.tv/users/barsaky/lists/den-svateho-valentina-valentine-s-day
-      - https://trakt.tv/users/abbelea/lists/movies-best-of-love
-    collection_order: audience_rating.desc
-    schedule: range(02/01-02/16) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(02/01-02/15)
-    visible_shared: range(02/01-02/15)
-
-  "This is St. Patrick's Day":
-    template: { name: Holiday,
-                level: "+++" }
-    summary: "Kiss me, I'm Irish"
-    trakt_list:
-      - https://trakt.tv/users/triadcool/lists/irish
-      - https://trakt.tv/users/sympli/lists/st-patricks-day-movies
-    collection_order: audience_rating.desc
-    schedule: range(03/10-03/19) # You have to schedule it one day longer so it will run and change visibility
-    visible_home: range(03/10-03/18)
-    visible_shared: range(03/10-03/18)
 
   ### Series and Collections
   "How Did This Get Made?":
