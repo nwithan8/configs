@@ -3,21 +3,26 @@
 - Use sort_title to promote and demote certain collections
     - start with `+` to promote to top of library
     - start with `~` to demote to bottom of a library
+- Recommended to start with a number corresponding to a category
+    - `1` above `2` above `3` etc.
+- Use `+` and `~` to promote and demote secondarily
+    - `1_++_` above `1_+_` above `1__` above `1_~_` above `1_~~_`
+    - `1_+_` above `1_~_` above `2_+_` above `3__`, etc.
 
 Prefix suggestions:
 
 ```
 # Prefixes for (Movie) Collections:
-#   +01_ = Charts
-#   +02_ = Holidays
-#   +03_ = Studios or Network
-#   +04_ = Genres
-#   +05_ = Countries
-#   +06_ = Awards
-#   +07_ = Collections
-#   +08_ = Decades
-#   +09_ = People
-#   +10_ = General
+#   01_+ = Charts
+#   02_+ = Holidays
+#   03_+ = Studios or Network
+#   04_+ = Genres
+#   05_+ = Countries
+#   06_+ = Awards
+#   07_+ = Collections
+#   08_+ = Decades
+#   09_+ = People
+#   10_+ = General
 ```
 
 ## Visibility
