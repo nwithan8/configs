@@ -7,7 +7,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+01_<<collection_name>>
+    sort_title: 01_+<<level>>_<<collection_name>>
     sync_mode: sync
     schedule: daily
     visible_library: true
@@ -21,7 +21,7 @@ templates:
       sort_by: release.desc
       any:
         actor: tmdb
-      sort_title: <<level>>+02_<<collection_name>>
+      sort_title: 02_+<<level>>_<<collection_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
@@ -35,7 +35,7 @@ templates:
       sort_by: release.desc
       any:
         director: tmdb
-      sort_title: <<level>>+02_<<collection_name>>
+      sort_title: 02_+<<level>>_<<collection_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
@@ -46,7 +46,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+03_<<collection_name>>
+    sort_title: 03_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: never
@@ -58,7 +58,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+04_<<collection_name>>
+    sort_title: 04_+<<level>>_<<collection_name>>
     sync_mode: sync
     schedule: daily
     visible_library: true
@@ -69,7 +69,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+05_<<collection_name>>
+    sort_title: 05_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
@@ -81,7 +81,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+06_<<collection_name>>
+    sort_title: 06_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
@@ -99,7 +99,7 @@ templates:
         producer: tmdb
         writer: tmdb
     tmdb_person: <<person>>
-    sort_title: <<level>>+07_<<collection_name>>
+    sort_title: 07_+<<level>>_<<collection_name>>
     sync_mode: append
     visible_library: true
 
@@ -107,7 +107,7 @@ templates:
     default:
       level: ""
     tmdb_actor_details: <<person>>
-    sort_title: <<level>>+07_<<collection_name>>
+    sort_title: 07_+<<level>>_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -116,7 +116,7 @@ templates:
     default:
       level: ""
     tmdb_director_details: <<person>>
-    sort_title: <<level>>+07_<<collection_name>>
+    sort_title: 07_+<<level>>_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -125,7 +125,7 @@ templates:
     default:
       level: ""
     tmdb_producer_details: <<person>>
-    sort_title: <<level>>+07_<<collection_name>>
+    sort_title: 07_+<<level>>_<<collection_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -135,7 +135,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+08_<<collection_name>>
+    sort_title: 08_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
@@ -147,7 +147,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+09_<<collection_name>>
+    sort_title: 09_+<<level>>_<<collection_name>>
     sync_mode: sync
     schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
@@ -158,7 +158,7 @@ templates:
       level: ""
     optional:
       - poster
-    sort_title: <<level>>+10_<<collection_name>>
+    sort_title: 10_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: daily
@@ -170,7 +170,7 @@ templates:
       level: ""
     optional:
       - poster
-    sort_title: <<level>>+10_<<collection_name>>
+    sort_title: 10_+<<level>>_<<collection_name>>
     smart_filter:
       sort_by: title.desc
       validate: false
@@ -183,7 +183,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: <<level>>+11_<<collection_name>>
+    sort_title: 11_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
@@ -193,7 +193,7 @@ templates:
   General:
     default:
       level: ""
-    sort_title: <<level>>+12_<<collection_name>>
+    sort_title: 12_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
     schedule: weekly(wednesday), weekly(sunday)
