@@ -2,24 +2,7 @@
 
 external_templates:
   - repo: templates/collections
-
-templates:
-  # Dynamic Collections Templates
-  # -----------------------------
-  Best_of_Year:
-    default:
-      level: ""
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
-    sort_title: 08_+<<level>>_Best of <<key>>
-    sync_mode: sync
-    summary: Rotten Tomatoes Best Movies of <<key>>
-    collection_order: release
-    collection_minimum: 3
-    delete_below_minimum: true
-    visible_library: true
-    visible_shared: false
-    visible_home: false
-    schedule: monthly(1)
+  - repo: templates/dynamic_collections
 
 collections:
   ### New Content
@@ -466,12 +449,26 @@ dynamic_collections:
   Per-Actor DC: # mapping name does not matter just needs to be unique
     type: actor
     data:
-      depth: 5  # must be in top X billed actors for a given movie for the movie to be added
+      depth: 10  # must be in top X billed actors for a given movie for the movie to be added
       minimum: 10 # actor must be in at least X movies to have a collection made
+    title_format: <<key_name>> (Actor)
+    template:
+      - Per_Actor
+
+  Per-Director DC: # mapping name does not matter just needs to be unique
+    type: director
+    data:
+      depth: 10  # must be in top X billed directors for a given movie for the movie to be added
+      minimum: 10 # director must be in at least X movies to have a collection made
+    title_format: <<key_name>> (Director)
+    template:
+      - Per_Director
 
   Per-Country DC: # mapping name does not matter just needs to be unique
     type: country
     title_format: Top <<key_name>> Cinema
+    template:
+      - Per_Country
     key_name_override:
       France: French
       Germany: German
@@ -510,4 +507,5 @@ dynamic_collections:
     exclude:
       - Talk Show
     title_format: Top <<key_name>> <<library_type>>s
-
+    template:
+      - Per_Genre

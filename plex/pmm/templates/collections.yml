@@ -88,47 +88,16 @@ templates:
     visible_library: true
     url_poster: <<poster_url>>
 
-  Person:
+  Genre:
     default:
       level: ""
-    smart_filter:
-      sort_by: release.desc
-      any:
-        actor: tmdb
-        director: tmdb
-        producer: tmdb
-        writer: tmdb
-    tmdb_person: <<person>>
+    optional:
+      - poster_url
     sort_title: 07_+<<level>>_<<collection_name>>
-    sync_mode: append
+    sync_mode: sync
+    schedule: weekly(wednesday), weekly(sunday)
     visible_library: true
-
-  Actor:
-    default:
-      level: ""
-    tmdb_actor_details: <<person>>
-    sort_title: 07_+<<level>>_<<collection_name>>
-    sync_mode: append
-    collection_order: custom
-    visible_library: true
-
-  Director:
-    default:
-      level: ""
-    tmdb_director_details: <<person>>
-    sort_title: 07_+<<level>>_<<collection_name>>
-    sync_mode: append
-    collection_order: custom
-    visible_library: true
-
-  Producer:
-    default:
-      level: ""
-    tmdb_producer_details: <<person>>
-    sort_title: 07_+<<level>>_<<collection_name>>
-    sync_mode: append
-    collection_order: custom
-    visible_library: true
+    url_poster: <<poster_url>>
 
   Decade:
     default:
@@ -142,16 +111,47 @@ templates:
     visible_library: true
     url_poster: <<poster_url>>
 
-  Genre:
+  Person:
     default:
       level: ""
-    optional:
-      - poster_url
+    smart_filter:
+      sort_by: release.desc
+      any:
+        actor: tmdb
+        director: tmdb
+        producer: tmdb
+        writer: tmdb
+    tmdb_person: <<person>>
     sort_title: 09_+<<level>>_<<collection_name>>
-    sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
+    sync_mode: append
     visible_library: true
-    url_poster: <<poster_url>>
+
+  Actor:
+    default:
+      level: ""
+    tmdb_actor_details: <<person>>
+    sort_title: 09_+<<level>>_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Director:
+    default:
+      level: ""
+    tmdb_director_details: <<person>>
+    sort_title: 09_+<<level>>_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
+
+  Producer:
+    default:
+      level: ""
+    tmdb_producer_details: <<person>>
+    sort_title: 09_+<<level>>_<<collection_name>>
+    sync_mode: append
+    collection_order: custom
+    visible_library: true
 
   Studio:
     default:

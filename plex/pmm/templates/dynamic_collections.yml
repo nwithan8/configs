@@ -1,0 +1,53 @@
+templates:
+  # Dynamic Collections Templates
+  # -----------------------------
+  Best_of_Year:
+    default:
+      level: ""
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
+    sort_title: 08_+<<level>>_Best of <<key>>
+    sync_mode: sync
+    summary: Rotten Tomatoes Best Movies of <<key>>
+    collection_order: release
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: monthly(1)
+
+  Per_Genre:
+    default:
+      level: ""
+    sort_title: 07_+<<level>>_<<key>>
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(saturday)
+
+  Per_Actor:
+    default:
+      level: ""
+    sort_title: 09_+<<level>>_<<key>>
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(thursday), weekly(monday)
+
+  Per_Director:
+    default:
+      level: ""
+    sort_title: 09_+<<level>>_<<key>>
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(friday), weekly(tuesday)
+
+  Per_Country:
+    default:
+      level: ""
+    sort_title: 11_+<<level>>_<<key>>
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: weekly(saturday)
