@@ -345,6 +345,17 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "100 Movies Bucket List":
+    template: { name: Collection,
+                level: "++" }
+    # summary provided by Trakt
+    schedule: monthly(15)
+    trakt_list_details:
+      - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
+    collection_order: rank.desc
+    visible_home: true
+    visible_shared: true
+
   "The Criterion Collection":
     template: { name: Collection,
                 level: "++" }
