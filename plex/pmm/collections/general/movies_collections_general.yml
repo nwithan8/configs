@@ -349,7 +349,7 @@ collections:
     template: { name: Collection,
                 level: "++" }
     # summary provided by Trakt
-    schedule: monthly(15)
+    schedule: monthly(22)
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
     collection_order: rank.desc
