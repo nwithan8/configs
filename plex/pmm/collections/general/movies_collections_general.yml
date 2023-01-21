@@ -457,7 +457,7 @@ dynamic_collections:
     template:
       - Best_of_Year
 
-  Per-Actor DC: # mapping name does not matter just needs to be unique
+  Per-Actor-Movies DC: # mapping name does not matter just needs to be unique
     type: actor
     data:
       depth: 10  # must be in top X billed actors for a given movie for the movie to be added

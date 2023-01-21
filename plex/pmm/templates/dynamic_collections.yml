@@ -17,6 +17,11 @@ templates:
     schedule: monthly(1)
 
   Per_Genre:
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      all:
+        genre: <<value>>
     default:
       level: ""
     sort_title: 07_+<<level>>_<<key>>
@@ -26,6 +31,9 @@ templates:
     schedule: weekly(saturday)
 
   Per_Actor:
+    plex_search:
+      any:
+        actor: <<value>>
     default:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
@@ -35,6 +43,9 @@ templates:
     schedule: weekly(thursday), weekly(monday)
 
   Per_Director:
+    plex_search:
+      any:
+        director: <<value>>
     default:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
@@ -44,6 +55,11 @@ templates:
     schedule: weekly(friday), weekly(tuesday)
 
   Per_Country:
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      any:
+        country: <<value>>
     default:
       level: ""
     sort_title: 11_+<<level>>_<<key>>
@@ -51,3 +67,10 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
+
+  Per_Network:
+    smart_filter:
+      sort_by: critic_rating.desc
+      all:
+        network: <<value>>
+

@@ -160,7 +160,6 @@ templates:
       - poster
     sort_title: 10_+<<level>>_<<collection_name>>
     sync_mode: sync
-    collection_order: custom
     schedule: daily
     visible_library: true
     url_poster: <<poster>>
