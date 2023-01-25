@@ -77,6 +77,8 @@ Prefix suggestions:
             - any:
                 - criteria1
                 - criteria2
+        - Recommended to use `smart_filter` over `plex_search` when possible, as `smart_filter` means Plex will keep the
+          list updated based on the criteria, rather than Plex Meta Manager having to re-run the builder every time
     - All other rules: Use, i.e., `collection_level: episodes`, to limit collection
       to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
 

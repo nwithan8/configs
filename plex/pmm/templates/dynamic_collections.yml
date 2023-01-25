@@ -31,7 +31,7 @@ templates:
     schedule: weekly(saturday)
 
   Per_Actor:
-    plex_search:
+    smart_filter:
       any:
         actor: <<value>>
     default:
@@ -43,7 +43,7 @@ templates:
     schedule: weekly(thursday), weekly(monday)
 
   Per_Director:
-    plex_search:
+    smart_filter:
       any:
         director: <<value>>
     default:

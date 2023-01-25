@@ -116,3 +116,14 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "Top 100 Simpsons Episodes":
+    collection_order: custom
+    builder_level: episode
+    smart_filter:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 100
+      all:
+        title.ends: "Simpsons"
+    summary: A collection of the highest-rated Simpsons episodes.
+

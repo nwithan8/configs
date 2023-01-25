@@ -56,6 +56,9 @@ templates:
 
 
 collections:
+  ### This year's Academy Awards
+  # ---------------------------------
+
   # This current year's Best Picture Oscar nominees
   # Only visible on home screen during Oscar season
   "This Year's Best Picture Nominees":
@@ -82,12 +85,107 @@ collections:
   # Only visible on home screen during Oscar season
   "This Year's Best Actress Nominees":
     # TODO: NEED TO BUILD MANUALLY
-    template: { name: Holiday,
+    template: { name: Award,
                 level: "+++++" }
     summary: "Who will take home the trophy?"
     schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+
+  ### This year's Per-Best Actor Collections
+  # ---------------------------------
+
+  # This current year's Best Actor Oscar nominees
+  # Only visible on home screen during Oscar season
+
+  "2023 Best Actor Nominee - Austin Butler":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 86654 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actor Nominee - Colin Farrell":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 72466 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actor Nominee - Brendan Fraser":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 18269 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actor Nominee - Paul Mescal":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 2326151 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actor Nominee - Bill Nighy":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 2440 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+
+  ### This year's Per-Best Actress Collections
+  # ---------------------------------
+
+  # This current year's Best Actress Oscar nominees
+  # Only visible on home screen during Oscar season
+
+  "2023 Best Actress Nominee - Cate Blanchett":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 112 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actress Nominee - Ana de Armas":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 224513 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actress Nominee - Andrea Riseborough":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 127558 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actress Nominee - Michelle Williams":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 1812 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+  "2023 Best Actress Nominee - Michelle Yeoh":
+    template: { name: ActorAward,
+                level: "+++++",
+                tmdb: 1620 }
+    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+
+
 
   # This current year's Oscar nominees (all)
   # Only visible on home screen during Oscar season
@@ -103,6 +201,8 @@ collections:
     visible_shared: range(02/01-03/31)
 
   ### Historical Awards
+  # ---------------------------------
+
   # All past Oscar-winning movies (not just Best Picture)
   # Only visible on home screen during Oscar season
   "Past Oscar Winners":

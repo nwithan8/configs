@@ -76,6 +76,18 @@ templates:
     visible_library: true
     url_poster: <<poster_url>>
 
+  ActorAward:
+    default:
+      level: ""
+    smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
+      all:
+        actor: tmdb
+    tmdb_person: <<tmdb>>
+    sort_title: 05_+<<level>>_<<collection_name>>
+    sync_mode: append
+    schedule: weekly(wednesday), weekly(sunday)
+    visible_library: true
+
   Collection:
     default:
       level: ""
