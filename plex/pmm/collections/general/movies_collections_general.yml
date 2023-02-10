@@ -54,7 +54,7 @@ collections:
       list_size: 15
       list_minimum: 2
     visible_library: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Recommendations from me
@@ -75,7 +75,7 @@ collections:
     summary: "The biggest actors in Hollywood right now"
     type: tmdb_popular_people
     data: 10
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   ### For the User
@@ -132,7 +132,7 @@ collections:
       - https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Top 80s movies via RottenTomatoes, updated monthly
   "Best of the 80s":
@@ -142,7 +142,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Top 90s movies via RottenTomatoes, updated monthly
   "Best of the 90s":
@@ -152,7 +152,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Top 2000s movies via RottenTomatoes, updated monthly
   "Best of the 2000s":
@@ -162,7 +162,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Top 2010s movies via RottenTomatoes, updated monthly
   "Best of the 2010s":
@@ -172,7 +172,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Top 2020s movies via IMDB, updated twice a week
   "Best of the 2020s":
@@ -183,7 +183,7 @@ collections:
       - https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
     schedule: weekly(wednesday), weekly(sunday)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Movies with a perfect RT score, updated monthly
   "The 100 Club":
@@ -193,7 +193,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   # Worst movies of all time, updated monthly
   "Just the Worst":
@@ -205,7 +205,7 @@ collections:
     collection_order: audience_rating.desc
     schedule: monthly(1)
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   ### Genres
   ## All genres collections are updated twice a week by default
@@ -215,7 +215,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
     collection_order: release
-    visible_home: true
+    visible_home: false
     visible_shared: true
 
   "Spoofs and Parodies":
@@ -223,21 +223,21 @@ collections:
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "Slam Dunk":
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "Get In, Get Out":
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "On The Edge Of Your Seat":
     template: { name: Genre }
@@ -245,7 +245,7 @@ collections:
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "Documentaries":
     template: { name: Genre }
@@ -256,7 +256,7 @@ collections:
       all:
         genre: Documentary
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "What a Twist!":
     template: { name: Genre }
@@ -264,7 +264,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: custom
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "Based On A True Story":
     template: { name: Genre }
@@ -272,7 +272,7 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
     collection_order: custom
     visible_home: false
-    visible_shared: false
+    visible_shared: true
 
   "A Real-Life Whodunnit":
     template: { name: Genre }
@@ -520,3 +520,181 @@ dynamic_collections:
     title_format: Top <<key_name>> <<library_type>>s
     template:
       - Per_Genre
+
+  Per-Holiday DC: # mapping name does not matter just needs to be unique
+    type: custom
+    data:
+      years: New Year's Day
+      valentine: Valentine's Day
+      patrick: St. Patrick's Day
+      easter: Easter
+      mother: Mother's Day
+      memorial: Memorial Day
+      father: Father's Day
+      independence: Independence Day
+      labor: Labor Day
+      halloween: Halloween
+      horror: Horror
+      trick: Kid-Friendly Halloween
+      slash: Slasher
+      thanksgiving: Thanksgiving
+      christmas: Christmas
+      hallmark: Hallmark Christmas
+      title_format: <<key_name>> <<library_typeU>>s
+    template:
+      - Per_Holiday
+    template_variables:
+      emoji:
+        years: "🎊 "
+        valentine: "💘 "
+        patrick: "☘ "
+        easter: "🐰 "
+        mother: "🤱 "
+        memorial: "🪖 "
+        father: "👨 "
+        independence: "🎆 "
+        labor: "⚒ "
+        halloween: "🎃 "
+        horror: "👻 "
+        trick: "🍬 "
+        slash: "🔪 "
+        thanksgiving: "🦃 "
+        christmas: "🎅 "
+        hallmark: "🎁 "
+      schedule:
+        years: range(12/26-01/04)
+        valentine: range(02/01-02/20)
+        patrick: range(03/01-03/18)
+        easter: range(03/20-04/30)
+        mother: range(05/05-05/10)
+        memorial: range(5/18-6/7)
+        father: range(06/15-06/20)
+        independence: range(06/23-07/11)
+        labor: range(09/01-09/10)
+        halloween: range(10/01-10/31)
+        horror: range(10/01-10/31)
+        trick: range(10/01-10/31)
+        slash: range(10/01-10/31)
+        thanksgiving: range(11/01-11/30)
+        christmas: range(12/01-12/31)
+        hallmark: range(12/01-12/31)
+      level:
+        years: "++"
+        valentine: "++"
+        patrick: "++"
+        easter: "++"
+        mother: "++"
+        memorial: "++"
+        father: "++"
+        independence: "++"
+        labor: "++"
+        halloween: "+++"
+        horror: "+"
+        trick: "++"
+        slash: "+"
+        thanksgiving: "++"
+        christmas: "++"
+        hallmark: "+"
+      seasonal_summary:
+        years: "Ring in the New Year with these movies!"
+        valentine: "Love me tender, love me sweet, never let me go."
+        patrick: "Kiss Me, I'm Irish."
+        easter: "Hoppy Easter!"
+        mother: "Thanks Mom!"
+        memorial: "Remembering those who gave their lives for our freedom."
+        father: "Thanks Dad!"
+        independence: "Celebrate the 4th of July with these movies!"
+        labor: "Labor Day is a day off, but these movies are hard work."
+        halloween: "Boo!"
+        horror: "Don't be scared, it's just a movie."
+        trick: "Trick or Treat!"
+        slash: "He's right behind you!"
+        thanksgiving: "Gobble gobble!"
+        christmas: "Cozy up with some Christmas classics."
+        hallmark: "Christmas movies with extra-sap!"
+      imdb_list:
+        years:
+          - https://www.imdb.com/list/ls066838460/
+        valentine:
+          - https://www.imdb.com/list/ls000094398/
+          - https://www.imdb.com/list/ls057783436/
+          - https://www.imdb.com/list/ls064427905/
+        patrick:
+          - https://www.imdb.com/list/ls063934595/
+        easter:
+          - https://www.imdb.com/list/ls062665509/
+          - https://www.imdb.com/list/ls051733651/
+        mother:
+          - https://www.imdb.com/list/ls072551197/
+        memorial:
+          - https://www.imdb.com/list/ls002014923/
+        father:
+          - https://www.imdb.com/list/ls020471057/
+        independence:
+          - https://www.imdb.com/list/ls068664510/
+          - https://www.imdb.com/list/ls080925875/
+        labor:
+          - https://www.imdb.com/list/ls002014923/
+        halloween:
+          - https://www.imdb.com/list/ls023118929/
+          - https://www.imdb.com/list/ls000099714/
+        thanksgiving:
+          - https://www.imdb.com/list/ls000835734/
+          - https://www.imdb.com/list/ls091597850/
+        christmas:
+          - https://www.imdb.com/list/ls000096828/
+      trakt_list:
+        valentine:
+          - https://trakt.tv/users/movie-pal/lists/valentine-s-day
+          - https://trakt.tv/users/barsaky/lists/den-svateho-valentina-valentine-s-day
+          - https://trakt.tv/users/abbelea/lists/movies-best-of-love
+        patrick:
+          - https://trakt.tv/users/triadcool/lists/irish
+          - https://trakt.tv/users/sympli/lists/st-patricks-day-movies
+        halloween:
+          - https://trakt.tv/users/29zombies/lists/halloween
+          - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
+          # - https://trakt.tv/users/kairbear08/lists/halloween
+          # - https://trakt.tv/users/mybicycle/lists/halloween
+          # - https://trakt.tv/users/jayinftl/lists/halloween
+          # - https://trakt.tv/users/roswellgeek/lists/halloween
+        trick:
+          - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
+        horror:
+          - https://trakt.tv/users/lish408/lists/31-days-of-horror-2022 # TODO: Replace for 2023
+        slash:
+          - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
+        thanksgiving:
+          - https://trakt.tv/users/galacticboy/lists/thanksgiving-movies
+          - https://trakt.tv/users/shahid1296/lists/thanksgiving
+          - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
+          - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
+        christmas:
+          - https://trakt.tv/users/movistapp/lists/christmas-movies
+          - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
+          - https://trakt.tv/users/littlestella3/lists/christmas
+        hallmark:
+          - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
+      tmdb_collection:
+        halloween:
+          - 185103    # Hotel Transylvania
+          - 11716     # Addams Family
+          - 750822    # Addams Family Animated
+          - 313086    # Conjuring
+          - 91361     # Halloween Collection
+          - 8581      # A Nightmare on Elm Street Collection
+          - 1733      # The Mummy Collection
+          - 8091      # Alien Collection
+          - 2980      # Ghostbusters
+          - 751156    # Hocus Pocus
+      tmdb_movie:
+        halloween:
+          - 23437    # A Nightmare on Elm Street (2010)
+      visible_home:
+        default: true
+      visible_shared:
+        default: true
+      image:
+        default: seasonal/<<key>>
+      translation_key:
+        default: season

@@ -41,18 +41,6 @@ templates:
     visible_shared: true
     visible_home: true
 
-  Holiday:
-    default:
-      level: ""
-    optional:
-      - poster_url
-    sort_title: 03_+<<level>>_<<collection_name>>
-    sync_mode: sync
-    collection_order: custom
-    schedule: never
-    visible_library: true
-    url_poster: <<poster_url>>
-
   Chart:
     default:
       level: ""
