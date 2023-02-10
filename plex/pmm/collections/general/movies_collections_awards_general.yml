@@ -195,7 +195,7 @@ collections:
                 level: "++++" }
     trakt_list:
       # TODO: NEED TO REPLACE MANUALLY
-      - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2022
+      - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
     schedule: yearly(02/01), yearly(02/20), yearly(04/01) # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
