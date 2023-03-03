@@ -47,6 +47,10 @@ Prefix suggestions:
 - Save time by updating lesser-important collections and playlists less frequently:
     - ex. `schedule: weekly(wednesday), weekly(sunday)`
 - Don't need to schedule a `smart_filter` because Plex auto-updates the list itself
+- Scheduling can take multiple criteria
+  - Ex. yearly(02/21), all[weekly(friday),range(02/21-03/31)], yearly(04/01)
+    - Run on Feb. 21 every year (regardless of day of week), then run every Friday between Feb. 21 and Mar. 31, then run Apr. 1 (regardless of day of week)
+    - Useful for awards or things that need to appear and be updated only for a certain time frame of the year
 
 ## Sorting
 

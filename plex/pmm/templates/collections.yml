@@ -60,7 +60,9 @@ templates:
     sort_title: 05_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -73,7 +75,9 @@ templates:
     tmdb_person: <<tmdb>>
     sort_title: 05_+<<level>>_<<collection_name>>
     sync_mode: append
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
 
   Collection:
@@ -84,7 +88,9 @@ templates:
     sort_title: 06_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -95,7 +101,9 @@ templates:
       - poster_url
     sort_title: 07_+<<level>>_<<collection_name>>
     sync_mode: sync
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -107,7 +115,9 @@ templates:
     sort_title: 08_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -185,7 +195,9 @@ templates:
     sort_title: 11_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -195,5 +207,7 @@ templates:
     sort_title: 12_+<<level>>_<<collection_name>>
     sync_mode: sync
     collection_order: custom
-    schedule: weekly(wednesday), weekly(sunday)
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
     visible_library: true

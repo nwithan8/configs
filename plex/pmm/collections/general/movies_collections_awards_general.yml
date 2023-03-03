@@ -66,7 +66,11 @@ collections:
     template: { name: Award,
                 level: "++++++" }
     summary: "Who will take home the trophy?"
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -77,7 +81,11 @@ collections:
     template: { name: Award,
                 level: "+++++" }
     summary: "Who will take home the trophy?"
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -88,7 +96,11 @@ collections:
     template: { name: Award,
                 level: "+++++" }
     summary: "Who will take home the trophy?"
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -102,7 +114,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 86654 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -110,7 +126,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 72466 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -118,7 +138,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 18269 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -126,7 +150,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 2326151 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -134,7 +162,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 2440 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -149,7 +181,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 112 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -157,7 +193,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 224513 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -165,7 +205,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 127558 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -173,7 +217,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 1812 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -181,7 +229,11 @@ collections:
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 1620 }
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -196,7 +248,11 @@ collections:
     trakt_list:
       # TODO: NEED TO REPLACE MANUALLY
       - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
-    schedule: yearly(02/01), yearly(02/20), yearly(04/01) # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -211,7 +267,11 @@ collections:
                 level: "++" }
     imdb_list:
       - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
-    schedule: yearly(02/01), yearly(03/28), yearly(04/01) # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -222,7 +282,11 @@ collections:
                 level: "++" }
     imdb_list:
       - https://www.imdb.com/search/title/?groups=best_director_winners&sort=year%2Cdesc
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     summary: The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
@@ -235,7 +299,11 @@ collections:
                 level: "++" }
     imdb_list:
       - https://www.imdb.com/search/title/?groups=best_picture_winners&sort=year%2Cdesc
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     summary: The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
@@ -248,7 +316,11 @@ collections:
                 level: "++" }
     summary: "Previous Razzie Worst Picture winners"
     mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
-    schedule: yearly(02/01), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
@@ -259,7 +331,11 @@ collections:
     template: { name: Award,
                 level: "++" }
     trakt_list: https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
-    schedule: yearly(06/01), yearly(07/01) # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    schedule:
+      - yearly(06/01)
+      - all[weekly(friday),range(06/01-06/30)]
+      - yearly(07/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(06/01-06/30)
     visible_shared: range(06/01-06/30)
 
@@ -270,7 +346,11 @@ collections:
     template: { name: Award,
                 level: "++" }
     trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
-    schedule: yearly(03/14), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(03/14)
+      - all[weekly(friday),range(03/14-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(03/14-03/31)
     visible_shared: range(03/14-03/31)
 
@@ -281,7 +361,11 @@ collections:
     template: { name: Award,
                 level: "++" }
     trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
-    schedule: yearly(02/21), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
 
@@ -292,7 +376,11 @@ collections:
     template: { name: Award,
                 level: "++" }
     trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
-    schedule: yearly(02/21), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
 
@@ -303,7 +391,11 @@ collections:
     template: { name: Award,
                 level: "++" }
     trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
-    schedule: yearly(02/21), yearly(04/01) # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
 

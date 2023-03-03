@@ -40,7 +40,9 @@ templates:
     visible_library: true
     visible_shared: false
     visible_home: false
-    schedule: weekly(thursday), weekly(monday)
+    schedule:
+      - weekly(thursday)
+      - weekly(monday)
 
   Per_Director:
     smart_filter:
@@ -52,7 +54,9 @@ templates:
     visible_library: true
     visible_shared: false
     visible_home: false
-    schedule: weekly(friday), weekly(tuesday)
+    schedule:
+      - weekly(friday)
+      - weekly(tuesday)
 
   Per_Country:
     smart_filter:
