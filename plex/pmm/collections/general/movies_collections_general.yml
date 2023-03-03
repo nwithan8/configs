@@ -38,7 +38,7 @@ collections:
     summary: "The hottest movies right now"
     imdb_chart: popular_movies
     collection_order: custom
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Trending on Plex

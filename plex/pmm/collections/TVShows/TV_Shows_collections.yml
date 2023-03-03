@@ -49,7 +49,7 @@ collections:
     collection_order: custom
     sync_mode: sync
     visible_library: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Editor's Choice":
