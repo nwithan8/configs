@@ -3,8 +3,12 @@
 # This is a fork of Robert Wilson's weather panel for Dwains Dashboard, converted from a blueprint to a standard card.
 
 # This removes all translation and customization capabilities of the original blueprint,
-# but aside from two hard-coded values (look for "TODO" in the code),
+# but aside from a few hard-coded values (look for "TODO" in the code),
 # it should be fully functional if you have the required sensors and have not modified their entity IDs.
+
+# Find and replace the following values:
+# YOUR_LATITUDE - Your latitude
+# YOUR_LONGITUDE - Your longitude
 
 # Dwains Dashboard is required to use this card, as it relies on custom components provided by Dwains Dashboard.
 
