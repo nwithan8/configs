@@ -1,0 +1,1020 @@
+# Created by Leon van der Linden, ported by Robert Wilson, modified by Nate Harris
+
+# This is a fork of Robert Wilson's weather panel for Dwains Dashboard, converted from a blueprint to a standard card.
+
+# This removes all translation and customization capabilities of the original blueprint,
+# but aside from two hard-coded values (look for "TODO" in the code),
+# it should be fully functional if you have the required sensors and have not modified their entity IDs.
+
+# Dwains Dashboard is required to use this card, as it relies on custom components provided by Dwains Dashboard.
+
+# Follow the instructions in Robert's original README:
+# https://github.com/dwainscheeren/dwains-dashboard-blueprints/tree/main/page-blueprints/weather-dashboard-openweathermap
+
+# In addition to the sensors and HACS components required by the original blueprint, you will need the following:
+# - Mushroom Chips Card
+
+type: custom:dwains-flexbox-card
+items_classes: col-xs-12
+cards:
+  - type: vertical-stack
+    item_classes: col-xs-12 col-sm-4
+    cards:
+      - type: custom:state-switch
+        entity: hash
+        default: forecast
+        states:
+          forecast:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: vertical-stack
+                cards:
+                  - type: custom:stack-in-card
+                    cards:
+                      - type: entity
+                        name: Active NWS Alerts
+                        show_header_toggle: false
+                        entity: sensor.nws_alerts
+                      - type: conditional
+                        conditions:
+                          - entity: sensor.nws_alerts
+                            state_not: '0'
+                        card:
+                          type: markdown
+                          content: >
+                            ---
+
+                            # NWS Active Alert 1
+                              {% if state_attr('sensor.nws_alerts', 'title') != None and state_attr('sensor.nws_alerts', 'title').split(' - ')[0] is defined  %}
+                            
+                            ## {{
+                            states.sensor.nws_alerts.attributes.title.split('
+                            - ')[0] }}
+
+                              {{ state_attr('sensor.nws_alerts', 'display_desc').split('\n\n-\n\n')[0] }}
+
+                              {% else %}
+                                No active alerts
+                              {% endif %}
+                      - type: conditional
+                        conditions:
+                          - entity: sensor.nws_alerts
+                            state_not: '0'
+                          - entity: sensor.nws_alerts
+                            state_not: '1'
+                        card:
+                          type: markdown
+                          content: >
+                            ---
+
+                            # NWS Active Alert 2 {% if
+                            state_attr('sensor.nws_alerts',
+                            'title').split(' - ')[1] is defined %}
+
+                            ## {{
+                            states.sensor.nws_alerts.attributes.title.split('
+                            - ')[1] }}
+
+                              {{ state_attr('sensor.nws_alerts', 'display_desc').split('\n\n-\n\n')[1] }}
+
+                            {% else %}
+                              No active alerts
+                            {% endif %}
+                      - type: conditional
+                        conditions:
+                          - entity: sensor.nws_alerts
+                            state_not: '0'
+                          - entity: sensor.nws_alerts
+                            state_not: '1'
+                          - entity: sensor.nws_alerts
+                            state_not: '2'
+                        card:
+                          type: markdown
+                          content: >
+                            ---
+
+                            # NWS Active Alert 3 {% if
+                            state_attr('sensor.nws_alerts',
+                            'title').split(' - ')[2] is defined %}
+
+                            ## {{
+                            states.sensor.nws_alerts.attributes.title.split('
+                            - ')[2] }}
+
+                              {{ state_attr('sensor.nws_alerts', 'display_desc').split('\n\n-\n\n')[2] }}
+
+                            {% else %}
+                              No active alerts
+                            {% endif %}
+                      - type: conditional
+                        conditions:
+                          - entity: sensor.nws_alerts
+                            state_not: '0'
+                          - entity: sensor.nws_alerts
+                            state_not: '1'
+                          - entity: sensor.nws_alerts
+                            state_not: '2'
+                          - entity: sensor.nws_alerts
+                            state_not: '3'
+                        card:
+                          type: markdown
+                          content: >
+                            ---
+
+                            # NWS Active Alert 4 {% if
+                            state_attr('sensor.nws_alerts',
+                            'title').split(' - ')[3] is defined %}
+
+                            ## {{
+                            states.sensor.nws_alerts.attributes.title.split('
+                            - ')[3] }}
+
+                              {{ state_attr('sensor.nws_alerts', 'display_desc').split('\n\n-\n\n')[3] }}
+
+                            {% else %}
+                              No active alerts
+                            {% endif %}
+                      - type: conditional
+                        conditions:
+                          - entity: sensor.nws_alerts
+                            state_not: '0'
+                          - entity: sensor.nws_alerts
+                            state_not: '1'
+                          - entity: sensor.nws_alerts
+                            state_not: '2'
+                          - entity: sensor.nws_alerts
+                            state_not: '3'
+                          - entity: sensor.nws_alerts
+                            state_not: '4'
+                        card:
+                          type: markdown
+                          content: >
+                            ---
+
+                            # NWS Active Alert 5 {% if
+                            state_attr('sensor.nws_alerts',
+                            'title').split(' - ')[4] is defined %}
+
+                            ## {{
+                            states.sensor.nws_alerts.attributes.title.split('
+                            - ')[4] }}
+
+                              {{ state_attr('sensor.nws_alerts', 'display_desc').split('\n\n-\n\n')[4] }}
+
+                            {% else %}
+                              No active alerts
+                            {% endif %}
+                  - type: custom:weather-card
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    # TODO: Change this to your own weather entity (I recommend using the NWS integration)
+                    entity: weather.kbjc_hourly
+                    current: true
+                    details: true
+                    forecast: true
+                    hourly_forecast: false
+                    number_of_forecasts: '5'
+                  - type: entities
+                    title: Stats
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - entity: sensor.openweathermap_feels_like_temperature
+                        name: Feels Like
+                      - entity: sensor.openweathermap_wind_speed
+                        name: Wind Speed
+                      - entity: sensor.openweathermap_humidity
+                        name: Humidity
+                      - entity: sensor.openweathermap_pressure
+                        name: Pressure
+                      - entity: sensor.openweathermap_wind_bearing
+                        name: Wind Direction
+                        icon: mdi:compass
+                      - type: custom:fold-entity-row
+                        head:
+                          type: section
+                          label: More Stats
+                        entities:
+                          - entity: sensor.allergy_index_today
+                            name: Allergy Index
+                          - entity: sensor.asthma_index_today
+                            name: Asthma Index
+                          - entity: sensor.current_ozone_level
+                  - type: custom:ha-card-weather-conditions
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    uv:
+                      protection_window: binary_sensor.protection_window
+                      ozone_level: sensor.current_ozone_level
+                      uv_index: sensor.current_uv_index
+                      uv_level: sensor.current_uv_level
+                      max_uv_index: sensor.max_uv_index
+                      set_skin_type_1: sensor.skin_type_1_safe_exposure_time
+                      set_skin_type_2: sensor.skin_type_2_safe_exposure_time
+                      set_skin_type_3: sensor.skin_type_3_safe_exposure_time
+                      set_skin_type_4: sensor.skin_type_4_safe_exposure_time
+                      set_skin_type_5: sensor.skin_type_5_safe_exposure_time
+                      set_skin_type_6: sensor.skin_type_6_safe_exposure_time
+          rain:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: vertical-stack
+                cards:
+                  - type: entities
+                    title: Forecast
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - entity: sensor.openweathermap_forecast_precipitation_probability
+                        name: Chance of Rain
+                      - entity: sensor.openweathermap_forecast_precipitation
+                        name: Amount of Rain
+                  - type: custom:mini-graph-card
+                    title: Last 24 Hours
+                    name: Last 24 Hours
+                    icon: ios:cloud-rain
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - sensor.openweathermap_rain
+                      - sensor.openweathermap_snow
+                    line_color: '#299ec2'
+                    hours_to_show: 12
+                    line_width: 1
+                    hour24: true
+                    points_per_hour: 2
+                    decimals: 0
+                    show:
+                      animate: true
+                      fill: true
+                      icon: true
+                      labels: false
+                      legend: false
+                      name: true
+                      graph: bar
+                      extrema: true
+                      average: true
+          temperature:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: vertical-stack
+                cards:
+                  - type: custom:mini-graph-card
+                    title: Temperature
+                    name: Temperature
+                    icon: ios:thermometer
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - sensor.openweathermap_temperature
+                    line_color: '#299ec2'
+                    font_size: 80
+                    hours_to_show: 12
+                    line_width: 2
+                    hour24: true
+                    points_per_hour: 2
+                    decimals: 1
+                    show:
+                      animate: true
+                      fill: true
+                      icon: true
+                      labels: true
+                      legend: true
+                      name: true
+                      graph: line
+                      extrema: true
+                      average: true
+                  - type: custom:mini-graph-card
+                    title: Feels Like
+                    name: Feels Like
+                    icon: ios:thermometer
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - sensor.openweathermap_feels_like_temperature
+                    line_color: '#299ec2'
+                    font_size: 80
+                    hours_to_show: 12
+                    line_width: 2
+                    hour24: true
+                    points_per_hour: 2
+                    decimals: 1
+                    show:
+                      animate: true
+                      fill: true
+                      icon: true
+                      labels: true
+                      legend: true
+                      name: true
+                      graph: line
+                      extrema: true
+                      average: true
+                  - type: custom:ha-card-weather-conditions
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    uv:
+                      protection_window: binary_sensor.protection_window
+                      ozone_level: sensor.current_ozone_level
+                      uv_index: sensor.current_uv_index
+                      uv_level: sensor.current_uv_level
+                      max_uv_index: sensor.max_uv_index
+                      set_skin_type_1: sensor.skin_type_1_safe_exposure_time
+                      set_skin_type_2: sensor.skin_type_2_safe_exposure_time
+                      set_skin_type_3: sensor.skin_type_3_safe_exposure_time
+                      set_skin_type_4: sensor.skin_type_4_safe_exposure_time
+                      set_skin_type_5: sensor.skin_type_5_safe_exposure_time
+                      set_skin_type_6: sensor.skin_type_6_safe_exposure_time
+          stats:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: vertical-stack
+                cards:
+                  - type: entities
+                    title: Stats
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - entity: sensor.season
+                        name: Season
+                      - entity: sensor.moon_phase
+                        name: Moon Phase
+                      - entity: sun.sun
+                        name: Sun
+                      - entity: sensor.openweathermap_humidity
+                        name: Humidity
+                      - entity: sensor.openweathermap_pressure
+                        name: Pressure
+                      - entity: sensor.openweathermap_wind_speed
+                        name: Wind Speed
+                      - entity: sensor.openweathermap_wind_bearing
+                        name: Wind Direction
+                        icon: mdi:compass
+                  - type: entities
+                    title: Risks
+                    style: |
+                      ha-card {
+                        border-radius: 10px;
+                        padding-bottom: 10px;
+                        background-color: var(--dwains-theme-primary)
+                      }
+                      :host {
+                        --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                      }
+                      .card-header {
+                        padding: 5px 16px;
+                        font-size: 15px;
+                        font-weight: 700 !important;
+                      }
+                      #states {
+                        padding-top: 0px !important;
+                        padding-bottom: 0px !important;
+                      }
+                      .secondary {
+                        color: darkgray !important;
+                        margin-left: 2px !important;
+                      }
+                    entities:
+                      - entity: sensor.allergy_index_today
+                        name: Allergy Index Today
+                      - entity: sensor.asthma_index_forecasted_average
+                        name: Allergy Index Average
+                        type: custom:multiple-entity-row
+                        entities:
+                          - attribute: rating
+                            name: Rating
+                          - attribute: trend
+                            name: Trend
+                      - entity: sensor.current_ozone_level
+                        name: Ozone Level Today
+                      - entity: sensor.asthma_index_today
+                        name: Asthma Index Today
+                      - entity: sensor.asthma_index_forecasted_average
+                        name: Asthma Index Average
+                        type: custom:multiple-entity-row
+                        entities:
+                          - attribute: rating
+                            name: Rating
+                          - attribute: trend
+                            name: Trend
+                      - entity: sensor.cold_flu_index_today
+                        name: Cold & Flu Index Today
+                      - entity: sensor.cold_flu_forecasted_average
+                        name: Cold & Flu Index Average
+                        type: custom:multiple-entity-row
+                        entities:
+                          - attribute: rating
+                            name: Rating
+                          - attribute: trend
+                            name: Trend
+
+  - type: vertical-stack
+    item_classes: col-xs-12 col-sm-8
+    cards:
+      - type: custom:state-switch
+        entity: hash
+        default: forecast
+        states:
+          forecast:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: iframe
+                style: |
+                  ha-card {
+                    border-radius: 10px;
+                    padding-bottom: 10px;
+                    background-color: var(--dwains-theme-primary)
+                  }
+                    :host {
+                      --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                  }
+                  .card-header {
+                    padding: 5px 16px;
+                    font-size: 15px;
+                    font-weight: 700 !important;
+                  }
+                  #states {
+                    padding-top: 0px !important;
+                    padding-bottom: 0px !important;
+                  }
+                  .secondary {
+                    color: darkgray !important;
+                    margin-left: 2px !important;
+                  }
+                aspect_ratio: 80%
+                # TODO: Replace the lat, lon, detailLat and detailLon with your own latitudes and longitudes
+                url: >-
+                  https://embed.windy.com/embed2.html?lat=YOUR_LATITUDE&lon=YOUR_LONGITUDE&detailLat=YOUR_LATITUDE&detailLon=YOUR_LONGITUDE&width=750&height=800&zoom=9&level=surface&overlay=radar&product=radar&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                name: Windy.com
+                show_state: false
+          rain:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: iframe
+                style: |
+                  ha-card {
+                    border-radius: 10px;
+                    padding-bottom: 10px;
+                    background-color: var(--dwains-theme-primary)
+                  }
+                    :host {
+                      --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                  }
+                  .card-header {
+                    padding: 5px 16px;
+                    font-size: 15px;
+                    font-weight: 700 !important;
+                  }
+                  #states {
+                    padding-top: 0px !important;
+                    padding-bottom: 0px !important;
+                  }
+                  .secondary {
+                    color: darkgray !important;
+                    margin-left: 2px !important;
+                  }
+                aspect_ratio: 80%
+                url: >-
+                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$0&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=rain&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                name: Windy.com
+                show_state: false
+                show_name: false
+          temperature:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: iframe
+                style: |
+                  ha-card {
+                    border-radius: 10px;
+                    padding-bottom: 10px;
+                    background-color: var(--dwains-theme-primary)
+                  }
+                    :host {
+                      --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                  }
+                  .card-header {
+                    padding: 5px 16px;
+                    font-size: 15px;
+                    font-weight: 700 !important;
+                  }
+                  #states {
+                    padding-top: 0px !important;
+                    padding-bottom: 0px !important;
+                  }
+                  .secondary {
+                    color: darkgray !important;
+                    margin-left: 2px !important;
+                  }
+                aspect_ratio: 80%
+                url: >-
+                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=temp&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                name: Windy.com
+                show_state: false
+                show_name: false
+          stats:
+            type: vertical-stack
+            cards:
+              - type: custom:dwains-flexbox-card
+                padding: true
+                cards:
+                  - type: custom:mushroom-chips-card
+                    chips:
+                      - type: template
+                        icon: mdi:weather-cloudy-clock
+                        content: Forecast
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#forecast'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:thermometer
+                        content: Temperature
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#temperature'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:weather-pouring
+                        content: Rain
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#rain'
+                        hold_action:
+                          action: none
+                      - type: template
+                        icon: mdi:format-list-numbered
+                        content: Stats
+                        tap_action:
+                          action: navigate
+                          navigation_path: '#stats'
+                        hold_action:
+                          action: none
+              - type: iframe
+                style: |
+                  ha-card {
+                    border-radius: 10px;
+                    padding-bottom: 10px;
+                    background-color: var(--dwains-theme-primary)
+                  }
+                    :host {
+                      --paper-item-icon-color: var(--dwains-theme-accent) !important;
+                  }
+                  .card-header {
+                    padding: 5px 16px;
+                    font-size: 15px;
+                    font-weight: 700 !important;
+                  }
+                  #states {
+                    padding-top: 0px !important;
+                    padding-bottom: 0px !important;
+                  }
+                  .secondary {
+                    color: darkgray !important;
+                    margin-left: 2px !important;
+                  }
+                aspect_ratio: 80%
+                url: >-
+                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=pressure&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                name: Windy.com
+                show_state: false
+                show_name: false
