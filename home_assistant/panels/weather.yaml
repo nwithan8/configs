@@ -875,8 +875,9 @@ cards:
                     margin-left: 2px !important;
                   }
                 aspect_ratio: 80%
+                # TODO: Replace the lat, lon, detailLat and detailLon with your own latitudes and longitudes
                 url: >-
-                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$0&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=rain&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                  https://embed.windy.com/embed2.html?lat=YOUR_LATITUDE&lon=YOUR_LONGITUDE&detailLat=YOUR_LATITUDE&detailLon=YOUR_LONGITUDE&width=750&height=800&zoom=9&level=surface&overlay=rain&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
                 name: Windy.com
                 show_state: false
                 show_name: false
@@ -944,8 +945,9 @@ cards:
                     margin-left: 2px !important;
                   }
                 aspect_ratio: 80%
+                # TODO: Replace the lat, lon, detailLat and detailLon with your own latitudes and longitudes
                 url: >-
-                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=temp&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                  https://embed.windy.com/embed2.html?lat=YOUR_LATITUDE&lon=YOUR_LONGITUDE&detailLat=YOUR_LATITUDE&detailLon=YOUR_LONGITUDE&width=750&height=800&zoom=9&level=surface&overlay=temp&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
                 name: Windy.com
                 show_state: false
                 show_name: false
@@ -1013,8 +1015,9 @@ cards:
                     margin-left: 2px !important;
                   }
                 aspect_ratio: 80%
+                # TODO: Replace the lat, lon, detailLat and detailLon with your own latitudes and longitudes
                 url: >-
-                  https://embed.windy.com/embed2.html?lat=$lat_home$&lon=$long_home$&detailLat=$lat_home$&detailLon=$long_home$&width=750&height=800&zoom=9&level=surface&overlay=pressure&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
+                  https://embed.windy.com/embed2.html?lat=YOUR_LATITUDE&lon=YOUR_LONGITUDE&detailLat=YOUR_LATITUDE&detailLon=YOUR_LONGITUDE&width=750&height=800&zoom=9&level=surface&overlay=pressure&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&radarRange=-1
                 name: Windy.com
                 show_state: false
                 show_name: false
