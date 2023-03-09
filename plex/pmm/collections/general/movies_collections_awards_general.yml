@@ -9,6 +9,7 @@ templates:
   # -----------------------------
   # Per-year award winners
   Yearly_Oscars_Winners:
+    # This will always be a year behind (2020 movies win at the 2021 Oscars) - The collection is the 2020 movies that won at the 2021 Oscars
     default:
       imdb_sort: moviemeter,asc
     allowed_library_types: movie

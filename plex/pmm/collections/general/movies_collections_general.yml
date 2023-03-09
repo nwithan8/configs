@@ -120,8 +120,8 @@ collections:
     summary: "Dive into the best films ever made"
     imdb_chart: top_movies
     schedule:
-  - weekly(wednesday)
-  - weekly(sunday)
+    - weekly(wednesday)
+    - weekly(sunday)
     visible_home: false
     visible_shared: true
 
@@ -184,8 +184,8 @@ collections:
     imdb_list:
       - https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
     schedule:
-  - weekly(wednesday)
-  - weekly(sunday)
+    - weekly(wednesday)
+    - weekly(sunday)
     visible_home: false
     visible_shared: true
 
