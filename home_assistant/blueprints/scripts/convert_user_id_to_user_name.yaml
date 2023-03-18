@@ -3,7 +3,7 @@ blueprint:
   description: >-
     A script that determines the user name for a provided user ID.
   domain: script
-  source_url: https://github.com/nwithan8/configs/blob/master/home_assistant/blueprints/scripts/convert_user_id_to_user_name.yaml
+  source_url: https://github.com/nwithan8/configs/blob/main/home_assistant/blueprints/scripts/convert_user_id_to_user_name.yaml
   input:
       store_in:
         description: The text input entity to store the result in
