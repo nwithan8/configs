@@ -7,6 +7,7 @@ blueprint:
   description: >-
     A script that sets a temporary code for a ZigBee smart door lock (via ZHA Toolkit). 
     This script adds and removes a new code, rather than enabling/disabling an existing code.
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/set_guest_door_code_zigbee.yaml
   domain: script
   input:
     lock:
