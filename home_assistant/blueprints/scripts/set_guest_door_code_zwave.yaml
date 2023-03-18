@@ -1,0 +1,77 @@
+# This script uses Keymaster (https://github.com/FutureTense/keymaster) to manage smart door lock codes, and therefore Keymaster needs to be installed.
+# There is no gaurantee that this script will work as expected with your particular Z-Wave smart door lock.
+
+blueprint:
+  name: Set Guest Door Code (Z-Wave)
+  description: >-
+    A script that sets a temporary code for a Z-Wave smart door lock (via Keymaster). 
+    This script adds and removes a new code, rather than enabling/disabling an existing code.
+  domain: script
+  input:
+    lock:
+      description: (Required) Which door lock to program
+      name: Lock
+      selector:
+        target:
+          entity:
+            domain: lock
+    slot:
+      description: (Required) Which code slot to use
+      name: Slot
+      selector:
+        text:
+    on_start:
+      description: (Optional) Action to execute when code is enabled.
+        The lock entity is available via the "lock" variable.
+        The set code is available via the "code" variable.
+        The set code slot is available via the "slot" variable.
+        The validity time is available via the "duration" variable.
+      name: When code enabled
+      default: []
+      selector:
+        action:
+    on_end:
+      description: (Optional) Action to execute when code is disabled.
+      name: When code disabled
+      default: []
+      selector:
+        action:
+fields:
+  code:
+    description: The code to set
+    example: "1234"
+    name: Code
+    required: true
+    selector:
+      text: null
+  duration:
+    description: How long the code is valid for
+    name: Valid for
+    required: true
+    selector:
+      duration:
+        enable_day: true
+
+variables:
+  lock: !input lock
+  slot: !input slot
+
+sequence:
+  - service: keymaster.add_code
+    data:
+      code_slot: "{{ slot }}"
+      usercode: "{{ code }}"
+      entity_id: "{{ lock.entity_id }}"
+  - choose:
+      - conditions: "{{ true }}"
+        sequence: !input on_start
+  - delay: "{{ duration }}"
+  - service: keymaster.clear_code
+    data:
+      code_slot: "{{ slot }}"
+      entity_id: "{{ lock.entity_id }}"
+  - choose:
+      - conditions: "{{ true }}"
+        sequence: !input on_end
+
+mode: single
