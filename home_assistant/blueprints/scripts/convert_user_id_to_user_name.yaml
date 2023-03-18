@@ -1,0 +1,45 @@
+blueprint:
+  name: Convert User ID to User Name
+  description: >-
+    A script that determines the user name for a provided user ID.
+  domain: script
+  source_url: https://github.com/nwithan8/configs/blob/master/home_assistant/blueprints/scripts/convert_user_id_to_user_name.yaml
+  input:
+      store_in:
+        description: The text input entity to store the result in
+        name: Where to store result
+        selector:
+            target:
+              entity:
+                domain: input_text
+fields:
+    user_id:
+        description: The ID of the user
+        example: abcdef123456
+        name: User ID
+        required: true
+        selector:
+            text:
+variables:
+  store_in: !input 'store_in'
+  user_name: >
+        {% set user = None %}
+    
+        {% set matching_users = (states.person |
+        selectattr('attributes.user_id','==', user_id) | list) %}
+    
+        {% if matching_users | length > 0 %}
+          {% set user = matching_users | first %}
+        {% else %}
+          {% set user = "system" %}
+        {% endif %}
+    
+        {{ "System" if user == "system" else state_attr(user.entity_id,
+        "friendly_name") }}
+sequence:
+  - alias: Store calculated user name in text entity
+    service: input_text.set_value
+    data:
+      value: "{{ user_name }}"
+    target:
+      entity_id: "{{ store_in.entity_id }}"
