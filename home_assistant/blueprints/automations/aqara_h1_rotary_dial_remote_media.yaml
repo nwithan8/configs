@@ -7,6 +7,8 @@
 blueprint:
   name: Aqara H1 Rotary Dial - Media Controls
 
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/aqara_h1_rotary_dial_remote_media.yaml
+
   description: >-
     This automation allows using an Aqara H1 Rotary Dial to control a media player.
     Requires a custom ZHA quirk until official ZHA support is added.
