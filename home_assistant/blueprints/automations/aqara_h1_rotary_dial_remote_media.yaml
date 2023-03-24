@@ -1,0 +1,116 @@
+# This blueprint allows you to control a media player with a Aqara H1 Rotary Dial (https://homekitnews.com/2020/11/02/aqara-reveal-smart-rotary-dimmer-switch/)
+# This automation requires a boolean (toggle) helper to maintain state: https://www.home-assistant.io/integrations/input_boolean/
+#
+# This ZigBee device is not currently supported by ZHA, and requires a custom ZHA quirk: https://gist.github.com/oxc/754d6436ce62d92af660d3671acd9346
+# This ZigBee device is already supported by Z2M: https://github.com/zigpy/zha-device-handlers/issues/2266
+
+blueprint:
+  name: Aqara H1 Rotary Dial - Media Controls
+
+  description: >-
+    This automation allows using an Aqara H1 Rotary Dial to control a media player.
+    Requires a custom ZHA quirk until official ZHA support is added.
+    Requires a boolean (toggle) helper to store modes.
+
+  domain: automation
+
+  input:
+    dial:
+      name: Aqara H1 Rotary Dial
+      description: Select the rotary dial you wish to use
+      selector:
+        device:
+          integration: zha
+          manufacturer: LUMI
+          model: lumi.remote.rkba01
+    media_player:
+      name: Media Player
+      description: The media player to control
+      selector:
+        target:
+          entity:
+            domain: media_player
+    mode_helper:
+      name: Mode toggle helper
+      description: A boolean (toggle) helper to store the current mode in
+      selector:
+        entity:
+          domain: input_boolean
+
+mode: restart
+max_exceeded: silent
+
+trigger:
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_id: !input dial
+
+action:
+  - choose:
+      # Play/pause on single press
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_single" }}'
+        sequence:
+          - service: media_player.media_play_pause
+            data: {}
+            target: !input media_player
+
+      # Toggle mode on double press
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_double" }}'
+        sequence:
+          - service: input_boolean.toggle
+            data: {}
+            target:
+              entity_id: !input mode_helper
+
+      # Stop playback on long press
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_hold" }}'
+        sequence:
+          - service: media_player.media_stop
+            data: {}
+            target: !input media_player
+
+      # Volume down / previous track on left turn
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "stop_rotation" and trigger.event.data.args.rotation_direction == -1 }}'
+        sequence:
+          - if:
+              - condition: state
+                entity_id: !input mode_helper
+                state: "on"
+            then:
+              - service: media_player.media_previous_track
+                data: {}
+                target: !input media_player
+            else:
+              - service: media_player.volume_down
+                data: {}
+                target: !input media_player
+
+      # Volume up / next track on right turn
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "stop_rotation" and trigger.event.data.args.rotation_direction == 1 }}'
+        sequence:
+          - if:
+              - condition: state
+                entity_id: !input mode_helper
+                state: "on"
+            then:
+              - service: media_player.media_next_track
+                data: {}
+                target: !input media_player
+            else:
+              - service: media_player.volume_up
+                data: {}
+                target: !input media_player
+
+    # Any other event will cancel the repeat loops.
+    default: []
