@@ -1,0 +1,96 @@
+# This blueprint allows you to map actions to the different controls on an Aqara H1 Rotary Dial (https://homekitnews.com/2020/11/02/aqara-reveal-smart-rotary-dimmer-switch/)
+# This ZigBee device is not currently supported by ZHA, and requires a custom ZHA quirk: https://gist.github.com/oxc/754d6436ce62d92af660d3671acd9346
+# This ZigBee device is already supported by Z2M: https://github.com/zigpy/zha-device-handlers/issues/2266
+
+blueprint:
+  name: Aqara H1 Rotary Dial - Remote
+
+  description: >-
+    This automation allows using an Aqara H1 Rotary Dial (ZigBee) to trigger actions.
+    Requires a custom quirk if using with ZHA.
+
+  domain: automation
+
+  input:
+    dial:
+      name: Aqara H1 Rotary Dial
+      description: Select the rotary dial you wish to use
+      selector:
+        device:
+          integration: zha
+          manufacturer: LUMI
+          model: lumi.remote.rkba01
+    single:
+      name: Single Press
+      description: The action to perform on a single press of the dial button
+      selector:
+        action:
+      default: []
+    double:
+      name: Double Press
+      description: The action to perform on a double press of the dial button
+      selector:
+        action:
+      default: []
+    long:
+      name: Long Press
+      description: The action to perform on a long press of the dial button
+      selector:
+        action:
+      default: []
+    left:
+      name: Left Turn
+      description: The action to perform on rotating the dial to the left
+      selector:
+        action:
+      default: []
+    right:
+      name: Right Turn
+      description: The action to perform on rotating the dial to the right
+      selector:
+        action:
+      default: []
+
+mode: restart
+max_exceeded: silent
+
+trigger:
+  - platform: event
+    event_type: zha_event
+    event_data:
+      device_id: !input dial
+
+action:
+  - choose:
+      # Single press on the button
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_single" }}'
+        sequence: !input single
+
+      # Double press on the button
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_double" }}'
+        sequence: !input double
+
+      # Long press on the button
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "1_hold" }}'
+        sequence: !input long
+
+      # Rotate dial to the left
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "stop_rotation" and trigger.event.data.args.rotation_direction == -1 }}'
+        sequence: !input left
+
+      # Rotate dial to the right
+      - conditions:
+          - condition: template
+            value_template: '{{ trigger.event.data.command == "stop_rotation" and trigger.event.data.args.rotation_direction == 1 }}'
+        sequence: !input right
+
+    # Any other event will cancel the repeat loops.
+    default: []
