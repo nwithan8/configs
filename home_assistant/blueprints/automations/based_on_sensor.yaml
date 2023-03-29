@@ -2,6 +2,7 @@
 blueprint:
   name: Based on sensor
   description: Trigger an action when a sensor is on or off
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/based_on_sensor.yaml
   domain: automation
   input:
     sensor:
