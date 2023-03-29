@@ -1,0 +1,58 @@
+# This script will trigger different actions based on whether a sensor is on or off.
+blueprint:
+  name: Based on sensor
+  description: Trigger an action when a sensor is on or off
+  domain: automation
+  input:
+    sensor:
+      name: Sensor
+      description: A sensor that toggles on and off
+      selector:
+        entity:
+          domain: sensor
+    sensor_on_action:
+      name: When enabled
+      description: The action to perform when the sensor is enabled
+      selector:
+        action:
+      default: []
+    sensor_off_action:
+      name: When disabled
+      description: The action to perform when the sensor is disabled
+      selector:
+        action:
+      default: []
+    duration:
+      name: Wait duration
+      description: How long to wait after the sensor is disabled before triggering the action
+      default: "0:00:30"
+
+trigger:
+  - id: "off"
+    entity_id: !input sensor
+    for: !input duration
+    platform: state
+    to: "off"
+
+  - id: "on"
+    entity_id: !input sensor
+    platform: state
+    to: "on"
+
+condition: []
+
+action:
+  - choose:
+      # Sensor enabled
+      - conditions:
+          - condition: trigger
+            id: "on"
+        sequence: !input sensor_on_action
+
+      # Sensor disabled
+      - conditions:
+          - condition: trigger
+            id: "off"
+        sequence: !input sensor_off_action
+
+mode: single
