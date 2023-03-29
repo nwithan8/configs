@@ -33,12 +33,12 @@ trigger:
     entity_id: !input sensor
     for: !input duration
     platform: state
-    to: "off"
+    to: "False"
 
   - id: "on"
     entity_id: !input sensor
     platform: state
-    to: "on"
+    to: "True"
 
 condition: []
 
