@@ -10,13 +10,29 @@ blueprint:
       description: A sensor that toggles on and off
       selector:
         entity:
-          domain: sensor
+          domain:
+            - sensor
+            - binary_sensor
+            - input_boolean
+            - light
+            - switch
+            - outlet
+    sensor_on_state:
+      name: Sensor "on"
+      description: State the sensor is considered "on"
+      selector:
+        text:
     sensor_on_action:
       name: When enabled
       description: The action to perform when the sensor is enabled
       selector:
         action:
       default: []
+    sensor_off_state:
+      name: Sensor "off"
+      description: State the sensor is considered "off"
+      selector:
+        text:
     sensor_off_action:
       name: When disabled
       description: The action to perform when the sensor is disabled
@@ -33,12 +49,12 @@ trigger:
     entity_id: !input sensor
     for: !input duration
     platform: state
-    to: "False"
+    to: !input sensor_off_state
 
   - id: "on"
     entity_id: !input sensor
     platform: state
-    to: "True"
+    to: !input sensor_on_state
 
 condition: []
 
