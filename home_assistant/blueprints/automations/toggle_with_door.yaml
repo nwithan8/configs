@@ -1,0 +1,64 @@
+blueprint:
+  name: Door Sensor-activated Entities
+  description: Turn entities on when a door is opened, off when a door is closed, with optional delays
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/toggle_with_door.yaml
+  domain: automation
+  input:
+    door_entity:
+      name: Door Sensor
+      description: The door sensor that tracks if the door is opened or closed
+      selector:
+        entity:
+          domain: binary_sensor
+    target_entities:
+      name: Target entity
+      description: The targeted device(s) that will toggle when the door is opened or closed. Can be a `light`, `switch`, `cover` or `fan`.
+      selector:
+        target:
+          entity:
+            domain:
+              - light
+              - switch
+              - fan
+              - cover
+    door_opened_wait:
+      name: Open delay
+      description: Time to wait after the door is opened to turn on the target entities
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+    door_closed_wait:
+      name: Close delay
+      description: Time to wait after the door is closed to turn off the target entities
+      default: 0
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+
+mode: single
+max_exceeded: silent
+
+trigger:
+  platform: state
+  entity_id: !input door_entity
+
+action:
+  - if:
+      - condition: state
+        state: "off"
+        entity_id: !input door_entity
+    then:
+      - delay: !input door_closed_wait
+      - service: homeassistant.turn_off
+        data: {}
+        target: !input target_entities
+    else:
+      - delay: !input door_opened_wait
+      - service: homeassistant.turn_on
+        data: {}
+        target: !input target_entities
