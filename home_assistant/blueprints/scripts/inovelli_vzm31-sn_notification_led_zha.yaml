@@ -1,0 +1,245 @@
+# This blueprint will allow you to make one generic script, and pass in all variables, including target switch, effect, colors, etc. on each call.
+# Users do NOT need to set up a per-device copy of this script.
+
+blueprint:
+  name: Inovelli VZM31-SN Notification LED (ZHA)
+  description: >-
+    A script that sets the notification LED bar of an Inovelli light switch.
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/inovelli_vzm31-sn_notification_led_zha.yaml
+  domain: script
+fields:
+  switch:
+    name: Inovelli VZM31-SN
+    description: Which light switch to program
+    required: true
+    selector:
+      device:
+        integration: zha
+        manufacturer: Inovelli
+        model: VZM31-SN
+  effect:
+    name: Effect
+    description: Effect to use
+    required: true
+    selector:
+      select:
+        options:
+          - "Off"
+          - "Clear"
+          - "Solid"
+          - "Fast Blink"
+          - "Slow Blink"
+          - "Pulse"
+          - "Chase"
+          - "Open-Close"
+          - "Small-Big"
+
+  duration:
+    name: Duration
+    description: How long the effect should last, in seconds (1-254, 255 for indefinite)
+    required: true
+    selector:
+      number:
+        min: 1
+        max: 255
+  level:
+    name: Intensity
+    description: How intense the light should be, percentage (0-100)
+    required: true
+    selector:
+      number:
+        min: 0
+        max: 100
+  color:
+    name: Color
+    description: The color the light should be, (0-254, 255 for white)
+    required: true
+    selector:
+      number:
+        min: 0
+        max: 255
+
+sequence:
+  - choose:
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Off"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 0
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Clear"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 255
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Solid"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 1
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Fast Blink"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 2
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Slow Blink"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 3
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Pulse"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 4
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Chase"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 5
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Open-Close"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 6
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ effect == "Small-Big"}}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              command: 1
+              command_type: server
+              args:
+                - 7
+                - "{{ color }}"
+                - "{{ level }}"
+                - "{{ duration }}"
+              manufacturer: 4655
+
+mode: single
