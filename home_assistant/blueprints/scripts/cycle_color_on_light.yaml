@@ -1,0 +1,255 @@
+# This script will step through (forwards or backwards) a list of assigned colors for an RGB light entity
+# Credit: https://gist.github.com/mdolnik/7147b5df4b08f7979afad02a5dd137a2
+# Credit: https://community.home-assistant.io/t/trying-to-cycle-through-colors-on-a-hue-bulb-each-time-a-button-is-pressed/493249/3
+
+blueprint:
+  name: Cycle color on a light
+  description: >-
+    A script that increments or decrements a color on a light.
+  domain: script
+  source_url: https://github.com/nwithan8/configs/blob/main/home_assistant/blueprints/scripts/cycle_color_on_light.yaml
+  input:
+    light:
+      name: Light
+      description: "The Light entity or Light Group entity to loop through the colors chosen below."
+      selector:
+        entity:
+          domain:
+            - light
+            - group
+          multiple: false
+    color_tracker:
+      name: Color state helper
+      description: An input number helper to store the current color in
+      selector:
+        entity:
+          domain: input_number
+    color_1:
+      name: Color 1
+      description: "Set to black to omit this color."
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_2:
+      name: Color 2
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_3:
+      name: Color 3
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_4:
+      name: Color 4
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_5:
+      name: Color 5
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_6:
+      name: Color 6
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_7:
+      name: Color 7
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_8:
+      name: Color 8
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_9:
+      name: Color 9
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_10:
+      name: Color 10
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_11:
+      name: Color 11
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+    color_12:
+      name: Color 12
+      description: "Set to black to omit this color"
+      default:
+        - 0
+        - 0
+        - 0
+      selector:
+        color_rgb: {}
+
+# Only single, otherwise could flood with attempts
+mode: single
+
+fields:
+  transition:
+    name: Transition Time
+    description: "Choose the time it takes to move to the next color."
+    selector:
+      duration: {}
+    default:
+      hours: 0
+      minutes: 0
+      seconds: 1
+  decrement:
+    name: Decrement
+    description: Go backwards instead of forward in the color list
+    required: true
+    selector:
+      boolean:
+
+variables:
+  light: !input "light"
+  color_tracker: !input "color_tracker"
+  transition_seconds: "{{ ((transition.hours)*60*60) + ((transition.minutes)*60)
+    + transition.seconds }}"
+  color_rgbs:
+    - !input "color_1"
+    - !input "color_2"
+    - !input "color_3"
+    - !input "color_4"
+    - !input "color_5"
+    - !input "color_6"
+    - !input "color_7"
+    - !input "color_8"
+    - !input "color_9"
+    - !input "color_10"
+    - !input "color_11"
+    - !input "color_12"
+  # Convert the array of RGB colors to a comma separated list of HSV values.
+  # Exclude any colors set to black.
+  # https://community.home-assistant.io/t/using-hsv-hsb-to-set-colored-lights/15472
+  # https://github.com/home-assistant/core/issues/33678#issuecomment-609424851
+  # https://stackoverflow.com/a/56141280/4147996
+  color_hsv_list_csv: >-
+    {%- set data = namespace(entries=[]) -%}
+    {%- for color_rgb in color_rgbs -%}
+      {%- if color_rgb != [0,0,0] -%}
+        {%- set r = (color_rgb[0]/255) -%}
+        {%- set g = (color_rgb[1]/255) -%}
+        {%- set b = (color_rgb[2]/255) -%}
+        {%- set maxRGB = max(r,g,b) -%}
+        {%- set minRGB = min(r,g,b) -%}
+        {%- set chroma = maxRGB - minRGB -%}
+        {%- if chroma == 0 -%}
+          {%- set h = 0 -%}
+          {%- set s = 0 -%}
+          {%- set v = maxRGB -%}
+        {%- else -%}
+          {%- if r == minRGB -%}
+            {%- set h = 3-((g-b)/chroma) -%}
+          {%- elif b == minRGB -%}
+            {%- set h = 1-((r-g)/chroma) -%}
+          {%- else -%}
+            {%- set h = 5-((b-r)/chroma) -%}
+          {%- endif -%}
+          {%- set h = 60 * h -%}
+          {%- set s = chroma / maxRGB -%}
+          {%- set v = maxRGB -%}
+        {%- endif -%}
+        {%- set h = h|round(2)|string -%}
+        {%- set s = s|round(2)|string -%}
+        {%- set v = v|round(2)|string -%}
+        {%- set comma_sep = h + "|" + s + "|" + v -%}
+        {%- set data.entries = data.entries + [comma_sep] -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {{ data.entries | join(",") }}
+  color_hsv_list: '{{ color_hsv_list_csv.split(",") }}'
+  color_count: "{{ color_hsv_list | length | int - 1}}"
+
+sequence:
+  - variables:
+      # Next color index to change to.
+      i_next: >
+        {% set idx = 0 %}
+        {% if decrement %}
+          {% set idx = states(color_tracker) | int - 1 %}
+          {% if idx < 0 %}
+            {% set idx = color_count %}
+          {% endif %}
+        {% else %}
+          {% set idx = states(color_tracker) | int + 1 %}
+          {% if idx > color_count %}
+            {% set idx = 0 %}
+          {% endif %}
+        {% endif %}
+        {{ idx }}
+      # Get the H/S of next colors.
+      hsv_next_csv: "{{ color_hsv_list[i_next] }}"
+      hue_next: '{{ hsv_next_csv.split("|")[0] }}'
+      sat_next: '{{ (hsv_next_csv.split("|")[1])|float * 100 }}'
+      # Light to interact with
+      lights_to_change: "{{
+        expand(light)
+        | selectattr('domain', 'eq', 'light')
+        | map(attribute='entity_id')
+        | list
+        }}"
+
+  - service: light.turn_on
+    target:
+      entity_id: "{{ lights_to_change }}"
+    data:
+      hs_color: "{{ [hue_next, sat_next] }}"
+      transition: "{{ transition_seconds }}"
+
+  - service: input_number.set_value
+    entity_id: !input "color_tracker"
+    data:
+      value: "{{ i_next | int }}"
