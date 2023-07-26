@@ -1,0 +1,226 @@
+type: vertical-stack
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: custom:mushroom-template-card
+        layout: vertical
+        icon: phu:magentatv
+        icon_color: |
+          {% if states('input_number.kitchen_rgb_mode') | int == 0 %}
+            0, 0 ,0 , 1
+          {% elif states('input_number.kitchen_rgb_mode') | int == 1 %}
+            {{ states('input_text.kitchen_kelvin_to_rgb') }}
+          {% elif states('input_number.kitchen_rgb_mode') | int == 2 %}
+            {{ states('input_text.kitchen_kelvin_to_rgb') }}
+          {% elif states('input_number.kitchen_rgb_mode') | int == 3 %}
+            {{ states('input_text.kitchen_rgb_color_value') }}
+          {% elif states('input_number.kitchen_rgb_mode') | int == 4 %}
+            {{ states('input_number.kitchen_rgb_brightness') | int }}, {{ states('input_number.kitchen_rgb_brightness') | int }}, {{ states('input_number.kitchen_rgb_brightness') | int }}, 1
+          {% else %}
+            255,0,0,1
+          {% endif %}
+        fill_container: true
+        primary: Mode
+        tap_action:
+          action: none
+        badge_icon: ''
+        multiline_secondary: true
+        secondary: |
+          {% if states('input_number.kitchen_rgb_mode') | int == 0 %}
+            0 (OFF)
+          {% elif states('input_number.kitchen_rgb_mode') | int == 1 %}
+            1 (Kelvin)
+          {% elif states('input_number.kitchen_rgb_mode') | int == 2 %}
+            3 (Kelvin Brightness)    
+          {% elif states('input_number.kitchen_rgb_mode') | int == 3 %}
+            3 (RGB)
+          {% elif states('input_number.kitchen_rgb_mode') | int == 4 %}
+            4 (RGB Brightness)
+          {% else %}
+            error
+          {% endif %}
+        hold_action:
+          action: none
+        double_tap_action:
+          action: none
+        card_mod:
+          style:
+            mushroom-shape-icon$: |
+              .shape {
+
+                --shape-animation: spin 20s linear infinite;
+                --shape-color: rgba(0,0,0,.07);
+                --icon-symbol-size: 90px;
+                --icon-size: 89px;
+                background: none
+                -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 50px), #000 0); 
+              }
+      - type: custom:mushroom-template-card
+        layout: vertical
+        icon: phu:magentatv
+        icon_color: '{{ states(''input_text.kitchen_kelvin_to_rgb'')}}'
+        fill_container: true
+        primary: '{{ states("input_number.kitchen_rgb_temperature")}}'
+        tap_action:
+          action: none
+        badge_icon: ''
+        multiline_secondary: true
+        secondary: Kelvin
+        hold_action:
+          action: none
+        double_tap_action:
+          action: none
+        card_mod:
+          style:
+            mushroom-shape-icon$: |
+              .shape {
+
+                --shape-animation: spin 20s linear infinite;
+                --shape-color: rgba(0,0,0,.07);
+                --icon-symbol-size: 90px;
+                --icon-size: 89px;
+                background: none
+                -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 50px), #000 0); 
+              }
+      - type: custom:mushroom-template-card
+        layout: vertical
+        icon: phu:magentatv
+        icon_color: '{{ states(''input_text.kitchen_rgb_color_value'')}}'
+        fill_container: true
+        primary: '{{ states(''input_text.kitchen_rgb_color_value'')}}'
+        tap_action:
+          action: none
+        badge_icon: ''
+        multiline_secondary: true
+        secondary: RGB ({{ states('input_number.kitchen_rgb_track') | float | int }})
+        hold_action:
+          action: none
+        double_tap_action:
+          action: none
+        card_mod:
+          style:
+            mushroom-shape-icon$: |
+              .shape {
+
+                --shape-animation: spin 20s linear infinite;
+                --shape-color: rgba(0,0,0,.07);
+                --icon-symbol-size: 90px;
+                --icon-size: 89px;
+                background: none;
+                -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 50px), #000 0);
+              }
+      - type: custom:mushroom-template-card
+        layout: vertical
+        icon: phu:magentatv
+        icon_color: >
+          {{ states('input_number.kitchen_rgb_brightness') | int }}, {{
+          states('input_number.kitchen_rgb_brightness') | int }}, {{
+          states('input_number.kitchen_rgb_brightness') | int }}
+        fill_container: true
+        primary: >-
+          {{ (states("input_number.kitchen_rgb_brightness") | int / 255 * 100) |
+          round(0) }}%
+        tap_action:
+          action: none
+        badge_icon: ''
+        multiline_secondary: true
+        secondary: >-
+          Brightness ({{ states('input_number.kitchen_rgb_brightness') | float |
+          int }})
+        hold_action:
+          action: none
+        double_tap_action:
+          action: none
+        card_mod:
+          style:
+            mushroom-shape-icon$: |
+              .shape {
+
+                --shape-animation: spin 20s linear infinite;
+                --shape-color: rgba(0,0,0,.07);
+                --icon-symbol-size: 90px;
+                --icon-size: 89px;
+                background: none
+                -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 50px), #000 0); 
+              }
+  - type: custom:my-slider-v2
+    entity: input_number.kitchen_rgb_temperature
+    styles:
+      card:
+        - height: 50px
+      container:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - overflow: hidden
+        - border-radius: 0px
+      track:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - background: rgba(235,167,5,.7)
+      progress:
+        - height: 100%
+        - background: rgba(255,234,182,.9)
+        - position: absolute
+        - width: 0.00%
+      thumb:
+        - height: 100%
+        - background: white
+        - position: absolute
+        - right: '-5px'
+        - width: 10px
+  - type: custom:my-slider-v2
+    entity: input_number.kitchen_rgb_track
+    styles:
+      card:
+        - height: 50px
+      container:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - overflow: hidden
+        - border-radius: 0px
+      track:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - background: rgba(255,0,0,.3)
+      progress:
+        - height: 100%
+        - background: rgba(0,0,255,.4)
+        - position: absolute
+        - width: 0.00%
+      thumb:
+        - height: 100%
+        - background: rgba(0,255,0,.7)
+        - position: absolute
+        - right: '-5px'
+        - width: 10px
+  - type: custom:my-slider-v2
+    entity: input_number.kitchen_rgb_brightness
+    styles:
+      card:
+        - height: 50px
+      container:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - overflow: hidden
+        - border-radius: 0px
+      track:
+        - width: 100%
+        - height: 100%
+        - position: relative
+        - background: rgba(100,100,100,.3)
+      progress:
+        - height: 100%
+        - background: rgba(255,255,255,.8)
+        - position: absolute
+        - width: 0.00%
+      thumb:
+        - height: 100%
+        - background: white
+        - position: absolute
+        - right: '-5px'
+        - width: 10px

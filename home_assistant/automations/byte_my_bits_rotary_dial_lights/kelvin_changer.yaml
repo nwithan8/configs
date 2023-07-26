@@ -1,0 +1,47 @@
+alias: "!Background - Kitchen - Kelvin Changer"
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - input_number.kitchen_rgb_temperature
+    from: null
+    to: null
+    enabled: true
+  - platform: state
+    entity_id:
+      - input_number.kitchen_rgb_mode
+    from: null
+    to: null
+condition: []
+action:
+  - if:
+      - condition: template
+        value_template: "{{ states('input_number.kitchen_rgb_mode') | int == 1 }}"
+        alias: IF Mode 1 = Kelvin
+        enabled: true
+    then:
+      - if:
+          - condition: state
+            entity_id: input_boolean.toggle_kitchen_rgb_top
+            state: "on"
+        then:
+          - service: light.turn_on
+            data:
+              kelvin: "{{ states('input_number.kitchen_rgb_temperature') }}"
+            target:
+              entity_id: light.kitchen_rgb_top_light
+        alias: IF Top Toggle ON
+      - if:
+          - condition: state
+            entity_id: input_boolean.toggle_kitchen_rgb_bottom
+            state: "on"
+            alias: IF Bottom Toggle ON
+        then:
+          - service: light.turn_on
+            data:
+              kelvin: "{{ states('input_number.kitchen_rgb_temperature') }}"
+            target:
+              entity_id: light.kitchen_rgb_bottom_light
+        alias: IF Bottom Toggle ON
+    alias: Do shit
+mode: single

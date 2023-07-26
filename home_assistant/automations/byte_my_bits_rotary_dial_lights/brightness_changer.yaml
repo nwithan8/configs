@@ -1,0 +1,101 @@
+alias: "!Background - Kitchen Brightness + Max/100 Setting"
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - input_number.kitchen_rgb_brightness
+    from: null
+    to: null
+    alias: When Helper, Kitchen RGB Brightness value has changed
+  - platform: state
+    entity_id:
+      - input_boolean.kitchen_rgb_toggle
+    from: null
+    to: null
+    alias: When Kitchen RGB Toggle has changed
+  - platform: state
+    entity_id:
+      - input_boolean.toggle_kitchen_rgb_100
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_boolean.toggle_kitchen_rgb_top
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_boolean.toggle_kitchen_rgb_bottom
+    from: null
+    to: null
+condition: []
+action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 600
+  - if:
+      - condition: state
+        entity_id: input_boolean.toggle_kitchen_rgb_100
+        state: "off"
+    then:
+      - if:
+          - condition: state
+            entity_id: input_boolean.kitchen_rgb_toggle
+            state: "on"
+        then:
+          - if:
+              - condition: state
+                entity_id: input_boolean.toggle_kitchen_rgb_top
+                state: "on"
+            then:
+              - service: light.turn_on
+                data:
+                  brightness: "{{ states('input_number.kitchen_rgb_brightness') }}"
+                target:
+                  entity_id: light.kitchen_rgb_top_light
+                alias: Call Service - Read Helper value, change top RGB light value
+            alias: IF Top Toggle ON, read Helper value, change light value
+          - if:
+              - condition: state
+                entity_id: input_boolean.toggle_kitchen_rgb_bottom
+                state: "on"
+            then:
+              - service: light.turn_on
+                data:
+                  brightness: "{{ states('input_number.kitchen_rgb_brightness') }}"
+                target:
+                  entity_id: light.kitchen_rgb_bottom_light
+                alias: >-
+                  Call Service - Read Helper value, change bottom RGB light
+                  value
+            alias: IF Bottom Toggle ON, read Helper value, change light value
+        alias: >-
+          IF RGB Toggle is ON, read brightness value, check TOP/BOT toggle,
+          change light values
+        else:
+          - service: light.turn_off
+            data:
+              transition: 3
+            target:
+              entity_id:
+                - light.kitchen_rgb_top_light
+                - light.kitchen_rgb_bottom_light
+    alias: Make sure Max/100 Toggle is OFF
+    else:
+      - if:
+          - condition: state
+            entity_id: input_boolean.toggle_kitchen_rgb_100
+            state: "on"
+        then:
+          - service: light.turn_on
+            data:
+              transition: 2
+              kelvin: 6500
+              brightness: 255
+            target:
+              entity_id:
+                - light.kitchen_rgb_top_light
+                - light.kitchen_rgb_bottom_light
+mode: single

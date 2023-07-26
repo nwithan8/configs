@@ -1,0 +1,104 @@
+alias: "!Background - Kitchen - RGB Changer"
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - input_boolean.kitchen_rgb_toggle
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_boolean.toggle_kitchen_rgb_top
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_boolean.toggle_kitchen_rgb_bottom
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_number.kitchen_rgb_mode
+    from: null
+    to: null
+  - platform: state
+    entity_id:
+      - input_text.kitchen_rgb_color_value
+    from: null
+    to: null
+condition: []
+action:
+  - if:
+      - condition: template
+        value_template: "{{ states('input_number.kitchen_rgb_mode') | int == 3 }}"
+        alias: IF Mode 3 = RGB
+        enabled: true
+    then:
+      - if:
+          - condition: state
+            entity_id: input_boolean.toggle_kitchen_rgb_top
+            state: "on"
+        then:
+          - service: light.turn_on
+            data:
+              rgb_color:
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[0]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[1]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[2]
+                  | int }}
+              transition: 0
+            target:
+              entity_id: light.kitchen_rgb_top_light
+      - if:
+          - condition: state
+            entity_id: input_boolean.toggle_kitchen_rgb_bottom
+            state: "on"
+        then:
+          - service: light.turn_on
+            data:
+              rgb_color:
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[0]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[1]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[2]
+                  | int }}
+              transition: 0
+            target:
+              entity_id: light.kitchen_rgb_bottom_light
+      - if:
+          - condition: and
+            conditions:
+              - condition: state
+                entity_id: input_boolean.toggle_kitchen_rgb_top
+                state: "off"
+              - condition: state
+                entity_id: input_boolean.toggle_kitchen_rgb_bottom
+                state: "off"
+        then:
+          - service: light.turn_on
+            data:
+              transition: 3
+              rgb_color:
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[0]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[1]
+                  | int }}
+                - >-
+                  {{ states('input_text.kitchen_rgb_color_value').split(',')[2]
+                  | int }}
+            target:
+              entity_id:
+                - light.kitchen_rgb_bottom_light
+                - light.kitchen_rgb_top_light
+mode: single
