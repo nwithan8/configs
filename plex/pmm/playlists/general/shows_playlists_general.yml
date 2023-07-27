@@ -4,3 +4,30 @@ external_templates:
   - repo: templates/playlists
 
 playlists:
+  ### Topical
+  "Treehouse of Horror":
+    summary: "All the Simpsons' Treehouse of Horror episodes"
+    libraries: TV Shows
+    sort_title:
+    smart_filter:
+      type: episode
+      sort_by: release.asc
+      all:
+        title.is: "The Simpsons"
+        episode_title: "Treehouse"
+    sync_mode: sync
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Top 100 Simpsons Episodes":
+    collection_order: custom
+    libraries: TV Shows
+    builder_level: episode
+    smart_filter:
+      type: episodes
+      sort_by: audience_rating.desc
+      limit: 100
+      all:
+        title.ends: "Simpsons"
+    summary: A collection of the highest-rated Simpsons episodes.
