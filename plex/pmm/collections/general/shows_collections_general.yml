@@ -5,6 +5,93 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  ### New Content
+  "Added This Week":
+    summary: "Episodes added this week on Plex"
+    sort_title:
+    smart_filter:
+      type: episode
+      sort_by: release.desc
+      all:
+        # Episode added in the last 7 days
+        episode_added: 7
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "Now On Plex":
+    summary: "Shows now playing on Plex"
+    sort_title:
+    smart_filter:
+      type: show
+      sort_by: release.desc
+      all:
+        # Shows added in the last 30 days
+        added: 30
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  ### Trending
+  "From The Top":
+    summary: "Let's start this from the beginning"
+    collection_level: episode
+    collection_order: alpha
+    plex_pilots: true
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  "Previously On...":
+    summary: "Catch up on last week's episodes"
+    sort_title:
+    smart_filter:
+      type: episode
+      sort_by: release.desc
+      all:
+        # Episode aired in the last 8 days
+        episode_air_date: 8
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "What Everyone Is Watching":
+    template: { name: Chart,
+                level: "++" }
+    summary: "What other subscribers are checking out"
+    libraries: "TV Shows"
+    sync_mode: sync
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+    visible_library: true
+    visible_home: false
+    visible_shared: true
+
+  "Trending Now":
+    summary: "The hottest shows right now"
+    imdb_chart: popular_shows
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Editor's Choice":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Our top picks"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
+    collection_order: release.desc
+    visible_home: true
+    visible_shared: true
+
   ### Studios
   ABC:
     template: { name: Network,
@@ -331,6 +418,16 @@ collections:
     visible_library: true
     visible_home: false
     visible_shared: false
+
+  ### Genres
+  "A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True Crime Documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: release
+    visible_home: false
+    visible_shared: true
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections

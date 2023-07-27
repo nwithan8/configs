@@ -1,3 +1,5 @@
+# Will be replicated for each movie library
+
 external_templates:
   - repo: templates/collections
 

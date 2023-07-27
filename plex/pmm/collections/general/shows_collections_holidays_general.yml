@@ -1,1 +1,6 @@
+# Will be replicated for each show library
+
+external_templates:
+  - repo: templates/collections
+
 collections:

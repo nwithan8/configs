@@ -1,4 +1,4 @@
-# In Memoriam collections for the all shows sections
+# Will be replicated for each show library
 
 external_templates:
   - repo: templates/collections
