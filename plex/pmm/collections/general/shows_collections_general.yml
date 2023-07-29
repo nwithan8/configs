@@ -41,7 +41,7 @@ collections:
     collection_order: alpha
     plex_pilots: true
     visible_library: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Previously On...":
@@ -70,7 +70,7 @@ collections:
       list_size: 15
       list_minimum: 2
     visible_library: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Trending Now":

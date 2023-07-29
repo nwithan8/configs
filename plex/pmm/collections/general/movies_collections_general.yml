@@ -28,7 +28,7 @@ collections:
     summary: "Now playing on a screen near you"
     imdb_chart: box_office
     collection_order: custom
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Trending online
@@ -122,7 +122,7 @@ collections:
     schedule:
     - weekly(wednesday)
     - weekly(sunday)
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Top 70s movies via IMDB, updated monthly
@@ -186,7 +186,7 @@ collections:
     schedule:
     - weekly(wednesday)
     - weekly(sunday)
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Movies with a perfect RT score, updated monthly
@@ -196,7 +196,7 @@ collections:
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     schedule: monthly(1)
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Worst movies of all time, updated monthly
@@ -208,7 +208,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
     collection_order: audience_rating.desc
     schedule: monthly(1)
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   ### Genres
@@ -219,28 +219,28 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
     collection_order: release
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Spoofs and Parodies":
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Slam Dunk":
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Get In, Get Out":
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "On The Edge Of Your Seat":
@@ -248,7 +248,7 @@ collections:
     summary: "The suspense is killing us!"
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Documentaries":
@@ -259,7 +259,7 @@ collections:
       sort_by: critic_rating.desc
       all:
         genre: Documentary
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "What a Twist!":
@@ -267,7 +267,7 @@ collections:
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: custom
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Based On A True Story":
@@ -275,7 +275,7 @@ collections:
     summary: ""
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
     collection_order: custom
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "A Real-Life Whodunnit":
@@ -284,7 +284,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
     collection_order: custom
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   # Good weekend movies, only visible on home on Saturday and Sunday
@@ -305,7 +305,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
     collection_order: audience_rating.desc
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Rom-com Central":
@@ -315,7 +315,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     collection_order: audience_rating.desc
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Best Movie Ever":
@@ -325,7 +325,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
     collection_minimum: 3
     delete_below_minimum: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "Worst Movie Ever":
@@ -335,7 +335,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
     collection_minimum: 3
     delete_below_minimum: true
-    visible_home: false
+    visible_home: true
     visible_shared: true
 
   "1001 Movies You Must See Before You Die":
