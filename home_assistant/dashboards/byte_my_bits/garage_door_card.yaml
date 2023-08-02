@@ -1,4 +1,4 @@
-	      type: custom:button-card
+	type: custom:button-card
         entity: cover.garagedoor1
         name: Garage Door 1
         state:
