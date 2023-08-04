@@ -4,8 +4,6 @@ blueprint:
   name: ERS Rotary Dial - Light Control
   description: Control light brightness, hue and color with an ERS rotary dial
 
-  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/ers_rotary_dial_light_control.yaml
-
   domain: automation
 
   input:
@@ -16,8 +14,8 @@ blueprint:
         entity:
           filter:
             - domain:
-              - light
-              - group
+                - light
+                - group
           multiple: false
 
     dial:
@@ -61,8 +59,9 @@ blueprint:
           filter:
             domain: input_number
 
-# Only single, otherwise could flood with attempts
-mode: single
+# Queued, to ignore non-matched events but capture existing ones
+mode: queued
+max: 20
 max_exceeded: silent
 
 variables:
@@ -89,7 +88,12 @@ variables:
   max_hue: "{{ state_attr(hue_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   hue_steps: "{{ full_rotate_step_count * 2 | int }}"
-  hue_delta: "{{ (trigger.event.data.params.step_size | float(0) / hue_steps) * (max_hue - min_hue) }}"
+  hue_delta: >
+    {% if trigger.event.data.command != 'step' %}
+      {{ 0 }}
+    {% else %}
+      {{ (trigger.event.data.params.step_size | float(0) / hue_steps) * (max_hue - min_hue) }}
+    {% endif %}
   # don't loop when reached max or min
   next_hue: >
     {%- set val = states(hue_tracker) | float(0) -%}
@@ -108,7 +112,12 @@ variables:
   max_brightness: "{{ state_attr(brightness_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   brightness_steps: "{{ full_rotate_step_count * 2 | int }}"
-  brightness_delta: "{{ (trigger.event.data.params.step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}"
+  brightness_delta: >
+    {% if trigger.event.data.command != 'step' %}
+      {{ 0 }}
+    {% else %}
+      {{ (trigger.event.data.params.step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}
+    {% endif %}
   # don't loop when reached max or min
   next_brightness: >
     {%- set val = states(brightness_tracker) | float(0) -%}
@@ -127,7 +136,12 @@ variables:
   max_color: "{{ state_attr(color_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   color_steps: "{{ full_rotate_step_count * 3 | int }}"
-  color_delta: "{{ (trigger.event.data.params.step_size | float(0) / color_steps) * (max_color - min_color) }}"
+  color_delta: >
+    {% if trigger.event.data.command != 'step' %}
+      {{ 0 }}
+    {% else %}
+      {{ (trigger.event.data.params.step_size | float(0) / color_steps) * (max_color - min_color) }}
+    {% endif %}
   # loop when reached max or min
   next_color: >
     {%- set val = states(color_tracker) | float(0) -%}
@@ -143,7 +157,6 @@ variables:
       {%- set val = max_color - (diff % max_color) -%}
     {%- endif -%}
     {{ val | int }}
-
 
 trigger:
   - platform: event
