@@ -3,10 +3,12 @@
 # This ZigBee device is not currently supported by ZHA, and requires a custom ZHA quirk: https://gist.github.com/oxc/754d6436ce62d92af660d3671acd9346
 # This ZigBee device is already supported by Z2M: https://github.com/zigpy/zha-device-handlers/issues/2266
 #
-# This automation is built for a device in EVENT mode rather than COMMAND mode. As there is some cross-over between the two modes, it is NOT recommended to use automations for both modes at the same time.
+# This automation is built for a device in COMMAND mode rather than EVENT mode. As there is some cross-over between the two modes, it is NOT recommended to use automations for both modes at the same time.
 
 blueprint:
-  name: Aqara H1 Rotary Dial - Remote (Event Mode)
+  name: Aqara H1 Rotary Dial - Remote (Command Mode)
+
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/aqara_h1_rotary_dial_remote_command_mode.yaml
 
   aqara_h1_rotary_dial_remote:
     yaml:
@@ -27,12 +29,6 @@ blueprint:
           integration: zha
           manufacturer: LUMI
           model: lumi.remote.rkba01
-    single:
-      name: Single Press
-      description: The action to perform on a single press of the dial button
-      selector:
-        action:
-      default: []
     double:
       name: Double Press
       description: The action to perform on a double press of the dial button
@@ -69,22 +65,16 @@ trigger:
 
 action:
   - choose:
-      # Single press on the button
-      - conditions:
-          - condition: template
-            value_template: '{{ trigger.event.data.command == "1_single" }}'
-        sequence: !input single
-
       # Double press on the button
       - conditions:
           - condition: template
-            value_template: '{{ trigger.event.data.command == "1_double" }}'
+            value_template: '{{ trigger.event.data.command == "toggle" }}'
         sequence: !input double
 
       # Long press on the button
       - conditions:
           - condition: template
-            value_template: '{{ trigger.event.data.command == "1_hold" }}'
+            value_template: '{{ trigger.event.data.command == "off" }}'
         sequence: !input long
 
       # Rotate dial to the left
