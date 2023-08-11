@@ -17,9 +17,26 @@ fields:
         integration: zha
         manufacturer: Inovelli
         model: VZM31-SN
+  led:
+    name: LED
+    description: Which LED to program (LED 1 is the bottom-most LED)
+    required: false
+    selector:
+      select:
+        options:
+          - "All"
+          - "LED 1"
+          - "LED 2"
+          - "LED 3"
+          - "LED 4"
+          - "LED 5"
+          - "LED 6"
+          - "LED 7"
+    default: "All"
   effect:
     name: Effect
-    description: Effect to use
+    description: >
+      Effect to use. Some effects cannot be used on a single LED; if an invalid match is provided, the effect will be overriden to "Solid"
     required: true
     selector:
       select:
@@ -47,6 +64,7 @@ fields:
           - "Fast Chase"
           - "Open-Close"
           - "Small-Big"
+    default: "Solid"
 
   duration:
     name: Duration
@@ -67,13 +85,35 @@ fields:
   color:
     name: Color
     description: The color the light should be, (0-254, 255 for white)
-    required: true
+    required: false
     selector:
       number:
         min: 0
         max: 255
 
+  color_preset:
+    name: Color Preset
+    description: Special color preset to use (overrides color setting and LED selection)
+    required: false
+    selector:
+      select:
+        options:
+          - "Rainbow"
+
 variables:
+  led_values:
+    "all": -1
+    "led 1": 0
+    "led 2": 1
+    "led 3": 2
+    "led 4": 3
+    "led 5": 4
+    "led 6": 5
+    "led 7": 6
+  led: '{{ led|default("all") }}'
+  led_value: >-
+    {{ led_values[led | lower] | int }}
+
   # Main + legacy effects mapping
   effect_values:
     "off": 0
@@ -98,26 +138,96 @@ variables:
     "slow siren": 19
     "open-close": 6
     "small-big": 7
-  effect: '{{ effect|default("clear") }}'
-  effect_value: >-
-    {{ effect_values[effect | lower] | int }}
+  # Only 0-8 can be used to set a single LED
+  max_single_led_effect: 8
+  effect: '{{ effect|default("solid") }}'
+  effect_value: >
+    {% set val = effect_values[effect | lower] | int %}
+    {% if val > max_single_led_effect %}
+      {% set val = 1 %}
+    {% endif %}
+    {{ val }}
+
+  color: "{{ color|default(255) }}"
+
+  special_color_preset: '{{ color_preset|default("none") }}'
+  use_special_color_preset: >
+    {{ special_color_preset != "none" }}
+
+  normal_payload: >
+    {% if led_value == -1 %}
+      {% set payload_data = {
+        "led_effect": effect_value,
+        "led_color": color,
+        "led_level": level,
+        "led_duration": duration,
+        } %}
+    {% else %}
+      {% set payload_data = {
+        "led_number": led_value,
+        "led_effect": effect_value,
+        "led_color": color,
+        "led_level": level,
+        "led_duration": duration,
+      } %}
+    {% endif %}
+    {{ payload_data }}
+
+  special_colors_orders:
+    "none": []
+    "rainbow": [222, 189, 166, 94, 53, 25, 0]
+
+  special_color_order: >
+    {{ special_colors_orders[special_color_preset | lower] }}
 
 sequence:
-  - service: zha.issue_zigbee_cluster_command
-    data:
-      ieee: >
-        {{ (device_attr(switch, "identifiers")|list).0.1 }}
-      endpoint_id: 1
-      cluster_id: 64561
-      cluster_type: in
-      command: 1
-      command_type: server
-      args:
-        - "{{ effect_value }}"
-        - "{{ color }}"
-        - "{{ level }}"
-        - "{{ duration }}"
-      manufacturer: 4655
+  - choose:
+      # Single color for one or all LEDs
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ not use_special_color_preset }}
+        sequence:
+          - service: zha.issue_zigbee_cluster_command
+            data:
+              ieee: >
+                {{ (device_attr(switch, "identifiers")|list).0.1 }}
+              endpoint_id: 1
+              cluster_id: 64561
+              cluster_type: in
+              # 1 = all LEDs, 3 = specific LED
+              command: >
+                {{ iif(led_value == -1, 1, 3) }}
+              command_type: server
+              params: "{{ normal_payload }}"
+              manufacturer: 4655
+        # Special color preset for all LEDs
+      - conditions:
+          - condition: template
+            value_template: >
+              {{ use_special_color_preset }}
+        sequence:
+          - repeat:
+              count: "{{ special_color_order | count }}"
+              sequence:
+                - service: zha.issue_zigbee_cluster_command
+                  data:
+                    ieee: >
+                      {{ (device_attr(switch, "identifiers")|list).0.1 }}
+                    endpoint_id: 1
+                    cluster_id: 64561
+                    cluster_type: in
+                    # 1 = all LEDs, 3 = specific LED
+                    command: 3
+                    command_type: server
+                    # Index starts at 1 like an idiot
+                    params:
+                      "led_number": "{{ repeat.index - 1}}"
+                      "led_effect": "{{ effect_value }}"
+                      "led_color": "{{ special_color_order[repeat.index - 1] | int }}"
+                      "led_level": "{{ level }}"
+                      "led_duration": "{{ duration }}"
+                    manufacturer: 4655
 
 mode: single
 max_exceeded: silent
