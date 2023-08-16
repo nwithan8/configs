@@ -10,10 +10,6 @@ blueprint:
 
   source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/aqara_h1_rotary_dial_remote_command_mode.yaml
 
-  aqara_h1_rotary_dial_remote:
-    yaml:
-
-
   description: >-
     This automation allows using an Aqara H1 Rotary Dial (ZigBee) to trigger actions.
     Requires a custom quirk if using with ZHA.
