@@ -1,8 +1,10 @@
-# Instructions: https://community.home-assistant.io/t/zha-control-light-color-hue-brightness-with-ers-dial/595002
+# Instructions: https://community.home-assistant.io/t/zha-z2m-control-light-color-hue-brightness-with-ers-dial/595002
 
 blueprint:
-  name: ERS Rotary Dial - Light Control
+  name: ERS Rotary Dial - Light Control (Z2M) - EVENT mode
   description: Control light brightness, hue and color with an ERS rotary dial
+
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/ers_rotary_dial_light_control_z2m.yaml
 
   domain: automation
 
@@ -71,7 +73,17 @@ variables:
   hue_tracker: !input "hue_tracker"
   brightness_tracker: !input "brightness_tracker"
   color_tracker: !input "color_tracker"
-  positive: "{{ trigger.event.data.command == 'step' and trigger.event.data.params.step_mode == 0 }}"
+  command: "{{ trigger.to_state.state }}"
+  single_pressed: "{{ command == 'single' }}"
+  double_pressed: "{{ command == 'double' }}"
+  rotated: "{{ command in ['rotate_right', 'rotate_left'] }}"
+  positive: "{{ command == 'rotate_right' }}"
+  step_size: >
+    {% if rotated %}
+      {{ trigger.to_state.attributes.action_step_size | int }}
+    {% else %}
+      {{ 0 }}
+    {% endif %}
   # How many steps to go full rotation (min 13 per step * 20 steps per full rotation)
   full_rotate_step_count: "{{ 13 * 20 | int }}"
   current_mode: "{{ states(mode_tracker) | int }}"
@@ -88,12 +100,7 @@ variables:
   max_hue: "{{ state_attr(hue_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   hue_steps: "{{ full_rotate_step_count * 2 | int }}"
-  hue_delta: >
-    {% if trigger.event.data.command != 'step' %}
-      {{ 0 }}
-    {% else %}
-      {{ (trigger.event.data.params.step_size | float(0) / hue_steps) * (max_hue - min_hue) }}
-    {% endif %}
+  hue_delta: "{{ (step_size | float(0) / hue_steps) * (max_hue - min_hue) }}"
   # don't loop when reached max or min
   next_hue: >
     {%- set val = states(hue_tracker) | float(0) -%}
@@ -112,12 +119,7 @@ variables:
   max_brightness: "{{ state_attr(brightness_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   brightness_steps: "{{ full_rotate_step_count * 2 | int }}"
-  brightness_delta: >
-    {% if trigger.event.data.command != 'step' %}
-      {{ 0 }}
-    {% else %}
-      {{ (trigger.event.data.params.step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}
-    {% endif %}
+  brightness_delta: "{{ (step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}"
   # don't loop when reached max or min
   next_brightness: >
     {%- set val = states(brightness_tracker) | float(0) -%}
@@ -136,12 +138,7 @@ variables:
   max_color: "{{ state_attr(color_tracker, 'max') | int }}"
   # How many steps to go full min-max spectrum
   color_steps: "{{ full_rotate_step_count * 3 | int }}"
-  color_delta: >
-    {% if trigger.event.data.command != 'step' %}
-      {{ 0 }}
-    {% else %}
-      {{ (trigger.event.data.params.step_size | float(0) / color_steps) * (max_color - min_color) }}
-    {% endif %}
+  color_delta: "{{ (step_size | float(0) / color_steps) * (max_color - min_color) }}"
   # loop when reached max or min
   next_color: >
     {%- set val = states(color_tracker) | float(0) -%}
@@ -170,7 +167,7 @@ action:
       # If event was a dial turn
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.command == 'step' }}"
+            value_template: "{{ rotated }}"
             alias: Dial turned (0 for right, 1 for left)
         sequence:
           # Process different actions based on current mode
@@ -180,7 +177,7 @@ action:
                   - condition: template
                     value_template: "{{ current_mode == 1 }}"
                     alias: In Mode 1 (Power)
-                sequence: []
+                sequence: [ ]
               # In Mode 2 (Brightness)
               - conditions:
                   - condition: template
@@ -270,7 +267,7 @@ action:
       # If event was a dial button short push
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.command == 'toggle' }}"
+            value_template: "{{ single_pressed }}"
         sequence:
           # Change mode (cycling back if reached the end)
           - service: input_number.set_value
@@ -281,11 +278,11 @@ action:
       # If event was a dial button long press
       - conditions:
           - condition: template
-            value_template: "{{ trigger.event.data.command == 'move_saturation' }}" # dumb: https://github.com/zigpy/zha-device-handlers/blob/92c9fbc6d01a5d86f78d64183302b906aa7d8215/zhaquirks/tuya/ts004f.py#L146C37-L146C37
+            value_template: "{{ double_pressed }}"
         sequence:
           # Toggle light power
           - service: light.toggle
-            data: {}
+            data: { }
             target:
               entity_id: !input light
             alias: Toggle light power
