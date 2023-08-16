@@ -1,0 +1,123 @@
+blueprint:
+  name: Inovelli LED Temperature Display
+  description: Display the temperature on the LED strip of an Inovelli VZM31-SN light switch
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/inovelli_led_temperature.yaml
+  domain: automation
+  input:
+    temp_sensor:
+      name: Temperature Sensor
+      description: The temperature sensor to monitor
+      selector:
+        entity:
+          domain: sensor
+          device_class: temperature
+    min_temp:
+      name: Minimum Temperature
+      description: The minimum temperature. Anything below this will be displayed as the minimum temperature (no LEDs)
+      default: 0
+      selector:
+        number:
+          # You're literally dead at either of these temperatures
+          min: -200
+          max: 199
+          unit_of_measurement: degrees
+          mode: box
+    max_temp:
+      name: Maximum Temperature
+      description: The maximum temperature. Anything above this will be displayed as the maximum temperature (all LEDs)
+      default: 100
+      selector:
+        number:
+          min: -199
+          max: 200
+          unit_of_measurement: degrees
+          mode: box
+    switch:
+      name: Inovelli VZM31-SN
+      description: Which light switch to program
+      selector:
+        device:
+          integration: zha
+          manufacturer: Inovelli
+          model: VZM31-SN
+    duration:
+      name: Duration
+      description: How long the effect should last, in seconds (1-254, 255 for indefinite)
+      selector:
+        number:
+          min: 1
+          max: 255
+      default: 255
+    level:
+      name: Intensity
+      description: How intense the light should be, percentage (0-100)
+      selector:
+        number:
+          min: 0
+          max: 100
+      default: 50
+    color:
+      name: Color
+      description: The color the light should be, (0-254, 255 for white)
+      selector:
+        number:
+          min: 0
+          max: 255
+          mode: box
+      default: 0
+
+mode: single
+max_exceeded: silent
+
+variables:
+  temp_sensor: !input temp_sensor
+  temperature: "{{ states(temp_sensor) | float(0) | round(1) }}"
+  solid_led_effect_code: 1
+  off_led_effect_code: 0
+  led_command: 3 # Set individual LED
+  max_temp: !input max_temp
+  min_temp: !input min_temp
+  level: !input level
+  duration: !input duration
+  switch: !input switch
+  color: !input color
+  off_color: 255 # White
+  temperature_range: "{{ max_temp - min_temp }}"
+  led_range: 7
+  leds_to_turn_on: "{{ (temperature - min_temp) / temperature_range * led_range | round(0) | int }}"
+
+trigger:
+  platform: state
+  entity_id: !input temp_sensor
+
+action:
+  - repeat:
+      count: "{{ led_range }}"
+      sequence:
+        - service: zha.issue_zigbee_cluster_command
+          data:
+            ieee: >
+              {{ (device_attr(switch, "identifiers")|list).0.1 }}
+            endpoint_id: 1
+            cluster_id: 64561
+            cluster_type: in
+            command: "{{ led_command }}"
+            command_type: server
+            # Index starts at 1 like an idiot
+            params:
+              "led_number": "{{ repeat.index - 1 }}"
+              "led_effect": >
+                {%- if repeat.index - 1 <= leds_to_turn_on -%}
+                  {{ solid_led_effect_code }}
+                {%- else -%}
+                  {{ off_led_effect_code }}
+                {%- endif -%}
+              "led_color": >
+                {%- if repeat.index - 1 <= leds_to_turn_on -%}
+                  {{ color }}
+                {%- else -%}
+                  {{ off_color }}
+                {%- endif -%}
+              "led_level": "{{ level }}"
+              "led_duration": "{{ duration }}"
+            manufacturer: 4655
