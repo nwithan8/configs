@@ -26,8 +26,7 @@ blueprint:
       selector:
         device:
           filter:
-            integration: zha
-            model: TS004F
+            integration: mqtt
 
     mode_tracker:
       name: Mode tracker
@@ -61,228 +60,240 @@ blueprint:
           filter:
             domain: input_number
 
+    base_topic:
+      name: Zigbee2MQTT Base mqtt topic
+      description: The base topic configured in Zigbee2MQTT. If you haven't changed this, leave the default here ("zigbee2mqtt")
+      default: zigbee2mqtt
+
 # Queued, to ignore non-matched events but capture existing ones
 mode: queued
 max: 20
 max_exceeded: silent
 
-variables:
-  light: !input "light"
-  dial: !input "dial"
-  mode_tracker: !input "mode_tracker"
-  hue_tracker: !input "hue_tracker"
-  brightness_tracker: !input "brightness_tracker"
-  color_tracker: !input "color_tracker"
-  command: "{{ trigger.to_state.state }}"
-  single_pressed: "{{ command == 'single' }}"
-  double_pressed: "{{ command == 'double' }}"
-  rotated: "{{ command in ['rotate_right', 'rotate_left'] }}"
-  positive: "{{ command == 'rotate_right' }}"
-  step_size: >
-    {% if rotated %}
-      {{ trigger.to_state.attributes.action_step_size | int }}
-    {% else %}
-      {{ 0 }}
-    {% endif %}
-  # How many steps to go full rotation (min 13 per step * 20 steps per full rotation)
-  full_rotate_step_count: "{{ 13 * 20 | int }}"
-  current_mode: "{{ states(mode_tracker) | int }}"
-  min_mode: "{{ state_attr(mode_tracker, 'min') | int }}"
-  max_mode: "{{ state_attr(mode_tracker, 'max') | int }}"
-  # always increment, looping
-  next_mode: >
-    {% set val = current_mode + 1 %} 
-    {% if val > max_mode %} 
-      {% set val = min_mode %}
-    {% endif %}
-    {{ val | int }}
-  min_hue: "{{ state_attr(hue_tracker, 'min') | int }}"
-  max_hue: "{{ state_attr(hue_tracker, 'max') | int }}"
-  # How many steps to go full min-max spectrum
-  hue_steps: "{{ full_rotate_step_count * 2 | int }}"
-  hue_delta: "{{ (step_size | float(0) / hue_steps) * (max_hue - min_hue) }}"
-  # don't loop when reached max or min
-  next_hue: >
-    {%- set val = states(hue_tracker) | float(0) -%}
-    {%- set delta = hue_delta -%}
-    {%- if not positive -%}
-      {%- set delta = delta * -1 -%}
-    {%- endif -%}
-    {%- set val = val + delta | int -%}
-    {%- if positive and val > max_hue -%}
-      {%- set val = max_hue -%}
-    {%- elif not positive and val < min_hue -%}
-      {%- set val = min_hue -%}
-    {%- endif -%}
-    {{ val | int }}
-  min_brightness: "{{ state_attr(brightness_tracker, 'min') | int }}"
-  max_brightness: "{{ state_attr(brightness_tracker, 'max') | int }}"
-  # How many steps to go full min-max spectrum
-  brightness_steps: "{{ full_rotate_step_count * 2 | int }}"
-  brightness_delta: "{{ (step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}"
-  # don't loop when reached max or min
-  next_brightness: >
-    {%- set val = states(brightness_tracker) | float(0) -%}
-    {%- set delta = brightness_delta -%}
-    {%- if not positive -%}
-      {%- set delta = delta * -1 -%}
-    {%- endif -%}
-    {%- set val = val + delta | int -%}
-    {%- if positive and val > max_brightness -%} 
-      {%- set val = max_brightness -%}
-    {%- elif not positive and val < min_brightness -%}
-      {%- set val = min_brightness -%}
-    {%- endif -%}
-    {{ val | int }}
-  min_color: "{{ state_attr(color_tracker, 'min') | int }}"
-  max_color: "{{ state_attr(color_tracker, 'max') | int }}"
-  # How many steps to go full min-max spectrum
-  color_steps: "{{ full_rotate_step_count * 3 | int }}"
-  color_delta: "{{ (step_size | float(0) / color_steps) * (max_color - min_color) }}"
-  # loop when reached max or min
-  next_color: >
-    {%- set val = states(color_tracker) | float(0) -%}
-    {%- set delta = color_delta -%}
-    {%- if not positive -%}
-      {%- set delta = delta * -1 -%}
-    {%- endif -%}
-    {%- set val = val + delta | int -%}
-    {%- if positive and val > max_color -%}
-      {%- set val = val % max_color -%}
-    {%- elif not positive and val < min_color -%}
-      {%- set diff = min_color - val -%}
-      {%- set val = max_color - (diff % max_color) -%}
-    {%- endif -%}
-    {{ val | int }}
+trigger_variables:
+  base_topic: !input base_topic
 
 trigger:
-  - platform: event
-    event_type: zha_event
-    event_data:
-      device_id: !input dial
+  - platform: mqtt
+    topic: "{{ base_topic }}/+/action"
 
 action:
+  - variables:
+      light: !input "light"
+      dial: !input "dial"
+      mode_tracker: !input "mode_tracker"
+      hue_tracker: !input "hue_tracker"
+      brightness_tracker: !input "brightness_tracker"
+      color_tracker: !input "color_tracker"
+      dial_topic: "{{ base_topic }}/{{ device_attr(dial, 'name') }}/action"
+      command: "{{ trigger.payload }}"
+      single_pressed: "{{ command == 'single' }}"
+      double_pressed: "{{ command == 'double' }}"
+      rotated: "{{ command in ['rotate_right', 'rotate_left'] }}"
+      positive: "{{ command == 'rotate_right' }}"
+      step_size: >
+        {% if rotated %}
+          {{ trigger.to_state.attributes.action_step_size | int }}
+        {% else %}
+          {{ 0 }}
+        {% endif %}
+      # How many steps to go full rotation (min 13 per step * 20 steps per full rotation)
+      full_rotate_step_count: "{{ 13 * 20 | int }}"
+      current_mode: "{{ states(mode_tracker) | int }}"
+      min_mode: "{{ state_attr(mode_tracker, 'min') | int }}"
+      max_mode: "{{ state_attr(mode_tracker, 'max') | int }}"
+      # always increment, looping
+      next_mode: >
+        {% set val = current_mode + 1 %} 
+        {% if val > max_mode %} 
+          {% set val = min_mode %}
+        {% endif %}
+        {{ val | int }}
+      min_hue: "{{ state_attr(hue_tracker, 'min') | int }}"
+      max_hue: "{{ state_attr(hue_tracker, 'max') | int }}"
+      # How many steps to go full min-max spectrum
+      hue_steps: "{{ full_rotate_step_count * 2 | int }}"
+      hue_delta: "{{ (step_size | float(0) / hue_steps) * (max_hue - min_hue) }}"
+      # don't loop when reached max or min
+      next_hue: >
+        {%- set val = states(hue_tracker) | float(0) -%}
+        {%- set delta = hue_delta -%}
+        {%- if not positive -%}
+          {%- set delta = delta * -1 -%}
+        {%- endif -%}
+        {%- set val = val + delta | int -%}
+        {%- if positive and val > max_hue -%}
+          {%- set val = max_hue -%}
+        {%- elif not positive and val < min_hue -%}
+          {%- set val = min_hue -%}
+        {%- endif -%}
+        {{ val | int }}
+      min_brightness: "{{ state_attr(brightness_tracker, 'min') | int }}"
+      max_brightness: "{{ state_attr(brightness_tracker, 'max') | int }}"
+      # How many steps to go full min-max spectrum
+      brightness_steps: "{{ full_rotate_step_count * 2 | int }}"
+      brightness_delta: "{{ (step_size | float(0) / brightness_steps) * (max_brightness - min_brightness) }}"
+      # don't loop when reached max or min
+      next_brightness: >
+        {%- set val = states(brightness_tracker) | float(0) -%}
+        {%- set delta = brightness_delta -%}
+        {%- if not positive -%}
+          {%- set delta = delta * -1 -%}
+        {%- endif -%}
+        {%- set val = val + delta | int -%}
+        {%- if positive and val > max_brightness -%} 
+          {%- set val = max_brightness -%}
+        {%- elif not positive and val < min_brightness -%}
+          {%- set val = min_brightness -%}
+        {%- endif -%}
+        {{ val | int }}
+      min_color: "{{ state_attr(color_tracker, 'min') | int }}"
+      max_color: "{{ state_attr(color_tracker, 'max') | int }}"
+      # How many steps to go full min-max spectrum
+      color_steps: "{{ full_rotate_step_count * 3 | int }}"
+      color_delta: "{{ (step_size | float(0) / color_steps) * (max_color - min_color) }}"
+      # loop when reached max or min
+      next_color: >
+        {%- set val = states(color_tracker) | float(0) -%}
+        {%- set delta = color_delta -%}
+        {%- if not positive -%}
+          {%- set delta = delta * -1 -%}
+        {%- endif -%}
+        {%- set val = val + delta | int -%}
+        {%- if positive and val > max_color -%}
+          {%- set val = val % max_color -%}
+        {%- elif not positive and val < min_color -%}
+          {%- set diff = min_color - val -%}
+          {%- set val = max_color - (diff % max_color) -%}
+        {%- endif -%}
+        {{ val | int }}
   # Process current event
   - choose:
-      # If event was a dial turn
+      # Verify that the dial is the one that triggered the event
       - conditions:
-          - condition: template
-            value_template: "{{ rotated }}"
-            alias: Dial turned (0 for right, 1 for left)
+          - "{{ trigger.payload != ''}}"
+          - "{{ trigger.topic == dial_topic }}"
         sequence:
-          # Process different actions based on current mode
           - choose:
-              # In Mode 1 (don't do anything; prevent accidental knob rotation)
+              # If event was a dial turn
               - conditions:
                   - condition: template
-                    value_template: "{{ current_mode == 1 }}"
-                    alias: In Mode 1 (Power)
-                sequence: [ ]
-              # In Mode 2 (Brightness)
-              - conditions:
-                  - condition: template
-                    value_template: "{{ current_mode == 2 }}"
-                    alias: In Mode 2 (Brightness)
+                    value_template: "{{ rotated }}"
+                    alias: Dial turned (0 for right, 1 for left)
                 sequence:
+                  # Process different actions based on current mode
+                  - choose:
+                      # In Mode 1 (don't do anything; prevent accidental knob rotation)
+                      - conditions:
+                          - condition: template
+                            value_template: "{{ current_mode == 1 }}"
+                            alias: In Mode 1 (Power)
+                        sequence: [ ]
+                      # In Mode 2 (Brightness)
+                      - conditions:
+                          - condition: template
+                            value_template: "{{ current_mode == 2 }}"
+                            alias: In Mode 2 (Brightness)
+                        sequence:
+                          - service: input_number.set_value
+                            entity_id: !input brightness_tracker
+                            data:
+                              value: "{{ next_brightness }}"
+                            alias: Update brightness tracker
+                          - service: light.turn_on
+                            data:
+                              brightness: "{{ states(brightness_tracker) | int }}"
+                            target:
+                              entity_id: !input light
+                            alias: Change light brightness
+                      # In Mode 3 (Hue)
+                      - conditions:
+                          - condition: template
+                            value_template: "{{ current_mode == 3 }}"
+                            alias: In Mode 3 (Hue)
+                        sequence:
+                          - service: input_number.set_value
+                            entity_id: !input hue_tracker
+                            data:
+                              value: "{{ next_hue }}"
+                            alias: Update hue tracker
+                          - service: light.turn_on
+                            data:
+                              kelvin: "{{ states(hue_tracker) | int }}"
+                            target:
+                              entity_id: !input light
+                            alias: Change light hue
+                      # In Mode 4 (Color)
+                      - conditions:
+                          - condition: template
+                            value_template: "{{ current_mode == 4 }}"
+                            alias: In Mode 4 (Color)
+                        sequence:
+                          - service: input_number.set_value
+                            entity_id: !input color_tracker
+                            data:
+                              value: "{{ next_color }}"
+                            alias: Update color tracker
+                          - service: light.turn_on
+                            data:
+                              # Calculate RGB codes based on 0-1535 index (max 2 channels, one always off)
+                              rgb_color: >
+                                {%- set r = 0 -%}
+                                {%- set g = 0 -%}
+                                {%- set b = 0 -%}
+                                {%- set index = states(color_tracker) | int -%}
+                                {%- if index > 0 and index <= 256 -%}
+                                  {%- set r = 255 -%}
+                                  {%- set g = index -%}
+                                  {%- set b = 0 -%}
+                                {%- elif index > 256 and index <= 512 -%}
+                                  {%- set r = 512 - index -%}
+                                  {%- set g = 255 -%}
+                                  {%- set b = 0 -%}
+                                {%- elif index > 512 and index <= 768 -%}
+                                  {%- set r = 0 -%}
+                                  {%- set g = 255 -%}
+                                  {%- set b = index - 512 -%}
+                                {%- elif index > 768 and index <= 1024 -%}
+                                  {%- set r = 0 -%}
+                                  {%- set g = 1024 - index -%}
+                                  {%- set b = 255 -%}
+                                {%- elif index > 1024 and index <= 1280 -%}
+                                  {%- set r = index - 1024 -%}
+                                  {%- set g = 0 -%}
+                                  {%- set b = 255 -%}
+                                {%- elif index > 1280 and index <= 1536 -%}
+                                  {%- set r = 255 -%}
+                                  {%- set g = 0 -%}
+                                  {%- set b = 1536 - index -%}
+                                {%- endif -%}
+                                {%- set r = r | string -%}
+                                {%- set g = g | string -%}
+                                {%- set b = b | string -%}
+                                {{ r + "," + g + "," + b }}
+                            target:
+                              entity_id: !input light
+                            alias: Change light color
+                    alias: Determine action based on mode
+              # If event was a dial button short push
+              - conditions:
+                  - condition: template
+                    value_template: "{{ single_pressed }}"
+                sequence:
+                  # Change mode (cycling back if reached the end)
                   - service: input_number.set_value
-                    entity_id: !input brightness_tracker
+                    entity_id: !input mode_tracker
                     data:
-                      value: "{{ next_brightness }}"
-                    alias: Update brightness tracker
-                  - service: light.turn_on
-                    data:
-                      brightness: "{{ states(brightness_tracker) | int }}"
+                      value: "{{ next_mode }}"
+                    alias: Switch to next mode
+              # If event was a dial button long press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ double_pressed }}"
+                sequence:
+                  # Toggle light power
+                  - service: light.toggle
+                    data: { }
                     target:
                       entity_id: !input light
-                    alias: Change light brightness
-              # In Mode 3 (Hue)
-              - conditions:
-                  - condition: template
-                    value_template: "{{ current_mode == 3 }}"
-                    alias: In Mode 3 (Hue)
-                sequence:
-                  - service: input_number.set_value
-                    entity_id: !input hue_tracker
-                    data:
-                      value: "{{ next_hue }}"
-                    alias: Update hue tracker
-                  - service: light.turn_on
-                    data:
-                      kelvin: "{{ states(hue_tracker) | int }}"
-                    target:
-                      entity_id: !input light
-                    alias: Change light hue
-              # In Mode 4 (Color)
-              - conditions:
-                  - condition: template
-                    value_template: "{{ current_mode == 4 }}"
-                    alias: In Mode 4 (Color)
-                sequence:
-                  - service: input_number.set_value
-                    entity_id: !input color_tracker
-                    data:
-                      value: "{{ next_color }}"
-                    alias: Update color tracker
-                  - service: light.turn_on
-                    data:
-                      # Calculate RGB codes based on 0-1535 index (max 2 channels, one always off)
-                      rgb_color: >
-                        {%- set r = 0 -%}
-                        {%- set g = 0 -%}
-                        {%- set b = 0 -%}
-                        {%- set index = states(color_tracker) | int -%}
-                        {%- if index > 0 and index <= 256 -%}
-                          {%- set r = 255 -%}
-                          {%- set g = index -%}
-                          {%- set b = 0 -%}
-                        {%- elif index > 256 and index <= 512 -%}
-                          {%- set r = 512 - index -%}
-                          {%- set g = 255 -%}
-                          {%- set b = 0 -%}
-                        {%- elif index > 512 and index <= 768 -%}
-                          {%- set r = 0 -%}
-                          {%- set g = 255 -%}
-                          {%- set b = index - 512 -%}
-                        {%- elif index > 768 and index <= 1024 -%}
-                          {%- set r = 0 -%}
-                          {%- set g = 1024 - index -%}
-                          {%- set b = 255 -%}
-                        {%- elif index > 1024 and index <= 1280 -%}
-                          {%- set r = index - 1024 -%}
-                          {%- set g = 0 -%}
-                          {%- set b = 255 -%}
-                        {%- elif index > 1280 and index <= 1536 -%}
-                          {%- set r = 255 -%}
-                          {%- set g = 0 -%}
-                          {%- set b = 1536 - index -%}
-                        {%- endif -%}
-                        {%- set r = r | string -%}
-                        {%- set g = g | string -%}
-                        {%- set b = b | string -%}
-                        {{ r + "," + g + "," + b }}
-                    target:
-                      entity_id: !input light
-                    alias: Change light color
-            alias: Determine action based on mode
-      # If event was a dial button short push
-      - conditions:
-          - condition: template
-            value_template: "{{ single_pressed }}"
-        sequence:
-          # Change mode (cycling back if reached the end)
-          - service: input_number.set_value
-            entity_id: !input mode_tracker
-            data:
-              value: "{{ next_mode }}"
-            alias: Switch to next mode
-      # If event was a dial button long press
-      - conditions:
-          - condition: template
-            value_template: "{{ double_pressed }}"
-        sequence:
-          # Toggle light power
-          - service: light.toggle
-            data: { }
-            target:
-              entity_id: !input light
-            alias: Toggle light power
+                    alias: Toggle light power
