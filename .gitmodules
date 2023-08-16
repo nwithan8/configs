@@ -1,0 +1,3 @@
+[submodule "home_assistant_config"]
+	path = home_assistant_config
+	url = git@github.com:nwithan8/home-assistant-config.git
