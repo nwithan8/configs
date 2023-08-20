@@ -75,7 +75,7 @@ trigger_variables:
 
 trigger:
   - platform: mqtt
-    topic: "{{ base_topic }}/+/action"
+    topic: "{{ base_topic }}/+"
 
 action:
   - variables:
@@ -86,14 +86,19 @@ action:
       brightness_tracker: !input "brightness_tracker"
       color_tracker: !input "color_tracker"
       dial_topic: "{{ base_topic }}/{{ device_attr(dial, 'name') }}/action"
-      command: "{{ trigger.payload }}"
+      command: >
+        {%- set command = '' -%}
+        {%- if 'action' in trigger.payload -%}
+          {%- set command = trigger.payload.action -%}
+        {%- endif -%}
+        {{ command }}
       single_pressed: "{{ command == 'single' }}"
       double_pressed: "{{ command == 'double' }}"
       rotated: "{{ command in ['rotate_right', 'rotate_left'] }}"
       positive: "{{ command == 'rotate_right' }}"
       step_size: >
         {% if rotated %}
-          {{ trigger.to_state.attributes.action_step_size | int }}
+          {{ trigger.payload.action_step_size | int }}
         {% else %}
           {{ 0 }}
         {% endif %}
