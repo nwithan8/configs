@@ -1,8 +1,11 @@
 # Instructions: https://community.home-assistant.io/t/zha-z2m-control-light-color-hue-brightness-with-ers-dial/595002
 
 blueprint:
-  name: ERS Rotary Dial - Light Control (Z2M) - EVENT mode
-  description: Control light brightness, hue and color with an ERS rotary dial
+  name: ERS Rotary Dial - Light Control (Z2M) - COMMAND mode
+  description: >
+    Control light brightness, hue and color with an ERS rotary dial.
+    Device needs to be in COMMAND mode (triple-press the button to switch modes).
+    Needs "Home Assistant legacy entity attributes" checked.
 
   source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/ers_rotary_dial_light_control_z2m.yaml
 
@@ -86,22 +89,13 @@ action:
       brightness_tracker: !input "brightness_tracker"
       color_tracker: !input "color_tracker"
       dial_topic: "{{ base_topic }}/{{ device_attr(dial, 'name') }}/action"
-      command: >
-        {%- set command = '' -%}
-        {%- if 'action' in trigger.payload -%}
-          {%- set command = trigger.payload.action -%}
-        {%- endif -%}
-        {{ command }}
-      single_pressed: "{{ command == 'single' }}"
+      # Ref: https://community.home-assistant.io/t/zigbee2mqtt-tuya-moes-smart-knob-ers-10tzbvk-aa/419989/26
+      command: "{{ trigger.to_state.state }}"
+      single_pressed: "{{ command == 'toggle' }}"
       double_pressed: "{{ command == 'double' }}"
-      rotated: "{{ command in ['rotate_right', 'rotate_left'] }}"
-      positive: "{{ command == 'rotate_right' }}"
-      step_size: >
-        {% if rotated %}
-          {{ trigger.payload.action_step_size | int }}
-        {% else %}
-          {{ 0 }}
-        {% endif %}
+      rotated: "{{ command in ['brightness_step_up', 'brightness_step_up'] }}"
+      positive: "{{ command == 'brightness_step_up' }}"
+      step_size: "{{ trigger.to_state.attributes.action_step_size }}"
       # How many steps to go full rotation (min 13 per step * 20 steps per full rotation)
       full_rotate_step_count: "{{ 13 * 20 | int }}"
       current_mode: "{{ states(mode_tracker) | int }}"
