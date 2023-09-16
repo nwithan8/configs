@@ -38,7 +38,7 @@ collections:
   "From The Top":
     summary: "Let's start this from the beginning"
     collection_level: episode
-    collection_order: alpha
+    collection_order: episode_added.desc
     plex_pilots: true
     visible_library: true
     visible_home: true
