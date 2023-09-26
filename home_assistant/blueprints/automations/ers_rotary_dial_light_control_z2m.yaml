@@ -63,22 +63,16 @@ blueprint:
           filter:
             domain: input_number
 
-    base_topic:
-      name: Zigbee2MQTT Base mqtt topic
-      description: The base topic configured in Zigbee2MQTT. If you haven't changed this, leave the default here ("zigbee2mqtt")
-      default: zigbee2mqtt
-
 # Queued, to ignore non-matched events but capture existing ones
 mode: queued
 max: 20
 max_exceeded: silent
 
-trigger_variables:
-  base_topic: !input base_topic
-
 trigger:
-  - platform: mqtt
-    topic: "{{ base_topic }}/+"
+  - platform: state
+    entity_id: !input dial
+    not_to: ""
+    attribute: action
 
 action:
   - variables:
@@ -93,8 +87,8 @@ action:
       command: "{{ trigger.to_state.state }}"
       single_pressed: "{{ command == 'toggle' }}"
       double_pressed: "{{ command == 'double' }}"
-      rotated: "{{ command in ['brightness_step_up', 'brightness_step_up'] }}"
-      positive: "{{ command == 'brightness_step_up' }}"
+      rotated: "{{ command in ['brightness_step_up', 'brightness_step_down', 'color_temperature_step_up', 'color_temperature_step_down'] }}"
+      positive: "{{ command in ['brightness_step_up', 'color_temperature_step_up'] }}"
       step_size: "{{ trigger.to_state.attributes.action_step_size }}"
       # How many steps to go full rotation (min 13 per step * 20 steps per full rotation)
       full_rotate_step_count: "{{ 13 * 20 | int }}"
