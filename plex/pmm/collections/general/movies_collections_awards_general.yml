@@ -19,16 +19,22 @@ templates:
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
 
+  Yearly_Berlinale_Awards:
+    allowed_library_types: movie
+    summary: <<key>> Berlinale International Film Festival
+    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-berlinale
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
+
   Yearly_Cannes_Awards:
     allowed_library_types: movie
     summary: <<key>> Cannes Film Festival
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-cannes
+    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-cannes
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
 
   Yearly_Sundance_Awards:
     allowed_library_types: movie
     summary: <<key>> Sundance Film Festival
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-sundance
+    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-sundance
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
 
   Yearly_Golden_Globes_Winners:
@@ -41,7 +47,7 @@ templates:
   Yearly_Spirit_Awards:
     allowed_library_types: movie
     summary: <<key>> Independent Spirit Awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-independent-spirits
+    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-independent-spirits
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
 
   Yearly_Critics_Choice_Awards:
@@ -54,7 +60,7 @@ templates:
   Yearly_BAFTA_Awards:
     allowed_library_types: movie
     summary: <<key>> BAFTA awards
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
+    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-bafta
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
 
 
@@ -413,6 +419,16 @@ dynamic_collections:
     title_format: Oscars Winners <<key_name>>
     template:
       - Yearly_Oscars_Winners
+
+  Yearly Berlinale DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 2016
+      ending: current_year
+    title_format: Berlinale International Film Festival <<key_name>>
+    template:
+      - Yearly_Berlinale_Awards
 
   Yearly Cannes DC: # mapping name does not matter just needs to be unique
     type: number

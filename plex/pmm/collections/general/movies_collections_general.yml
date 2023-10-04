@@ -423,7 +423,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     trakt_list_details:
-      - https://trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline
+      - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
     visible_home: false
     visible_shared: false
