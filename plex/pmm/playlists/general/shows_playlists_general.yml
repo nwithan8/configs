@@ -8,7 +8,6 @@ playlists:
   "Treehouse of Horror":
     summary: "All The Simpsons' Treehouse of Horror episodes"
     libraries: TV Shows
-    sort_title:
     smart_filter:
       type: episode
       sort_by: release.asc
