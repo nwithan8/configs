@@ -431,11 +431,11 @@ collections:
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections
-  Per-Actor-Shows DC: # mapping name does not matter just needs to be unique
-    type: actor
-    data:
-      depth: 10  # must be in top X billed actors for a given show for the show to be added
-      minimum: 3 # actor must be in at least X shows to have a collection made
-    title_format: <<key_name>> (Actor)
-    template:
-      - Per_Actor
+  # Per-Actor-Shows DC: # mapping name does not matter just needs to be unique
+    # type: actor
+    # data:
+      # depth: 10  # must be in top X billed actors for a given show for the show to be added
+      # minimum: 3 # actor must be in at least X shows to have a collection made
+    # title_format: <<key_name>> (Actor)
+    # template:
+      # - Per_Actor
