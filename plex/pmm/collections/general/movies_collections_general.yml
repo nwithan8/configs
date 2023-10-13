@@ -17,6 +17,7 @@ collections:
         # Movie added in the last 7 days
         added: 7
         content_rating.not: NC-17, Unrated
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -28,6 +29,7 @@ collections:
     summary: "Now playing on a screen near you"
     trakt_boxoffice: true
     collection_order: custom
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -38,6 +40,7 @@ collections:
     summary: "The hottest movies right now"
     imdb_chart: popular_movies
     collection_order: custom
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -65,6 +68,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
     collection_order: release.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -75,6 +79,7 @@ collections:
     summary: "The biggest actors in Hollywood right now"
     type: tmdb_popular_people
     data: 10
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -92,6 +97,7 @@ collections:
         release: 3650
         unplayed: true
       limit: 10
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -109,6 +115,7 @@ collections:
         # Movie added in the last 2 months
         added: 60
       limit: 30
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -122,6 +129,7 @@ collections:
     schedule:
     - weekly(wednesday)
     - weekly(sunday)
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -163,6 +171,7 @@ collections:
     summary: "RottenTomatoes' top movies of the 2000s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
     schedule: monthly(1)
+    visible_library: true
     visible_home: false
     visible_shared: true
 
@@ -173,6 +182,7 @@ collections:
     summary: "RottenTomatoes' top movies of the 2010s"
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
     schedule: monthly(1)
+    visible_library: true
     visible_home: false
     visible_shared: true
 
@@ -186,6 +196,7 @@ collections:
     schedule:
     - weekly(wednesday)
     - weekly(sunday)
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -196,6 +207,7 @@ collections:
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     schedule: monthly(1)
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -208,6 +220,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
     collection_order: audience_rating.desc
     schedule: monthly(1)
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -219,6 +232,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
     collection_order: release
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -226,6 +240,7 @@ collections:
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -233,6 +248,7 @@ collections:
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -240,6 +256,7 @@ collections:
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -248,6 +265,7 @@ collections:
     summary: "The suspense is killing us!"
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -259,6 +277,7 @@ collections:
       sort_by: critic_rating.desc
       all:
         genre: Documentary
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -267,6 +286,7 @@ collections:
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: custom
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -275,6 +295,7 @@ collections:
     summary: ""
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
     collection_order: custom
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -284,6 +305,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
     collection_order: custom
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -294,6 +316,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
     collection_order: audience_rating.desc
+    visible_library: true
     visible_home: weekly(saturday), weekly(sunday)
     visible_shared: weekly(saturday), weekly(sunday)
 
@@ -305,6 +328,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
     collection_order: audience_rating.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -315,6 +339,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
     collection_order: audience_rating.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -325,6 +350,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
     collection_minimum: 3
     delete_below_minimum: true
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -335,6 +361,7 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
     collection_minimum: 3
     delete_below_minimum: true
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -346,6 +373,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
     collection_order: critic_rating.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -357,6 +385,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
     collection_order: rank.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -367,6 +396,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
     collection_order: critic_rating.desc
+    visible_library: true
     visible_home: true
     visible_shared: true
 
@@ -375,6 +405,7 @@ collections:
                 level: "+" }
     summary: "007 forever"
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -385,6 +416,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/cybercelia/lists/mcu
     collection_order: release
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -395,6 +427,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/maxrax/lists/dc-cinematics
     collection_order: release
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -405,6 +438,7 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls093405279
     collection_order: release
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -415,6 +449,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/dgw/lists/star-trek-canon
     url_background: https://i.redd.it/vz20prnp8v551.jpg
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -425,6 +460,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -436,6 +472,7 @@ collections:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
     url_background: https://wallpapercave.com/wp/vPJGO64.jpg
     url_poster: https://theposterdb.com/api/assets/160915
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -446,6 +483,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
     url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
+    visible_library: true
     visible_home: false
     visible_shared: false
 
@@ -695,6 +733,8 @@ dynamic_collections:
       tmdb_movie:
         halloween:
           - 23437    # A Nightmare on Elm Street (2010)
+      visible_library:
+        default: true
       visible_home:
         default: true
       visible_shared:
