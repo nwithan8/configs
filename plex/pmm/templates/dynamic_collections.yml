@@ -110,7 +110,6 @@ templates:
       all:
         label: <<smart_label>>
     schedule: <<schedule_<<key>>>>
-    delete_not_scheduled: true
     sync_mode: <<sync_mode_<<key>>>>
     tmdb_collection: <<tmdb_collection_<<key>>>>
     tmdb_movie: <<tmdb_movie_<<key>>>>
