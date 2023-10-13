@@ -85,6 +85,9 @@ Prefix suggestions:
           list updated based on the criteria, rather than Plex Meta Manager having to re-run the builder every time
     - All other rules: Use, i.e., `collection_level: episodes`, to limit collection
       to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
+  - `episode_added` only works on Shows, because it accounts for when Show had an episode added, not when episode was
+    added to library
+    - Use `episode_release`, which works for individual episodes, as well as Seasons and Shows
 
 ## Templates
 
