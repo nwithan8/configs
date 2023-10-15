@@ -122,6 +122,5 @@ templates:
     sort_title: 03_+<<level>>_<<collection_name>>
     visible_shared: true
     visible_home: true
-    collection_order: custom
     url_poster: <<poster_url>>
 

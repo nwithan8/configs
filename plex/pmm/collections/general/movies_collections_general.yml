@@ -630,7 +630,7 @@ dynamic_collections:
         trick:
           - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
         horror:
-          - https://trakt.tv/users/lish408/lists/31-days-of-horror-2022 # TODO: Replace for 2023
+          - https://trakt.tv/users/lish408/lists/31-days-of-horror-2023
         slash:
           - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
         thanksgiving:
