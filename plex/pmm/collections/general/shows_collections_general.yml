@@ -7,6 +7,8 @@ external_templates:
 collections:
   ### New Content
   "Added This Week":
+    template: { name: Collection,
+                level: "++++" }
     summary: "Episodes added this week on Plex"
     sort_title:
     smart_filter:
@@ -21,6 +23,8 @@ collections:
     visible_library: true
 
   "Now On Plex":
+    template: { name: Collection,
+                level: "+++" }
     summary: "Shows now playing on Plex"
     sort_title:
     smart_filter:
@@ -36,6 +40,8 @@ collections:
 
   ### Trending
   "From The Top":
+    template: { name: Collection,
+                level: "++" }
     summary: "Let's start this from the beginning"
     collection_level: episode
     collection_order: episode_release.desc
@@ -45,6 +51,8 @@ collections:
     visible_shared: true
 
   "Previously On...":
+    template: { name: Collection,
+                level: "++++" }
     summary: "Catch up on last week's episodes"
     sort_title:
     smart_filter:
