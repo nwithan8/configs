@@ -40,6 +40,7 @@ collections:
     summary: "The hottest movies right now"
     imdb_chart: popular_movies
     collection_order: custom
+    sync_mode: sync
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -489,6 +490,10 @@ dynamic_collections:
     title_format: Best of <<key_name>>
     template:
       - Best_of_Year
+
+  The A List: # mapping name DOES matter, since this isn't based on a template
+    type: tmdb_popular_people
+    data: 25  # top 25 actors right now, according to TMDb
 
   Per-Holiday DC: # mapping name does not matter just needs to be unique
     type: custom
