@@ -493,7 +493,7 @@ dynamic_collections:
 
   The A List: # mapping name DOES matter, since this isn't based on a template
     type: tmdb_popular_people
-    data: 25  # top 25 actors right now, according to TMDb
+    data: 100  # top 100 actors right now, according to TMDb
 
   Per-Holiday DC: # mapping name does not matter just needs to be unique
     type: custom
