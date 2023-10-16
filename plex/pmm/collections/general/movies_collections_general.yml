@@ -123,32 +123,107 @@ collections:
     visible_home: true
     visible_shared: true
 
+  # Top 10s movies via IMDB, updated monthly
+  "Best of the 1910s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1910s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1910.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1910-01-01,1919-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
+  # Top 20s movies via IMDB, updated monthly
+  "Best of the 1920s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1920s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1920.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1920-01-01,1929-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
+  # Top 30s movies via IMDB, updated monthly
+  "Best of the 1930s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1930s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1930.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1930-01-01,1939-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
+  # Top 40s movies via IMDB, updated monthly
+  "Best of the 1940s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1940s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1940.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1940-01-01,1949-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
+  # Top 50s movies via IMDB, updated monthly
+  "Best of the 1950s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1950s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1950.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1950-01-01,1959-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
+  # Top 60s movies via IMDB, updated monthly
+  "Best of the 1960s":
+    template: { name: Decade,
+                level: "+" }
+    summary: "IMDb's top movies of the 1960s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1960.jpg
+    imdb_list:
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1960-01-01,1969-12-31&num_votes=1000,&sort=user_rating,desc
+    schedule: monthly(1)
+    visible_home: false
+    visible_shared: true
+
   # Top 70s movies via IMDB, updated monthly
-  "Best of the 70s":
+  "Best of the 1970s":
     template: { name: Decade,
                 level: "+" }
     summary: "IMDb's top movies of the 1970s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1970.jpg
     imdb_list:
-      - https://www.imdb.com/search/title/?title_type=tv_series&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=1970-01-01,1979-12-31&num_votes=1000,&sort=user_rating,desc
     schedule: monthly(1)
     visible_home: false
     visible_shared: true
 
   # Top 80s movies via RottenTomatoes, updated monthly
-  "Best of the 80s":
+  "Best of the 1980s":
     template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1980s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1980.jpg
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-80s
     schedule: monthly(1)
     visible_home: false
     visible_shared: true
 
   # Top 90s movies via RottenTomatoes, updated monthly
-  "Best of the 90s":
+  "Best of the 1990s":
     template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 1990s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/1990.jpg
     mdblist_list: https://mdblist.com/lists/hdlists/rottentomatoes-com-s-best-of-the-90s
     schedule: monthly(1)
     visible_home: false
@@ -159,6 +234,7 @@ collections:
     template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2000s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2000.jpg
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-00s
     schedule: monthly(1)
     visible_library: true
@@ -170,6 +246,7 @@ collections:
     template: { name: Decade,
                 level: "+" }
     summary: "RottenTomatoes' top movies of the 2010s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2010.jpg
     mdblist_list: https://mdblist.com/lists/hdlists/best-of-the-2010s
     schedule: monthly(1)
     visible_library: true
@@ -181,8 +258,9 @@ collections:
     template: { name: Decade,
                 level: "+" }
     summary: "IMDb's top movies of the 2020s"
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/decade/best/2020.jpg
     imdb_list:
-      - https://www.imdb.com/search/title/?title_type=tv_series&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
+      - https://www.imdb.com/search/title/?title_type=movie&release_date=2020-01-01,2029-12-31&num_votes=5000,&languages=en&sort=user_rating,desc
     schedule:
     - weekly(wednesday)
     - weekly(sunday)
@@ -476,7 +554,38 @@ dynamic_collections:
       ending: current_year
     title_format: Best of <<key_name>>
     template:
-      - Best_of_Year
+      - Movies_Best_of_Year
+
+  Best of Decade DC: # mapping name does not matter just needs to be unique
+    type: custom
+    data:
+      twenties: 1920
+      thirties: 1930
+      forties: 1940
+      fifties: 1950
+      sixties: 1960
+      seventies: 1970
+      eighties: 1980
+      nineties: 1990
+      two_thousands: 2000
+      twenty_tens: 2010
+      twenty_twenties: 2020
+    template_variables:
+      ending:
+        twenties: 1929
+        thirties: 1939
+        forties: 1949
+        fifties: 1959
+        sixties: 1969
+        seventies: 1979
+        eighties: 1989
+        nineties: 1999
+        two_thousands: 2009
+        twenty_tens: 2019
+        twenty_twenties: 2029
+    title_format: Best of the <<key_name>>s
+    template:
+      - Per_Decade
 
   The A List: # mapping name DOES matter, since this isn't based on a template
     type: tmdb_popular_people

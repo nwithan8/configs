@@ -1,7 +1,7 @@
 templates:
   # Dynamic Collections Templates
   # -----------------------------
-  Best_of_Year:
+  Movies_Best_of_Year:
     default:
       level: ""
     trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-of-<<key>>
@@ -15,6 +15,20 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: monthly(1)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/best/<<key>>.jpg
+
+  Per_Decade:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        year.gte: <<key_name>>
+        year.lte: <<ending>>
+    sort_title: 08_+<<level>>_<<key>>
+    visible_library: true
+    visible_shared: false
+    visible_home: false
+    schedule: monthly(17)
+    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key>>.png
 
   Per_Genre:
     smart_filter:
@@ -29,6 +43,7 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key>>.jpg
 
   Per_Actor:
     smart_filter:
@@ -71,12 +86,7 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
-
-  Per_Network:
-    smart_filter:
-      sort_by: critic_rating.desc
-      all:
-        network: <<value>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key>>.jpg
 
   Per_Holiday:
     default:
