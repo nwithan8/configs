@@ -449,7 +449,6 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
     url_background: https://wallpapercave.com/wp/vPJGO64.jpg
-    url_poster: https://theposterdb.com/api/assets/160915
     visible_library: true
     visible_home: false
     visible_shared: false

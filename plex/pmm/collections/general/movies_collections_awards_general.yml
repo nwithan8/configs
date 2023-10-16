@@ -283,10 +283,13 @@ collections:
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner.jpg
 
   # All past Oscar Best Director-winning movies
   # Only visible on home screen during Oscar season
   "Past Best Director Winners":
+    summary: "The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
     template: { name: Award,
                 level: "++" }
     imdb_list:
@@ -298,12 +301,13 @@ collections:
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    summary: The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
+    visible_library: true
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_director_winner.jpg
 
   # All past Oscar Best Picture-winning movies
   # Only visible on home screen during Oscar season
   "Past Best Picture Winners":
+    summary: "The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
     template: { name: Award,
                 level: "++" }
     imdb_list:
@@ -315,7 +319,7 @@ collections:
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    summary: The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929.
+    visible_library: true
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_picture_winner.jpg
 
   # All past Razzie-winning Worst Picture movies
@@ -332,51 +336,8 @@ collections:
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-
-  # All past Cannes Palme d'or-winning movies
-  # Only visible on home screen during Cannes Palme d'or season
-  "Past Cannes Palme d'or Winners":
-    summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
-    template: { name: Award,
-                level: "++" }
-    trakt_list: https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
-    schedule:
-      - yearly(06/01)
-      - all[weekly(friday),range(06/01-06/30)]
-      - yearly(07/01)
-      # You have to schedule it to run again after visibility timeframe for visibility to switch back
-    visible_home: range(06/01-06/30)
-    visible_shared: range(06/01-06/30)
-
-  # All past Cesar Award-winning movies
-  # Only visible on home screen during Cesar Award season
-  "Past Cesar Award Winners":
-    summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
-    template: { name: Award,
-                level: "++" }
-    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
-    schedule:
-      - yearly(03/14)
-      - all[weekly(friday),range(03/14-03/31)]
-      - yearly(04/01)
-      # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    visible_home: range(03/14-03/31)
-    visible_shared: range(03/14-03/31)
-
-  # All past Berlinale-winning movies
-  # Only visible on home screen during Berlinale season
-  "Past Berlinale Winners":
-    summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
-    template: { name: Award,
-                level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
-    schedule:
-      - yearly(02/21)
-      - all[weekly(friday),range(02/21-03/31)]
-      - yearly(04/01)
-      # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    visible_home: range(02/21-03/31)
-    visible_shared: range(02/21-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzies/winner.jpg
 
   # All past BAFTA Best Film-winning movies
   # Only visible on home screen during BAFTA season
@@ -392,6 +353,76 @@ collections:
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner.jpg
+
+  # All past Berlinale-winning movies
+  # Only visible on home screen during Berlinale season
+  "Past Berlinale Winners":
+    summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    schedule:
+      - yearly(02/21)
+      - all[weekly(friday),range(02/21-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/21-03/31)
+    visible_shared: range(02/21-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner.jpg
+
+  # All past Cannes Palme d'or-winning movies
+  # Only visible on home screen during Cannes Palme d'or season
+  "Past Cannes Palme d'or Winners":
+    summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+    schedule:
+      - yearly(06/01)
+      - all[weekly(friday),range(06/01-06/30)]
+      - yearly(07/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner.jpg
+
+  # All past Cesar Award-winning movies
+  # Only visible on home screen during Cesar Award season
+  "Past Cesar Award Winners":
+    summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
+    schedule:
+      - yearly(03/14)
+      - all[weekly(friday),range(03/14-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(03/14-03/31)
+    visible_shared: range(03/14-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner.jpg
+
+  # All past Sundance-winning movies
+  # Only visible on home screen during Sundance season
+  "Past Sundance Winners":
+    summary: "Sundance is the largest independent film festival in the United States. Held in January, the festival is the premier showcase for new work from American and international independent filmmakers."
+    template: { name: Award,
+                level: "++" }
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    schedule:
+      - yearly(01/01)
+      - all[weekly(friday),range(01/01-01/31)]
+      - yearly(02/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    visible_home: range(01/01-01/31)
+    visible_shared: range(01/01-01/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner.jpg
 
   # All past Venice Film Festival-winning movies
   # Only visible on home screen during Venice Film Festival season
@@ -407,6 +438,8 @@ collections:
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
+    visible_library: true
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections
