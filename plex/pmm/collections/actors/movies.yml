@@ -9,3 +9,4 @@ dynamic_collections:
   The A List: # mapping name DOES matter, since this isn't based on a template
     type: tmdb_popular_people
     data: 100  # top 100 actors right now, according to TMDb
+    sort_title: 09_+<<level>>_<<key>>
