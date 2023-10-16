@@ -7,7 +7,7 @@ external_templates:
 collections:
   ### New Content
   "Added This Week":
-    template: { name: Collection,
+    template: { name: Chart,
                 level: "++++" }
     summary: "Episodes added this week on Plex"
     sort_title:
@@ -23,7 +23,7 @@ collections:
     visible_library: true
 
   "Now On Plex":
-    template: { name: Collection,
+    template: { name: Chart,
                 level: "+++" }
     summary: "Shows now playing on Plex"
     sort_title:
@@ -40,7 +40,7 @@ collections:
 
   ### Trending
   "From The Top":
-    template: { name: Collection,
+    template: { name: Chart,
                 level: "++" }
     summary: "Let's start this from the beginning"
     collection_level: episode
@@ -51,7 +51,7 @@ collections:
     visible_shared: true
 
   "Previously On...":
-    template: { name: Collection,
+    template: { name: Chart,
                 level: "++++" }
     summary: "Catch up on last week's episodes"
     sort_title:
@@ -68,7 +68,7 @@ collections:
 
   "What Everyone Is Watching":
     template: { name: Chart,
-                level: "++" }
+                level: "+++++" }
     summary: "What other subscribers are checking out"
     libraries: "TV Shows"
     sync_mode: sync
@@ -83,7 +83,7 @@ collections:
 
   "Trending Now":
     template: { name: Chart,
-                level: "+++" }
+                level: "+++++" }
     summary: "The hottest shows right now"
     imdb_chart: popular_shows
     collection_order: custom
