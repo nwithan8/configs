@@ -679,13 +679,13 @@ dynamic_collections:
     type: genre
     exclude:
       - Talk Show
-    title_format: Top <<key_name>> <<library_type>>s
+    title_format: <<key_name>>
     template:
       - Per_Genre
 
   Per-Country DC: # mapping name does not matter just needs to be unique
     type: country
-    title_format: Top <<key_name>> Cinema
+    title_format: <<key_name>> Cinema
     template:
       - Per_Country
     key_name_override:
