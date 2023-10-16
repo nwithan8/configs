@@ -259,18 +259,6 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Documentaries":
-    template: { name: Genre }
-    summary: "You might learn something"
-    smart_filter:
-      type: movies
-      sort_by: critic_rating.desc
-      all:
-        genre: Documentary
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-
   "What a Twist!":
     template: { name: Genre }
     summary: "Bet you didn't see THAT coming..."
