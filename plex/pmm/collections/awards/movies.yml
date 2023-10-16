@@ -1,7 +1,6 @@
-# Will be replicated for each movie library
-
 external_templates:
   - repo: templates/collections
+  - repo: templates/dynamic_collections
 
 templates:
   # Normal Templates
@@ -62,7 +61,6 @@ templates:
     summary: <<key>> BAFTA awards
     trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
-
 
 collections:
   ### This year's Academy Awards

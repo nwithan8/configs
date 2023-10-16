@@ -137,4 +137,3 @@ Prefix suggestions:
 - A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result,
   make a collection using the "actor" template.
 - Schedule a dynamic collection (visibility, update frequency, etc.) via the template
-

@@ -1,0 +1,204 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  # Movies with a perfect RT score, updated monthly
+  "The 100 Club":
+    template: { name: Award,
+                level: "+" }
+    summary: "RottenTomatoes' movies with a perfect score"
+    mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Worst movies of all time, updated monthly
+  "Just the Worst":
+    template: { name: Award }
+    summary: "The worst movies of all time."
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
+      - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
+    collection_order: audience_rating.desc
+    schedule: monthly(1)
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  # Good weekend movies, only visible on home on Saturday and Sunday
+  "Kick Back and Relax":
+    template: { name: Genre }
+    summary: "The best movies for a lazy weekend afternoon"
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
+    collection_order: audience_rating.desc
+    visible_library: true
+    visible_home: weekly(saturday), weekly(sunday)
+    visible_shared: weekly(saturday), weekly(sunday)
+
+  "How Did This Get Made?":
+    template: { name: Collection,
+                level: "++" }
+    summary: "The films of the podcast 'How Did This Get Made?'"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
+    collection_order: audience_rating.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Rom-com Central":
+    template: { name: Collection,
+                level: "++" }
+    summary: "Rotten Tomatoes' best romantic comedies of all time"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    collection_order: audience_rating.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Best Movie Ever":
+    template: { name: Collection,
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Worst Movie Ever":
+    template: { name: Collection,
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
+    collection_minimum: 3
+    delete_below_minimum: true
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "1001 Movies You Must See Before You Die":
+    template: { name: Collection,
+                level: "++" }
+    # summary provided by Trakt
+    schedule: monthly(1)
+    trakt_list_details:
+      - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
+    collection_order: critic_rating.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "100 Movies Bucket List":
+    template: { name: Collection,
+                level: "++" }
+    # summary provided by Trakt
+    schedule: monthly(22)
+    trakt_list_details:
+      - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
+    collection_order: rank.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "The Criterion Collection":
+    template: { name: Collection,
+                level: "++" }
+    # summary provided by Trakt
+    trakt_list_details:
+      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+    collection_order: critic_rating.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Bond. James Bond.":
+    template: { name: Collection,
+                level: "+" }
+    summary: "007 forever"
+    mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "I Love You 3000":
+    template: { name: Collection,
+                level: "+" }
+    summary: "The Marvel Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/cybercelia/lists/mcu
+    collection_order: release
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Tell Me, Do You Bleed?":
+    template: { name: Collection,
+                level: "+" }
+    summary: "The DC Cinematic Universe"
+    trakt_list:
+      - https://trakt.tv/users/maxrax/lists/dc-cinematics
+    collection_order: release
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Disney Channel Original Movies":
+    template: { name: Collection,
+                level: "+" }
+    summary: "You're watching Disney Channel"
+    imdb_list:
+      - https://www.imdb.com/list/ls093405279
+    collection_order: release
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "To Boldly Go":
+    summary: "The Star Trek collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list:
+      - https://trakt.tv/users/dgw/lists/star-trek-canon
+    url_background: https://i.redd.it/vz20prnp8v551.jpg
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "In A Galaxy Far, Far Away":
+    summary: "The Star Wars collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
+    url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "Bears. Beets. Battlestar Galactica":
+    summary: "The Battlestar Galactica collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
+    url_background: https://wallpapercave.com/wp/vPJGO64.jpg
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "To Be Or Not To Be":
+    summary: "The Shakespeare collection"
+    template: { name: Collection,
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
+    url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
+    visible_library: true
+    visible_home: false
+    visible_shared: false

@@ -1,0 +1,57 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+  "From The Top":
+    template: { name: Chart,
+                level: "++" }
+    summary: "Let's start this from the beginning"
+    collection_level: episode
+    collection_order: episode_release.desc
+    plex_pilots: true
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Previously On...":
+    template: { name: Chart,
+                level: "++++" }
+    summary: "Catch up on last week's episodes"
+    sort_title:
+    smart_filter:
+      type: episode
+      sort_by: release.desc
+      all:
+        # Episode aired in the last 8 days
+        episode_air_date: 8
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "What Everyone Is Watching":
+    template: { name: Chart,
+                level: "+++++" }
+    summary: "What other subscribers are checking out"
+    libraries: "TV Shows"
+    sync_mode: sync
+    collection_order: custom
+    tautulli_popular:
+      list_days: 30
+      list_size: 15
+      list_minimum: 2
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "Trending Now":
+    template: { name: Chart,
+                level: "+++++" }
+    summary: "The hottest shows right now"
+    imdb_chart: popular_shows
+    collection_order: custom
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true

@@ -1,6 +1,0 @@
-# Collections specific to Movies (4K)
-
-external_templates:
-  - repo: templates/collections
-
-collections:

@@ -1,7 +1,0 @@
-# Collections specific to TV Shows (4K)
-
-external_templates:
-  - repo: templates/collections
-
-collections:
-

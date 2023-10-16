@@ -1,0 +1,187 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  ## These get generated in the order they are listed here, so put the more intensive ones at the bottom
+
+  Per-Holiday DC: # mapping name does not matter just needs to be unique
+    type: custom
+    data:
+      years: New Year's Day
+      valentine: Valentine's Day
+      patrick: St. Patrick's Day
+      easter: Easter
+      mother: Mother's Day
+      memorial: Memorial Day
+      father: Father's Day
+      independence: Independence Day
+      labor: Labor Day
+      halloween: Halloween
+      horror: Horror
+      trick: Kid-Friendly Halloween
+      slash: Slasher
+      thanksgiving: Thanksgiving
+      christmas: Christmas
+      hallmark: Hallmark Christmas
+      title_format: <<key_name>> <<library_type>>s
+    template:
+      - Per_Holiday
+    template_variables:
+      emoji:
+        years: "🎊 "
+        valentine: "💘 "
+        patrick: "☘ "
+        easter: "🐰 "
+        mother: "🤱 "
+        memorial: "🪖 "
+        father: "👨 "
+        independence: "🎆 "
+        labor: "⚒ "
+        halloween: "🎃 "
+        horror: "👻 "
+        trick: "🍬 "
+        slash: "🔪 "
+        thanksgiving: "🦃 "
+        christmas: "🎅 "
+        hallmark: "🎁 "
+      schedule:
+        years: range(12/26-01/04)
+        valentine: range(02/01-02/20)
+        patrick: range(03/01-03/18)
+        easter: range(03/20-04/30)
+        mother: range(05/05-05/10)
+        memorial: range(5/18-6/7)
+        father: range(06/15-06/20)
+        independence: range(06/23-07/11)
+        labor: range(09/01-09/10)
+        halloween: range(10/01-10/31)
+        horror: range(10/01-10/31)
+        trick: range(10/01-10/31)
+        slash: range(10/01-10/31)
+        thanksgiving: range(11/01-11/30)
+        christmas: range(12/01-12/31)
+        hallmark: range(12/01-12/31)
+      level:
+        years: "++"
+        valentine: "++"
+        patrick: "++"
+        easter: "++"
+        mother: "++"
+        memorial: "++"
+        father: "++"
+        independence: "++"
+        labor: "++"
+        halloween: "+++"
+        horror: "+"
+        trick: "++"
+        slash: "+"
+        thanksgiving: "++"
+        christmas: "++"
+        hallmark: "+"
+      seasonal_summary:
+        years: "Ring in the New Year with these movies!"
+        valentine: "Love me tender, love me sweet, never let me go."
+        patrick: "Kiss Me, I'm Irish."
+        easter: "Hoppy Easter!"
+        mother: "Thanks Mom!"
+        memorial: "Remembering those who gave their lives for our freedom."
+        father: "Thanks Dad!"
+        independence: "Celebrate the 4th of July with these movies!"
+        labor: "Labor Day is a day off, but these movies are hard work."
+        halloween: "Boo!"
+        horror: "Don't be scared, it's just a movie."
+        trick: "Trick or Treat!"
+        slash: "He's right behind you!"
+        thanksgiving: "Gobble gobble!"
+        christmas: "Cozy up with some Christmas classics."
+        hallmark: "Christmas movies with extra-sap!"
+      imdb_list:
+        years:
+          - https://www.imdb.com/list/ls066838460/
+        valentine:
+          - https://www.imdb.com/list/ls000094398/
+          - https://www.imdb.com/list/ls057783436/
+          - https://www.imdb.com/list/ls064427905/
+        patrick:
+          - https://www.imdb.com/list/ls063934595/
+        easter:
+          - https://www.imdb.com/list/ls062665509/
+          - https://www.imdb.com/list/ls051733651/
+        mother:
+          - https://www.imdb.com/list/ls072551197/
+        memorial:
+          - https://www.imdb.com/list/ls002014923/
+        father:
+          - https://www.imdb.com/list/ls020471057/
+        independence:
+          - https://www.imdb.com/list/ls068664510/
+          - https://www.imdb.com/list/ls080925875/
+        labor:
+          - https://www.imdb.com/list/ls002014923/
+        halloween:
+          - https://www.imdb.com/list/ls023118929/
+          - https://www.imdb.com/list/ls000099714/
+        thanksgiving:
+          - https://www.imdb.com/list/ls000835734/
+          - https://www.imdb.com/list/ls091597850/
+        christmas:
+          - https://www.imdb.com/list/ls000096828/
+      trakt_list:
+        valentine:
+          - https://trakt.tv/users/movie-pal/lists/valentine-s-day
+          - https://trakt.tv/users/barsaky/lists/den-svateho-valentina-valentine-s-day
+          - https://trakt.tv/users/abbelea/lists/movies-best-of-love
+        patrick:
+          - https://trakt.tv/users/triadcool/lists/irish
+          - https://trakt.tv/users/sympli/lists/st-patricks-day-movies
+        halloween:
+          - https://trakt.tv/users/29zombies/lists/halloween
+          - https://trakt.tv/users/galacticboy/lists/not-so-spooky-halloween
+          # - https://trakt.tv/users/kairbear08/lists/halloween
+          # - https://trakt.tv/users/mybicycle/lists/halloween
+          # - https://trakt.tv/users/jayinftl/lists/halloween
+          # - https://trakt.tv/users/roswellgeek/lists/halloween
+        trick:
+          - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
+        horror:
+          - https://trakt.tv/users/lish408/lists/31-days-of-horror-2023
+        slash:
+          - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
+        thanksgiving:
+          - https://trakt.tv/users/galacticboy/lists/thanksgiving-movies
+          - https://trakt.tv/users/shahid1296/lists/thanksgiving
+          - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
+          - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
+        christmas:
+          - https://trakt.tv/users/movistapp/lists/christmas-movies
+          - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
+          - https://trakt.tv/users/littlestella3/lists/christmas
+        hallmark:
+          - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
+      tmdb_collection:
+        halloween:
+          - 185103    # Hotel Transylvania
+          - 11716     # Addams Family
+          - 750822    # Addams Family Animated
+          - 313086    # Conjuring
+          - 91361     # Halloween Collection
+          - 8581      # A Nightmare on Elm Street Collection
+          - 1733      # The Mummy Collection
+          - 8091      # Alien Collection
+          - 2980      # Ghostbusters
+          - 751156    # Hocus Pocus
+      tmdb_movie:
+        halloween:
+          - 23437    # A Nightmare on Elm Street (2010)
+      visible_library:
+        default: true
+      visible_home:
+        default: true
+      visible_shared:
+        default: true
+      image:
+        default: seasonal/<<key>>
+      translation_key:
+        default: season

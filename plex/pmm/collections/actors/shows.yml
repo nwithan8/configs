@@ -1,7 +1,3 @@
-# Collections specific to Movies
-
 external_templates:
   - repo: templates/collections
-
-collections:
-
+  - repo: templates/dynamic_collections

@@ -1,0 +1,15 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+collections:
+
+  ### Genres
+  "A Real-Life Whodunnit":
+    template: { name: Genre }
+    summary: "True Crime Documentaries"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: release
+    visible_home: false
+    visible_shared: true

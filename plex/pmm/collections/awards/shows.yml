@@ -1,6 +1,5 @@
-# Will be replicated for each show library
-
 external_templates:
   - repo: templates/collections
+  - repo: templates/dynamic_collections
 
 collections:

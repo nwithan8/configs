@@ -1,0 +1,45 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  ## These get generated in the order they are listed here, so put the more intensive ones at the bottom
+
+  Per-Country DC: # mapping name does not matter just needs to be unique
+    type: country
+    title_format: <<key_name>> Cinema
+    template:
+      - Per_Country
+    key_name_override:
+      France: French
+      Germany: German
+      India: Indian
+      United States: American
+      England: British
+      Japan: Japanese
+      China: Chinese
+      South Korea: Korean
+      Italy: Italian
+      Spain: Spanish
+      Canada: Canadian
+      Mexico: Mexican
+      Australia: Australian
+      Brazil: Brazilian
+      Russia: Russian
+      Argentina: Argentinean
+      Belgium: Belgian
+      Denmark: Danish
+      Finland: Finnish
+      Greece: Greek
+      Iceland: Icelandic
+      Ireland: Irish
+      Netherlands: Dutch
+      New Zealand: New Zealand
+      Norway: Norwegian
+      Poland: Polish
+      Portugal: Portuguese
+      Sweden: Swedish
+      Switzerland: Swiss
+      Turkey: Turkish
+      Ukraine: Ukrainian
