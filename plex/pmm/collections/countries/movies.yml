@@ -8,38 +8,6 @@ dynamic_collections:
 
   Per-Country DC: # mapping name does not matter just needs to be unique
     type: country
-    title_format: <<key_name>> Cinema
+    title_format: <<key_name>>
     template:
       - Per_Country
-    key_name_override:
-      France: French
-      Germany: German
-      India: Indian
-      United States: American
-      England: British
-      Japan: Japanese
-      China: Chinese
-      South Korea: Korean
-      Italy: Italian
-      Spain: Spanish
-      Canada: Canadian
-      Mexico: Mexican
-      Australia: Australian
-      Brazil: Brazilian
-      Russia: Russian
-      Argentina: Argentinean
-      Belgium: Belgian
-      Denmark: Danish
-      Finland: Finnish
-      Greece: Greek
-      Iceland: Icelandic
-      Ireland: Irish
-      Netherlands: Dutch
-      New Zealand: New Zealand
-      Norway: Norwegian
-      Poland: Polish
-      Portugal: Portuguese
-      Sweden: Swedish
-      Switzerland: Swiss
-      Turkey: Turkish
-      Ukraine: Ukrainian
