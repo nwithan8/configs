@@ -8,8 +8,9 @@ collections:
                 level: "++" }
     summary: "Let's start this from the beginning"
     collection_level: episode
-    collection_order: episode_release.desc
+    collection_order: release.desc
     plex_pilots: true
+    sync_mode: sync
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -18,7 +19,6 @@ collections:
     template: { name: Chart,
                 level: "++++" }
     summary: "Catch up on last week's episodes"
-    sort_title:
     smart_filter:
       type: episode
       sort_by: release.desc
