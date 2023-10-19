@@ -15,28 +15,28 @@ templates:
       imdb_sort: moviemeter,asc
     allowed_library_types: movie
     summary: <<key>> Academy Awards (Oscars) Winners
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Oscars_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
 
   Yearly_Berlinale_Awards:
     allowed_library_types: movie
     summary: <<key>> Berlinale International Film Festival
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Berlinale_Winners_<<key>>
     trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-berlinale
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
 
   Yearly_Cannes_Awards:
     allowed_library_types: movie
     summary: <<key>> Cannes Film Festival
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Cannes_Winners_<<key>>
     trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-cannes
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
 
   Yearly_Sundance_Awards:
     allowed_library_types: movie
     summary: <<key>> Sundance Film Festival
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Sundance_Winners_<<key>>
     trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-sundance
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
 
@@ -44,14 +44,14 @@ templates:
     default:
       imdb_sort: moviemeter,asc
     summary: <<key>> Golden Globe Winners
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Golden_Globes_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
 
   Yearly_Spirit_Awards:
     allowed_library_types: movie
     summary: <<key>> Independent Spirit Awards
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_Spirit_Winners_<<key>>
     trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-independent-spirits
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
 
@@ -59,13 +59,14 @@ templates:
     default:
       url: critic-s
     summary: <<key>> Critics Choice Awards
+    sort_title: 05_Critics_Winners_<<key>>
     trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
 
   Yearly_BAFTA_Awards:
     allowed_library_types: movie
     summary: <<key>> BAFTA awards
-    sort_title: 05_+<<level>>_<<key>>
+    sort_title: 05_BAFTA_Winners_<<key>>
     trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
 
