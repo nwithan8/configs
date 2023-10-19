@@ -8,7 +8,7 @@ collections:
                 level: "++" }
     summary: "Let's start this from the beginning"
     collection_level: episode
-    collection_order: release.desc
+    collection_order: custom
     plex_pilots: true
     sync_mode: sync
     visible_library: true
