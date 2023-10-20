@@ -453,6 +453,7 @@ collections:
 
   NBC:
     template: { name: Network,
+                network: "NBC",
                 poster: https://theposterdb.com/api/assets/113217 }
     tmdb_network: 6
     summary: "Shows Aired on NBC"
@@ -462,6 +463,7 @@ collections:
 
   Netflix:
     template: { name: Network,
+                network: "Netflix",
                 poster: https://theposterdb.com/api/assets/113218 }
     tmdb_network: 213
     summary: "Netflix Original Shows"
@@ -543,6 +545,7 @@ collections:
 
   Quibi:
     template: { name: Network,
+                network: "Quibi",
                 poster: https://theposterdb.com/api/assets/115020 }
     imdb_list:
       - https://www.imdb.com/list/ls085112163
@@ -553,6 +556,7 @@ collections:
 
   Showtime:
     template: { name: Network,
+                network: "Showtime",
                 poster: https://theposterdb.com/api/assets/113257 }
     tmdb_network: 67
     summary: "Shows Aired on Showtime"
@@ -571,6 +575,7 @@ collections:
 
   Starz:
     template: { name: Network,
+                network: "Starz, Starz Encore, Starz Play, StarzPlay",
                 poster: https://theposterdb.com/api/assets/113265 }
     tmdb_network: 318
     summary: "Shows Aired on Starz"
@@ -580,6 +585,7 @@ collections:
 
   SyFy:
     template: { name: Network,
+                network: "SyFy, Syfy, Syfy (US), SciFi",
                 poster: https://theposterdb.com/api/assets/113269 }
     tmdb_network: 77
     summary: "Shows Aired on SYFY"
@@ -658,13 +664,3 @@ collections:
     visible_library: true
     visible_home: false
     visible_shared: false
-
-  ### Genres
-  "A Real-Life Whodunnit":
-    template: { name: Genre }
-    summary: "True Crime Documentaries"
-    trakt_list:
-      - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
-    collection_order: release
-    visible_home: false
-    visible_shared: true
