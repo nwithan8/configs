@@ -86,7 +86,6 @@ templates:
     optional:
       - poster_url
     sort_title: 06_+<<level>>_<<collection_name>>
-    collection_order: custom
     sync_mode: sync
     visible_library: true
     url_poster: <<poster_url>>
