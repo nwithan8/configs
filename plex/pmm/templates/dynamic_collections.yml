@@ -87,7 +87,7 @@ templates:
       trakt_list_<<key>>: <<trakt_list>>
       mdblist_list_<<key>>: <<mdblist_list>>
       summary_<<key>>: <<seasonal_summary>>
-      name_<<key>>: <<seasonal_name>>
+      name_<<key>>: <<key>>
       emoji_<<key>>: <<emoji>>
     optional:
       - poster_url

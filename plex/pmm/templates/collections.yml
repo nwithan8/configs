@@ -80,6 +80,21 @@ templates:
       - weekly(sunday)
     visible_library: true
 
+  Holiday:
+    default:
+      level: ""
+    optional:
+      - poster_url
+    sort_title: 06_+<<level>>_<<collection_name>>
+    smart_label: title.asc
+    sync_mode: sync
+    collection_order: custom
+    visible_library: true
+    url_poster: <<poster_url>>
+    run_again: true
+    visible_home: true
+    visible_shared: true
+
   Collection:
     default:
       level: ""
