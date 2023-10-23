@@ -3,17 +3,19 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
-  "From The Top":
-    template: { name: Chart,
-                level: "++" }
-    summary: "Let's start this from the beginning"
-    collection_level: episode
-    builder_level: episode
-    plex_pilots: true
-    sync_mode: sync
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+
+  # NOTE: Collection too stressful on server
+  # "From The Top":
+  #  template: { name: Chart,
+  #              level: "++" }
+  #  summary: "Let's start this from the beginning"
+  #  collection_level: episode
+  #  builder_level: episode
+  #  plex_pilots: true
+  #  sync_mode: sync
+  #  visible_library: true
+  #  visible_home: true
+  #  visible_shared: true
 
   "Previously On...":
     template: { name: Chart,
