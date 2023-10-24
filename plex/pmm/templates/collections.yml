@@ -5,9 +5,10 @@ templates:
   New:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 010_+<<level>>_<<collection_name>>
+    sort_title: 010_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule: daily
     visible_library: true
@@ -16,12 +17,13 @@ templates:
   InMemoriamActor:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     tmdb_person: <<tmdb_id>>
     smart_filter:
       sort_by: release.desc
       any:
         actor: tmdb
-      sort_title: 020_+<<level>>_<<collection_name>>
+      sort_title: 020_+<<level>>_<<sort_title_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
@@ -30,12 +32,13 @@ templates:
   InMemoriamDirector:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     tmdb_person: <<tmdb_id>>
     smart_filter:
       sort_by: release.desc
       any:
         director: tmdb
-      sort_title: 021_+<<level>>_<<collection_name>>
+      sort_title: 021_+<<level>>_<<sort_title_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
@@ -44,9 +47,10 @@ templates:
   Chart:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 040_+<<level>>_<<collection_name>>
+    sort_title: 040_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule: daily
     visible_library: true
@@ -55,9 +59,10 @@ templates:
   Award:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 050_+<<level>>_<<collection_name>>
+    sort_title: 050_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:
@@ -69,11 +74,12 @@ templates:
   ActorAward:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
       all:
         actor: tmdb
     tmdb_person: <<tmdb>>
-    sort_title: 051_+<<level>>_<<collection_name>>
+    sort_title: 051_+<<level>>_<<sort_title_name>>
     sync_mode: append
     schedule:
       - weekly(wednesday)
@@ -83,9 +89,10 @@ templates:
   Holiday:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 060_+<<level>>_<<collection_name>>
+    sort_title: 060_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     visible_library: true
     url_poster: <<poster_url>>
@@ -98,7 +105,7 @@ templates:
       level: ""
     optional:
       - poster_url
-    sort_title: 065_+<<level>>_<<collection_name>>
+    sort_title: 065_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:
@@ -110,9 +117,10 @@ templates:
   Genre:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 070_+<<level>>_<<collection_name>>
+    sort_title: 070_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
       - weekly(wednesday)
@@ -123,9 +131,10 @@ templates:
   Decade:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 080_+<<level>>_<<collection_name>>
+    sort_title: 080_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:
@@ -137,6 +146,7 @@ templates:
   Person:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     smart_filter:
       sort_by: release.desc
       any:
@@ -145,15 +155,16 @@ templates:
         producer: tmdb
         writer: tmdb
     tmdb_person: <<person>>
-    sort_title: 090_+<<level>>_<<collection_name>>
+    sort_title: 090_+<<level>>_<<sort_title_name>>
     sync_mode: append
     visible_library: true
 
   Actor:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     tmdb_actor_details: <<person>>
-    sort_title: 090_+<<level>>_<<collection_name>>
+    sort_title: 090_+<<level>>_<<sort_title_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -161,8 +172,9 @@ templates:
   Director:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     tmdb_director_details: <<person>>
-    sort_title: 091_+<<level>>_<<collection_name>>
+    sort_title: 091_+<<level>>_<<sort_title_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -170,8 +182,9 @@ templates:
   Producer:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     tmdb_producer_details: <<person>>
-    sort_title: 092_+<<level>>_<<collection_name>>
+    sort_title: 092_+<<level>>_<<sort_title_name>>
     sync_mode: append
     collection_order: custom
     visible_library: true
@@ -179,9 +192,10 @@ templates:
   Studio:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster
-    sort_title: 100_+<<level>>_<<collection_name>>
+    sort_title: 100_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule: daily
     visible_library: true
@@ -190,9 +204,10 @@ templates:
   Network:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster
-    sort_title: 100_+<<level>>_<<collection_name>>
+    sort_title: 100_+<<level>>_<<sort_title_name>>
     smart_filter:
       sort_by: title.desc
       validate: false
@@ -203,9 +218,10 @@ templates:
   Country:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 110_+<<level>>_<<collection_name>>
+    sort_title: 110_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:
@@ -217,7 +233,8 @@ templates:
   General:
     default:
       level: ""
-    sort_title: 120_+<<level>>_<<collection_name>>
+      sort_title_name: <<collection_name>>
+    sort_title: 120_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:

@@ -21,6 +21,16 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "Rom-com Central":
+    template: { name: Genre }
+    summary: "Rotten Tomatoes' best romantic comedies of all time"
+    trakt_list:
+      - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
+    collection_order: audience_rating.desc
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   "Slam Dunk":
     template: { name: Genre }
     summary: "The best sports movies, ever."
