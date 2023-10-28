@@ -9,5 +9,21 @@ dynamic_collections:
   Per-Country DC Movies: # mapping name does not matter just needs to be unique
     type: country
     title_format: <<key_name>>
+    key_name_override:
+      Plurinational State of Bolivia: Bolivia
+      Russian Federation: Russia
+      Taiwan, Province of China: Taiwan
+      Turks and Caicos Islands: Turks and Caicos
+      Syrian Arab Republic: Syria
+      Viet Nam: Vietnam
+      State of Palestine: Palestine
+      Republic of North Macedonia: North Macedonia
+      Papua New Guinea: Guinea
+      Lao People's Democratic Republic: Lao
+      Islamic Republic of Iran: Iran
+      French Polynesia: Polynesia
+      Federated States of Micronesia: Micronesia
+      Bolivarian Republic of Venezuela: Venezuela
+      Republic of Korea: South Korea
     template:
       - Per_Country

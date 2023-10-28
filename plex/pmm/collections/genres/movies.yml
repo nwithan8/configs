@@ -91,7 +91,10 @@ dynamic_collections:
   Per-Genre DC Movies: # mapping name does not matter just needs to be unique
     type: genre
     exclude:
+      - Action/Adventure
       - Talk Show
     title_format: <<key_name>>
     template:
       - Per_Genre
+    key_name_override:
+      Film-Noir: Film Noir

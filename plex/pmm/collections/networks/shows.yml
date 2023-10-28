@@ -585,10 +585,10 @@ collections:
 
   SyFy:
     template: { name: Network,
-                network: "SyFy, Syfy, Syfy (US), SciFi",
+                network: "Syfy",
                 poster: https://theposterdb.com/api/assets/113269 }
     tmdb_network: 77
-    summary: "Shows Aired on SYFY"
+    summary: "Shows Aired on Syfy"
     visible_library: true
     visible_home: false
     visible_shared: false

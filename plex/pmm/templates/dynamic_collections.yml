@@ -22,12 +22,12 @@ templates:
         genre: <<value>>
     default:
       level: ""
-    sort_title: 07_+<<level>>_<<key>>
+    sort_title: 07_+<<level>>_<<key_name>>
     visible_library: true
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name>>.jpg
 
   Per_Actor:
     smart_filter:
@@ -65,12 +65,12 @@ templates:
         country: <<value>>
     default:
       level: ""
-    sort_title: 11_+<<level>>_<<key>>
+    sort_title: 11_+<<level>>_<<key_name>>
     visible_library: true
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name>>.jpg
 
   Per_Holiday:
     default:
