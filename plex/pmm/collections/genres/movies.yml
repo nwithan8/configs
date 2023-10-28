@@ -3,7 +3,7 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
-  "What's The Deal With Airplane Food?":
+  "🎤 What's The Deal With Airplane Food?":
     template: { name: Genre }
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
@@ -13,7 +13,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Spoofs and Parodies":
+  "😜 Spoofs and Parodies":
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
@@ -21,7 +21,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Rom-com Central":
+  "👩‍❤️‍💋‍👨 Rom-com Central":
     template: { name: Genre }
     summary: "Rotten Tomatoes' best romantic comedies of all time"
     trakt_list:
@@ -31,7 +31,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Slam Dunk":
+  "🏀 Slam Dunk":
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
@@ -39,7 +39,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Get In, Get Out":
+  "🚓 Get In, Get Out":
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
@@ -47,7 +47,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "On The Edge Of Your Seat":
+  "🎢 On The Edge Of Your Seat":
     template: { name: Genre }
     summary: "The suspense is killing us!"
     imdb_list:
@@ -56,7 +56,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "What a Twist!":
+  "🤯 What a Twist!":
     template: { name: Genre }
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
@@ -65,7 +65,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Based On A True Story":
+  "📗 Based On A True Story":
     template: { name: Genre }
     summary: ""
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
@@ -74,7 +74,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "A Real-Life Whodunnit":
+  "🔍 A Real-Life Whodunnit":
     template: { name: Genre }
     summary: "True Crime Documentaries"
     trakt_list:

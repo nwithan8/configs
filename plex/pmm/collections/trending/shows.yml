@@ -17,7 +17,7 @@ collections:
   #  visible_home: true
   #  visible_shared: true
 
-  "Previously On...":
+  "⏮️ Previously On...":
     template: { name: Chart,
                 level: "++++" }
     summary: "Catch up on last week's episodes"
@@ -32,7 +32,7 @@ collections:
     visible_shared: true
     visible_library: true
 
-  "What Everyone Is Watching":
+  "👀 What Everyone Is Watching":
     template: { name: Chart,
                 level: "+++++" }
     summary: "What other subscribers are checking out"
@@ -47,7 +47,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Trending Now":
+  "📈 Trending Now":
     template: { name: Chart,
                 level: "+++++" }
     summary: "The hottest shows right now"

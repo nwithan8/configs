@@ -5,7 +5,7 @@ external_templates:
 collections:
 
   ### Genres
-  "A Real-Life Whodunnit":
+  "🔍 A Real-Life Whodunnit":
     template: { name: Genre }
     summary: "True Crime Documentaries"
     trakt_list:

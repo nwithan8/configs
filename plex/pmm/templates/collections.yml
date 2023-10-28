@@ -103,9 +103,25 @@ templates:
   Collection:
     default:
       level: ""
+      sort_title_name: <<collection_name>>
     optional:
       - poster_url
     sort_title: 065_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    collection_order: custom
+    schedule:
+      - weekly(wednesday)
+      - weekly(sunday)
+    visible_library: true
+    url_poster: <<poster_url>>
+
+  Franchise:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 066_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     collection_order: custom
     schedule:

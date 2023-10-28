@@ -33,6 +33,6 @@ dynamic_collections:
         two_thousands: 2009
         twenty_tens: 2019
         twenty_twenties: 2029
-    title_format: Best of the <<key_name>>s
+    title_format: 🗓️ Best of the <<key_name>>s
     template:
       - Per_Decade

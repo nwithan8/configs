@@ -29,6 +29,6 @@ dynamic_collections:
     data:
       starting: 2014
       ending: current_year
-    title_format: Best of <<key_name>>
+    title_format: 🍅 Best of <<key_name>>
     template:
       - Movies_Best_of_Year

@@ -5,7 +5,7 @@ external_templates:
 collections:
   # Random list of 10 movies released in the last 10 years
   # Regenerates every time the user visits the page
-  "Something New":
+  "🥳 Something New":
     template: { name: New,
                 level: "++" }
     summary: "Let's try something new"
@@ -22,7 +22,7 @@ collections:
 
   # Random list of 30 movies released in the last 5 months and added in the last 2 months
   # Regenerates every time the user visits the page
-  "Spin The Wheel!":
+  "🎲 Spin The Wheel!":
     template: { name: New,
                 level: "+" }
     summary: "New releases for you to take a chance on!"

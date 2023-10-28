@@ -4,7 +4,7 @@ external_templates:
 
 collections:
   ### New Content
-  "Added This Week":
+  "➕ Added This Week":
     template: { name: New,
                 level: "++++" }
     summary: "Episodes added this week on Plex"
@@ -20,7 +20,7 @@ collections:
     visible_shared: true
     visible_library: true
 
-  "Now On Plex":
+  "📺 Now On Plex":
     template: { name: New,
                 level: "+++" }
     summary: "Shows now playing on Plex"

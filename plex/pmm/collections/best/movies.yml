@@ -4,7 +4,7 @@ external_templates:
 
 collections:
   # Top movies via IMDB, updated twice a week
-  "Best Of All Time":
+  "🙌 Best Of All Time":
     template: { name: Award,
                 level: "++" }
     summary: "Dive into the best films ever made"

@@ -3,7 +3,7 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
-  "Editor's Choice":
+  "⭐️ Editor's Choice":
     template: { name: Chart,
                 level: "++" }
     summary: "Our top picks"

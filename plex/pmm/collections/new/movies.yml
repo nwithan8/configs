@@ -4,7 +4,7 @@ external_templates:
 
 collections:
   ### New Content
-  "Added This Week":
+  "➕ Added This Week":
     template: { name: New,
                 level: "++" }
     summary: "Movies now playing on Plex"

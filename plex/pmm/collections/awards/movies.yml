@@ -76,7 +76,7 @@ collections:
 
   # This current year's Best Picture Oscar nominees
   # Only visible on home screen during Oscar season
-  "This Year's Best Picture Nominees":
+  "🎬 This Year's Best Picture Nominees":
     # TODO: NEED TO BUILD MANUALLY
     template: { name: Award,
                 level: "++++++" }
@@ -91,7 +91,7 @@ collections:
 
   # This current year's Best Actor Oscar nominees
   # Only visible on home screen during Oscar season
-  "This Year's Best Actor Nominees":
+  "🎭 This Year's Best Actor Nominees":
     # TODO: NEED TO BUILD MANUALLY
     template: { name: Award,
                 level: "+++++" }
@@ -106,7 +106,7 @@ collections:
 
   # This current year's Best Actress Oscar nominees
   # Only visible on home screen during Oscar season
-  "This Year's Best Actress Nominees":
+  "🎭 This Year's Best Actress Nominees":
     # TODO: NEED TO BUILD MANUALLY
     template: { name: Award,
                 level: "+++++" }
@@ -125,7 +125,7 @@ collections:
   # This current year's Best Actor Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "2023 Best Actor Nominee - Austin Butler":
+  "🎭 2023 Best Actor Nominee - Austin Butler":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 86654 }
@@ -137,7 +137,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actor Nominee - Colin Farrell":
+  "🎭 2023 Best Actor Nominee - Colin Farrell":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 72466 }
@@ -149,7 +149,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actor Nominee - Brendan Fraser":
+  "🎭 2023 Best Actor Nominee - Brendan Fraser":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 18269 }
@@ -161,7 +161,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actor Nominee - Paul Mescal":
+  "🎭 2023 Best Actor Nominee - Paul Mescal":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 2326151 }
@@ -173,7 +173,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actor Nominee - Bill Nighy":
+  "🎭 2023 Best Actor Nominee - Bill Nighy":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 2440 }
@@ -192,7 +192,7 @@ collections:
   # This current year's Best Actress Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "2023 Best Actress Nominee - Cate Blanchett":
+  "🎭 2023 Best Actress Nominee - Cate Blanchett":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 112 }
@@ -204,7 +204,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actress Nominee - Ana de Armas":
+  "🎭 2023 Best Actress Nominee - Ana de Armas":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 224513 }
@@ -216,7 +216,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actress Nominee - Andrea Riseborough":
+  "🎭 2023 Best Actress Nominee - Andrea Riseborough":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 127558 }
@@ -228,7 +228,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actress Nominee - Michelle Williams":
+  "🎭 2023 Best Actress Nominee - Michelle Williams":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 1812 }
@@ -240,7 +240,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
 
-  "2023 Best Actress Nominee - Michelle Yeoh":
+  "🎭 2023 Best Actress Nominee - Michelle Yeoh":
     template: { name: ActorAward,
                 level: "+++++",
                 tmdb: 1620 }
@@ -256,7 +256,7 @@ collections:
 
   # This current year's Oscar nominees (all)
   # Only visible on home screen during Oscar season
-  "This Year's Oscar Nominees":
+  "🎖️This Year's Oscar Nominees":
     summary: "Who will take home the trophy?"
     template: { name: Award,
                 level: "++++" }
@@ -276,7 +276,7 @@ collections:
 
   # All past Oscar-winning movies (not just Best Picture)
   # Only visible on home screen during Oscar season
-  "Past Oscar Winners":
+  "🏆 Past Oscar Winners":
     summary: "Oscar-winning Movies"
     template: { name: Award,
                 level: "++" }
@@ -294,7 +294,7 @@ collections:
 
   # All past Oscar Best Director-winning movies
   # Only visible on home screen during Oscar season
-  "Past Best Director Winners":
+  "🏆 Past Best Director Winners":
     summary: "The Academy Award for Best Director is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
     template: { name: Award,
                 level: "++" }
@@ -312,7 +312,7 @@ collections:
 
   # All past Oscar Best Picture-winning movies
   # Only visible on home screen during Oscar season
-  "Past Best Picture Winners":
+  "🏆 Past Best Picture Winners":
     summary: "The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
     template: { name: Award,
                 level: "++" }
@@ -330,7 +330,7 @@ collections:
 
   # All past Razzie-winning Worst Picture movies
   # Only visible on home screen during Razzie season
-  "Past Worst Picture Winners":
+  "🤮 Past Worst Picture Winners":
     template: { name: Award,
                 level: "++" }
     summary: "Previous Razzie Worst Picture winners"
@@ -347,7 +347,7 @@ collections:
 
   # All past BAFTA Best Film-winning movies
   # Only visible on home screen during BAFTA season
-  "Past BAFTA Best Film Winners":
+  "🇬🇧 Past BAFTA Best Film Winners":
     summary: "The EE British Academy Film Awards or BAFTA Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA) to honour the best British and international contributions to film."
     template: { name: Award,
                 level: "++" }
@@ -364,7 +364,7 @@ collections:
 
   # All past Berlinale-winning movies
   # Only visible on home screen during Berlinale season
-  "Past Berlinale Winners":
+  "🇩🇪 Past Berlinale Winners":
     summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
     template: { name: Award,
                 level: "++" }
@@ -381,7 +381,7 @@ collections:
 
   # All past Cannes Palme d'or-winning movies
   # Only visible on home screen during Cannes Palme d'or season
-  "Past Cannes Palme d'or Winners":
+  "🕊️ Past Cannes Palme d'or Winners":
     summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
     template: { name: Award,
                 level: "++" }
@@ -398,7 +398,7 @@ collections:
 
   # All past Cesar Award-winning movies
   # Only visible on home screen during Cesar Award season
-  "Past Cesar Award Winners":
+  "🇫🇷 Past Cesar Award Winners":
     summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
     template: { name: Award,
                 level: "++" }
@@ -415,7 +415,7 @@ collections:
 
   # All past Sundance-winning movies
   # Only visible on home screen during Sundance season
-  "Past Sundance Winners":
+  "🇺🇸 Past Sundance Winners":
     summary: "Sundance is the largest independent film festival in the United States. Held in January, the festival is the premier showcase for new work from American and international independent filmmakers."
     template: { name: Award,
                 level: "++" }
@@ -432,7 +432,7 @@ collections:
 
   # All past Venice Film Festival-winning movies
   # Only visible on home screen during Venice Film Festival season
-  "Past Venice Film Festival Winners":
+  "🇮🇹 Past Venice Film Festival Winners":
     summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"
     template: { name: Award,
                 level: "++" }

@@ -4,7 +4,7 @@ external_templates:
 
 collections:
   # Movies with a perfect RT score, updated monthly
-  "The 100 Club":
+  "💯 The 100 Club":
     template: { name: Award,
                 level: "+" }
     summary: "RottenTomatoes' movies with a perfect score"
@@ -15,7 +15,7 @@ collections:
     visible_shared: true
 
   # Worst movies of all time, updated monthly
-  "Just the Worst":
+  "💩 Just the Worst":
     template: { name: Award }
     summary: "The worst movies of all time."
     trakt_list:
@@ -28,7 +28,7 @@ collections:
     visible_shared: true
 
   # Good weekend movies, only visible on home on Saturday and Sunday
-  "Kick Back and Relax":
+  "🧘 Kick Back and Relax":
     template: { name: Genre }
     summary: "The best movies for a lazy weekend afternoon"
     trakt_list:
@@ -38,8 +38,9 @@ collections:
     visible_home: weekly(saturday), weekly(sunday)
     visible_shared: weekly(saturday), weekly(sunday)
 
-  "How Did This Get Made?":
+  "🤨 How Did This Get Made?":
     template: { name: Collection,
+                sort_title: "How Did This Get Made?",
                 level: "++" }
     summary: "The films of the podcast 'How Did This Get Made?'"
     trakt_list:
@@ -49,8 +50,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Best Movie Ever":
+  "👍 Best Movie Ever":
     template: { name: Collection,
+                sort_title: "Weekly Planet - Best Movie Ever",
                 level: "++" }
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
@@ -60,8 +62,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Worst Movie Ever":
+  "👎 Worst Movie Ever":
     template: { name: Collection,
+                sort_title: "Weekly Planet - Worst Movie Ever",
                 level: "++" }
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
@@ -71,8 +74,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "1001 Movies You Must See Before You Die":
+  "🎩 1001 Movies You Must See Before You Die":
     template: { name: Collection,
+                sort_title: "1001 Movies You Must See Before You Die",
                 level: "++" }
     # summary provided by Trakt
     schedule: monthly(1)
@@ -83,8 +87,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "100 Movies Bucket List":
+  "🪣 100 Movies Bucket List":
     template: { name: Collection,
+                sort_title: "100 Movies Bucket List",
                 level: "++" }
     # summary provided by Trakt
     schedule: monthly(22)
@@ -95,8 +100,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "The Criterion Collection":
+  "📽️ The Criterion Collection":
     template: { name: Collection,
+                sort_title: "The Criterion Collection",
                 level: "++" }
     # summary provided by Trakt
     trakt_list_details:
@@ -106,8 +112,9 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "Bond. James Bond.":
-    template: { name: Collection,
+  "🤵‍♂️ Bond. James Bond.":
+    template: { name: Franchise,
+                sort_title: "James Bond",
                 level: "+" }
     summary: "007 forever"
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
@@ -115,8 +122,9 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "I Love You 3000":
-    template: { name: Collection,
+  "🦸 I Love You 3000":
+    template: { name: Franchise,
+                sort_title: "Marvel Cinematic Universe",
                 level: "+" }
     summary: "The Marvel Cinematic Universe"
     trakt_list:
@@ -126,8 +134,9 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "Tell Me, Do You Bleed?":
-    template: { name: Collection,
+  "🦸 Tell Me, Do You Bleed?":
+    template: { name: Franchise,
+                sort_title: "DC Cinematic Universe",
                 level: "+" }
     summary: "The DC Cinematic Universe"
     trakt_list:
@@ -137,8 +146,9 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "Disney Channel Original Movies":
-    template: { name: Collection,
+  "🐭 Disney Channel Original Movies":
+    template: { name: Franchise,
+                sort_title: "Disney Channel Original Movies",
                 level: "+" }
     summary: "You're watching Disney Channel"
     imdb_list:
@@ -148,9 +158,10 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "To Boldly Go":
+  "🪐 To Boldly Go":
     summary: "The Star Trek collection"
-    template: { name: Collection,
+    template: { name: Franchise,
+                sort_title: "Star Trek",
                 level: "+" }
     trakt_list:
       - https://trakt.tv/users/dgw/lists/star-trek-canon
@@ -159,9 +170,10 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "In A Galaxy Far, Far Away":
+  "🚀 In A Galaxy Far, Far Away":
     summary: "The Star Wars collection"
-    template: { name: Collection,
+    template: { name: Franchise,
+                sort_title: "Star Wars",
                 level: "+" }
     trakt_list_details:
       - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
@@ -170,9 +182,10 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "Bears. Beets. Battlestar Galactica":
+  "👽 Bears. Beets. Battlestar Galactica":
     summary: "The Battlestar Galactica collection"
-    template: { name: Collection,
+    template: { name: Franchise,
+                sort_title: "Battlestar Galactica",
                 level: "+" }
     trakt_list_details:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
@@ -181,9 +194,10 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "To Be Or Not To Be":
+  "🪶 To Be Or Not To Be":
     summary: "The Shakespeare collection"
-    template: { name: Collection,
+    template: { name: Franchise,
+                sort_title: "Shakespeare",
                 level: "+" }
     trakt_list_details:
       - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
