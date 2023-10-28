@@ -70,7 +70,7 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/color/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
 
   Per_Holiday:
     default:
