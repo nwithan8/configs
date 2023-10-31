@@ -8,7 +8,7 @@ collections:
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
-    collection_order: release
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -17,6 +17,7 @@ collections:
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
     mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -26,7 +27,7 @@ collections:
     summary: "Rotten Tomatoes' best romantic comedies of all time"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
-    collection_order: audience_rating.desc
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -35,6 +36,7 @@ collections:
     template: { name: Genre }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -43,6 +45,7 @@ collections:
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -52,6 +55,7 @@ collections:
     summary: "The suspense is killing us!"
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -60,7 +64,7 @@ collections:
     template: { name: Genre }
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
-    collection_order: custom
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -69,7 +73,7 @@ collections:
     template: { name: Genre }
     summary: ""
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
-    collection_order: custom
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -79,7 +83,7 @@ collections:
     summary: "True Crime Documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
-    collection_order: custom
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true

@@ -12,6 +12,7 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: monthly(17)
+    collection_order: random
     url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key>>.png
 
   Per_Genre:
@@ -36,6 +37,7 @@ templates:
     default:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
+    collection_order: release.asc
     visible_library: true
     visible_shared: false
     visible_home: false
@@ -50,6 +52,7 @@ templates:
     default:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
+    collection_order: release.asc
     visible_library: true
     visible_shared: false
     visible_home: false
@@ -66,6 +69,7 @@ templates:
     default:
       level: ""
     sort_title: 11_+<<level>>_<<key_name>>
+    collection_order: random
     visible_library: true
     visible_shared: false
     visible_home: false
@@ -105,6 +109,7 @@ templates:
         label: <<smart_label>>
     schedule: <<schedule_<<key>>>>
     sync_mode: <<sync_mode_<<key>>>>
+    collection_order: random
     tmdb_collection: <<tmdb_collection_<<key>>>>
     tmdb_movie: <<tmdb_movie_<<key>>>>
     imdb_list: <<imdb_list_<<key>>>>

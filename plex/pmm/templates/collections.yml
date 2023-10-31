@@ -10,6 +10,7 @@ templates:
       - poster_url
     sort_title: 010_+<<level>>_<<sort_title_name>>
     sync_mode: sync
+    collection_order: release.desc
     schedule: daily
     visible_library: true
     url_poster: <<poster_url>>
@@ -138,6 +139,7 @@ templates:
       - poster_url
     sort_title: 070_+<<level>>_<<sort_title_name>>
     sync_mode: sync
+    collection_order: random
     schedule:
       - weekly(wednesday)
       - weekly(sunday)

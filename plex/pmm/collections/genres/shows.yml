@@ -10,6 +10,6 @@ collections:
     summary: "True Crime Documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
-    collection_order: release
+    collection_order: random
     visible_home: false
     visible_shared: true

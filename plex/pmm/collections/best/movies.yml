@@ -12,6 +12,7 @@ collections:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
+    collection_order: random
     visible_library: true
     visible_home: true
     visible_shared: true
