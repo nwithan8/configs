@@ -46,7 +46,7 @@ collections:
     summary: "The films of the podcast 'How Did This Get Made?'"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
-    collection_order: random
+    collection_order: custom
     visible_library: true
     visible_home: true
     visible_shared: true
