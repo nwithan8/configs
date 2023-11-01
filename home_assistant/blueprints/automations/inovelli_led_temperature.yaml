@@ -1,6 +1,6 @@
 blueprint:
   name: Inovelli LED Temperature Display
-  description: Display the temperature on the LED strip of an Inovelli VZM31-SN light switch
+  description: Display the temperature on the LED strip of an Inovelli VZM31-SN or VZM35-SN light switch
   source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/inovelli_led_temperature.yaml
   domain: automation
   input:
@@ -33,13 +33,12 @@ blueprint:
           unit_of_measurement: degrees
           mode: box
     switch:
-      name: Inovelli VZM31-SN
+      name: Inovelli VZM31-SN or VZM35-SN
       description: Which light switch to program
       selector:
         device:
           integration: zha
           manufacturer: Inovelli
-          model: VZM31-SN
     duration:
       name: Duration
       description: How long the effect should last, in seconds (1-254, 255 for indefinite)

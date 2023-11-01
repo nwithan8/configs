@@ -2,21 +2,20 @@
 # Users do NOT need to set up a per-device copy of this script.
 
 blueprint:
-  name: Inovelli VZM31-SN Notification LED (ZHA)
+  name: Inovelli VZM31-SN or VZM35-SN Notification LED (ZHA)
   description: >-
     A script that sets the notification LED bar of an Inovelli light switch.
   source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/inovelli_vzm31-sn_notification_led_zha.yaml
   domain: script
 fields:
   switch:
-    name: Inovelli VZM31-SN
+    name: Inovelli VZM31-SN or VZM35-SN
     description: Which light switch to program
     required: true
     selector:
       device:
         integration: zha
         manufacturer: Inovelli
-        model: VZM31-SN
   led:
     name: LED
     description: Which LED to program (LED 1 is the bottom-most LED)
