@@ -216,3 +216,14 @@ collections:
     visible_library: true
     visible_home: false
     visible_shared: false
+
+  "📖 Get Busy Living, or Get Busy Dying":
+    summary: "The Stephen King collection"
+    template: { name: Franchise,
+                sort_title: "Stephen King",
+                level: "+" }
+    collection_order: release.asc
+    plex_search:
+      sort_by:
+      all:
+        writer: "Stephen King"
