@@ -26,20 +26,6 @@ templates:
     trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-berlinale
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
 
-  Yearly_Cannes_Awards_2023_Plus:
-    allowed_library_types: movie
-    summary: <<key>> Cannes Film Festival
-    sort_title: 05_Cannes_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-cannes
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
-
-  Yearly_Cannes_Awards_2016_To_2022:
-    allowed_library_types: movie
-    summary: <<key>> Cannes Film Festival
-    sort_title: 05_Cannes_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-cannes
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
-
   Yearly_Cannes_Awards:
     default:
       list_owner: pjcob
@@ -478,67 +464,28 @@ dynamic_collections:
     template:
       - Yearly_Berlinale_Awards
 
-  Yearly Cannes DC 2022 Plus: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 2022
-      ending: current_year
-    title_format: Cannes Film Festival <<key_name>>
-    template:
-      - Yearly_Cannes_Awards_2022_Plus
-
-  Yearly Cannes DC 2016 To 2021: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 2016
-      ending: 2022
-    title_format: Cannes Film Festival <<key_name>>
-    template:
-      - Yearly_Cannes_Awards_2016_To_2022
-
   Yearly Cannes DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
     data:
-      starting: 2014
+      starting: 2016
       ending: current_year
     title_format: Cannes Film Festival <<key_name>>
     template:
       - Yearly_Cannes_Awards
     template_variables:
       list_owner:
-        2014: pjcob
-        2015: pjcob
-        2016: pjcob
-        2017: pjcob
-        2018: pjcob
-        2019: pjcob
-        2020: pjcob
-        2021: pjcob
-        2022: pjcob
         2023: hernandezel
 
-  Yearly Sundance DC 2022 Plus: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 2022
-      ending: current_year
-    title_format: Sundance Film Festival <<key_name>>
-    template:
-      - Yearly_Sundance_Awards_2022_Plus
-
-  Yearly Sundance DC 2010 To 2021: # mapping name does not matter just needs to be unique
+  Yearly Sundance DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
     data:
       starting: 2010
-      ending: 2021
+      ending: current_year
     title_format: Sundance Film Festival <<key_name>>
     template:
-      - Yearly_Sundance_Awards_2010_To_2021
+      - Yearly_Sundance_Awards
 
   Yearly Golden Globes DC: # mapping name does not matter just needs to be unique
     type: number
