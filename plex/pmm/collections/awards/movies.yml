@@ -37,7 +37,7 @@ templates:
     allowed_library_types: movie
     summary: <<key>> Sundance Film Festival
     sort_title: 05_Sundance_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-sundance
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-sundance
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
 
   Yearly_Golden_Globes_Winners:
@@ -52,7 +52,7 @@ templates:
     allowed_library_types: movie
     summary: <<key>> Independent Spirit Awards
     sort_title: 05_Spirit_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-independent-spirits
+    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-independent-spirits
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
 
   Yearly_Critics_Choice_Awards:
