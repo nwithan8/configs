@@ -244,6 +244,7 @@ collections:
     trakt_list:
       # TODO: NEED TO REPLACE MANUALLY
       - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
+    collection_order: random
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]

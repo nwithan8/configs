@@ -70,6 +70,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - Can't use `collection_order` for Plex `smart_filter` rules. Replacements:
     - `collection_order: release` -> `sort_by: release.desc`
     - `collection_order: alpha` -> `sort_by: title.desc`
+    - `collection_order: random` -> `sort_by: random`
     - `collection_order: custom` -> `sort_by: ??`
 - Needs to be one level above `all`/`any` criteria list. Ex.:
     - `smart_filter`:
