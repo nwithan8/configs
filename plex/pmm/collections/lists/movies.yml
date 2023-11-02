@@ -5,8 +5,9 @@ external_templates:
 collections:
   # Movies with a perfect RT score, updated monthly
   "💯 The 100 Club":
-    template: { name: Award,
-                level: "+" }
+    template: { name: Collection,
+                sort_title: "Best Movies Ever",
+                level: "+++" }
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     collection_order: random
@@ -17,7 +18,9 @@ collections:
 
   # Worst movies of all time, updated monthly
   "💩 Just the Worst":
-    template: { name: Award }
+    template: { name: Collection
+                sort_title: "Worst Movies Ever"
+                level: "++" }
     summary: "The worst movies of all time."
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
