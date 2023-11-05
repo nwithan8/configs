@@ -205,9 +205,11 @@ templates:
     optional:
       - poster
     sort_title: 100_+<<level>>_<<sort_title_name>>
-    sync_mode: sync
-    schedule: daily
-    visible_library: true
+    smart_filter:
+      sort_by: release.desc
+      validate: false
+      any:
+        studio: <<studio>>
     url_poster: <<poster>>
 
   Network:
