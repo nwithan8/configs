@@ -227,3 +227,16 @@ collections:
       sort_by:
       all:
         writer: "Stephen King"
+
+  "🐦‍⬛ Quoth the Raven":
+    summary: "The Edgar Allan Poe collection"
+    template: { name: Franchise,
+                sort_title: "Edgar Allan Poe",
+                level: "+" }
+    trakt_list_details:
+      - https://trakt.tv/users/majeed_pk/lists/the-best-edgar-allan-poe-adaptations
+    url_background: https://wallpapercave.com/wp/wp2328085.jpg
+    collection_order: random
+    visible_library: true
+    visible_home: false
+    visible_shared: false
