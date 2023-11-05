@@ -71,7 +71,7 @@ collections:
 
   "📗 Based On A True Story":
     template: { name: Genre }
-    summary: ""
+    summary: "Based on a true story"
     mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
     collection_order: random
     visible_library: true
@@ -80,9 +80,19 @@ collections:
 
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre }
-    summary: "True Crime Documentaries"
+    summary: "True crime documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "👨‍🍳 Bon Appetit":
+    template: { name: Genre }
+    summary: "Mouth-watering movies"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/bon-appetit
     collection_order: random
     visible_library: true
     visible_home: true
