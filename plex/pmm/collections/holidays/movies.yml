@@ -171,6 +171,17 @@ collections:
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
 
+  "🗳️ Election Day":
+    schedule: range(10/25-11/12)
+    visible_home: range(10/25-11/11)
+    visible_shared: range(10/25-11/11)
+    template: { name: Holiday,
+                level: "++" }
+    summary: "I like the noise of democracy."
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/best-political-movies
+
   "🦃 Thanksgiving":
     schedule: range(11/01-12/01)
     visible_home: range(11/01-11/30)
