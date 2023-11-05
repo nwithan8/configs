@@ -41,7 +41,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "🚓 Get In, Get Out":
+  "🚓 Get In Get Out":
     template: { name: Genre }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
