@@ -479,8 +479,8 @@ dynamic_collections:
       - Yearly_Berlinale_Awards
     template_variables:
       url:
-        2017: vermelholimao/lists/berlinale-2017-67th-berlin-international-film-festival
-        2018: vermelholimao/lists/berlinale-2018-68th-berlin-international-film-festival
+        2017: vermelholimao/lists/berlinale-2017-67-berlin-international-film-festival
+        2018: vermelholimao/lists/berlinale-2018-68-berlin-international-film-festival
         2019: vermelholimao/lists/berlinale-2019-69th-berlin-international-film-festival
         2020: vermelholimao/lists/berlinale-2020-70th-berlin-international-film-festival
 
