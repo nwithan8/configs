@@ -545,8 +545,6 @@ collections:
     template: { name: Network,
                 network: "Quibi",
                 poster: https://theposterdb.com/api/assets/115020 }
-    imdb_list:
-      - https://www.imdb.com/list/ls085112163
     summary: "Quibi Original Shows"
     visible_library: true
     visible_home: false
