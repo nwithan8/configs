@@ -94,6 +94,8 @@ This collection uses a combination of all these prefixes, and are always sorted 
                 - criteria2
         - Recommended to use `smart_filter` over `plex_search` when possible, as `smart_filter` means Plex will keep the
           list updated based on the criteria, rather than Plex Meta Manager having to re-run the builder every time
+            - Need to use `builder_level` if using `smart_filter` for anything other than show/movies (i.e. seasons,
+              episodes, etc.)
     - All other rules: Use, i.e., `collection_level: episodes`, to limit collection
       to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Metadata-Details#metadata-details)
   - `episode_added` only works on Shows, because it accounts for when Show had an episode added, not when episode was

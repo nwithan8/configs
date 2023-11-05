@@ -222,11 +222,10 @@ collections:
     template: { name: Franchise,
                 sort_title: "Stephen King",
                 level: "+" }
-    collection_order: release.asc
-    plex_search:
-      sort_by:
+    smart_filter:
       all:
         writer: "Stephen King"
+      sort_by: release.asc
 
   "🐦‍⬛ Quoth the Raven":
     summary: "The Edgar Allan Poe collection"
