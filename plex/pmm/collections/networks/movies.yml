@@ -10,7 +10,6 @@ collections:
                 studio: "A24",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/A24.jpg }
     summary: "A24 Films"
-    collection_order: audience_rating.desc
     visible_library: true
     visible_home: false
     visible_shared: false
