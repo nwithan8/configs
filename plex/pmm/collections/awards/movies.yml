@@ -20,10 +20,13 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
 
   Yearly_Berlinale_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-berlinale
     allowed_library_types: movie
     summary: <<key>> Berlinale International Film Festival
     sort_title: 05_Berlinale_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/hernandezel/lists/<<key>>-berlinale
+    trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
 
   Yearly_Cannes_Awards:
@@ -37,10 +40,13 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
 
   Yearly_Sundance_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-sundance
     allowed_library_types: movie
     summary: <<key>> Sundance Film Festival
     sort_title: 05_Sundance_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-sundance
+    trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
 
   Yearly_Golden_Globes_Winners:
@@ -52,25 +58,33 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
 
   Yearly_Spirit_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-independent-spirits
     allowed_library_types: movie
     summary: <<key>> Independent Spirit Awards
     sort_title: 05_Spirit_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-independent-spirits
+    trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
 
   Yearly_Critics_Choice_Awards:
     default:
-      url: critic-s
+      list_owner: pjcob
+      prefix: critic-s
+      url: <<list_owner>>/lists/<<key>>-<<prefix>>-choice
     summary: <<key>> Critics Choice Awards
     sort_title: 05_Critics_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-<<url>>-choice
+    trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
 
   Yearly_BAFTA_Awards:
+    default:
+      list_owner: pjcob
+      url: <<list_owner>>/lists/<<key>>-bafta
     allowed_library_types: movie
     summary: <<key>> BAFTA awards
     sort_title: 05_BAFTA_Winners_<<key>>
-    trakt_list: https://trakt.tv/users/pjcob/lists/<<key>>-bafta
+    trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
 
 collections:
@@ -458,11 +472,17 @@ dynamic_collections:
     type: number
     sync: true
     data:
-      starting: 2016
+      starting: 2017
       ending: current_year
     title_format: Berlinale International Film Festival <<key_name>>
     template:
       - Yearly_Berlinale_Awards
+    template_variables:
+      url:
+        2017: vermelholimao/lists/berlinale-2017-67th-berlin-international-film-festival
+        2018: vermelholimao/lists/berlinale-2018-68th-berlin-international-film-festival
+        2019: vermelholimao/lists/berlinale-2019-69th-berlin-international-film-festival
+        2020: vermelholimao/lists/berlinale-2020-70th-berlin-international-film-festival
 
   Yearly Cannes DC: # mapping name does not matter just needs to be unique
     type: number
@@ -517,7 +537,7 @@ dynamic_collections:
     template:
       - Yearly_Critics_Choice_Awards
     template_variables:
-      url:
+      prefix:
         2019: critics
         2018: critics
         2017: critics
