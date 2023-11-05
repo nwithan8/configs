@@ -8,22 +8,21 @@ playlists:
   "Treehouse of Horror":
     summary: "All The Simpsons' Treehouse of Horror episodes"
     libraries: TV Shows
+    builder_level: episode
     smart_filter:
-      type: episode
-      sort_by: release.asc
       all:
         title.is: "The Simpsons"
         episode_title: "Treehouse"
+      sort_by: release.asc
     sync_mode: sync
 
   "Top 100 Simpsons Episodes":
     summary: "The top 100 Simpsons episodes"
-    collection_order: custom
     libraries: TV Shows
     builder_level: episode
-    plex_search:
-      type: episode
+    smart_filter:
+      all:
+        title.is: "The Simpsons"
       sort_by: audience_rating.desc
       limit: 100
-      all:
-        title.ends: "Simpsons"
+    sync_mode: sync
