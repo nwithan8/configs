@@ -455,7 +455,6 @@ collections:
     template: { name: Network,
                 network: "NBC",
                 poster: https://theposterdb.com/api/assets/113217 }
-    tmdb_network: 6
     summary: "Shows Aired on NBC"
     visible_library: true
     visible_home: false
@@ -465,7 +464,6 @@ collections:
     template: { name: Network,
                 network: "Netflix",
                 poster: https://theposterdb.com/api/assets/113218 }
-    tmdb_network: 213
     summary: "Netflix Original Shows"
     visible_library: true
     visible_home: false
@@ -558,7 +556,6 @@ collections:
     template: { name: Network,
                 network: "Showtime",
                 poster: https://theposterdb.com/api/assets/113257 }
-    tmdb_network: 67
     summary: "Shows Aired on Showtime"
     visible_library: true
     visible_home: false
@@ -577,7 +574,6 @@ collections:
     template: { name: Network,
                 network: "Starz, Starz Encore, Starz Play, StarzPlay",
                 poster: https://theposterdb.com/api/assets/113265 }
-    tmdb_network: 318
     summary: "Shows Aired on Starz"
     visible_library: true
     visible_home: false
@@ -587,7 +583,6 @@ collections:
     template: { name: Network,
                 network: "Syfy",
                 poster: https://theposterdb.com/api/assets/113269 }
-    tmdb_network: 77
     summary: "Shows Aired on Syfy"
     visible_library: true
     visible_home: false
