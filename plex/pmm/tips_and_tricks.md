@@ -40,6 +40,11 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - `visible_library`, `visible_home` and `visible_shared`
     - `true`, `false` or [schedule](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Schedule-Detail) available for
       all options
+    - `visible_library`: Will be visible in the Recommended tab for a specific library (and in the Library tab if you have chose to intermix collections in with library items)
+    - `visible_home`: Will be visible on your Home page (what appears on your Home page is determined by what libraries you have pinned)
+    - `visible_shared`: Will be visible in the Home page for other users (what appears on their Home page is determined by what libraries they have pinned)
+    - Collections are *ALWAYS* visible in the Collections tab for a specific library (not controlled by the `visible_library` option)
+    - Advice: Treat `visible_library` the same as `visible_home`/`visible_shared`. If you want something to appear as a recommendation on the Home page, you probably want it to appear in the specific library's Recommendations tab as well.
 - Visibility does not dictate when a playlist/collection is updated:
     - When setting visibility to a certain time-frame, make sure the playlist/collection itself is scheduled to update
       at

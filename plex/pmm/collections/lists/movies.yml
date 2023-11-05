@@ -217,16 +217,6 @@ collections:
     visible_home: false
     visible_shared: false
 
-  "📖 Get Busy Living, or Get Busy Dying":
-    summary: "The Stephen King collection"
-    template: { name: Franchise,
-                sort_title: "Stephen King",
-                level: "+" }
-    smart_filter:
-      all:
-        writer: "Stephen King"
-      sort_by: release.asc
-
   "🐦‍⬛ Quoth the Raven":
     summary: "The Edgar Allan Poe collection"
     template: { name: Franchise,
@@ -236,6 +226,20 @@ collections:
       - https://trakt.tv/users/majeed_pk/lists/the-best-edgar-allan-poe-adaptations
     url_background: https://wallpapercave.com/wp/wp2328085.jpg
     collection_order: random
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "📖 Get Busy Living, or Get Busy Dying":
+    summary: "The Stephen King collection"
+    template: { name: Franchise,
+                sort_title: "Stephen King",
+                level: "+",
+                poster: "https://i.redd.it/sz63m6aex2g31.png" }
+    smart_filter:
+      all:
+        writer: "Stephen King"
+      sort_by: release.asc
     visible_library: true
     visible_home: false
     visible_shared: false

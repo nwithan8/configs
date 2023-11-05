@@ -8,7 +8,7 @@ templates:
         year.gte: <<key_name>>
         year.lte: <<ending>>
     sort_title: 08_+<<level>>_<<key>>
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule: monthly(17)
@@ -24,7 +24,7 @@ templates:
     default:
       level: ""
     sort_title: 07_+<<level>>_<<key_name>>
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)
@@ -38,7 +38,7 @@ templates:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
     collection_order: release.asc
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule:
@@ -53,7 +53,7 @@ templates:
       level: ""
     sort_title: 09_+<<level>>_<<key>>
     collection_order: release.asc
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule:
@@ -70,7 +70,7 @@ templates:
       level: ""
     sort_title: 11_+<<level>>_<<key_name>>
     collection_order: random
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule: weekly(saturday)

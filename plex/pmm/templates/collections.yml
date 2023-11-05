@@ -67,7 +67,7 @@ templates:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
-    visible_library: true
+    visible_library: false
     url_poster: <<poster_url>>
 
   ActorAward:
@@ -83,7 +83,7 @@ templates:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
-    visible_library: true
+    visible_library: false
 
   Holiday:
     default:
@@ -93,11 +93,11 @@ templates:
       - poster_url
     sort_title: 060_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    visible_library: true
     url_poster: <<poster_url>>
     run_again: true
-    visible_home: true
-    visible_shared: true
+    visible_home: false
+    visible_shared: false
+    visible_library: false
 
   Collection:
     default:
@@ -138,7 +138,7 @@ templates:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
-    visible_library: true
+    visible_library: false
     url_poster: <<poster_url>>
 
   Decade:
@@ -152,7 +152,7 @@ templates:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
-    visible_library: true
+    visible_library: false
     url_poster: <<poster_url>>
 
   Person:
@@ -169,7 +169,7 @@ templates:
     tmdb_person: <<person>>
     sort_title: 090_+<<level>>_<<sort_title_name>>
     sync_mode: append
-    visible_library: true
+    visible_library: false
 
   Actor:
     default:
@@ -178,7 +178,7 @@ templates:
     tmdb_actor_details: <<person>>
     sort_title: 090_+<<level>>_<<sort_title_name>>
     sync_mode: append
-    visible_library: true
+    visible_library: false
 
   Director:
     default:
@@ -187,7 +187,7 @@ templates:
     tmdb_director_details: <<person>>
     sort_title: 091_+<<level>>_<<sort_title_name>>
     sync_mode: append
-    visible_library: true
+    visible_library: false
 
   Producer:
     default:
@@ -196,7 +196,7 @@ templates:
     tmdb_producer_details: <<person>>
     sort_title: 092_+<<level>>_<<sort_title_name>>
     sync_mode: append
-    visible_library: true
+    visible_library: false
 
   Studio:
     default:
@@ -237,7 +237,7 @@ templates:
     schedule:
       - weekly(wednesday)
       - weekly(sunday)
-    visible_library: true
+    visible_library: false
     url_poster: <<poster_url>>
 
   General:

@@ -7,6 +7,7 @@ collections:
     schedule: range(10/25-11/12)
     visible_home: range(10/25-11/11)
     visible_shared: range(10/25-11/11)
+    visible_library: range(10/25-11/11)
     template: { name: Holiday,
                 level: "++" }
     summary: "I like the noise of democracy."

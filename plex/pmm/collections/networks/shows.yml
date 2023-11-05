@@ -15,7 +15,7 @@ collections:
                 network: "A&E",
                 poster: https://theposterdb.com/api/assets/113113 }
     summary: "Shows Aired on A&E"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -24,7 +24,7 @@ collections:
                 network: "ABC, ABS (US)",
                 poster: https://theposterdb.com/api/assets/113115 }
     summary: "Shows Aired on ABC (US)"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -33,7 +33,7 @@ collections:
                 network: "ABC Family",
                 poster: https://theposterdb.com/api/assets/113114 }
     summary: "Shows Aired on ABC Family"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -42,7 +42,7 @@ collections:
                 network: "Adult Swim",
                 poster: https://theposterdb.com/api/assets/113116 }
     summary: "Shows Aired on Adult Swim"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -51,7 +51,7 @@ collections:
                 network: "AMC, AMC+",
                 poster: https://theposterdb.com/api/assets/113118 }
     summary: "Shows Aired on AMC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -60,7 +60,7 @@ collections:
                 network: "Animal Planet",
                 poster: https://theposterdb.com/api/assets/113119 }
     summary: "Shows Aired on Animal Planet"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -69,7 +69,7 @@ collections:
                 network: "Apple TV+, Apple Music",
                 poster: https://theposterdb.com/api/assets/113121 }
     summary: "Apple TV+ Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -78,7 +78,7 @@ collections:
                 network: "BBC, BBC Choice, BBC First, BBC HD, BBC iPlayer, BBC UKTV",
                 poster: https://theposterdb.com/api/assets/113123 }
     summary: "Shows Aired on BBC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -87,7 +87,7 @@ collections:
                 network: "BBC One",
                 poster: https://theposterdb.com/api/assets/113128 }
     summary: "Shows Aired on BBC One"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -96,7 +96,7 @@ collections:
                 network: "BBC Two",
                 poster: https://theposterdb.com/api/assets/113130 }
     summary: "Shows Aired on BBC Two"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -105,7 +105,7 @@ collections:
                 network: "BBC Three",
                 poster: https://theposterdb.com/api/assets/113129 }
     summary: "Shows Aired on BBC Three"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -114,7 +114,7 @@ collections:
                 network: "BBC Four",
                 poster: https://theposterdb.com/api/assets/113127 }
     summary: "Shows Aired on BBC Four"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -123,7 +123,7 @@ collections:
                 network: "BBC America",
                 poster: https://theposterdb.com/api/assets/113125 }
     summary: "Shows Aired on BBC America"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -132,7 +132,7 @@ collections:
                 network: "BET",
                 poster: https://theposterdb.com/api/assets/113131 }
     summary: "Shows Aired on BET"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -141,7 +141,7 @@ collections:
                 network: "Bravo",
                 poster: https://theposterdb.com/api/assets/113134 }
     summary: "Shows Aired on Bravo"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -150,7 +150,7 @@ collections:
                 network: "Cartoon Network",
                 poster: https://theposterdb.com/api/assets/113135 }
     summary: "Shows Aired on Cartoon Network"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -159,7 +159,7 @@ collections:
                 network: "CBBC, Cbeebies",
                 poster: https://theposterdb.com/api/assets/113126 }
     summary: "Shows Aired on Cbeebies"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -168,7 +168,7 @@ collections:
                 network: "CBS, CBS All Access, CBS Reality, CBS Reality (UK), CBS.com",
                 poster: https://theposterdb.com/api/assets/113138 }
     summary: "Shows Aired on CBS"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -177,7 +177,7 @@ collections:
                 network: "Channel 4, E4, More4, 4Seven, Film4",
                 poster: https://theposterdb.com/api/assets/113139 }
     summary: "Shows Aired on Channel 4"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -186,7 +186,7 @@ collections:
                 network: "Cinemax",
                 poster: https://theposterdb.com/api/assets/113140 }
     summary: "Shows Aired on Cinemax"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -195,7 +195,7 @@ collections:
                 network: "CNBC",
                 poster: https://theposterdb.com/api/assets/113143 }
     summary: "Shows Aired on CNBC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -204,7 +204,7 @@ collections:
                 network: "CNN",
                 poster: https://theposterdb.com/api/assets/113145 }
     summary: "Shows Aired on CNN"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -213,7 +213,7 @@ collections:
                 network: "Comedy Central, Comedy Central (UK)",
                 poster: https://theposterdb.com/api/assets/113146 }
     summary: "Shows Aired on Comedy Central"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -222,7 +222,7 @@ collections:
                 network: "The CW",
                 poster: https://theposterdb.com/api/assets/113153 }
     summary: "Shows Aired on The CW"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -231,7 +231,7 @@ collections:
                 network: "Discovery, Discovery Channel, Discovery Channel (AU), Discovery Channel (CA), Discovery Channel (UK), Discovery Health Channel, Discovery Kids, Discovery Life, Discovery Real Time, Discovery Turbo, Discovery Turbo UK, Discovery+",
                 poster: https://theposterdb.com/api/assets/113157 }
     summary: "Shows Aired on Discovery Channel"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -240,7 +240,7 @@ collections:
                 network: "Disney Channel, Disney Channel (UK)",
                 poster: https://theposterdb.com/api/assets/113158 }
     summary: "Shows Aired on Disney Channel"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -249,7 +249,7 @@ collections:
                 network: "Disney Junior",
                 poster: https://theposterdb.com/api/assets/113162 }
     summary: "Shows Aired on Disney Junior"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -258,7 +258,7 @@ collections:
                 network: "Disney XD",
                 poster: https://theposterdb.com/api/assets/258328 }
     summary: "Shows Aired on Disney XD"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -267,7 +267,7 @@ collections:
                 network: "Toon Disney",
                 poster: https://theposterdb.com/api/assets/113163 }
     summary: "Shows Aired on Toon Disney"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -276,7 +276,7 @@ collections:
                 network: "Disney+, Disney+ Hostar",
                 poster: https://theposterdb.com/api/assets/113160 }
     summary: "Disney+ Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -285,7 +285,7 @@ collections:
                 network: "ESPN, ESPN2, ESPN3, ESPNU, ESPN+, ESPNU+",
                 poster: https://theposterdb.com/api/assets/113167 }
     summary: "Shows Aired on ESPN"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -294,7 +294,7 @@ collections:
                 network: "E!",
                 poster: https://theposterdb.com/api/assets/113143 }
     summary: "Shows Aired on E!"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -303,7 +303,7 @@ collections:
                 network: "Food Network",
                 poster: https://theposterdb.com/api/assets/113170 }
     summary: "Shows Aired on Food Network"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -312,7 +312,7 @@ collections:
                 network: "FOX, Fox Action Movies, Fox Business Network, Fox Premium Series, FOX Sports 1, Fox Sports Networks",
                 poster: https://theposterdb.com/api/assets/113173 }
     summary: "Shows Aired on FOX"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -321,7 +321,7 @@ collections:
                 network: "Fox Kids",
                 poster: https://theposterdb.com/api/assets/115230 }
     summary: "Shows Aired on Fox Kids"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -330,7 +330,7 @@ collections:
                 network: "Freeform",
                 poster: https://theposterdb.com/api/assets/113176 }
     summary: "Shows Aired on Freeform"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -339,7 +339,7 @@ collections:
                 network: "FX, FXX, FXM",
                 poster: https://theposterdb.com/api/assets/113174 }
     summary: "Shows Aired on FX"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -348,7 +348,7 @@ collections:
                 network: "Hallmark Channel",
                 poster: https://theposterdb.com/api/assets/113185 }
     summary: "Shows Aired on Hallmark Channel"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -357,7 +357,7 @@ collections:
                 network: "HBO, HBO Canada, HBO Europe",
                 poster: https://theposterdb.com/api/assets/113186 }
     summary: "Shows Aired on HBO"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -366,7 +366,7 @@ collections:
                 network: "HBO Max",
                 poster: https://theposterdb.com/api/assets/115226 }
     summary: "HBO Max Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -375,7 +375,7 @@ collections:
                 network: "History, History (CA), History (UK), History Channel, History Channel (AU)",
                 poster: https://theposterdb.com/api/assets/113187 }
     summary: "Shows Aired on History Channel"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -384,7 +384,7 @@ collections:
                 network: "HGTV, HGTV (AU), HGTV Canada",
                 poster: https://theposterdb.com/api/assets/113183 }
     summary: "Shows Aired on HGTV"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -393,7 +393,7 @@ collections:
                 network: "Hulu",
                 poster: https://theposterdb.com/api/assets/113188 }
     summary: "Hulu Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -402,7 +402,7 @@ collections:
                 network: "ION",
                 poster: https://theposterdb.com/api/assets/113191 }
     summary: "Shows Aired on ION"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -411,7 +411,7 @@ collections:
                 network: "ITV, ITV2, ITV3, ITV4, ITVBe, CITV",
                 poster: https://theposterdb.com/api/assets/113192 }
     summary: "Shows Aired on ITV"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -420,7 +420,7 @@ collections:
                 network: "Lifetime",
                 poster: https://theposterdb.com/api/assets/113194 }
     summary: "Shows Aired on Lifetime"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -429,7 +429,7 @@ collections:
                 network: "MSNBC",
                 poster: https://theposterdb.com/api/assets/113199 }
     summary: "Shows Aired on MSNBC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -438,7 +438,7 @@ collections:
                 network: "MTV, MTV (AU/NZ), MTV (UK), MTV2, MTV3",
                 poster: https://theposterdb.com/api/assets/113202 }
     summary: "Shows Aired on MTV"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -447,7 +447,7 @@ collections:
                 network: "National Geographic, National Geographic (UK), National Geographic Brasil, National Geographic Channel, National Geographic Wild",
                 poster: https://theposterdb.com/api/assets/113206 }
     summary: "Shows Aired on National Geographic"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -456,7 +456,7 @@ collections:
                 network: "NBC",
                 poster: https://theposterdb.com/api/assets/113217 }
     summary: "Shows Aired on NBC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -465,7 +465,7 @@ collections:
                 network: "Netflix",
                 poster: https://theposterdb.com/api/assets/113218 }
     summary: "Netflix Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -474,7 +474,7 @@ collections:
                 network: "Nickelodeon",
                 poster: https://theposterdb.com/api/assets/113231 }
     summary: "Shows Aired on Nickelodeon"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -483,7 +483,7 @@ collections:
                 network: "Nick Jr.",
                 poster: https://theposterdb.com/api/assets/113227 }
     summary: "Shows Aired on Nick Jr."
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -492,7 +492,7 @@ collections:
                 network: "Nicktoons",
                 poster: https://theposterdb.com/api/assets/113225 }
     summary: "Shows Aired on NickToons"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -501,7 +501,7 @@ collections:
                 network: "TeenNick",
                 poster: https://theposterdb.com/api/assets/113228 }
     summary: "Shows Aired on TeenNick"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -510,7 +510,7 @@ collections:
                 network: "Oxygen",
                 poster: https://theposterdb.com/api/assets/113240 }
     summary: "Shows Aired on Oxygen"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -519,7 +519,7 @@ collections:
                 network: "PBS, PBS Kids",
                 poster: https://theposterdb.com/api/assets/113244 }
     summary: "Shows Aired on PBS"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -528,7 +528,7 @@ collections:
                 network: "Peacock",
                 poster: https://theposterdb.com/api/assets/113217 }
     summary: "Peacock Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -537,7 +537,7 @@ collections:
                 network: "Amazon, Amazon Prime Video, Prime Video",
                 poster: https://theposterdb.com/api/assets/113247 }
     summary: "Prime Video Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -546,7 +546,7 @@ collections:
                 network: "Quibi",
                 poster: https://theposterdb.com/api/assets/115020 }
     summary: "Quibi Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -555,7 +555,7 @@ collections:
                 network: "Showtime",
                 poster: https://theposterdb.com/api/assets/113257 }
     summary: "Shows Aired on Showtime"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -564,7 +564,7 @@ collections:
                 network: "Sky 1, Sky Arts, Sky Atlantic, Sky Atlantic (UK), Sky Cinema, Sky Crime, Sky Documentaries, Sky Living, Sky Max, Sky Nature, Sky One, Sky Sports, Sky Two, Sky Witness, Sky1",
                 poster: https://theposterdb.com/api/assets/255451 }
     summary: "Shows Aired on Sky"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -573,7 +573,7 @@ collections:
                 network: "Starz, Starz Encore, Starz Play, StarzPlay",
                 poster: https://theposterdb.com/api/assets/113265 }
     summary: "Shows Aired on Starz"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -582,7 +582,7 @@ collections:
                 network: "Syfy",
                 poster: https://theposterdb.com/api/assets/113269 }
     summary: "Shows Aired on Syfy"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -591,7 +591,7 @@ collections:
                 network: "TBS",
                 poster: https://theposterdb.com/api/assets/113271 }
     summary: "Shows Aired on TBS"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -600,7 +600,7 @@ collections:
                 network: "TLC",
                 poster: https://theposterdb.com/api/assets/113274 }
     summary: "Shows Aired on TLC"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -609,7 +609,7 @@ collections:
                 network: "TNT",
                 poster: https://theposterdb.com/api/assets/113276 }
     summary: "Shows Aired on TNT"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -618,7 +618,7 @@ collections:
                 network: "TVLand",
                 poster: https://theposterdb.com/api/assets/113284 }
     summary: "Shows Aired on TVLand"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -627,7 +627,7 @@ collections:
                 network: "USA Network",
                 poster: https://theposterdb.com/api/assets/113293 }
     summary: "Shows Aired on USA"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -636,7 +636,7 @@ collections:
                 network: "VH1",
                 poster: https://theposterdb.com/api/assets/113294 }
     summary: "Shows Aired on VH1"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -645,7 +645,7 @@ collections:
                 network: "The WB",
                 poster: https://theposterdb.com/api/assets/113297 }
     summary: "Shows Aired on The WB"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false
 
@@ -654,6 +654,6 @@ collections:
                 network: "YouTube, YouTube Premium",
                 poster: https://theposterdb.com/api/assets/113301 }
     summary: "YouTube Original Shows"
-    visible_library: true
+    visible_library: false
     visible_home: false
     visible_shared: false

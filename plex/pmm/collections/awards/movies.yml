@@ -106,6 +106,7 @@ collections:
     collection_order: release.asc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   ### This year's Per-Best Actor Collections
   # ---------------------------------
@@ -125,6 +126,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actor Nominee - Colin Farrell":
     template: { name: ActorAward,
@@ -138,6 +140,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actor Nominee - Brendan Fraser":
     template: { name: ActorAward,
@@ -151,6 +154,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actor Nominee - Paul Mescal":
     template: { name: ActorAward,
@@ -164,6 +168,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actor Nominee - Bill Nighy":
     template: { name: ActorAward,
@@ -177,6 +182,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
 
   ### This year's Per-Best Actress Collections
@@ -197,6 +203,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actress Nominee - Ana de Armas":
     template: { name: ActorAward,
@@ -210,6 +217,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actress Nominee - Andrea Riseborough":
     template: { name: ActorAward,
@@ -223,6 +231,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actress Nominee - Michelle Williams":
     template: { name: ActorAward,
@@ -236,6 +245,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   "🎭 2023 Best Actress Nominee - Michelle Yeoh":
     template: { name: ActorAward,
@@ -249,6 +259,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
 
 
@@ -269,6 +280,7 @@ collections:
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
 
   ### Historical Awards
   # ---------------------------------
@@ -289,7 +301,7 @@ collections:
     collection_order: random
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    visible_library: true
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner.jpg
 
   # All past Oscar Best Director-winning movies
@@ -308,7 +320,7 @@ collections:
     collection_order: random
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    visible_library: true
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_director_winner.jpg
 
   # All past Oscar Best Picture-winning movies
@@ -345,7 +357,7 @@ collections:
     collection_order: random
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    visible_library: true
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzies/winner.jpg
 
   # All past BAFTA Best Film-winning movies
@@ -363,7 +375,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
-    visible_library: true
+    visible_library: range(02/21-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner.jpg
 
   # All past Berlinale-winning movies
@@ -381,7 +393,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
-    visible_library: true
+    visible_library: range(02/21-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner.jpg
 
   # All past Cannes Palme d'or-winning movies
@@ -399,7 +411,7 @@ collections:
     collection_order: release.desc
     visible_home: range(06/01-06/30)
     visible_shared: range(06/01-06/30)
-    visible_library: true
+    visible_library: range(06/01-06/30)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner.jpg
 
   # All past Cesar Award-winning movies
@@ -417,7 +429,7 @@ collections:
     collection_order: release.desc
     visible_home: range(03/14-03/31)
     visible_shared: range(03/14-03/31)
-    visible_library: true
+    visible_library: range(03/14-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner.jpg
 
   # All past Sundance-winning movies
@@ -435,7 +447,7 @@ collections:
     collection_order: release.desc
     visible_home: range(01/01-01/31)
     visible_shared: range(01/01-01/31)
-    visible_library: true
+    visible_library: range(01/01-01/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner.jpg
 
   # All past Venice Film Festival-winning movies
@@ -453,7 +465,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/21-03/31)
     visible_shared: range(02/21-03/31)
-    visible_library: true
+    visible_library: range(02/21-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
 
 dynamic_collections:
