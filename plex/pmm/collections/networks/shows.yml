@@ -615,7 +615,7 @@ collections:
 
   TVLand:
     template: { name: Network,
-                network: "TVLand",
+                network: "TV Land",
                 poster: https://theposterdb.com/api/assets/113284 }
     summary: "Shows Aired on TVLand"
     visible_library: false
