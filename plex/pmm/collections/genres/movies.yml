@@ -16,7 +16,8 @@ collections:
   "😜 Spoofs and Parodies":
     template: { name: Genre }
     summary: "Imitation is the sincerest form of flattery"
-    mdblist_list: https://mdblist.com/lists/hdlists/top-50-parody-movies-of-all-time
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/spoof-parody-films
     collection_order: random
     visible_library: true
     visible_home: true
@@ -38,8 +39,8 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     collection_order: random
     visible_library: true
-    visible_home: true
-    visible_shared: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
 
   "🚓 Get In Get Out":
     template: { name: Genre }
@@ -47,8 +48,8 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     collection_order: random
     visible_library: true
-    visible_home: true
-    visible_shared: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
 
   "🎢 On The Edge Of Your Seat":
     template: { name: Genre }
@@ -57,8 +58,8 @@ collections:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
     collection_order: random
     visible_library: true
-    visible_home: true
-    visible_shared: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
 
   "🤯 What a Twist!":
     template: { name: Genre }
@@ -66,8 +67,8 @@ collections:
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: random
     visible_library: true
-    visible_home: true
-    visible_shared: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
 
   "📗 Based On A True Story":
     template: { name: Genre }
@@ -95,8 +96,109 @@ collections:
       - https://trakt.tv/users/majeed_pk/lists/bon-appetit
     collection_order: random
     visible_library: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
+
+  "🗎 Documentaries":
+    template: { name: Genre }
+    summary: "The top documentaries of all time"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/documentaries
+    collection_order: random
+    visible_library: true
     visible_home: true
     visible_shared: true
+
+  "🧥 I'm Gonna Make Him an Offer":
+    template: { name: Genre }
+    summary: "The best gangster movies of all time"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/the-complete-list-of-mafia-gangsters-movies
+    collection_order: random
+    visible_library: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
+
+  "🧑 It Really Happened":
+    template: { name: Genre }
+    summary: "These people actually existed."
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/biographies
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🌿 What Is Life Anyway?":
+    template: { name: Genre }
+    summary: "The best existential movies of all time"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/existentialist-films
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "⚖️ Order In The Court":
+    template: { name: Genre }
+    summary: "The best courtroom dramas of all time"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/courtroom-dramas
+    collection_order: random
+    visible_library: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
+
+  "🪖 World War II, In Order":
+    template: { name: Genre }
+    summary: "Movies depicting World War II, in chronological order"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/world-war-ii-in-chronological-order
+    collection_order: custom  # Maintain the order of the list
+    visible_library: true
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
+
+  "🙂 Feel-Good Movies":
+    template: { name: Genre }
+    summary: "The best feel-good movies of all time"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/feelgood-movies
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🧘 Kick Back and Relax":
+    template: { name: Genre }
+    summary: "The best movies for a lazy weekend afternoon"
+    trakt_list:
+      - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
+    collection_order: random
+    schedule: weekly(saturday), weekly(sunday), weekly(monday)
+    visible_home: weekly(saturday), weekly(sunday)
+    visible_shared: weekly(saturday), weekly(sunday)
+    visible_library: weekly(saturday), weekly(sunday)
+
+  "🤪 The Weirdo's Videostore":
+    template: { name: Genre }
+    summary: "Cinema is strange."
+    letterboxd_list: https://letterboxd.com/maxvayne/list/the-weirdos-videostore-aka-the-weirdos-paradise
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "⁉️ Controversial Cinema":
+    template: { name: Genre }
+    summary: "The most edgy, crazy, disturbing, controversial, shocking, bizarre, scandalous and downright f***ed up films of all time!"
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/dark-deeply-disturbing-controversial-shocking-bizarre-and-messed-up-films
+    collection_order: random
+    visible_library: false  # This is a hidden collection due to the nature of the content
+    visible_home: false  # Not advertised on the home page
+    visible_shared: false  # Not advertised on the home page
+
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections

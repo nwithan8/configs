@@ -31,18 +31,6 @@ collections:
     visible_home: true
     visible_shared: true
 
-  # Good weekend movies, only visible on home on Saturday and Sunday
-  "🧘 Kick Back and Relax":
-    template: { name: Genre }
-    summary: "The best movies for a lazy weekend afternoon"
-    trakt_list:
-      - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
-    collection_order: random
-    visible_library: true
-    schedule: weekly(saturday), weekly(sunday), weekly(monday)
-    visible_home: weekly(saturday), weekly(sunday)
-    visible_shared: weekly(saturday), weekly(sunday)
-
   "🤨 How Did This Get Made?":
     template: { name: Collection,
                 sort_title: "How Did This Get Made?",
