@@ -51,7 +51,9 @@ collections:
     template: { name: Chart,
                 level: "+++++" }
     summary: "The hottest shows right now"
-    imdb_chart: popular_shows
+    trakt_chart:
+      chart: trending
+      limit: 30
     collection_order: custom
     sync_mode: sync
     visible_library: true
