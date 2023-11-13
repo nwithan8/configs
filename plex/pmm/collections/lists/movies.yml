@@ -18,8 +18,8 @@ collections:
 
   # Worst movies of all time, updated monthly
   "💩 Just the Worst":
-    template: { name: Collection
-                sort_title: "Worst Movies Ever"
+    template: { name: Collection,
+                sort_title: "Worst Movies Ever",
                 level: "++" }
     summary: "The worst movies of all time."
     trakt_list:
