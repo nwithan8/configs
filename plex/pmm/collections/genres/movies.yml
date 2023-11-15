@@ -119,15 +119,16 @@ collections:
     visible_home: false  # Not advertised on the home page
     visible_shared: false  # Not advertised on the home page
 
-  "🧑 It Really Happened":
-    template: { name: Genre }
-    summary: "These people actually existed."
-    trakt_list:
-      - https://trakt.tv/users/majeed_pk/lists/biographies
-    collection_order: random
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # TODO: Might time out due to size
+  # "🧑 It Really Happened":
+  #  template: { name: Genre }
+  #  summary: "These people actually existed."
+  #  trakt_list:
+  #    - https://trakt.tv/users/majeed_pk/lists/biographies
+  #  collection_order: random
+  #  visible_library: true
+  #  visible_home: true
+  #  visible_shared: true
 
   "🌿 What Is Life Anyway?":
     template: { name: Genre }

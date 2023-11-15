@@ -468,17 +468,18 @@ collections:
     visible_library: range(02/21-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
 
-  "🎞️ American Film Institute":
-    summary: "The American Film Institute (AFI) is an American film organization that educates filmmakers and honors the heritage of the motion picture arts in the United States."
-    template: { name: Award,
-                level: "+" }
-    trakt_list: https://trakt.tv/users/majeed_pk/lists/afi-100-years-all-films-complete
-    schedule:
-      - weekly(friday)
-    collection_order: release.desc
-    visible_home: false
-    visible_shared: false
-    visible_library: true
+  # Too big, times out
+  # "🎞️ American Film Institute":
+  #  summary: "The American Film Institute (AFI) is an American film organization that educates filmmakers and honors the heritage of the motion picture arts in the United States."
+  #  template: { name: Award,
+  #              level: "+" }
+  #  trakt_list: https://trakt.tv/users/majeed_pk/lists/afi-100-years-all-films-complete
+  #  schedule:
+  #    - weekly(friday)
+  #  collection_order: release.desc
+  #  visible_home: false
+  #  visible_shared: false
+  #  visible_library: true
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections
