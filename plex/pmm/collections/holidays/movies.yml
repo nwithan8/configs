@@ -44,6 +44,19 @@ collections:
       - https://www.imdb.com/list/ls063934595/
     poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg
 
+  "🥦 4/20":
+    schedule: range(04/15-04/23)
+    visible_home: range(04/15-04/22)
+    visible_shared: range(04/15-04/22)
+    visible_library: range(04/15-04/22)
+    template: { name: Holiday,
+                level: "+" }
+    summary: "Blaze it!"
+    collection_order: random
+    imdb_list:
+      - https://www.imdb.com/list/ls075204988/
+    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/420.jpg
+
   "🐰 Easter":
     schedule: range(03/20-05/01)
     visible_home: range(03/20-04/30)
