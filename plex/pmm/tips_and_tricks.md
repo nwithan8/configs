@@ -156,3 +156,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result,
   make a collection using the "actor" template.
 - Schedule a dynamic collection (visibility, update frequency, etc.) via the template
+
+## Custom Posters
+- Placeholder posters generated using [this utility](https://github.com/bullmoose20/Plex-Stuff#create_poster) and [this font](https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/Comfortaa-Bold.ttf)
+  - Example: `./create_poster.ps1 -clean 1 -base_color "#5B5B5B" -gradient "1" -font "Comfortaa-Bold" -font_size "200" -text "NETWORKS"` 
