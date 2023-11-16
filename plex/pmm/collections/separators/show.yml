@@ -3,6 +3,8 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  # Each needs a placeholder show, can't be empty collections
+  # Show be in the library, so try to use a popular show likely to be on any given server
   "Awards":
     template: { name: Award,
                 level: "++++++++++" }
@@ -11,6 +13,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Holidays":
     template: { name: Holiday,
@@ -20,6 +24,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Collections":
     template: { name: Collection,
@@ -29,6 +35,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Franchises":
     template: { name: Franchise,
@@ -38,6 +46,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Genres":
     template: { name: Genre,
@@ -47,6 +57,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Decades":
     template: { name: Decade,
@@ -56,6 +68,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Networks":
     template: { name: Network,
@@ -65,6 +79,8 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Countries":
     template: { name: Country,
@@ -74,4 +90,6 @@ collections:
     visible_home: false
     visible_shared: false
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/countries.jpg
+    tvdb_show:
+      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
