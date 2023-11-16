@@ -9,12 +9,12 @@ collections:
     visible_shared: range(12/26-01/04)
     visible_library: range(12/26-01/04)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/years.jpg }
     summary: "Ring in the New Year with these movies!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls066838460/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/years.jpg
 
   "💘 Valentine's Day":
     schedule: range(02/01-02/21)
@@ -22,14 +22,14 @@ collections:
     visible_shared: range(02/01-02/20)
     visible_library: range(02/01-02/20)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/valentine.jpg }
     summary: "Love me tender, love me sweet, never let me go."
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/
       - https://www.imdb.com/list/ls064427905/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/valentine.jpg
 
   "☘ St. Patrick's Day":
     schedule: range(03/01-03/19)
@@ -37,12 +37,12 @@ collections:
     visible_shared: range(03/01-03/18)
     visible_library: range(03/01-03/18)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg }
     summary: "Kiss Me, I'm Irish."
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls063934595/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/patrick.jpg
 
   "🥦 4/20":
     schedule: range(04/15-04/23)
@@ -50,12 +50,12 @@ collections:
     visible_shared: range(04/15-04/22)
     visible_library: range(04/15-04/22)
     template: { name: Holiday,
-                level: "+" }
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/420.jpg }
     summary: "Blaze it!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls075204988/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/420.jpg
 
   "🐰 Easter":
     schedule: range(03/20-05/01)
@@ -63,13 +63,13 @@ collections:
     visible_shared: range(03/20-04/30)
     visible_library: range(03/20-04/30)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/easter.jpg }
     summary: "Hoppy Easter!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/easter.jpg
 
   "🤱 Mother's Day":
     schedule: range(05/05-05/11)
@@ -77,12 +77,12 @@ collections:
     visible_shared: range(05/05-05/10)
     visible_library: range(05/05-05/10)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/mother.jpg }
     summary: "Thanks Mom!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls072551197/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/mother.jpg
 
   "🪖 Memorial Day":
     schedule: range(5/18-6/8)
@@ -90,12 +90,12 @@ collections:
     visible_shared: range(5/18-6/7)
     visible_library: range(5/18-6/7)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/memorial.jpg }
     summary: "Remembering those who gave their lives for our freedom."
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/memorial.jpg
 
   "👨 Father's Day":
     schedule: range(06/15-06/21)
@@ -103,12 +103,12 @@ collections:
     visible_shared: range(06/15-06/20)
     visible_library: range(06/15-06/20)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/father.jpg }
     summary: "Thanks Dad!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls020471057/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/father.jpg
 
   "🎆 Independence Day":
     schedule: range(06/23-07/11)
@@ -116,13 +116,13 @@ collections:
     visible_shared: range(06/23-07/10)
     visible_library: range(06/23-07/10)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/independence.jpg }
     summary: "Celebrate the 4th of July with these movies!"
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls068664510/
       - https://www.imdb.com/list/ls080925875/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/independence.jpg
 
   "⚒ Labor Day":
     schedule: range(09/01-09/11)
@@ -130,12 +130,12 @@ collections:
     visible_shared: range(09/01-09/10)
     visible_library: range(09/01-09/10)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/labor.jpg }
     summary: "Labor Day is a day off, but these movies are hard work."
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/labor.jpg
 
   "🎃 Halloween":
     schedule: range(10/01-11/01)
@@ -143,7 +143,8 @@ collections:
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
     template: { name: Holiday,
-                level: "+++" }
+                level: "+++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/halloween.jpg }
     summary: "Boo!"
     collection_order: random
     imdb_list:
@@ -169,7 +170,6 @@ collections:
       - 751156    # Hocus Pocus
     tmdb_movie:
       - 23437    # A Nightmare on Elm Street (2010)
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/halloween.jpg
 
   "👻 Horror":
     schedule: range(10/01-11/01)
@@ -225,7 +225,8 @@ collections:
     visible_shared: range(11/01-11/30)
     visible_library: range(11/01-11/30)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/thanksgiving.jpg }
     summary: "Gobble gobble!"
     collection_order: random
     imdb_list:
@@ -236,7 +237,6 @@ collections:
       - https://trakt.tv/users/shahid1296/lists/thanksgiving
       - https://trakt.tv/users/retrogran/lists/thanksgiving-season-movies
       - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/thanksgiving.jpg
 
   "🎅 Christmas":
     schedule: range(12/01-01/01)
@@ -244,7 +244,8 @@ collections:
     visible_shared: range(12/01-12/31)
     visible_library: range(12/01-12/31)
     template: { name: Holiday,
-                level: "++" }
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg }
     summary: "Cozy up with some Christmas classics."
     collection_order: random
     imdb_list:
@@ -253,7 +254,6 @@ collections:
       - https://trakt.tv/users/movistapp/lists/christmas-movies
       - https://trakt.tv/users/questdvd/lists/absolute-hayes-christmas-classics
       - https://trakt.tv/users/littlestella3/lists/christmas
-    poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg
 
   "🎁 Hallmark Christmas":
     schedule: range(12/01-01/01)
