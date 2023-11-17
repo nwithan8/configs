@@ -80,6 +80,36 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "📖 The Book Was Better":
+    template: { name: Genre }
+    summary: "Based on a book"
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-books
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "🕹️ Arrow In The Knee":
+    template: { name: Genre }
+    summary: "Based on a video game"
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-video-games
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "💬 With Great Power...":
+    template: { name: Genre }
+    summary: "Based on a comic book"
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-comics
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre }
     summary: "True crime documentaries"
