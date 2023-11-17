@@ -3,13 +3,19 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  # Recommended levels (will appear in the order below):
+  # ++++ - Major holidays, especially those with a specific date or small range (top priority)
+  # +++ - Major holidays, especially those with a specific date or small range (lower priority)
+  # ++ - Month-long or extended holidays
+  # + - Lesser holidays
+
   "✊🏿 Black History Month":
     schedule: range(02/01-03/01)
     visible_home: range(02/01-02/29)
     visible_shared: range(02/01-02/29)
     visible_library: range(02/01-02/29)
     template: { name: Holiday,
-                level: "+",
+                level: "++",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/black_history2.jpg }
     summary: "Celebrate Black History Month with these movies!"
     collection_order: random
@@ -22,7 +28,7 @@ collections:
     visible_shared: range(05/01-05/31)
     visible_library: range(05/01-05/31)
     template: { name: Holiday,
-                level: "+",
+                level: "++",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/aapi.jpg }
     summary: "Celebrate Asian American and Pacific Islander Heritage Month with these movies!"
     collection_order: random
@@ -35,7 +41,7 @@ collections:
     visible_shared: range(06/01-06/30)
     visible_library: range(06/01-06/30)
     template: { name: Holiday,
-                level: "+",
+                level: "++",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/lgbtq.jpg }
     summary: "Celebrate Pride Month with these movies!"
     collection_order: random
@@ -48,7 +54,7 @@ collections:
     visible_shared: range(09/15-10/15)
     visible_library: range(09/15-10/15)
     template: { name: Holiday,
-                level: "+",
+                level: "++",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/hispanic.jpg }
     summary: "Celebrate Hispanic Heritage Month with these movies!"
     collection_order: random
@@ -61,7 +67,7 @@ collections:
     visible_shared: range(10/25-11/11)
     visible_library: range(10/25-11/11)
     template: { name: Holiday,
-                level: "++" }
+                level: "+++" }
     summary: "I like the noise of democracy."
     collection_order: random
     trakt_list:
