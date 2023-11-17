@@ -73,7 +73,8 @@ collections:
   "📗 Based On A True Story":
     template: { name: Genre }
     summary: "Based on a true story"
-    mdblist_list: https://mdblist.com/lists/hdlists/based-on-or-inspired-by-a-true-story
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-true-stories
     collection_order: random
     visible_library: true
     visible_home: true
