@@ -73,14 +73,13 @@ collections:
 
   "Networks":
     template: { name: Network,
-                level: "++++++++++" }
+                network: "FOX",
+                level: "++++++++++",
+                poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg }
     summary: "Networks"
     visible_library: false
     visible_home: false
     visible_shared: false
-    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg
-    tvdb_show:
-      - https://thetvdb.com/series/the-simpsons # The Simpsons
 
   "Countries":
     template: { name: Country,

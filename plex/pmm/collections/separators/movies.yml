@@ -67,13 +67,13 @@ collections:
 
   "Studios":
     template: { name: Studio,
-                level: "++++++++++" }
+                level: "++++++++++",
+                studio: "A24",
+                poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/studios.jpg }
     summary: "Studios"
     visible_library: false
     visible_home: false
     visible_shared: false
-    url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/studios.jpg
-    tmdb_movie: https://www.themoviedb.org/movie/630 # The Wizard of Oz (1939)
 
   "Countries":
     template: { name: Country,
