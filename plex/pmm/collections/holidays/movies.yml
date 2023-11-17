@@ -31,6 +31,19 @@ collections:
       - https://www.imdb.com/list/ls057783436/
       - https://www.imdb.com/list/ls064427905/
 
+  "✊🏿 Black History Month":
+    schedule: range(02/01-03/01)
+    visible_home: range(02/01-02/29)
+    visible_shared: range(02/01-02/29)
+    visible_library: range(02/01-02/29)
+    template: { name: Holiday,
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/black_history2.jpg }
+    summary: "Celebrate Black History Month with these movies!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/black-history-month
+
   "☘ St. Patrick's Day":
     schedule: range(03/01-03/19)
     visible_home: range(03/01-03/18)
@@ -71,6 +84,19 @@ collections:
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
 
+  "🌏 AAPI Heritage Month":
+    schedule: range(05/01-06/01)
+    visible_home: range(05/01-05/31)
+    visible_shared: range(05/01-05/31)
+    visible_library: range(05/01-05/31)
+    template: { name: Holiday,
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/aapi.jpg }
+    summary: "Celebrate Asian American and Pacific Islander Heritage Month with these movies!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/asian-american-pacific-islander-heritage-month
+
   "🤱 Mother's Day":
     schedule: range(05/05-05/11)
     visible_home: range(05/05-05/10)
@@ -96,6 +122,19 @@ collections:
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
+
+  "🏳️‍🌈 LGBTQ+ Pride Month":
+    schedule: range(06/01-07/01)
+    visible_home: range(06/01-06/30)
+    visible_shared: range(06/01-06/30)
+    visible_library: range(06/01-06/30)
+    template: { name: Holiday,
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/lgbtq.jpg }
+    summary: "Celebrate Pride Month with these movies!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/lgbtq-pride-month
 
   "👨 Father's Day":
     schedule: range(06/15-06/21)
@@ -136,6 +175,19 @@ collections:
     collection_order: random
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
+
+  "🇪🇸 Hispanic Heritage Month":
+    schedule: range(09/15-10/16)
+    visible_home: range(09/15-10/15)
+    visible_shared: range(09/15-10/15)
+    visible_library: range(09/15-10/15)
+    template: { name: Holiday,
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/hispanic.jpg }
+    summary: "Celebrate Hispanic Heritage Month with these movies!"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/plexmetamanager/lists/hispanic-heritage-month
 
   "🎃 Halloween":
     schedule: range(10/01-11/01)
