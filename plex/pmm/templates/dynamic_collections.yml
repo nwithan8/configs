@@ -5,82 +5,60 @@ templates:
   # Dynamic Collections Templates
   # -----------------------------
   Per_Decade:
-    template: { name: Decade,
-                level: "",
-                poster_url: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key>>.png }
     smart_filter:
       sort_by: audience_rating.desc
       all:
         year.gte: <<key_name>>
         year.lte: <<ending>>
+    sort_title: 080_+<<level>>_<<key>>
+    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key>>.png
     visible_library: false
     visible_shared: false
     visible_home: false
+    schedule: monthly(17)
 
   Per_Genre:
-    template: { name: Genre,
-                level: "",
-                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name>>.jpg }
     smart_filter:
       limit: 10000
       sort_by: critic_rating.desc
       all:
         genre: <<value>>
+    default:
+      level: ""
+      sort_title: 070_+<<level>>_<<key_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
-
-  Per_Actor:
-    template: { name: Actor,
-                level: ""}
-    smart_filter:
-      sort_by: release.asc
-      any:
-        actor: <<value>>
-    visible_library: false
-    visible_shared: false
-    visible_home: false
-    schedule:
-      - weekly(thursday)
-      - weekly(monday)
-
-  Per_Director:
-    template: { name: Director,
-                level: ""}
-    smart_filter:
-      sort_by: release.asc
-      any:
-        director: <<value>>
-    visible_library: false
-    visible_shared: false
-    visible_home: false
-    schedule:
-      - weekly(friday)
-      - weekly(tuesday)
+    schedule: weekly(saturday)
 
   Per_Country_Movies:
-    template: { name: Country,
-                level: "",
-                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg }
     smart_filter:
       limit: 10000
       sort_by: critic_rating.desc
       any:
         country: <<value>>
+    default:
+      level: ""
+    sort_title: 110_+<<level>>_<<key_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
+    schedule: weekly(saturday)
 
   Per_Country_Shows:
-    template: { name: Country,
-                level: "",
-                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg }
     smart_filter:
       limit: 10000
       sort_by: critic_rating.desc
       any:
         origin_country: <<value>>
+    default:
+      level: ""
+    sort_title: 110_+<<level>>_<<key_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
+    schedule: weekly(saturday)
 
