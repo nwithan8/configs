@@ -7,7 +7,7 @@ templates:
       all:
         year.gte: <<key_name>>
         year.lte: <<ending>>
-    sort_title: 08_+<<level>>_<<key>>
+    sort_title: 080_+<<level>>_<<key>>
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -23,7 +23,7 @@ templates:
         genre: <<value>>
     default:
       level: ""
-    sort_title: 07_+<<level>>_<<key_name>>
+    sort_title: 070_+<<level>>_<<key_name>>
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -36,7 +36,7 @@ templates:
         actor: <<value>>
     default:
       level: ""
-    sort_title: 09_+<<level>>_<<key>>
+    sort_title: 090_+<<level>>_<<key>>
     collection_order: release.asc
     visible_library: false
     visible_shared: false
@@ -51,7 +51,7 @@ templates:
         director: <<value>>
     default:
       level: ""
-    sort_title: 09_+<<level>>_<<key>>
+    sort_title: 090_+<<level>>_<<key>>
     collection_order: release.asc
     visible_library: false
     visible_shared: false
@@ -118,7 +118,7 @@ templates:
     cache_builders: 1
     summary: <<summary_<<key>>>>
     name: <<emoji_<<key>>>><<name_<<key>>>>
-    sort_title: 03_+<<level>>_<<collection_name>>
+    sort_title: 060_+<<level>>_<<collection_name>>
     visible_shared: true
     visible_home: true
     url_poster: <<poster_url>>
