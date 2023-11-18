@@ -337,7 +337,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
 
-dynamic_collection:
+dynamic_collections:
   Christmas Advent Calendar DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
