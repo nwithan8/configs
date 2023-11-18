@@ -113,6 +113,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - As of v1.16.4, you can define templates in an external file. This allows you to define your templates in one central
   place, rather than having to copy-paste them into each file.
     - Import your templates with the `external_templates` key
+- HINT: A template can refer to another template rather than needing to re-implement every setting
 
 ## Collection vs Playlist
 
@@ -156,6 +157,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - A dynamic collection will execute a query (say, grab a list of the top 10 actors right now), and then for each result,
   make a collection using the "actor" template.
 - Schedule a dynamic collection (visibility, update frequency, etc.) via the template
+- HINT: You can use a collection template in a dynamic collection template (e.g. use the same sort_title setting for both dynamic collections and one-off collections by using the same collection template)
 
 ## Custom Posters
 - Placeholder posters generated using [this utility](https://github.com/bullmoose20/Plex-Stuff#create_poster) and [this font](https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/Comfortaa-Bold.ttf)
