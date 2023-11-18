@@ -16,7 +16,6 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    collection_order: random
 
   Per_Genre:
     template: { name: Genre,
@@ -35,9 +34,9 @@ templates:
     template: { name: Actor,
                 level: ""}
     smart_filter:
+      sort_by: release.asc
       any:
         actor: <<value>>
-    collection_order: release.asc
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -49,9 +48,9 @@ templates:
     template: { name: Director,
                 level: ""}
     smart_filter:
+      sort_by: release.asc
       any:
         director: <<value>>
-    collection_order: release.asc
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -68,7 +67,6 @@ templates:
       sort_by: critic_rating.desc
       any:
         country: <<value>>
-    collection_order: random
     visible_library: false
     visible_shared: false
     visible_home: false
