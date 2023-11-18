@@ -4,7 +4,8 @@ external_templates:
 
 collections:
   "🎤 What's The Deal With Airplane Food?":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
@@ -14,7 +15,8 @@ collections:
     visible_shared: true
 
   "😜 Spoofs and Parodies":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Imitation is the sincerest form of flattery"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/spoof-parody-films
@@ -24,7 +26,8 @@ collections:
     visible_shared: true
 
   "👩‍❤️‍💋‍👨 Rom-com Central":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Rotten Tomatoes' best romantic comedies of all time"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
@@ -34,7 +37,8 @@ collections:
     visible_shared: true
 
   "🏀 Slam Dunk":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     collection_order: random
@@ -43,7 +47,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🚓 Get In Get Out":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     collection_order: random
@@ -52,7 +57,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🎢 On The Edge Of Your Seat":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The suspense is killing us!"
     imdb_list:
       - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
@@ -62,7 +68,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🤯 What a Twist!":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: random
@@ -71,7 +78,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "📗 Based On A True Story":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Based on a true story"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-true-stories
@@ -81,7 +89,8 @@ collections:
     visible_shared: true
 
   "📖 The Book Was Better":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Based on a book"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-books
@@ -91,7 +100,8 @@ collections:
     visible_shared: true
 
   "🕹️ Arrow In The Knee":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Based on a video game"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-video-games
@@ -101,7 +111,8 @@ collections:
     visible_shared: true
 
   "💬 With Great Power...":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Based on a comic book"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-comics
@@ -111,7 +122,8 @@ collections:
     visible_shared: true
 
   "🔍 A Real-Life Whodunnit":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "True crime documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
@@ -121,7 +133,8 @@ collections:
     visible_shared: true
 
   "👨‍🍳 Bon Appetit":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Mouth-watering movies"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/bon-appetit
@@ -131,7 +144,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🗎 Documentaries":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The top documentaries of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/documentaries
@@ -141,7 +155,8 @@ collections:
     visible_shared: true
 
   "🧥 I'm Gonna Make Him an Offer":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best gangster movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/the-complete-list-of-mafia-gangsters-movies
@@ -152,7 +167,8 @@ collections:
 
   # TODO: Might time out due to size
   # "🧑 It Really Happened":
-  #  template: { name: Genre }
+  #  template: { name: Genre,
+                level: "++" }
   #  summary: "These people actually existed."
   #  trakt_list:
   #    - https://trakt.tv/users/majeed_pk/lists/biographies
@@ -162,7 +178,8 @@ collections:
   #  visible_shared: true
 
   "🌿 What Is Life Anyway?":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best existential movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/existentialist-films
@@ -172,7 +189,8 @@ collections:
     visible_shared: true
 
   "⚖️ Order In The Court":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best courtroom dramas of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/courtroom-dramas
@@ -182,7 +200,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🪖 World War II, In Order":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Movies depicting World War II, in chronological order"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/world-war-ii-in-chronological-order
@@ -192,7 +211,8 @@ collections:
     visible_shared: false  # Not advertised on the home page
 
   "🙂 Feel-Good Movies":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best feel-good movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/feelgood-movies
@@ -202,7 +222,8 @@ collections:
     visible_shared: true
 
   "🧘 Kick Back and Relax":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The best movies for a lazy weekend afternoon"
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
@@ -213,7 +234,8 @@ collections:
     visible_library: weekly(saturday), weekly(sunday)
 
   "🤪 The Weirdo's Videostore":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "Cinema is strange."
     letterboxd_list: https://letterboxd.com/maxvayne/list/the-weirdos-videostore-aka-the-weirdos-paradise
     collection_order: random
@@ -222,7 +244,8 @@ collections:
     visible_shared: true
 
   "⁉️ Controversial Cinema":
-    template: { name: Genre }
+    template: { name: Genre,
+                level: "++" }
     summary: "The most edgy, crazy, disturbing, controversial, shocking, bizarre, scandalous and downright f***ed up films of all time!"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/dark-deeply-disturbing-controversial-shocking-bizarre-and-messed-up-films
