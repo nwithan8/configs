@@ -2,6 +2,18 @@ external_templates:
   - repo: templates/collections
   - repo: templates/dynamic_collections
 
+templates:
+  Christmas_Advent_Calendar:
+    allowed_library_types: movie
+    summary: Day <<key>> of the Christmas Advent Calendar
+    sort_title: 061_Christmas_Advent_Calendar_<<key>> # 061_ is after 060_ for Holiday templates, before 065_ for Collection templates
+    trakt_list:
+      - https://trakt.tv/users/pierredurrr/lists/advent-calendar
+    limit: <<key>>
+    visible_home: yearly(12/<<key>>)
+    visible_shared: yearly(12/<<key>>)
+    visible_library: yearly(12/<<key>>)
+
 collections:
   # Recommended levels (will appear in the order below):
   # ++++ - Major holidays, especially those with a specific date or small range (top priority)
@@ -324,3 +336,15 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
+
+dynamic_collection:
+  Christmas Advent Calendar DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 1
+      ending: 25
+    title_format: "🎄 Advent Calendar - Day {number}"
+    schedule: range(12/01-12/26)
+    template:
+      - Christmas_Advent_Calendar
