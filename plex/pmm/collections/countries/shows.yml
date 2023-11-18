@@ -10,4 +10,4 @@ dynamic_collections:
     type: origin_country
     title_format: <<key_name>>
     template:
-      - Per_Country
+      - Per_Country_Shows

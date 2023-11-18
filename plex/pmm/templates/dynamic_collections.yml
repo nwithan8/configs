@@ -58,7 +58,7 @@ templates:
       - weekly(friday)
       - weekly(tuesday)
 
-  Per_Country:
+  Per_Country_Movies:
     template: { name: Country,
                 level: "",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg }
@@ -67,6 +67,19 @@ templates:
       sort_by: critic_rating.desc
       any:
         country: <<value>>
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+
+  Per_Country_Shows:
+    template: { name: Country,
+                level: "",
+                poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg }
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      any:
+        origin_country: <<value>>
     visible_library: false
     visible_shared: false
     visible_home: false
