@@ -94,7 +94,8 @@ templates:
     sort_title: 060_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     url_poster: <<poster_url>>
-    run_again: true
+    minimum_items: 3
+    delete_not_scheduled: true
     visible_home: false
     visible_shared: false
     visible_library: false
