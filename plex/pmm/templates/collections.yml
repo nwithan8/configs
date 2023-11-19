@@ -95,7 +95,7 @@ templates:
     sync_mode: sync
     url_poster: <<poster_url>>
     minimum_items: 3
-    delete_not_scheduled: true
+    # delete_not_scheduled: true
     visible_home: false
     visible_shared: false
     visible_library: false
