@@ -13,6 +13,7 @@ templates:
     visible_home: yearly(12/<<key>>)
     visible_shared: yearly(12/<<key>>)
     visible_library: yearly(12/<<key>>)
+    cache_builders: 1 # No need to reparse the list every time
 
 collections:
   # Recommended levels (will appear in the order below):
