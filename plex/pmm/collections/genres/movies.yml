@@ -168,7 +168,7 @@ collections:
   # TODO: Might time out due to size
   # "🧑 It Really Happened":
   #  template: { name: Genre,
-                level: "++" }
+  #              level: "++" }
   #  summary: "These people actually existed."
   #  trakt_list:
   #    - https://trakt.tv/users/majeed_pk/lists/biographies
