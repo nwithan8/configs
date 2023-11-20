@@ -13,6 +13,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -25,6 +26,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -37,6 +39,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -49,6 +52,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -61,6 +65,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -73,6 +78,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons
@@ -87,6 +93,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
 
   "Countries":
     template: { name: Country,
@@ -96,6 +103,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/countries.jpg
     tvdb_show:
       - https://thetvdb.com/series/the-simpsons # The Simpsons

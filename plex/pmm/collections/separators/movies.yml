@@ -13,6 +13,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
     tmdb_movie: https://www.themoviedb.org/movie/13 # Forrest Gump (1994)
 
@@ -24,6 +25,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
     tmdb_movie: https://www.themoviedb.org/movie/671 # Harry Potter and the Philosopher's Stone (2001)
 
@@ -35,6 +37,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
     tmdb_movie: https://www.themoviedb.org/movie/238 # The Godfather (1972)
 
@@ -46,6 +49,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
     tmdb_movie: https://www.themoviedb.org/movie/1726 # Iron Man (2008)
 
@@ -57,6 +61,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
     tmdb_movie: https://www.themoviedb.org/movie/85 # Raiders of the Lost Ark (1981)
 
@@ -68,6 +73,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
     tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
 
@@ -81,6 +87,7 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
 
   "Countries":
     template: { name: Country,
@@ -90,5 +97,6 @@ collections:
     visible_home: false
     visible_shared: false
     schedule: daily
+    delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/countries.jpg
     tmdb_movie: https://www.themoviedb.org/movie/120 # The Lord of the Rings: The Fellowship of the Ring (2001)
