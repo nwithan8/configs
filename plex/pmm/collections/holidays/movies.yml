@@ -346,6 +346,6 @@ dynamic_collections:
     data:
       starting: 1
       ending: 25
-    title_format: "🎄 Advent Calendar - Day <<key>>"
+    title_format: "🎄 Advent Calendar - Day <<key_name>>"
     template:
       - Christmas_Advent_Calendar

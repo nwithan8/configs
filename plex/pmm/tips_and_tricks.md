@@ -158,6 +158,8 @@ This collection uses a combination of all these prefixes, and are always sorted 
   make a collection using the "actor" template.
 - Schedule a dynamic collection (visibility, update frequency, etc.) via the template
 - Unfortunately, you cannot use a template in a dynamic collection, so make sure elements are the same (e.g. the sort_title syntax)
+- <<key_name>> used in title, <<key>> used in all other places
+  - For number-based DCs, these are the same.
 
 ## Custom Posters
 - Placeholder posters generated using [this utility](https://github.com/bullmoose20/Plex-Stuff#create_poster) and [this font](https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/Comfortaa-Bold.ttf)
