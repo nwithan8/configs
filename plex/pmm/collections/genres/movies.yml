@@ -264,6 +264,8 @@ dynamic_collections:
     exclude:
       - Action/Adventure
       - Talk Show
+      - Awards Show
+      - Podcast
     title_format: <<key_name>>
     template:
       - Per_Genre

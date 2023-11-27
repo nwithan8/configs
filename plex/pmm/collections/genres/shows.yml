@@ -22,6 +22,8 @@ dynamic_collections:
     type: genre
     exclude:
       - Action/Adventure
+      - Awards Show
+      - Podcast
     title_format: <<key_name>>
     template:
       - Per_Genre
