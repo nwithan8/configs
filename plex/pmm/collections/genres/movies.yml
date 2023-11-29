@@ -237,7 +237,8 @@ collections:
     template: { name: Genre,
                 level: "++" }
     summary: "Cinema is strange."
-    letterboxd_list: https://letterboxd.com/maxvayne/list/the-weirdos-videostore-aka-the-weirdos-paradise
+    trakt_list:
+      - https://trakt.tv/users/majeed_pk/lists/the-weirdo-s-videostore
     collection_order: random
     visible_library: true
     visible_home: true
