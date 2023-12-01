@@ -78,7 +78,7 @@ templates:
       all:
         actor: tmdb
     tmdb_person: <<tmdb>>
-    sort_title: 051_+<<level>>_<<sort_title_name>>
+    sort_title: 052_+<<level>>_<<sort_title_name>>
     sync_mode: append
     schedule:
       - weekly(wednesday)
