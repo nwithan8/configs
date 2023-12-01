@@ -17,7 +17,7 @@ templates:
     summary: <<key>> Academy Awards (Oscars) Winners
     sort_title: 050_Oscars_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<key>>.jpg
     schedule: monthly(04)
 
   Yearly_Berlinale_Awards:
@@ -59,7 +59,7 @@ templates:
     summary: <<key>> Golden Globe Winners
     sort_title: 050_Golden_Globes_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(04)
 
   Yearly_Spirit_Awards:
@@ -93,6 +93,15 @@ templates:
     sort_title: 050_BAFTA_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
+    schedule: monthly(04)
+
+  Yearly_Razzie_Winners:
+    default:
+      imdb_sort: moviemeter,asc
+    summary: <<key>> Golden Raspberry Winners
+    sort_title: 051_Razzie_Winners_<<key>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=razzie_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/<<key>>.jpg
     schedule: monthly(04)
 
 collections:
@@ -587,3 +596,13 @@ dynamic_collections:
     title_format: BAFTA <<key_name>>
     template:
       - Yearly_BAFTA_Awards
+
+  Yearly Razzie DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 1980
+      ending: current_year
+    title_format: Golden Raspberry Winners <<key_name>>
+    template:
+      - Yearly_Razzie_Winners
