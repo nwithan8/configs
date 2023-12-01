@@ -5,6 +5,43 @@ external_templates:
 collections:
   ### Studios
   # Studio - produced the movie (A24, Universal, Warner Bros, etc)
+  # Some of what you might be thinking of are production companies, which are different (e.g. Neon, Bleecker Street, etc)
+  "1492":
+    template: { name: Studio,
+                studio: "1492 Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/1492%20Pictures.jpg }
+    summary: "1492 Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "20th Century Animation":
+    template: { name: Studio,
+                studio: "20th Century Animation",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/20th%20Century%20Animation.jpg }
+    summary: "20th Century Animation"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "20th Century Studios":
+    template: { name: Studio,
+                studio: "20th Century Studios, 20th Century Fox",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/20th%20Century%20Studios.jpg }
+    summary: "20th Century Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "3 Arts":
+    template: { name: Studio,
+                studio: "3 Arts Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/3%20Arts%20Entertainment.jpg }
+    summary: "3 Arts Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   A24:
     template: { name: Studio,
                 studio: "A24",
@@ -14,4 +51,731 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "Aardman":
+    template: { name: Studio,
+                studio: "Aardman",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Aardman.jpg }
+    summary: "Aardman"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
 
+  "Amblin":
+    template: { name: Studio,
+                studio: "Amblin Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Amblin%20Entertainment.jpg }
+    summary: "Amblin Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Annapurna":
+    template: { name: Studio,
+                studio: "Annapurna Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Annapurna%20Pictures.jpg }
+    summary: "Annapurna Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Artisan":
+    template: { name: Studio,
+                studio: "Artisan Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Artisan%20Entertainment.jpg }
+    summary: "Artisan Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Atlas":
+    template: { name: Studio,
+                studio: "Atlas Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Atlas%20Entertainment.jpg }
+    summary: "Atlas Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Bad Robot":
+    template: { name: Studio,
+                studio: "Bad Robot",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bad%20Robot.jpg }
+    summary: "Bad Robot Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Bad Wolf":
+    template: { name: Studio,
+                studio: "Bad Wolf",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bad%20Wolf.jpg }
+    summary: "Bad Wolf"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "BBC Studios":
+    template: { name: Studio,
+                studio: "BBC Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/BBC%20Studios.jpg }
+    summary: "BBC Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Blue Sky":
+    template: { name: Studio,
+                studio: "Blue Sky Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blue%20Sky%20Studios.jpg }
+    summary: "Blue Sky Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Blumhouse":
+    template: { name: Studio,
+                studio: "Blumhouse Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blumhouse%20Productions.jpg }
+    summary: "Blumhouse Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Blur":
+    template: { name: Studio,
+                studio: "Blur Studio",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blur%20Studio.jpg }
+    summary: "Blur Studio"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Castle Rock":
+    template: { name: Studio,
+                studio: "Castle Rock Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Castle%20Rock%20Entertainment.jpg }
+    summary: "Castle Rock Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Chernin":
+    template: { name: Studio,
+                studio: "Chernin Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Chernin%20Entertainment.jpg }
+    summary: "Chernin Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Columbia Pictures":
+    template: { name: Studio,
+                studio: "Columbia Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Columbia%20Pictures.jpg }
+    summary: "Columbia Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "DC Comics":
+    template: { name: Studio,
+                studio: "DC Comics",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/DC%20Comics.jpg }
+    summary: "DC Comics"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "DreamWorks":
+    template: { name: Studio,
+                studio: "DreamWorks Studio, DreamWorks Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/DreamWorks%20Studios.jpg }
+    summary: "DreamWorks"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "e0ne":
+    template: { name: Studio,
+                studio: "Entertainment One",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Entertainment%20One.jpg }
+    summary: "e0ne"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Everest":
+    template: { name: Studio,
+                studio: "Everest Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Everest%20Entertainment.jpg }
+    summary: "Everest Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Focus Features":
+    template: { name: Studio,
+                studio: "Focus Features",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Focus%20Features.jpg }
+    summary: "Focus Features"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Gary Sanchez":
+    template: { name: Studio,
+                studio: "Gary Sanchez Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Gary%20Sanchez%20Productions.jpg }
+    summary: "Gary Sanchez Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Gracie Films":
+    template: { name: Studio,
+                studio: "Gracie Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Gracie%20Films.jpg }
+    summary: "Gracie Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "HBO":
+    template: { name: Studio,
+                studio: "HBO",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/HBO.jpg }
+    summary: "HBO"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Hallmark":
+    template: { name: Studio,
+                studio: "Hallmark",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Hallmark.jpg }
+    summary: "Hallmark"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Hasbro":
+    template: { name: Studio,
+                studio: "Hasbro",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Hasbro.jpg }
+    summary: "Hasbro"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Illumination":
+    template: { name: Studio,
+                studio: "Illumination Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Illumination%20Entertainment.jpg }
+    summary: "Illumination Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Legendary":
+    template: { name: Studio,
+                studio: "Legendary Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Legendary%20Pictures.jpg }
+    summary: "Legendary Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Lifetime":
+    template: { name: Studio,
+                studio: "Lifetime",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lifetime.jpg }
+    summary: "Lifetime"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Lionsgate":
+    template: { name: Studio,
+                studio: "Lionsgate",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lionsgate.jpg }
+    summary: "Lionsgate"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Lord Miller":
+    template: { name: Studio,
+                studio: "Lord Miller Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lord%20Miller%20Productions.jpg }
+    summary: "Lord Miller Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Lucasfilm":
+    template: { name: Studio,
+                studio: "Lucasfilm Ltd",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lucasfilm%20Ltd.jpg }
+    summary: "Lucasfilm Ltd"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Marv":
+    template: { name: Studio,
+                studio: "Marv Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marv%20Films.jpg }
+    summary: "Marv Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Marvel Animation":
+    template: { name: Studio,
+                studio: "Marvel Animation",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marvel%20Animation.jpg }
+    summary: "Marvel Animation"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Marvel Studios":
+    template: { name: Studio,
+                studio: "Marvel Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marvel%20Studios.jpg }
+    summary: "Marvel Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "MGM":
+    template: { name: Studio,
+                studio: "Metro-Goldwyn-Mayer",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Metro-Goldwyn-Mayer.jpg }
+    summary: "Metro-Goldwyn-Mayer"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Millennium":
+    template: { name: Studio,
+                studio: "Millennium Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Millennium%20Films.jpg }
+    summary: "Millennium Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Miramax":
+    template: { name: Studio,
+                studio: "Miramax",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Miramax.jpg }
+    summary: "Miramax"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Netflix":
+    template: { name: Studio,
+                studio: "Netflix",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Netflix.jpg }
+    summary: "Netflix"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "New Line":
+    template: { name: Studio,
+                studio: "New Line Cinema",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/New%20Line%20Cinema.jpg }
+    summary: "New Line Cinema"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Nickelodeon Animation":
+    template: { name: Studio,
+                studio: "Nickelodeon Animation Studio",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Nickelodeon%20Animation%20Studio.jpg }
+    summary: "Nickelodeon Animation Studio"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Open Road":
+    template: { name: Studio,
+                studio: "Open Road Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Open%20Road%20Films.jpg }
+    summary: "Open Road Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Original Film":
+    template: { name: Studio,
+                studio: "Original Film",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Original%20Film.jpg }
+    summary: "Original Film"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Orion":
+    template: { name: Studio,
+                studio: "Orion Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Orion%20Pictures.jpg }
+    summary: "Orion Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Paramount Animation":
+    template: { name: Studio,
+                studio: "Paramount Animation",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Paramount%20Animation.jpg }
+    summary: "Paramount Animation"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Paramount":
+    template: { name: Studio,
+                studio: "Paramount Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Paramount%20Pictures.jpg }
+    summary: "Paramount Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Pixar":
+    template: { name: Studio,
+                studio: "Pixar Animation Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Pixar%20Animation%20Studios.jpg }
+    summary: "Pixar Animation Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Plan B":
+    template: { name: Studio,
+                studio: "Plan B Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Plan%20B%20Entertainment.jpg }
+    summary: "Plan B Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "PlayStation":
+    template: { name: Studio,
+                studio: "PlayStation Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/PlayStation%20Productions.jpg }
+    summary: "PlayStation Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Playtone":
+    template: { name: Studio,
+                studio: "Playtone",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Playtone.jpg }
+    summary: "Playtone"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "RatPac":
+    template: { name: Studio,
+                studio: "RatPac Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/RatPac%20Entertainment.jpg }
+    summary: "RatPac Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Regency":
+    template: { name: Studio,
+                studio: "Regency Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Regency%20Pictures.jpg }
+    summary: "Regency Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "See-Saw":
+    template: { name: Studio,
+                studio: "See-Saw Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/See-Saw%20Films.jpg }
+    summary: "See-Saw Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Showtime":
+    template: { name: Studio,
+                studio: "Showtime Networks",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Showtime%20Networks.jpg }
+    summary: "Showtime Networks"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Sky":
+    template: { name: Studio,
+                studio: "Sky studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sky%20Studios.jpg }
+    summary: "Sky Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Skydance":
+    template: { name: Studio,
+                studio: "Skydance",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Skydance.jpg }
+    summary: "Skydance"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Sony Pictures Animation":
+    template: { name: Studio,
+                studio: "Sony Pictures Animation",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sony%20Pictures%20Animation.jpg }
+    summary: "Sony Pictures Animation"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Sony Pictures":
+    template: { name: Studio,
+                studio: "Sony Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sony%20Pictures.jpg }
+    summary: "Sony Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Spyglass":
+    template: { name: Studio,
+                studio: "Spyglass Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Spyglass%20Entertainment.jpg }
+    summary: "Spyglass Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Square Enix":
+    template: { name: Studio,
+                studio: "Square Enix",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Square%20Enix.jpg }
+    summary: "Square Enix"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Studio Ghilbi":
+    template: { name: Studio,
+                studio: "Studio Ghibli",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Studio%20Ghibli.jpg }
+    summary: "Studio Ghibli"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Summit":
+    template: { name: Studio,
+                studio: "Summit Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Summit%20Entertainment.jpg }
+    summary: "Summit Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Syfy":
+    template: { name: Studio,
+                studio: "Syfy",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Syfy.jpg }
+    summary: "Syfy"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Syncopy":
+    template: { name: Studio,
+                studio: "Syncopy",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Syncopy.jpg }
+    summary: "Syncopy"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "The Cat in the Hat Productions":
+    template: { name: Studio,
+                studio: "The Cat in the Hat Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Cat%20in%20the%20Hat%20Productions.jpg }
+    summary: "The Cat in the Hat Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "The Jim Henson Company":
+    template: { name: Studio,
+                studio: "The Jim Henson Company",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Jim%20Henson%20Company.jpg }
+    summary: "The Jim Henson Company"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "The Weinstein Company":
+    template: { name: Studio,
+                studio: "The Weinstein Company",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Weinstein%20Company.jpg }
+    summary: "The Weinstein Company"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Thunder Road":
+    template: { name: Studio,
+                studio: "Thunder Road",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Thunder%20Road.jpg }
+    summary: "Thunder Road"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Tim Burton Productions":
+    template: { name: Studio,
+                studio: "Tim Burton Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Tim%20Burton%20Productions.jpg }
+    summary: "Tim Burton Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Touchstone":
+    template: { name: Studio,
+                studio: "Touchstone Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Touchstone%20Pictures.jpg }
+    summary: "Touchstone Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "TriStar":
+    template: { name: Studio,
+                studio: "TriStar Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TriStar%20Pictures.jpg }
+    summary: "TriStar Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Tribeca":
+    template: { name: Studio,
+                studio: "Tribeca Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Tribeca%20Productions.jpg }
+    summary: "Tribeca Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Twisted Pictures":
+    template: { name: Studio,
+                studio: "Twisted Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Twisted%20Pictures.jpg }
+    summary: "Twisted Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "United Artists":
+    template: { name: Studio,
+                studio: "United Artists",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/United%20Artists.jpg }
+    summary: "United Artists"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Universal Animation":
+    template: { name: Studio,
+                studio: "Universal Animation Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Universal%20Animation%20Studios.jpg }
+    summary: "Universal Animation Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Universal":
+    template: { name: Studio,
+                studio: "Universal Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Universal%20Pictures.jpg }
+    summary: "Universal Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Village Roadshow":
+    template: { name: Studio,
+                studio: "Village Roadshow Pictures",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Village%20Roadshow%20Pictures.jpg }
+    summary: "Village Roadshow Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Walden":
+    template: { name: Studio,
+                studio: "Walden Media",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walden%20Media.jpg }
+    summary: "Walden Media"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Walt Disney Animation":
+    template: { name: Studio,
+                studio: "Walt Disney Animation Studios",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walt%20Disney%20Animation%20Studios.jpg }
+    summary: "Walt Disney Animation Studios"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Walt Disney":
+    template: { name: Studio,
+                studio: "Walt Disney Pictures, Walt Disney Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walt%20Disney%20Productions.jpg }
+    summary: "Walt Disney Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Warner Animation Group":
+    template: { name: Studio,
+                studio: "Warner Animation Group",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Warner%20Animation%20Group.jpg }
+    summary: "Warner Animation Group"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Warner Bros.":
+    template: { name: Studio,
+                studio: "Warner Bros. Pictures, Warner Bros. Television, Warner Premiere",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Warner%20Bros.%20Pictures.jpg }
+    summary: "Warner Bros. Pictures"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Williams Street":
+    template: { name: Studio,
+                studio: "Williams Street",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Williams%20Street.jpg }
+    summary: "Williams Street"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
