@@ -495,7 +495,7 @@ dynamic_collections:
     type: number
     sync: true
     data:
-      starting: 2010
+      starting: 1927
       ending: current_year
     title_format: Oscars Winners <<key_name>>
     template:
@@ -544,7 +544,7 @@ dynamic_collections:
     type: number
     sync: true
     data:
-      starting: 2014
+      starting: 1943
       ending: current_year
     title_format: Golden Globes Winners <<key_name>>
     template:
