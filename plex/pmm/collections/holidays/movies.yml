@@ -14,6 +14,7 @@ templates:
     visible_home: yearly(12/<<key>>)
     visible_shared: yearly(12/<<key>>)
     visible_library: yearly(12/<<key>>)
+    url_poster: https://as2.ftcdn.net/v2/jpg/03/05/39/41/1000_F_305394138_GiLwZEU9Fq7BG81bThTvkuzrJggyPc3W.jpg
     cache_builders: 1 # No need to reparse the list every time
 
 collections:
