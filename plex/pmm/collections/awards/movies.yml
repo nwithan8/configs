@@ -18,7 +18,7 @@ templates:
     sort_title: 050_Oscars_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(05)
 
   Yearly_Berlinale_Awards:
     default:
@@ -29,7 +29,7 @@ templates:
     sort_title: 050_Berlinale_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(06)
 
   Yearly_Cannes_Awards:
     default:
@@ -40,7 +40,7 @@ templates:
     sort_title: 050_Cannes_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(07)
 
   Yearly_Sundance_Awards:
     default:
@@ -51,7 +51,7 @@ templates:
     sort_title: 050_Sundance_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(08)
 
   Yearly_Golden_Globes_Winners:
     default:
@@ -60,7 +60,7 @@ templates:
     sort_title: 050_Golden_Globes_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(09)
 
   Yearly_Spirit_Awards:
     default:
@@ -71,7 +71,7 @@ templates:
     sort_title: 050_Spirit_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(10)
 
   Yearly_Critics_Choice_Awards:
     default:
@@ -82,7 +82,7 @@ templates:
     sort_title: 050_Critics_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(11)
 
   Yearly_BAFTA_Awards:
     default:
@@ -93,7 +93,7 @@ templates:
     sort_title: 050_BAFTA_Winners_<<key>>
     trakt_list: https://trakt.tv/users/<<url>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(12)
 
   Yearly_Razzie_Winners:
     default:
@@ -102,7 +102,7 @@ templates:
     sort_title: 051_Razzie_Winners_<<key>>
     imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=razzie_winner&sort=<<imdb_sort>>
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/<<key>>.jpg
-    schedule: monthly(04)
+    schedule: monthly(13)
 
 collections:
   ### This year's Academy Awards

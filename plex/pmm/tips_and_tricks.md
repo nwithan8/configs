@@ -66,6 +66,27 @@ This collection uses a combination of all these prefixes, and are always sorted 
   - Ex. yearly(02/21), all[weekly(friday),range(02/21-03/31)], yearly(04/01)
     - Run on Feb. 21 every year (regardless of day of week), then run every Friday between Feb. 21 and Mar. 31, then run Apr. 1 (regardless of day of week)
     - Useful for awards or things that need to appear and be updated only for a certain time frame of the year
+- No need to schedule everything on the same day:
+  - Schedules for collection templates:
+    - New: daily
+    - Chart: daily
+    - General: daily (overridden by other schedules)
+    - Holiday: no default, per-holiday
+    - Award: weekly(sunday)
+    - ActorAward: weekly(sunday)
+    - Genres: weekly(monday), weekly(thursday)
+    - Decade: weekly(monday), weekly(thursday) (overridden by other schedules)
+    - Collection: weekly(tuesday), weekly(friday) (overridden by other schedules)
+    - Franchise: weekly(wednesday), weekly(saturday)
+    - Countries: weekly(saturday)
+    - Networks: weekly(wednesday)
+    - Studios: weekly(wednesday)
+    - People: weekly(sunday)
+  - Also goes for monthly schedules, no need to always make it the first of the month: monthly(1), monthly(15)
+    - Past Award Winners collections run once-a-month, staggered throughout the month
+    - Per-Decade collections run once-a-month
+    - Per-Genre collections run weekly(monday), weekly(thursday)
+    - Per-Country collections run weekly(saturday)
 
 ## Sorting
 

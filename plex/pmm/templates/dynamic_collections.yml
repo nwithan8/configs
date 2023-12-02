@@ -15,7 +15,7 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: monthly(17)
+    schedule: monthly(14)
 
   Per_Genre:
     smart_filter:
@@ -30,7 +30,9 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: weekly(saturday)
+    schedule:
+      - weekly(monday)
+      - weekly(thursday)
 
   Per_Country_Movies:
     smart_filter:
@@ -45,7 +47,8 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: weekly(saturday)
+    schedule:
+      - weekly(saturday)
 
   Per_Country_Shows:
     smart_filter:
@@ -60,5 +63,6 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: weekly(saturday)
+    schedule:
+      - weekly(saturday)
 

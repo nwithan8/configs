@@ -11,7 +11,7 @@ collections:
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     collection_order: random
-    schedule: monthly(1)
+    # default schedule
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -26,7 +26,7 @@ collections:
       - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
       - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
     collection_order: random
-    schedule: monthly(1)
+    # default schedule
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -39,7 +39,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
     collection_order: custom
-    schedule: weekly(monday)
+    # default schedule
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -76,7 +76,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
     collection_order: random
-    schedule: monthly(1)
+    schedule: monthly(03)
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -89,7 +89,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
     collection_order: rank.desc
-    schedule: monthly(1)
+    schedule: monthly(04)
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -102,7 +102,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
     collection_order: critic_rating.desc
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -114,7 +114,7 @@ collections:
     summary: "007 forever"
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
     collection_order: release
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -127,7 +127,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/cybercelia/lists/mcu
     collection_order: release
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -140,7 +140,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/maxrax/lists/dc-cinematics
     collection_order: release
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -153,7 +153,7 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls093405279
     collection_order: release
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -167,7 +167,7 @@ collections:
       - https://trakt.tv/users/dgw/lists/star-trek-canon
     url_background: https://i.redd.it/vz20prnp8v551.jpg
     collection_order: release
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -181,7 +181,7 @@ collections:
       - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
     collection_order: custom
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -195,7 +195,7 @@ collections:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
     url_background: https://wallpapercave.com/wp/vPJGO64.jpg
     collection_order: custom
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -209,7 +209,7 @@ collections:
       - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
     url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
     collection_order: random
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -223,7 +223,7 @@ collections:
       - https://trakt.tv/users/majeed_pk/lists/the-best-edgar-allan-poe-adaptations
     url_background: https://wallpapercave.com/wp/wp2328085.jpg
     collection_order: random
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false
@@ -238,7 +238,7 @@ collections:
       all:
         writer: "Stephen King"
       sort_by: release.asc
-    schedule: weekly(sunday)
+    # default schedule
     visible_library: true
     visible_home: false
     visible_shared: false

@@ -65,7 +65,6 @@ templates:
     sort_title: 050_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
-      - weekly(wednesday)
       - weekly(sunday)
     visible_library: false
     url_poster: <<poster_url>>
@@ -81,7 +80,6 @@ templates:
     sort_title: 052_+<<level>>_<<sort_title_name>>
     sync_mode: append
     schedule:
-      - weekly(wednesday)
       - weekly(sunday)
     visible_library: false
 
@@ -109,8 +107,8 @@ templates:
     sort_title: 065_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
-      - weekly(wednesday)
-      - weekly(sunday)
+      - weekly(tuesday)
+      - weekly(friday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -124,7 +122,7 @@ templates:
     sync_mode: sync
     schedule:
       - weekly(wednesday)
-      - weekly(sunday)
+      - weekly(saturday)
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -137,8 +135,8 @@ templates:
     sort_title: 070_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
-      - weekly(wednesday)
-      - weekly(sunday)
+      - weekly(monday)
+      - weekly(thursday)
     visible_library: false
     url_poster: <<poster_url>>
 
@@ -151,8 +149,8 @@ templates:
     sort_title: 080_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
-      - weekly(wednesday)
-      - weekly(sunday)
+      - weekly(monday)
+      - weekly(thursday)
     visible_library: false
     url_poster: <<poster_url>>
 
@@ -212,6 +210,8 @@ templates:
       any:
         studio: <<studio>>
     url_poster: <<poster>>
+    schedule:
+      - weekly(wednesday)
 
   Network:
     default:
@@ -226,6 +226,8 @@ templates:
       any:
         network: <<network>>
     url_poster: <<poster>>
+    schedule:
+      - weekly(wednesday)
 
   Country:
     default:
@@ -236,8 +238,7 @@ templates:
     sort_title: 110_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     schedule:
-      - weekly(wednesday)
-      - weekly(sunday)
+      - weekly(saturday)
     visible_library: false
     url_poster: <<poster_url>>
 
@@ -247,7 +248,5 @@ templates:
       sort_title_name: <<collection_name>>
     sort_title: 120_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule:
-      - weekly(wednesday)
-      - weekly(sunday)
+    schedule: daily
     visible_library: true
