@@ -522,7 +522,7 @@ collections:
   "Sky":
     template: { name: Studio,
                 studio: "Sky studios",
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sky%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sky%20studios.jpg }
     summary: "Sky Studios"
     visible_library: false
     visible_home: false
