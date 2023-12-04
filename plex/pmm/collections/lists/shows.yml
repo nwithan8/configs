@@ -1,3 +1,16 @@
 external_templates:
   - repo: templates/collections
   - repo: templates/dynamic_collections
+
+collections:
+  "️❌ Cancelled":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Actors, directors, and writers who have been cancelled"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/cancelled
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
