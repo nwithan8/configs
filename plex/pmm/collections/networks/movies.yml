@@ -123,6 +123,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "Bleecker Street":
+    template: { name: Studio,
+                studio: "Bleecker Street",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bleecker%20Street.jpg }
+    summary: "Bleecker Street"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   "Blue Sky":
     template: { name: Studio,
                 studio: "Blue Sky Studios",
@@ -267,6 +276,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "IFC Films":
+    template: { name: Studio,
+                studio: "IFC Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/IFC%20Films.jpg }
+    summary: "IFC Films"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   "Illumination":
     template: { name: Studio,
                 studio: "Illumination Entertainment",
@@ -371,6 +389,15 @@ collections:
                 studio: "Miramax",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Miramax.jpg }
     summary: "Miramax"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "Neon":
+    template: { name: Studio,
+                studio: "Neon",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/NEON.jpg }
+    summary: "Neon"
     visible_library: false
     visible_home: false
     visible_shared: false
@@ -483,6 +510,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "Rankin/Bass":
+    template: { name: Studio,
+                studio: "Rankin/Bass Productions",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Rankin-Bass%20Productions.jpg }
+    summary: "Rankin/Bass Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   "RatPac":
     template: { name: Studio,
                 studio: "RatPac Entertainment",
@@ -582,6 +618,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "STX":
+    template: { name: Studio,
+                studio: "STX Entertainment, STX Films",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/STX%20Entertainment.jpg }
+    summary: "STX Entertainment"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   "Summit":
     template: { name: Studio,
                 studio: "Summit Entertainment",
@@ -654,6 +699,15 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "Toho":
+    template: { name: Studio,
+                studio: "Toho, Toho Pictures, Toho Pictures, Inc.",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TOHO.jpg }
+    summary: "Toho"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
   "Touchstone":
     template: { name: Studio,
                 studio: "Touchstone Pictures",
@@ -677,6 +731,15 @@ collections:
                 studio: "Tribeca Productions",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Tribeca%20Productions.jpg }
     summary: "Tribeca Productions"
+    visible_library: false
+    visible_home: false
+    visible_shared: false
+
+  "TSG Entertainment":
+    template: { name: Studio,
+                studio: "TSG Entertainment",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TSG%20Entertainment.jpg }
+    summary: "TSG Entertainment"
     visible_library: false
     visible_home: false
     visible_shared: false
