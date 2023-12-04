@@ -10,6 +10,7 @@ templates:
     trakt_list:
       - https://trakt.tv/users/pierredurrr/lists/advent-calendar
     limit: <<key>>
+    collection_order: custom
     schedule: range(12/01-12/26)
     visible_home: yearly(12/<<key>>)
     visible_shared: yearly(12/<<key>>)
