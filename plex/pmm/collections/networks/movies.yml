@@ -17,7 +17,7 @@ collections:
 
   "20th Century Animation":
     template: { name: Studio,
-                studio: "20th Century Animation",
+                studio: "20th Century Fox Animation",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/20th%20Century%20Animation.jpg }
     summary: "20th Century Animation"
     visible_library: false
@@ -197,7 +197,7 @@ collections:
 
   "DreamWorks":
     template: { name: Studio,
-                studio: "DreamWorks Studio, DreamWorks Pictures",
+                studio: "DreamWorks Studio, DreamWorks Animation, DreamWorks Pictures",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/DreamWorks%20Studios.jpg }
     summary: "DreamWorks"
     visible_library: false
@@ -323,7 +323,7 @@ collections:
 
   "Lord Miller":
     template: { name: Studio,
-                studio: "Lord Miller Productions",
+                studio: "Lord Miller",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lord%20Miller%20Productions.jpg }
     summary: "Lord Miller Productions"
     visible_library: false
@@ -476,8 +476,8 @@ collections:
 
   "Pixar":
     template: { name: Studio,
-                studio: "Pixar Animation Studios",
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Pixar%20Animation%20Studios.jpg }
+                studio: "Pixar",
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Pixar.jpg }
     summary: "Pixar Animation Studios"
     visible_library: false
     visible_home: false
@@ -513,7 +513,7 @@ collections:
   "Rankin/Bass":
     template: { name: Studio,
                 studio: "Rankin/Bass Productions",
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Rankin-Bass%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Rankin%20Bass%20Productions.jpg }
     summary: "Rankin/Bass Productions"
     visible_library: false
     visible_home: false
@@ -818,7 +818,7 @@ collections:
 
   "Warner Animation Group":
     template: { name: Studio,
-                studio: "Warner Animation Group",
+                studio: "Warner Bros. Animation, Warner Bros. Cartoons",
                 poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Warner%20Animation%20Group.jpg }
     summary: "Warner Animation Group"
     visible_library: false
