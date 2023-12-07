@@ -1,10 +1,8 @@
 libraries: # Library mappings must have a colon (:) placed after them
-  Pre-Rolls: # Not a real library, just a placeholder to run pre-roll collections
-    metadata_path:
-      - repo: collections/pre_rolls
   Movies:
     library_name: Movies
     metadata_path:
+      - repo: collections/pre_rolls # Pre-Rolls, runs as part of Movies
       - repo: collections/actors/movies
       - repo: collections/awards/movies
       - repo: collections/best/movies

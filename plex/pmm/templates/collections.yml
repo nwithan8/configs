@@ -250,3 +250,7 @@ templates:
     sync_mode: sync
     schedule: daily
     visible_library: true
+
+  PreRoll:
+    schedule: daily
+    build_collection: false

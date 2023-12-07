@@ -1,6 +1,10 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+
 collections:
 
-  # Use "build_collection: false" since these aren't real collections
+  # Use "template: { name: PreRoll }" since these aren't real collections
   # These run in order, so if you want an override, put it below
 
   # Rolls:
@@ -173,101 +177,101 @@ collections:
 
   # Default
   "Default Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/3D_Netflix_Logo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/80's_Lambo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Abstract_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Apocalypse_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/3D_Netflix_Logo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/80's_Lambo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Abstract_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Apocalypse_Plex_Pre-roll.mp4"
     schedule: daily
 
   # Seasons
   "Spring Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Blooming_Flower_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Dancing_Butterflies_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Flower_Field_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Melting_Snow_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Blooming_Flower_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Dancing_Butterflies_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Flower_Field_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Melting_Snow_Plex_Pre-roll.mp4"
     schedule: range(03/19-03-26)
 
   "Summer Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Growing_Grass_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Summer_Vibes_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Summer_Splash_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Growing_Grass_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Summer_Vibes_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Summer_Splash_Plex_Pre-roll.mp4"
     schedule: range(06/20-6/27)
 
   "Fall Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Autumn_Trees_Plex_Bumper.mp4;/content/storage2/prerolls1/Fall_Fox_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Simple_Fall_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Warm_Apple_Night_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Water_Leaves_Plex_Bumper.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Autumn_Trees_Plex_Bumper.mp4;/content/storage2/prerolls1/Fall_Fox_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Simple_Fall_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Warm_Apple_Night_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Water_Leaves_Plex_Bumper.mp4"
     schedule: range(09/22-9-28)
 
   "Winter Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Winter_Forest_LoFi_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Winter_Ice_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Winter_Snow_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Winter_Forest_LoFi_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Winter_Ice_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Winter_Snow_Plex_Pre-roll.mp4"
     schedule: range(12/26-12/30)
 
   # Holidays
   "New Years Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Happy_New_Year_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Happy_New_Year_Plex_Pre-roll.mp4"
     schedule: range(12/30-01/04)
 
   "Black History Month Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Black_History_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Black_History_Plex_Pre-roll.mp4"
     schedule: range(02/01-02/29)
 
   # Will override Black History Month
   "Valentine's Day Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Valentines_Day_Flowers.mp4;/content/storage2/prerolls1/Valentines_Day_Hearts.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Valentines_Day_Flowers.mp4;/content/storage2/prerolls1/Valentines_Day_Hearts.mp4"
     schedule: range(02/12-02/15)
 
   "St. Patrick's Day Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Green_Energy_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Green_Energy_Plex_Pre-roll.mp4"
     schedule: range(03/16-03/18)
 
   "April Fool's Day Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Shia_Laboeuf_V3_Plex_Pre-roll.mp4;/content/storage2/prerolls1/April_Fools_Plex_Pre-roll.mp4 # I really hate this one
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Shia_Laboeuf_V3_Plex_Pre-roll.mp4;/content/storage2/prerolls1/April_Fools_Plex_Pre-roll.mp4" # I really hate this one
     schedule: range(04/01-04/02)
 
   "Asian American and Pacific Islander Heritage Month Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Sakura_Plex_Pre-roll.mp4;
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Sakura_Plex_Pre-roll.mp4"
     schedule: range(05/01-05/31)
 
   # Will override Asian American and Pacific Islander Heritage Month
   "Memorial Day Pre-Rolls":
-    build_collection: false
+    template: { name: PreRoll }
     server_preroll: ""
     schedule: range(05/25-05/31)
 
   "Pride Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Pride_1080p.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Pride_1080p.mp4"
     schedule: range(06/01-06/30)
 
   "Independence Day Pre-Rolls":
-    build_collection: false
+    template: { name: PreRoll }
     server_preroll: ""
     schedule: range(07/03-07/05)
 
   "Hispanic Heritage Month Pre-Rolls":
-    build_collection: false
+    template: { name: PreRoll }
     server_preroll: ""
     schedule: range(09/15-10/15)
 
   "Halloween Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Bloody_Horror_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Blood_Splatter_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Garage_Screams_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Dark_Logo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Ghostbusters_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Halloween_Pack_V01.mp4;/content/storage2/prerolls1/Halloween_Pack_V02.mp4;/content/storage2/prerolls1/Halloween_Pack_V03.mp4;/content/storage2/prerolls1/Halloween_Pack_V04.mp4;/content/storage2/prerolls1/Halloween_Pack_V05.mp4;/content/storage2/prerolls1/Halloween_Pack_V06.mp4;/content/storage2/prerolls1/Halloween_Pack_V07.mp4;/content/storage2/prerolls1/Halloween_Pack_V08.mp4;/content/storage2/prerolls1/Happy_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Horror_Movies_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Monster_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Spooky_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Vampire_Bats_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Zombieland_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Bloody_Horror_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Blood_Splatter_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Garage_Screams_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Dark_Logo_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Ghostbusters_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Halloween_Pack_V01.mp4;/content/storage2/prerolls1/Halloween_Pack_V02.mp4;/content/storage2/prerolls1/Halloween_Pack_V03.mp4;/content/storage2/prerolls1/Halloween_Pack_V04.mp4;/content/storage2/prerolls1/Halloween_Pack_V05.mp4;/content/storage2/prerolls1/Halloween_Pack_V06.mp4;/content/storage2/prerolls1/Halloween_Pack_V07.mp4;/content/storage2/prerolls1/Halloween_Pack_V08.mp4;/content/storage2/prerolls1/Happy_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Horror_Movies_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Monster_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Spooky_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Vampire_Bats_Halloween_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Zombieland_Plex_Pre-roll.mp4"
     schedule: range(10/16-10/31)
 
   "Native American Heritage Month Pre-Rolls":
-    build_collection: false
+    template: { name: PreRoll }
     server_preroll: ""
     schedule: range(11/01-11/30)
 
   # Will override Native American Heritage Month
   "Thanksgiving Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Happy_Thanksgiving_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Happy_Thanksgiving_Plex_Pre-roll.mp4"
     schedule: range(11/20-11/26)
 
   "Christmas Pre-Rolls":
-    build_collection: false
-    server_preroll: /content/storage2/prerolls1/Christmas_Card_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Ornaments_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Train_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Tree_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Gingerbread_Men_Dance_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Merry_Christmas_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Santa_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Snow_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Trees_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Holiday_Sweater_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Magic_Christmas_Tree_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Merry_Christmas_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Santa_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snow_Globe_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snowflakes_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snowman_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Happy_Hanukkah_Plex_Pre-roll.mp4
+    template: { name: PreRoll }
+    server_preroll: "/content/storage2/prerolls1/Christmas_Card_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Ornaments_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Train_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Christmas_Tree_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Gingerbread_Men_Dance_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Merry_Christmas_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Santa_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Snow_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Glitter_Trees_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Holiday_Sweater_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Magic_Christmas_Tree_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Merry_Christmas_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Santa_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snow_Globe_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snowflakes_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Snowman_Plex_Pre-roll.mp4;/content/storage2/prerolls1/Happy_Hanukkah_Plex_Pre-roll.mp4"
     schedule: range(12/01-12/28)
