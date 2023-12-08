@@ -99,11 +99,13 @@ This collection uses a combination of all these prefixes, and are always sorted 
     - `collection_order: random` -> `sort_by: random`
     - `collection_order: custom` -> `sort_by: ??`
 - Needs to be one level above `all`/`any` criteria list. Ex.:
-    - `smart_filter`:
-        - sort_by: `release.desc`
-        - any:
-            - criteria1
-            - criteria2
+  ```yaml
+  smart_filter:
+    sort_by: release.desc
+    any:
+      - criteria1
+      - criteria2
+  ```
 - Collections display on home screen in order of creation
     - Recommend having library-specific collections loaded first in config before general collections
 
