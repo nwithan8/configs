@@ -115,11 +115,13 @@ This collection uses a combination of all these prefixes, and are always sorted 
     - Plex `smart_filter`/`plex_search`: Use, i.e. `type: episodes`, to limit collection
       to [specific type](https://github.com/meisnate12/Plex-Meta-Manager/wiki/Plex-Builders#special-attributes)
         - Needs to be one level above `all`/`any` criteria list. Ex.:
-        - `smart_filter`:
-            - type: `episodes`
-            - any:
-                - criteria1
-                - criteria2
+        ```yaml
+        smart_filter:
+          type: episodes
+          any:
+            - criteria1
+            - criteria2
+        ```
         - Recommended to use `smart_filter` over `plex_search` when possible, as `smart_filter` means Plex will keep the
           list updated based on the criteria, rather than Plex Meta Manager having to re-run the builder every time
             - Need to use `builder_level` if using `smart_filter` for anything other than show/movies (i.e. seasons,
