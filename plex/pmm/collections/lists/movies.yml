@@ -3,6 +3,19 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  # Top movies via IMDB, updated monthly
+  "🙌 Best Of All Time":
+    template: { name: Collection,
+                sort_title: "Best Of All Time",
+                level: "++++" }
+    summary: "Dive into the best films ever made"
+    imdb_chart: top_movies
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   # Movies with a perfect RT score, updated monthly
   "💯 The 100 Club":
     template: { name: Collection,
