@@ -2,7 +2,7 @@ external_templates:
   - repo: templates/collections
   - repo: templates/dynamic_collections
 
-collections:
+templates:
   # Dynamic Collections Templates
   # -----------------------------
   # Per-year award winners
