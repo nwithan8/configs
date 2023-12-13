@@ -3,6 +3,22 @@
 external_templates:
   - repo: templates/playlists
 
+templates:
+  Top_Episodes:
+    default:
+      show: ""
+      show_alias: <<show>>
+      count: 100
+    summary: "The top <<show_alias>> episodes"
+    libraries: TV Shows
+    plex_search:
+      type: episode
+      all:
+        title.is: "<<show>>"
+      sort_by: audience_rating.desc
+      limit: <<count>>
+    sync_mode: sync
+
 playlists:
   ### Topical
   "Treehouse of Horror":
@@ -17,12 +33,61 @@ playlists:
     sync_mode: sync
 
   "Top 100 Simpsons Episodes":
-    summary: "The top 100 Simpsons episodes"
-    libraries: TV Shows
-    plex_search:
-      type: episode
-      all:
-        title.is: "The Simpsons"
-      sort_by: audience_rating.desc
-      limit: 100
-    sync_mode: sync
+    template: { name: Top_Episodes,
+                show: "The Simpsons",
+                show_alias: "Simpsons",
+                count: 100 }
+
+  "Top 100 Family Guy Episodes":
+    template: { name: Top_Episodes,
+                show: "Family Guy",
+                show_alias: "Family Guy",
+                count: 100 }
+
+  "Top 100 Futurama Episodes":
+    template: { name: Top_Episodes,
+                show: "Futurama",
+                show_alias: "Futurama",
+                count: 100 }
+
+  "Top 100 South Park Episodes":
+    template: { name: Top_Episodes,
+                show: "South Park",
+                show_alias: "South Park",
+                count: 100 }
+
+  "Top 100 Seinfeld Episodes":
+    template: { name: Top_Episodes,
+                show: "Seinfeld",
+                show_alias: "Seinfeld",
+                count: 100 }
+
+  "Top 50 Mythbusters Episodes":
+    template: { name: Top_Episodes,
+                show: "MythBusters",
+                show_alias: "Mythbusters",
+                count: 50 }
+
+  "Top 100 Mystery Science Theater 3000 Episodes":
+    template: { name: Top_Episodes,
+                show: "Mystery Science Theater 3000",
+                show_alias: "MST3K",
+                count: 100 }
+
+  "Top 100 Midsomer Murders Episodes":
+    template: { name: Top_Episodes,
+                show: "Midsomer Murders",
+                show_alias: "Midsomer Murders",
+                count: 100 }
+
+  "Top 100 Law & Order Episodes":
+    template: { name: Top_Episodes,
+                show: "Law & Order",
+                show_alias: "Law & Order",
+                count: 100 }
+
+  "Top 50 I Love Lucy Episodes":
+    template: { name: Top_Episodes,
+                show: "I Love Lucy",
+                show_alias: "I Love Lucy",
+                count: 50 }
