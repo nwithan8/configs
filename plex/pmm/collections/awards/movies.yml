@@ -549,7 +549,7 @@ dynamic_collections:
     template:
       - Yearly_Sundance_Awards
 
-  Yearly Golden Globes DC: # mapping name does not matter just needs to be unique
+  Yearly Golden Globes Movies DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
     data:

@@ -3,3 +3,47 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  # Dynamic Collections Templates
+  # -----------------------------
+  # Per-year award winners
+  Yearly_Emmy_Winners:
+    default:
+      imdb_sort: moviemeter,asc
+    allowed_library_types: show
+    summary: <<key>> Emmy Winners
+    sort_title: 050_Emmy_Winners_<<key>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=emmy_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
+    schedule: monthly(14)
+
+  Yearly_Golden_Globes_Winners:
+    default:
+      imdb_sort: moviemeter,asc
+    allowed_library_types: show
+    summary: <<key>> Golden Globe Winners
+    sort_title: 050_Golden_Globes_Winners_<<key>>
+    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
+    schedule: monthly(09)
+
+dynamic_collections:
+  ## Use DC as suffix to avoid name conflicts with static collections
+  Yearly Emmy Winners DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 1949
+      ending: current_year
+    title_format: Emmy Winners <<key_name>>
+    template:
+      - Yearly_Emmy_Winners
+
+  Yearly Golden Globes Shows DC: # mapping name does not matter just needs to be unique
+    type: number
+    sync: true
+    data:
+      starting: 1943
+      ending: current_year
+    title_format: Golden Globes Winners <<key_name>>
+    template:
+      - Yearly_Golden_Globes_Winners
