@@ -10,14 +10,14 @@ templates:
     smart_filter:
       sort_by: audience_rating.desc
       all:
-        year.gte: <<key_name>>
+        year.gte: <<starting>>
         year.lte: <<ending>>
-    sort_title: 080_+<<level>>_<<key>>
-    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<key_name>>.png
+    sort_title: 080_+<<level>>_<<starting>>
+    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<starting>>.png
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: monthly(14)
+    schedule: monthly(15)
 
   Per_Genre:
     smart_filter:
