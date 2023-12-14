@@ -88,6 +88,7 @@ collections:
     template: { name: Collection,
                 sort_title: "1001 Movies You Must See Before You Die",
                 level: "++" }
+    name_mapping: "1001 Movies You Must See Before You Die Collection"
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
@@ -127,6 +128,7 @@ collections:
     template: { name: Franchise,
                 sort_title: "James Bond",
                 level: "+" }
+    name_mapping: "James Bond Collection"
     summary: "007 forever"
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
     collection_order: release
@@ -139,6 +141,7 @@ collections:
     template: { name: Franchise,
                 sort_title: "Marvel Cinematic Universe",
                 level: "+" }
+    name_mapping: "Marvel Cinematic Universe Collection"
     summary: "The Marvel Cinematic Universe"
     trakt_list:
       - https://trakt.tv/users/cybercelia/lists/mcu
@@ -152,6 +155,7 @@ collections:
     template: { name: Franchise,
                 sort_title: "DC Cinematic Universe",
                 level: "+" }
+    name_mapping: "DC Cinematic Universe Collection"
     summary: "The DC Cinematic Universe"
     trakt_list:
       - https://trakt.tv/users/maxrax/lists/dc-cinematics
@@ -165,6 +169,7 @@ collections:
     template: { name: Franchise,
                 sort_title: "Disney Channel Original Movies",
                 level: "+" }
+    name_mapping: "Disney Channel Original Movies Collection"
     summary: "You're watching Disney Channel"
     imdb_list:
       - https://www.imdb.com/list/ls093405279
@@ -207,6 +212,7 @@ collections:
     template: { name: Franchise,
                 sort_title: "Battlestar Galactica",
                 level: "+" }
+    name_mapping: "Battlestar Galactica Collection"
     trakt_list_details:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
     url_background: https://wallpapercave.com/wp/vPJGO64.jpg

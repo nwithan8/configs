@@ -6,6 +6,7 @@ collections:
   "🎤 What's The Deal With Airplane Food?":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Stand-Up Comedy Collection"
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
       - https://trakt.tv/users/lish408/lists/stand-up-comedy-specials
@@ -17,6 +18,7 @@ collections:
   "😜 Spoofs and Parodies":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Spoof and Parody Films Collection"
     summary: "Imitation is the sincerest form of flattery"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/spoof-parody-films
@@ -40,6 +42,7 @@ collections:
   "🏀 Slam Dunk":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Sports Movies Collection"
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
     collection_order: random
@@ -50,6 +53,7 @@ collections:
   "🚓 Get In Get Out":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Heist Movies Collection"
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
     collection_order: random
@@ -60,6 +64,7 @@ collections:
   "🎢 On The Edge Of Your Seat":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Thriller Movies Collection"
     summary: "The suspense is killing us!"
     imdb_search:
       type: movie, short, tv_movie, tv_special
@@ -74,6 +79,7 @@ collections:
   "🤯 What a Twist!":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Plot Twist Movies Collection"
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
     collection_order: random
@@ -131,6 +137,7 @@ collections:
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "True Crime Collection"
     summary: "True crime documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
@@ -236,6 +243,7 @@ collections:
   "🧘 Kick Back and Relax":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Chill Movies Collection"
     summary: "The best movies for a lazy weekend afternoon"
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc

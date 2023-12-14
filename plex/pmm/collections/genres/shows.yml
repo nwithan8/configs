@@ -7,6 +7,7 @@ collections:
   ### Genres
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre }
+    name_mapping: "True Crime Collection"
     summary: "True crime documentaries"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
