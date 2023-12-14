@@ -8,6 +8,7 @@ collections:
     template: { name: Collection,
                 sort_title: "Best Of All Time",
                 level: "++++" }
+    name_mapping: "Best Of All Time Collection"
     summary: "Dive into the best films ever made"
     imdb_chart: top_movies
     collection_order: random
@@ -21,6 +22,7 @@ collections:
     template: { name: Collection,
                 sort_title: "Best Movies Ever",
                 level: "+++" }
+    name_mapping: "The 100 Club Collection"
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     collection_order: random
@@ -34,6 +36,7 @@ collections:
     template: { name: Collection,
                 sort_title: "Worst Movies Ever",
                 level: "++" }
+    name_mapping: "Just the Worst Collection"
     summary: "The worst movies of all time."
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
@@ -228,6 +231,7 @@ collections:
     visible_shared: false
 
   "🐦‍⬛ Quoth the Raven":
+    name_mapping: "Edgar Allan Poe Collection"
     summary: "The Edgar Allan Poe collection"
     template: { name: Franchise,
                 sort_title: "Edgar Allan Poe",
@@ -259,6 +263,7 @@ collections:
   "️❌ Cancelled":
     template: { name: Collection,
                 level: "+" }
+    name_mapping: "Cancelled Collection"
     summary: "Actors, directors, and writers who have been cancelled"
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/cancelled

@@ -28,6 +28,7 @@ collections:
   "👩‍❤️‍💋‍👨 Rom-com Central":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Romantic Comedies Collection"
     summary: "Rotten Tomatoes' best romantic comedies of all time"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-200-best-romantic-comedies-of-all-time
@@ -94,6 +95,7 @@ collections:
   "📖 The Book Was Better":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Based On A Book Collection"
     summary: "Based on a book"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-books
@@ -105,6 +107,7 @@ collections:
   "🕹️ Arrow In The Knee":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Video Game Movies Collection"
     summary: "Based on a video game"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-video-games
@@ -116,6 +119,7 @@ collections:
   "💬 With Great Power...":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "With Great Power Collection"
     summary: "Based on a comic book"
     trakt_list:
       - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-comics
@@ -149,6 +153,7 @@ collections:
   "🗎 Documentaries":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Documentaries Collection"
     summary: "The top documentaries of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/documentaries
@@ -183,6 +188,7 @@ collections:
   "🌿 What Is Life Anyway?":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Existentialist Films Collection"
     summary: "The best existential movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/existentialist-films
@@ -194,6 +200,7 @@ collections:
   "⚖️ Order In The Court":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Courtroom Drama Collection"
     summary: "The best courtroom dramas of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/courtroom-dramas
@@ -205,6 +212,7 @@ collections:
   "🪖 World War II, In Order":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "World War II Collection"
     summary: "Movies depicting World War II, in chronological order"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/world-war-ii-in-chronological-order
@@ -216,6 +224,7 @@ collections:
   "🙂 Feel-Good Movies":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Feel Good Movies Collection"
     summary: "The best feel-good movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/feelgood-movies
@@ -239,6 +248,7 @@ collections:
   "🤪 The Weirdo's Videostore":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Weirdo Videostore Collection"
     summary: "Cinema is strange."
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/the-weirdo-s-videostore
@@ -250,6 +260,7 @@ collections:
   "⁉️ Controversial Cinema":
     template: { name: Genre,
                 level: "++" }
+    name_mapping: "Controversial Cinema Collection"
     summary: "The most edgy, crazy, disturbing, controversial, shocking, bizarre, scandalous and downright f***ed up films of all time!"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/dark-deeply-disturbing-controversial-shocking-bizarre-and-messed-up-films
