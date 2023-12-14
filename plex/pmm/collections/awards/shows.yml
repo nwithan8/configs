@@ -19,44 +19,7 @@ templates:
       event_id: ev0000206
       event_year: <<key>>
       winning: true
-      category_filter:
-        - Outstanding Art Direction/Set Decoration/Scenic Design
-        - Outstanding Arts and Popular Culture Program
-        - Outstanding Casting
-        - Outstanding Costume Design/Styling
-        - Outstanding Culinary Series
-        - Outstanding Daytime Drama Series
-        - Outstanding Daytime Special
-        - Outstanding Directing Team for a Multiple Camera Daytime Non-Fiction Program
-        - Outstanding Directing Team for a Single Camera Daytime Non-Fiction Program
-        - Outstanding Drama Series Directing Team
-        - Outstanding Drama Series Writing Team
-        - Outstanding Entertainment News Series
-        - Outstanding Entertainment Talk Show
-        - Outstanding Game Show
-        - Outstanding Guest Performer in a Drama Series
-        - Outstanding Hairstyling
-        - Outstanding Informative Talk Show
-        - Outstanding Instructional and How-To Program
-        - Outstanding Interactive Media for a Daytime Program
-        - Outstanding Legal/Courtroom Program
-        - Outstanding Lifestyle Program
-        - Outstanding Lighting Direction
-        - Outstanding Live Sound Mixing and Sound Editing
-        - Outstanding Main Title and Graphic Design
-        - Outstanding Makeup
-        - Outstanding Multiple Camera Editing
-        - Outstanding Music Direction and Composition
-        - Outstanding Original Song
-        - Outstanding Short Form Daytime Program
-        - Outstanding Sound Mixing and Sound Editing
-        - Outstanding Special Effects Costumes, Makeup and Hairstyling
-        - Outstanding Technical Team, Camera Work, Video
-        - Outstanding Travel, Adventure and Nature Program
-        - Outstanding Writing Team for a Daytime Non-Fiction Series or Special
-        - Outstanding Young Performer in a Drama Series
-        - Outstanding Cinematography
-        - Outstanding Single Camera Editing
+      # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
     schedule: monthly(14)
 
@@ -70,10 +33,7 @@ templates:
       event_id: ev0000292
       event_year: <<key>>
       winning: true
-      category_filter:
-        - Best Television Limited Series, Anthology Series, or Motion Picture Made for Television
-        - Best Television Series, Drama
-        - Best Television Series, Musical or Comedy
+      # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(09)
 
@@ -85,7 +45,7 @@ dynamic_collections:
     type: number
     sync: true
     data:
-      starting: 1949
+      starting: 1974
       ending: current_year
     title_format: Emmy Winners <<key_name>>
     template:

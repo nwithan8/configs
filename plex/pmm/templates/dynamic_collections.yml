@@ -5,6 +5,8 @@ templates:
   # Dynamic Collections Templates
   # -----------------------------
   Per_Decade:
+    default:
+      level: ""
     smart_filter:
       sort_by: audience_rating.desc
       all:

@@ -18,25 +18,7 @@ templates:
       event_id: ev0000003
       event_year: <<key>>
       winning: true
-      category_filter:
-        - Best Motion Picture of the Year
-        - Best Original Screenplay
-        - Best Adapted Screenplay
-        - Best Achievement in Cinematography
-        - Best Achievement in Film Editing
-        - Best Achievement in Production Design
-        - Best Achievement in Costume Design
-        - Best Sound
-        - Best Achievement in Makeup and Hairstyling
-        - Best Achievement in Music Written for Motion Pictures (Original Score)
-        - Best Achievement in Music Written for Motion Pictures (Original Song)
-        - Best Achievement in Visual Effects
-        - Best Documentary Feature
-        - Best Animated Feature Film
-        - Best Animated Short Film
-        - Best Live Action Short Film
-        - Best Documentary Short Film
-        - Best International Feature Film
+      # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<key>>.jpg
     schedule: monthly(05)
 
@@ -80,15 +62,7 @@ templates:
       event_id: ev0000292
       event_year: <<key>>
       winning: true
-      category_filter:
-        - Best Motion Picture, Animated
-        - Best Motion Picture, Drama
-        - Best Motion Picture, Musical or Comedy
-        - Best Motion Picture, Non-English Language
-        - Best Original Score, Motion Picture
-        - Best Original Song, Motion Picture
-        - Best Screenplay, Motion Picture
-        - Cinematic and Box Office Achievement
+      # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(09)
 
