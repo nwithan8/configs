@@ -3,6 +3,9 @@ external_templates:
   - repo: templates/dynamic_collections
 
 templates:
+  # TODO: Figure out year delay for awards (2023 awards given in 2024, so when collection runs in 2024, it needs to look up 2023)
+  # This is not true for all awards (some are given in the same year)
+
   # Dynamic Collections Templates
   # -----------------------------
   # Per-year award winners
@@ -12,7 +15,48 @@ templates:
     allowed_library_types: show
     summary: <<key>> Emmy Winners
     sort_title: 050_Emmy_Winners_<<key>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=emmy_winner&sort=<<imdb_sort>>
+    imdb_award:
+      event_id: ev0000206
+      event_year: <<key>>
+      winning: true
+      category_filter:
+        - Outstanding Art Direction/Set Decoration/Scenic Design
+        - Outstanding Arts and Popular Culture Program
+        - Outstanding Casting
+        - Outstanding Costume Design/Styling
+        - Outstanding Culinary Series
+        - Outstanding Daytime Drama Series
+        - Outstanding Daytime Special
+        - Outstanding Directing Team for a Multiple Camera Daytime Non-Fiction Program
+        - Outstanding Directing Team for a Single Camera Daytime Non-Fiction Program
+        - Outstanding Drama Series Directing Team
+        - Outstanding Drama Series Writing Team
+        - Outstanding Entertainment News Series
+        - Outstanding Entertainment Talk Show
+        - Outstanding Game Show
+        - Outstanding Guest Performer in a Drama Series
+        - Outstanding Hairstyling
+        - Outstanding Informative Talk Show
+        - Outstanding Instructional and How-To Program
+        - Outstanding Interactive Media for a Daytime Program
+        - Outstanding Legal/Courtroom Program
+        - Outstanding Lifestyle Program
+        - Outstanding Lighting Direction
+        - Outstanding Live Sound Mixing and Sound Editing
+        - Outstanding Main Title and Graphic Design
+        - Outstanding Makeup
+        - Outstanding Multiple Camera Editing
+        - Outstanding Music Direction and Composition
+        - Outstanding Original Song
+        - Outstanding Short Form Daytime Program
+        - Outstanding Sound Mixing and Sound Editing
+        - Outstanding Special Effects Costumes, Makeup and Hairstyling
+        - Outstanding Technical Team, Camera Work, Video
+        - Outstanding Travel, Adventure and Nature Program
+        - Outstanding Writing Team for a Daytime Non-Fiction Series or Special
+        - Outstanding Young Performer in a Drama Series
+        - Outstanding Cinematography
+        - Outstanding Single Camera Editing
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
     schedule: monthly(14)
 
@@ -22,9 +66,18 @@ templates:
     allowed_library_types: show
     summary: <<key>> Golden Globe Winners
     sort_title: 050_Golden_Globes_Winners_<<key>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    imdb_award:
+      event_id: ev0000292
+      event_year: <<key>>
+      winning: true
+      category_filter:
+        - Best Television Limited Series, Anthology Series, or Motion Picture Made for Television
+        - Best Television Series, Drama
+        - Best Television Series, Musical or Comedy
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(09)
+
+    # TODO: Add this year's Emmy and Golden Globe nominees
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections

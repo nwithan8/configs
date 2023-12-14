@@ -60,8 +60,11 @@ collections:
     template: { name: Genre,
                 level: "++" }
     summary: "The suspense is killing us!"
-    imdb_list:
-      - https://www.imdb.com/search/keyword/?keywords=psychological-thriller&ref_=kw_ref_rt_usr&sort=release_date,desc&mode=detail&page=1&title_type=movie&genres=Thriller&user_rating=5.0%2C&release_date=2000%2C
+    imdb_search:
+      type: movie, short, tv_movie, tv_special
+      keywords: psychological-thriller
+      genres: thriller
+      rating.gte: 5.0
     collection_order: random
     visible_library: true
     visible_home: false  # Not advertised on the home page

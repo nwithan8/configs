@@ -8,15 +8,35 @@ templates:
 
   # Dynamic Collections Templates
   # -----------------------------
+
   # Per-year award winners
   Yearly_Oscars_Winners:
-    # This will always be a year behind (2020 movies win at the 2021 Oscars) - The collection is the 2020 movies that won at the 2021 Oscars
-    default:
-      imdb_sort: moviemeter,asc
     allowed_library_types: movie
     summary: <<key>> Academy Awards (Oscars) Winners
     sort_title: 050_Oscars_Winners_<<key>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
+    imdb_award:
+      event_id: ev0000003
+      event_year: <<key>>
+      winning: true
+      category_filter:
+        - Best Motion Picture of the Year
+        - Best Original Screenplay
+        - Best Adapted Screenplay
+        - Best Achievement in Cinematography
+        - Best Achievement in Film Editing
+        - Best Achievement in Production Design
+        - Best Achievement in Costume Design
+        - Best Sound
+        - Best Achievement in Makeup and Hairstyling
+        - Best Achievement in Music Written for Motion Pictures (Original Score)
+        - Best Achievement in Music Written for Motion Pictures (Original Song)
+        - Best Achievement in Visual Effects
+        - Best Documentary Feature
+        - Best Animated Feature Film
+        - Best Animated Short Film
+        - Best Live Action Short Film
+        - Best Documentary Short Film
+        - Best International Feature Film
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/<<key>>.jpg
     schedule: monthly(05)
 
@@ -54,11 +74,21 @@ templates:
     schedule: monthly(08)
 
   Yearly_Golden_Globes_Winners:
-    default:
-      imdb_sort: moviemeter,asc
     summary: <<key>> Golden Globe Winners
     sort_title: 050_Golden_Globes_Winners_<<key>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
+    imdb_award:
+      event_id: ev0000292
+      event_year: <<key>>
+      winning: true
+      category_filter:
+        - Best Motion Picture, Animated
+        - Best Motion Picture, Drama
+        - Best Motion Picture, Musical or Comedy
+        - Best Motion Picture, Non-English Language
+        - Best Original Score, Motion Picture
+        - Best Original Song, Motion Picture
+        - Best Screenplay, Motion Picture
+        - Cinematic and Box Office Achievement
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(09)
 
@@ -96,11 +126,18 @@ templates:
     schedule: monthly(12)
 
   Yearly_Razzie_Winners:
-    default:
-      imdb_sort: moviemeter,asc
     summary: <<key>> Golden Raspberry Winners
     sort_title: 051_Razzie_Winners_<<key>>
-    imdb_list: https://www.imdb.com/search/title/?release_date=<<key>>-01-01,<<key>>-12-31&groups=razzie_winner&sort=<<imdb_sort>>
+    imdb_award:
+      event_id: ev0000558
+      event_year: <<key>>
+      winning: true
+      category_filter:
+        - Worst Picture
+        - Worst Remake, Rip-Off or Sequel
+        - Worst Screen Combo
+        - Worst Screenplay
+        - Redeemer Award
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/<<key>>.jpg
     schedule: monthly(13)
 
@@ -108,10 +145,28 @@ collections:
   ### This year's Academy Awards
   # ---------------------------------
 
+  # This current year's Oscar nominees (all)
+  # Only visible on home screen during Oscar season
+  "🎖️This Year's Oscar Nominees":
+    summary: "Who will take home the trophy?"
+    template: { name: Award,
+                level: "++++" }
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2023  # TODO: Change this every year
+    collection_order: random
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
   # This current year's Best Picture Oscar nominees
   # Only visible on home screen during Oscar season
   "🎬 This Year's Best Picture Nominees":
-    # TODO: NEED TO BUILD MANUALLY
     template: { name: Award,
                 level: "++++++" }
     summary: "Who will take home the trophy?"
@@ -120,6 +175,10 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    imdb_award:
+      event_id: ev0000003
+      event_year: 2023  # TODO: Change this every year
+      category_filter: Best Motion Picture of the Year
     collection_order: release.asc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
@@ -279,26 +338,6 @@ collections:
     visible_library: range(02/01-03/31)
 
 
-
-  # This current year's Oscar nominees (all)
-  # Only visible on home screen during Oscar season
-  "🎖️This Year's Oscar Nominees":
-    summary: "Who will take home the trophy?"
-    template: { name: Award,
-                level: "++++" }
-    trakt_list:
-      # TODO: NEED TO REPLACE MANUALLY
-      - https://trakt.tv/users/jcbwoldseth/lists/oscar-race-2023
-    collection_order: random
-    schedule:
-      - yearly(02/01)
-      - all[weekly(friday),range(02/01-03/31)]
-      - yearly(04/01)
-      # You have to schedule it to run again after visibility timeframe for visibility to switch back
-    visible_home: range(02/01-03/31)
-    visible_shared: range(02/01-03/31)
-    visible_library: range(02/01-03/31)
-
   ### Historical Awards
   # ---------------------------------
 
@@ -308,8 +347,8 @@ collections:
     summary: "Oscar-winning Movies"
     template: { name: Award,
                 level: "++" }
-    imdb_list:
-      - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    imdb_search:
+      event.winning: oscar
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -328,7 +367,8 @@ collections:
     template: { name: Award,
                 level: "++" }
     imdb_list:
-      - https://www.imdb.com/search/title/?groups=best_director_winners&sort=year%2Cdesc
+      # TODO: Might need to change
+      - https://www.imdb.com/search/title/?title_type=feature&groups=best_director_winner
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -347,7 +387,8 @@ collections:
     template: { name: Award,
                 level: "++" }
     imdb_list:
-      - https://www.imdb.com/search/title/?groups=best_picture_winners&sort=year%2Cdesc
+      # TODO: Might need to change
+      - https://www.imdb.com/search/title/?title_type=feature&groups=best_picture_winner
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -499,7 +540,6 @@ collections:
   #  visible_library: true
 
 dynamic_collections:
-  ## Use DC as suffix to avoid name conflicts with static collections
   Yearly Oscars Winners DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
