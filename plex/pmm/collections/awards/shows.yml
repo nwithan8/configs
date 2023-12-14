@@ -8,19 +8,30 @@ templates:
 
   # Dynamic Collections Templates
   # -----------------------------
-  # Per-year award winners
+
+  # Per-year award winners and nominees
   Yearly_Emmy_Winners:
-    default:
-      imdb_sort: moviemeter,asc
     allowed_library_types: show
     summary: <<key>> Emmy Winners
-    sort_title: 050_Emmy_Winners_<<key>>
+    sort_title: 050_Emmy_<<key>>_Winner
     imdb_award:
       event_id: ev0000206
       event_year: <<key>>
       winning: true
       # Categories change too much year-to-year to attempt to filter
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/winner/<<key>>.jpg
+    schedule: monthly(14)
+
+  Yearly_Emmy_Nominees:
+    allowed_library_types: show
+    summary: <<key>> Emmy Nominees
+    sort_title: 050_Emmy_<<key>>_Nominee
+    imdb_award:
+      event_id: ev0000206
+      event_year: <<key>>
+      winning: false
+      # Categories change too much year-to-year to attempt to filter
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/nominee/<<key>>.jpg
     schedule: monthly(14)
 
   Yearly_Golden_Globes_Winners:
@@ -37,7 +48,13 @@ templates:
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
     schedule: monthly(09)
 
-    # TODO: Add this year's Emmy and Golden Globe nominees
+    # TODO: Golden Globe Nominees?
+
+collections:
+
+  # TODO: This year's Emmy nominees
+
+  # TODO: This year's Golden Globe nominees
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections
