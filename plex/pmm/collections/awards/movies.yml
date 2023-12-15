@@ -976,7 +976,7 @@ dynamic_collections:
       ending: current_year
     title_format: Venice Film Festival Winners <<key_name>>
     template:
-      - Yearly_Venice_Winners
+      - Yearly_Venice_Awards_Winners
 
   Yearly Venice Nominees DC: # mapping name does not matter just needs to be unique
     type: number
@@ -986,7 +986,7 @@ dynamic_collections:
       ending: current_year
     title_format: Venice Film Festival Nominees <<key_name>>
     template:
-      - Yearly_Venice_Nominees
+      - Yearly_Venice_Awards_Nominees
 
   # TODO: Posters for TIFF do not exist yet
   # Yearly Toronto Winners DC: # mapping name does not matter just needs to be unique
