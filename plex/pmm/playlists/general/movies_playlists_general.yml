@@ -3,5 +3,5 @@
 external_templates:
   - repo: templates/playlists
 
-playlists:
+# playlists:
 

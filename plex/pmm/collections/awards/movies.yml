@@ -488,7 +488,7 @@ collections:
       event_year: 2023  # TODO: Change this every year
       winning: false
     schedule: # February (multiple days)
-      - yearly(02/01
+      - yearly(02/01)
       - all[weekly(friday),range(02/01-03/02)]
       - yearly(03/03)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
@@ -506,7 +506,7 @@ collections:
                 level: "++" }
     trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
     schedule: # February (multiple days)
-      - yearly(02/01
+      - yearly(02/01)
       - all[weekly(friday),range(02/01-03/02)]
       - yearly(03/03)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
