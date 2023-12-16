@@ -8,7 +8,6 @@ collections:
     template: { name: New,
                 level: "++++" }
     summary: "Episodes added this week on Plex"
-    sort_title:
     smart_filter:
       type: episode
       sort_by: release.desc
@@ -24,7 +23,6 @@ collections:
     template: { name: New,
                 level: "+++" }
     summary: "Shows now playing on Plex"
-    sort_title:
     smart_filter:
       type: show
       sort_by: release.desc
