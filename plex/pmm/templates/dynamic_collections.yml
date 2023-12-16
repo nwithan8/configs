@@ -36,28 +36,12 @@ templates:
       - weekly(monday)
       - weekly(thursday)
 
-  Per_Country_Movies:
+  Per_Country:
     smart_filter:
       limit: 10000
       sort_by: critic_rating.desc
       any:
         country: <<value>>
-    default:
-      level: ""
-    sort_title: 110_+<<level>>_<<key_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
-    visible_library: false
-    visible_shared: false
-    visible_home: false
-    schedule:
-      - weekly(saturday)
-
-  Per_Country_Shows:
-    smart_filter:
-      limit: 10000
-      sort_by: critic_rating.desc
-      any:
-        origin_country: <<value>>
     default:
       level: ""
     sort_title: 110_+<<level>>_<<key_name>>
