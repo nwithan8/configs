@@ -9,7 +9,6 @@ dynamic_collections:
   Best of Decade Movies DC: # mapping name does not matter just needs to be unique
     type: custom
     data:
-      twenties: 1920
       thirties: 1930
       forties: 1940
       fifties: 1950
@@ -22,7 +21,6 @@ dynamic_collections:
       twenty_twenties: 2020
     template_variables:
       starting:
-        twenties: 1920
         thirties: 1930
         forties: 1940
         fifties: 1950
@@ -34,7 +32,6 @@ dynamic_collections:
         twenty_tens: 2010
         twenty_twenties: 2020
       ending:
-        twenties: 1929
         thirties: 1939
         forties: 1949
         fifties: 1959
