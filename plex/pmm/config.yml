@@ -1,7 +1,7 @@
 libraries: # Library mappings must have a colon (:) placed after them
   Movies:
     library_name: Movies
-    metadata_path:
+    collection_files:
       - repo: collections/pre_rolls # Pre-Rolls, runs as part of Movies
       - repo: collections/actors/movies
       - repo: collections/awards/movies
@@ -21,7 +21,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       - repo: collections/separators/movies
 #  4K Movies:
 #    library_name: Movies (4K)
-#    metadata_path:
+#    collection_files:
 #      - repo: collections/actors/movies
 #      - repo: collections/awards/movies
 #      - repo: collections/best/movies
@@ -39,7 +39,7 @@ libraries: # Library mappings must have a colon (:) placed after them
 #      - repo: collections/years/movies
   TV Shows:
     library_name: TV Shows
-    metadata_path:
+    collection_files:
       - repo: collections/actors/shows
       - repo: collections/awards/shows
       - repo: collections/best/shows
@@ -58,7 +58,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       - repo: collections/separators/shows
 #  4K TV Shows:
 #    library_name: TV Shows (4K)
-#    metadata_path:
+#    collection_files:
 #      - repo: collections/actors/shows
 #      - repo: collections/awards/shows
 #      - repo: collections/best/shows
