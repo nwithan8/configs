@@ -69,7 +69,7 @@ collections:
     imdb_search:
       type: movie, short, tv_movie, tv_special
       keyword.any: "Psychological Thriller"
-      genres: thriller
+      genre.any: thriller
       rating.gte: 5.0
     collection_order: random
     visible_library: true
