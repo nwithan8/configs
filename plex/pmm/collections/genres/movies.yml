@@ -68,7 +68,7 @@ collections:
     summary: "The suspense is killing us!"
     imdb_search:
       type: movie, short, tv_movie, tv_special
-      keyword.any: "Psychological Thriller"
+      keyword.any: "Psychological%20Thriller"
       genre.any: thriller
       rating.gte: 5.0
     collection_order: random
