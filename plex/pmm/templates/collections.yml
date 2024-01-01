@@ -133,7 +133,7 @@ templates:
     optional:
       - poster_url
     sort_title: 070_+<<level>>_<<sort_title_name>>
-    sync_mode: sync
+    sync_mode: append
     schedule:
       - weekly(monday)
       - weekly(thursday)
