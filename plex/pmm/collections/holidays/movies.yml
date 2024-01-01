@@ -313,10 +313,10 @@ collections:
       - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
 
   "🎅 Christmas":
-    schedule: range(12/01-12/28)
-    visible_home: range(12/01-12/29)
-    visible_shared: range(12/01-12/29)
-    visible_library: range(12/01-12/29)
+    schedule: range(12/01-12/29)
+    visible_home: range(12/01-12/28)
+    visible_shared: range(12/01-12/28)
+    visible_library: range(12/01-12/28)
     template: { name: Holiday,
                 level: "++",
                 poster_url: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/seasonal/christmas.jpg }
@@ -330,10 +330,10 @@ collections:
       - https://trakt.tv/users/littlestella3/lists/christmas
 
   "🎁 Hallmark Christmas":
-    schedule: range(12/01-12/28)
-    visible_home: range(12/01-12/29)
-    visible_shared: range(12/01-12/29)
-    visible_library: range(12/01-12/29)
+    schedule: range(12/01-12/29)
+    visible_home: range(12/01-12/28)
+    visible_shared: range(12/01-12/28)
+    visible_library: range(12/01-12/28)
     template: { name: Holiday,
                 level: "+" }
     summary: "Christmas movies with extra-sap!"
