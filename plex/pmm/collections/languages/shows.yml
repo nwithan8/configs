@@ -1,0 +1,4 @@
+external_templates:
+  - repo: templates/collections
+  - repo: templates/dynamic_collections
+

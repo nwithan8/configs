@@ -52,3 +52,19 @@ templates:
     schedule:
       - weekly(saturday)
 
+  Per_Language:
+    smart_filter:
+      limit: 10000
+      sort_by: critic_rating.desc
+      any:
+        audio_language: <<value>>
+    default:
+      level: ""
+    sort_title: 115_+<<level>>_<<key_name>>
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/audio_language/<<value>>.jpg
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule:
+      - weekly(sunday)
+

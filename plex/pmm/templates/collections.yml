@@ -242,6 +242,19 @@ templates:
     visible_library: false
     url_poster: <<poster_url>>
 
+  Language:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 115_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule:
+      - weekly(saturday)
+    visible_library: false
+    url_poster: <<poster_url>>
+
   General:
     default:
       level: ""
