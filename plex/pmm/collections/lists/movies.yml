@@ -101,7 +101,8 @@ collections:
   "🪣 100 Movies Bucket List":
     template: { name: Collection,
                 sort_title: "100 Movies Bucket List",
-                level: "++" }
+                level: "++",
+                poster_url: https://m.media-amazon.com/images/I/81KZufVPTgL._AC_SL1500_.jpg }
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
