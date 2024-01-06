@@ -14,6 +14,23 @@ collections:
       all:
         # Episode added in the last 7 days
         episode_added: 7
+        audio_language: en
+    sync_mode: sync
+    visible_home: true
+    visible_shared: true
+    visible_library: true
+
+  "➕ Added This Week (Non-English)":
+    template: { name: New,
+                level: "++++" }
+    summary: "Non-English episodes added this week on Plex"
+    smart_filter:
+      type: episode
+      sort_by: release.desc
+      all:
+        # Episode added in the last 7 days
+        episode_added: 7
+        audio_language.not: en
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -29,6 +46,23 @@ collections:
       all:
         # Shows added in the last 30 days
         added: 30
+        audio_language: en
+    sync_mode: sync
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "📺 Now On Plex (Non-English)":
+    template: { name: New,
+                level: "+++" }
+    summary: "Non-English shows now playing on Plex"
+    smart_filter:
+      type: show
+      sort_by: release.desc
+      all:
+        # Shows added in the last 30 days
+        added: 30
+        audio_language.not: en
     sync_mode: sync
     visible_library: true
     visible_home: true
