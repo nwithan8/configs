@@ -796,7 +796,7 @@ dynamic_collections:
 
   # TODO: Oscars Nominees?
 
-  Yearly Golden Globes Movies DC: # mapping name does not matter just needs to be unique
+  Yearly Golden Globes Winners Movies DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
     data:
@@ -818,26 +818,6 @@ dynamic_collections:
     template:
       - Yearly_Razzie_Winners
 
-  Yearly Razzie Nominees DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1980
-      ending: current_year
-    title_format: Golden Raspberry Nominees <<key_name>>
-    template:
-      - Yearly_Razzie_Nominees
-
-  Yearly Cannes Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1946
-      ending: current_year
-    title_format: Cannes Film Festival Winners <<key_name>>
-    template:
-      - Yearly_Cannes_Winners
-
   Yearly Cannes Nominees DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
@@ -847,16 +827,6 @@ dynamic_collections:
     title_format: Cannes Film Festival Nominees <<key_name>>
     template:
       - Yearly_Cannes_Nominees
-
-  Yearly BAFTA Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1948
-      ending: current_year
-    title_format: BAFTA Winners <<key_name>>
-    template:
-      - Yearly_BAFTA_Winners
 
   Yearly BAFTA Nominees DC: # mapping name does not matter just needs to be unique
     type: number
@@ -868,16 +838,6 @@ dynamic_collections:
     template:
       - Yearly_BAFTA_Nominees
 
-  Yearly Berlinale Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1951
-      ending: current_year
-    title_format: Berlinale International Film Festival Winners <<key_name>>
-    template:
-      - Yearly_Berlinale_Winners
-
   Yearly Berlinale Nominees DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
@@ -887,16 +847,6 @@ dynamic_collections:
     title_format: Berlinale International Film Festival Nominees <<key_name>>
     template:
       - Yearly_Berlinale_Nominees
-
-  Yearly Critics Choice Awards Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1996
-      ending: current_year
-    title_format: Critics Choice Awards Winners <<key_name>>
-    template:
-      - Yearly_Critics_Choice_Awards_Winners
 
   Yearly Critics Choice Awards Nominees DC: # mapping name does not matter just needs to be unique
     type: number
@@ -908,16 +858,6 @@ dynamic_collections:
     template:
       - Yearly_Critics_Choice_Awards_Nominees
 
-  Yearly Spirit Awards Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1986
-      ending: current_year
-    title_format: Independent Spirit Awards Winners <<key_name>>
-    template:
-      - Yearly_Spirit_Awards_Winners
-
   Yearly Spirit Awards Nominees DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
@@ -927,16 +867,6 @@ dynamic_collections:
     title_format: Independent Spirit Awards Nominees <<key_name>>
     template:
       - Yearly_Spirit_Awards_Nominees
-
-  Yearly Sundance Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1982
-      ending: current_year
-    title_format: Sundance Film Festival Winners <<key_name>>
-    template:
-      - Yearly_Sundance_Winners
 
   Yearly Sundance Nominees DC: # mapping name does not matter just needs to be unique
     type: number
@@ -948,16 +878,6 @@ dynamic_collections:
     template:
       - Yearly_Sundance_Nominees
 
-  Yearly Cesar Awards Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1976
-      ending: current_year
-    title_format: Cesar Awards Winners <<key_name>>
-    template:
-      - Yearly_Cesar_Awards_Winners
-
   Yearly Cesar Awards Nominees DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
@@ -967,16 +887,6 @@ dynamic_collections:
     title_format: Cesar Awards Nominees <<key_name>>
     template:
       - Yearly_Cesar_Awards_Nominees
-
-  Yearly Venice Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1932
-      ending: current_year
-    title_format: Venice Film Festival Winners <<key_name>>
-    template:
-      - Yearly_Venice_Awards_Winners
 
   Yearly Venice Nominees DC: # mapping name does not matter just needs to be unique
     type: number

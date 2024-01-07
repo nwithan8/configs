@@ -68,7 +68,7 @@ dynamic_collections:
     template:
       - Yearly_Emmy_Winners
 
-  Yearly Golden Globes Shows DC: # mapping name does not matter just needs to be unique
+  Yearly Golden Globes Winners Shows DC: # mapping name does not matter just needs to be unique
     type: number
     sync: true
     data:
