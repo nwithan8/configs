@@ -11,5 +11,15 @@ dynamic_collections:
     title_format: <<key_name>>
     exclude:
       - English
+      - english
+      - cpe
+      - Multiple languages
+      - No linguistic content
+      - french (PARISIAN)
+      - french (CANADIAN)
+      - day
+      - jap
+      - tai
+      - Undetermined language
     template:
       - Per_Language
