@@ -54,7 +54,6 @@ templates:
 
   Per_Language:
     smart_filter:
-      limit: 10000
       sort_by: critic_rating.desc
       any:
         audio_language: <<value>>
