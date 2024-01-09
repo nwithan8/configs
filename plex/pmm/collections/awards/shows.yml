@@ -31,7 +31,7 @@ templates:
       event_year: <<key>>
       winning: false
       # Categories change too much year-to-year to attempt to filter
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/emmys/<<key>>.jpg
     schedule: monthly(14)
 
   Yearly_Golden_Globes_Winners:
@@ -45,7 +45,7 @@ templates:
       event_year: <<key>>
       winning: true
       # Categories change too much year-to-year to attempt to filter
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
     schedule: monthly(09)
 
     # TODO: Golden Globe Nominees?
