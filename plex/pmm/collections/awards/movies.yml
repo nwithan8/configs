@@ -54,7 +54,7 @@ templates:
       event_id: ev0000558
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/<<key>>.jpg
     schedule: monthly(13)
 
   Yearly_Cannes_Winners:
@@ -74,7 +74,7 @@ templates:
       event_id: ev0000147
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
     schedule: monthly(07)
 
   Yearly_BAFTA_Winners:
@@ -94,7 +94,7 @@ templates:
       event_id: ev0000123
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
     schedule: monthly(12)
 
   Yearly_Berlinale_Winners:
@@ -114,7 +114,7 @@ templates:
       event_id: ev0000091
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
     schedule: monthly(06)
 
   Yearly_Critics_Choice_Awards_Winners:
@@ -134,7 +134,7 @@ templates:
       event_id: ev0000341
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
     schedule: monthly(11)
 
   Yearly_Spirit_Awards_Winners:
@@ -154,7 +154,7 @@ templates:
       event_id: ev0000349
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
     schedule: monthly(10)
 
   Yearly_Sundance_Winners:
@@ -174,7 +174,7 @@ templates:
       event_id: ev0000631
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
     schedule: monthly(08)
 
   Yearly_Cesar_Awards_Winners:
@@ -194,7 +194,7 @@ templates:
       event_id: ev0000157
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/<<key>>.jpg
     schedule: monthly(03)
 
   Yearly_Venice_Awards_Winners:
@@ -214,7 +214,7 @@ templates:
       event_id: ev0000681
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/<<key>>.jpg
     schedule: monthly(09)
 
   Yearly_Toronto_Awards_Winners:
@@ -234,7 +234,7 @@ templates:
       event_id: ev0000659
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/nominee/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/<<key>>.jpg
     schedule: monthly(15)
 
 collections:
