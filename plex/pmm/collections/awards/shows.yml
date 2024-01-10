@@ -56,24 +56,3 @@ templates:
 
   # TODO: This year's Golden Globe nominees
 
-dynamic_collections:
-  ## Use DC as suffix to avoid name conflicts with static collections
-  Yearly Emmy Winners DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1974
-      ending: current_year
-    title_format: Emmy Winners <<key_name>>
-    template:
-      - Yearly_Emmy_Winners
-
-  Yearly Golden Globes Winners Shows DC: # mapping name does not matter just needs to be unique
-    type: number
-    sync: true
-    data:
-      starting: 1943
-      ending: current_year
-    title_format: Golden Globes Winners <<key_name>>
-    template:
-      - Yearly_Golden_Globes_Winners
