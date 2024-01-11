@@ -134,6 +134,21 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "👾 Monsters vs. Aliens":
+    template: { name: Genre,
+                level: "++" }
+    name_mapping: "Monsters Vs Aliens Collection"
+    summary: "Save the world from aliens and monsters"
+    trakt_list:
+      - https://trakt.tv/users/rizreflects/lists/aliens-monsters
+      - https://trakt.tv/users/y0dase/lists/monsters-creatures
+      - https://trakt.tv/users/ctt2canuckt/lists/kaiju-monsters
+      - https://trakt.tv/users/twentywashere/lists/welcome-to-earth-alien-invasions
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre,
                 level: "++" }
