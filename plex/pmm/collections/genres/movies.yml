@@ -138,7 +138,7 @@ collections:
     template: { name: Genre,
                 level: "++" }
     name_mapping: "Monsters Vs Aliens Collection"
-    summary: "Save the world from aliens and monsters"
+    summary: "Save the world from aliens and monsters!"
     trakt_list:
       - https://trakt.tv/users/rizreflects/lists/aliens-monsters
       - https://trakt.tv/users/y0dase/lists/monsters-creatures
