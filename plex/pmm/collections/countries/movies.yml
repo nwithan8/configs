@@ -24,5 +24,10 @@ dynamic_collections:
       Federated States of Micronesia: Micronesia
       Bolivarian Republic of Venezuela: Venezuela
       Republic of Korea: South Korea
+      United Republic of Tanzania: Tanzania
+      Republic of Moldova: Moldova
+      Brunei Darussalam: Brunei
     template:
       - Per_Country
+    exclude:
+      - Réunion
