@@ -309,3 +309,5 @@ dynamic_collections:
       - Per_Genre
     key_name_override:
       Film-Noir: Film Noir
+    exclude:
+      - Misdaad
