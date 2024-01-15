@@ -12,7 +12,8 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/true-crime-documentary-series-film
     collection_order: random
-    visible_home: false
+    visible_library: true
+    visible_home: true
     visible_shared: true
 
 dynamic_collections:
