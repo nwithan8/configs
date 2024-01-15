@@ -304,10 +304,9 @@ dynamic_collections:
       - Talk Show
       - Awards Show
       - Podcast
+      - Misdaad
     title_format: <<key_name>>
     template:
       - Per_Genre
     key_name_override:
       Film-Noir: Film Noir
-    exclude:
-      - Misdaad
