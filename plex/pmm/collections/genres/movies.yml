@@ -255,7 +255,7 @@ collections:
     visible_home: true
     visible_shared: true
 
-  "🧘 Kick Back and Relax":
+  "🧘 Enjoy The Weekend":
     template: { name: Genre,
                 level: "++" }
     name_mapping: "Chill Movies Collection"
