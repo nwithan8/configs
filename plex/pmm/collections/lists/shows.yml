@@ -14,3 +14,63 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  "🔳 Cartoon Cartoon":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Cartoon Network's original programming block"
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🦊 Fox Kids":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Fox Kids original programming"
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🟠 SNICK":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Saturday Night Nickelodeon"
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/snick
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🛡️ Kids WB":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Kids WB original programming"
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🐭 Disney Afternoon":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Disney Afternoon original programming"
+    trakt_list:
+      - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
