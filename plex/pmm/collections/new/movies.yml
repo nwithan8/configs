@@ -19,19 +19,3 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
-
-  "➕ Added This Week (Non-English)":
-    template: { name: New,
-                level: "++" }
-    summary: "Non-English movies now playing on Plex"
-    smart_filter:
-      type: movies
-      sort_by: release.desc
-      all:
-        # Movie added in the last 7 days
-        added: 7
-        content_rating.not: NC-17, NR, X, MA-17, Not Rated
-        audio_language.not: en
-    visible_library: true
-    visible_home: true
-    visible_shared: true
