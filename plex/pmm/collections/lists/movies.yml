@@ -3,6 +3,8 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  ### RATINGS ###
+
   # Top movies via IMDB, updated monthly
   "🙌 Best Of All Time":
     template: { name: Collection,
@@ -47,6 +49,8 @@ collections:
     visible_home: true
     visible_shared: true
 
+  ### PODCASTS ###
+
   "🤨 How Did This Get Made?":
     template: { name: Collection,
                 sort_title: "How Did This Get Made?",
@@ -83,6 +87,21 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  "📼 The Video Archives Podcast":
+    template: { name: Collection,
+                sort_title: "The Video Archives Podcast",
+                level: "++" }
+    trakt_list_details:
+      - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
+    summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
+    collection_order: custom
+    schedule: daily
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  ### LISTS ###
 
   "🎩 1001 Movies You Must See Before You Die":
     template: { name: Collection,
@@ -124,6 +143,36 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  ### GENERAL ###
+
+  "🏷️ A Blockbuster Night":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Make it a Blockbuster Night"
+    trakt_list:
+      - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
+      - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  "️❌ Cancelled":
+    template: { name: Collection,
+                level: "+" }
+    name_mapping: "Cancelled Collection"
+    summary: "Actors, directors, and writers who have been cancelled"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/cancelled
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
+  ### FRANCHISES ###
 
   "🤵‍♂️ Bond. James Bond.":
     template: { name: Franchise,
@@ -266,17 +315,4 @@ collections:
     visible_library: true
     visible_home: false
     visible_shared: false
-
-  "️❌ Cancelled":
-    template: { name: Collection,
-                level: "+" }
-    name_mapping: "Cancelled Collection"
-    summary: "Actors, directors, and writers who have been cancelled"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/cancelled
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
 
