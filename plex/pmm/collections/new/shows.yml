@@ -14,7 +14,6 @@ collections:
       all:
         # Episode added in the last 7 days
         episode_added: 7
-        audio_language: en
     sync_mode: sync
     visible_home: true
     visible_shared: true
@@ -30,7 +29,6 @@ collections:
       all:
         # Shows added in the last 30 days
         added: 30
-        audio_language: en
     sync_mode: sync
     visible_library: true
     visible_home: true
