@@ -272,6 +272,21 @@ collections:
     visible_home: false
     visible_shared: false
 
+  "🦎 King of The Monsters":
+    summary: "The Godzilla collection"
+    template: { name: Franchise,
+                sort_title: "Godzilla",
+                level: "+" }
+    name_mapping: "Godzilla Collection"
+    trakt_list_details:
+      - https://trakt.tv/users/marcelocastanheira/lists/godzilla
+    url_background: https://www.scified.com/media/versions_of_godzilla.jpg
+    collection_order: release
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
   "🪶 To Be Or Not To Be":
     summary: "The Shakespeare collection"
     template: { name: Franchise,
