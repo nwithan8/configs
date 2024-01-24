@@ -246,7 +246,7 @@ collections:
                 level: "++++" }
     imdb_award:
       event_id: ev0000003
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
@@ -636,10 +636,10 @@ collections:
   # This current year's Best Actor Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "🎭 2023 Best Actor Nominee - Austin Butler":
+  "🎭 2024 Best Actor Nominee - Bradley Cooper":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 86654 }
+                tmdb: 51329 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -650,10 +650,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actor Nominee - Colin Farrell":
+  "🎭 2024 Best Actor Nominee - Colman Domingo":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 72466 }
+                tmdb: 91671 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -664,10 +664,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actor Nominee - Brendan Fraser":
+  "🎭 2024 Best Actor Nominee - Paul Giamatti":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 18269 }
+                tmdb: 13242 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -678,10 +678,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actor Nominee - Paul Mescal":
+  "🎭 2024 Best Actor Nominee - Cillian Murphy":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 2326151 }
+                tmdb: 2037 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -692,10 +692,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actor Nominee - Bill Nighy":
+  "🎭 2024 Best Actor Nominee - Jeffrey Wright":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 2440 }
+                tmdb: 2954 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -713,10 +713,10 @@ collections:
   # This current year's Best Actress Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "🎭 2023 Best Actress Nominee - Cate Blanchett":
+  "🎭 2024 Best Actress Nominee - Annette Bening":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 112 }
+                tmdb: 516 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -727,10 +727,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actress Nominee - Ana de Armas":
+  "🎭 2024 Best Actress Nominee - Lily Gladstone":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 224513 }
+                tmdb: 1183917 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -741,10 +741,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actress Nominee - Andrea Riseborough":
+  "🎭 2024 Best Actress Nominee - Sandra Hüller":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 127558 }
+                tmdb: 7152 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -755,10 +755,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actress Nominee - Michelle Williams":
+  "🎭 2024 Best Actress Nominee - Carey Mulligan":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 1812 }
+                tmdb: 36662 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -769,10 +769,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2023 Best Actress Nominee - Michelle Yeoh":
+  "🎭 2024 Best Actress Nominee - Emma Stone":
     template: { name: ActorAward,
                 level: "+++++",
-                tmdb: 1620 }
+                tmdb: 54693 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
