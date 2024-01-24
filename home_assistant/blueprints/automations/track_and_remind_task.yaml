@@ -1,0 +1,241 @@
+blueprint:
+  name: Track and Remind about a Task
+  description: >
+    Track the completion of a repetitive task, and trigger actions when the task is due, overdue or completed.
+
+    Based on Future Smart Home's concept: https://www.youtube.com/watch?v=DhU2Jw2-op8
+
+
+    NOTE: This automation only checks task completion status once a day, and therefore is not useful for tasks that need to be completed multiple times in a 24-hour period.
+  
+    
+    PRE-REQUISITES:
+    
+    - Create an input_datetime helper to track the last time the task was completed.
+    - Create an NFC tag that will be used to mark the task as completed.
+
+  domain: automation
+  input:
+    task_name:
+      name: Task name
+      description: >
+        The name of the task to track.
+      selector:
+        text:
+          type: text
+
+    task_interval:
+      name: Task interval
+      description: >
+        How often the task needs to be completed, in days.
+      selector:
+        number:
+          min: 1
+          max: 365
+          step: 1
+          mode: box
+
+    nfc_tag:
+      name: NFC tag
+      description: >
+        The ID of the NFC tag that marks the task as "completed".
+
+        Can be found under Settings -> Tags, and then click on the relevant tag.
+      selector:
+        text:
+          type: text
+
+    date_tracker:
+      name: Date tracker
+      description: >
+        The datetime helper that will track the task completion.
+      selector:
+        entity:
+          filter:
+            domain: input_datetime
+
+    status_check_time:
+      name: Status check time
+      description: >
+        What time, every day, this automation will check for incomplete tasks and send notifications.
+      selector:
+        time:
+
+    due_action:
+      name: Due reminder action
+      description: >
+        What action to take when a reminder needs to be sent about a task due today.
+        
+        For example, send a notification to a mobile device, turn on a light, change a binary sensor, etc.
+
+
+        The following variables are available to the action:
+          - "task_name": The name of the task (string)
+          - "task_due_date": The date the task was originally due (string)
+          - "days_since_last_completed": How many days since the task was last completed (integer)
+          - "task_interval": How often the task is due (integer)
+          - "task_is_due": Whether the task is due today (boolean)
+          - "task_is_overdue": Whether the task is overdue (boolean)
+      selector:
+        action:
+      default: []
+
+    overdue_action:
+      name: Overdue reminder action
+      description: >
+        What action to take when a reminder needs to be send about an overdue task.
+        
+        For example, send a notification to a mobile device, turn on a light, change a binary sensor, etc.
+        
+        If not set, overdue tasks will use the same action as above.
+
+
+        The following variables are available to the action:
+          - "task_name": The name of the task (string)
+          - "task_due_date": The date the task was originally due (string)
+          - "days_since_last_completed": How many days since the task was last completed (integer)
+          - "task_interval": How often the task is due (integer)
+          - "task_is_due": Whether the task is due today (boolean) (always false)
+          - "task_is_overdue": Whether the task is overdue (boolean) (always true)
+      selector:
+        action:
+      default: []
+
+    skip_days_of_week:
+      name: Days of the week to skip
+      description: >
+        Which days of the week to skip task completion status checks.
+
+        This has no impact on the completion or due/overdue status of the task; it simply skips checking the status on the specified days.
+      selector:
+        select:
+          multiple: true
+          options:
+            - label: Monday
+              value: "0"
+            - label: Tuesday
+              value: "1"
+            - label: Wednesday
+              value: "2"
+            - label: Thursday
+              value: "3"
+            - label: Friday
+              value: "4"
+            - label: Saturday
+              value: "5"
+            - label: Sunday
+              value: "6"
+      default: []
+
+    rolling_completion:
+      name: Use rolling completion
+      description: >
+        If enabled, when marking a task complete, mark it completed at original due date rather than current date.
+
+
+        For example, assume you have a task that needs to be completed every 7 days. After 10 days, you mark the task as completed.
+
+        If enabled, the "completed date" will be the original due date, three days ago, which means it will be due again 4 days from now.
+
+        If not enabled, the "completed date" will be today, which means it will be due again 7 days from now.
+
+
+        This can be useful if you don't want your delay in completing the task to affect the next date the task is due.
+      selector:
+        boolean:
+      default: false
+
+    on_completion_action:
+      name: Action upon completion
+      description: >
+        An optional additional action to take when the task has been completed.
+        
+        For example, send a notification to a mobile device, turn on a light, change a binary sensor, etc.
+      default: []
+      selector:
+        action:
+
+mode: single
+max_exceeded: silent
+
+variables:
+  task_name: !input "task_name"
+  task_interval: !input "task_interval"
+  date_tracker: !input "date_tracker"
+  rolling_completion: !input "rolling_completion"
+  overdue_action: !input "overdue_action"
+  skip_days_of_week: !input "skip_days_of_week"
+  days_since_last_completed: >
+    {% set last_date = states(date_tracker) | as_datetime %}
+    {{ (now().date() - last_date.date()).days }}
+  task_due_date: >
+    {% set last_date = states(date_tracker) | as_datetime %}  
+    {{ last_date.date() + timedelta(days=task_interval) }}
+  task_is_due: "{{ days_since_last_completed == task_interval }}"
+  task_is_overdue: "{{ days_since_last_completed > task_interval }}"
+
+trigger:
+  - alias: On schedule
+    id: schedule
+    platform: time
+    at: !input status_check_time
+  - alias: When associated NFC tag is scanned
+    id: tag_scan
+    platform: tag
+    tag_id: !input nfc_tag
+
+action:
+  - choose:
+      - conditions:
+          - alias: NFC tag scanned
+            condition: trigger
+            id: tag_scan
+        sequence:
+          - alias: Update date tracker to next due date
+            service: input_datetime.set_datetime
+            entity_id: !input date_tracker
+            data:
+              datetime: >
+                {% if rolling_completion %}
+                  {% set last_date = states(date_tracker) | as_datetime %}
+                  {{ last_date.date() + timedelta(days=task_interval) }}
+                {% else %}
+                  {{ now().date() + timedelta(days=task_interval) }}
+                {% endif %}
+          - alias: Execute "on completion" action if set
+            choose:
+              - conditions: "{{ true }}"
+                sequence: !input on_completion_action
+      - conditions:
+          - alias: At scheduled time
+            condition: trigger
+            id: schedule
+          - alias: Today is not a skip day
+            condition: template
+            value_template: "{{ now().date().weekday() | string not in skip_days_of_week }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - alias: Task is due today
+                    condition: template
+                    value_template: "{{ task_is_due }}"
+                sequence: !input due_action
+              - conditions:
+                  - alias: Task is overdue
+                    condition: template
+                    value_template: "{{ task_is_overdue }}"
+                sequence:
+                  - if:
+                      - alias: Custom overdue action
+                        condition: template
+                        value_template: "{{ overdue_action != [] }}"
+                    then:
+                      - alias: Execute overdue action
+                        choose:
+                          - conditions: "{{ true }}"
+                            sequence: !input overdue_action
+                    else:
+                      - alias: Execute due action
+                        choose:
+                          - conditions: "{{ true }}"
+                            sequence: !input due_action
