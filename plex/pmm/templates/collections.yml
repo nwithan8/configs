@@ -2,15 +2,15 @@ external_templates:
   git: PMM/collections
 
 templates:
-  New:
+  Promoted:
     default:
       level: ""
       sort_title_name: <<collection_name>>
     optional:
       - poster_url
-    sort_title: 010_+<<level>>_<<sort_title_name>>
+    sort_title: 000_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: daily
+    schedule: daily  # Override this in the collection
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -23,7 +23,7 @@ templates:
       sort_by: release.desc
       any:
         actor: tmdb
-      sort_title: 020_+<<level>>_<<sort_title_name>>
+      sort_title: 001_+<<level>>_<<sort_title_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
@@ -38,11 +38,23 @@ templates:
       sort_by: release.desc
       any:
         director: tmdb
-      sort_title: 021_+<<level>>_<<sort_title_name>>
+      sort_title: 002_+<<level>>_<<sort_title_name>>
       sync_mode: append
     visible_library: true
     visible_shared: true
     visible_home: true
+
+  New:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    optional:
+      - poster_url
+    sort_title: 010_+<<level>>_<<sort_title_name>>
+    sync_mode: sync
+    schedule: daily
+    visible_library: true
+    url_poster: <<poster_url>>
 
   Chart:
     default:
