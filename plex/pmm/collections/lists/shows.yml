@@ -15,6 +15,18 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "📺️ Saturday Morning Cartoons":
+    template: { name: Collection,
+                level: "+" }
+    summary: "Saturday Morning Cartoons"
+    trakt_list:
+      - https://trakt.tv/users/fiala06/lists/saturday-morning-cartoons
+    collection_order: random
+    schedule: weekly(saturday), weekly(sunday)
+    visible_home: weekly(saturday)
+    visible_shared: weekly(saturday)
+    visible_library: weekly(saturday)
+
   "🔳 Cartoon Cartoon":
     template: { name: Collection,
                 level: "+" }
