@@ -6,7 +6,7 @@ templates:
   Shows_Best_of_Year:
     default:
       level: ""
-    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-best-tv-of-<<key>>
+    trakt_list: https://trakt.tv/users/lish408/lists/rotten-tomatoes-the-best-tv-of-<<key>>
     sort_title: 080_+<<level>>_Best of <<key>>
     sync_mode: sync
     summary: Rotten Tomatoes Best TV Shows of <<key>>
