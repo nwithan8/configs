@@ -23,6 +23,7 @@ dynamic_collections:
   Per-Genre DC Shows: # mapping name does not matter just needs to be unique
     type: genre
     exclude:
+      - Talk
       - Action/Adventure
       - Awards Show
       - Podcast
