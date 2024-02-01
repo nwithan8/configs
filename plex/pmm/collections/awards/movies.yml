@@ -273,9 +273,9 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
-    visible_home: range(02/01-03/31)
-    visible_shared: range(02/01-03/31)
-    visible_library: true # Always visible in library
+    visible_home: false
+    visible_shared: false
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner.jpg
 
   # This year's Best Picture Oscar nominees
@@ -319,7 +319,7 @@ collections:
     collection_order: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
-    visible_library: true # Always visible in library
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_picture_winner.jpg
 
   # This year's Razzie nominees
@@ -359,9 +359,9 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
-    visible_home: range(02/01-03/31)
-    visible_shared: range(02/01-03/31)
-    visible_library: true # Always visible in library
+    visible_home: false
+    visible_shared: false
+    visible_library: range(02/01-03/31)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/winner.jpg
 
   # This year's BAFTA nominees
@@ -398,8 +398,8 @@ collections:
       - yearly(03/06)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
-    visible_home: range(02/01-03/05)
-    visible_shared: range(02/01-03/05)
+    visible_home: false
+    visible_shared: false
     visible_library: range(02/01-03/05)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner.jpg
 
@@ -440,8 +440,8 @@ collections:
       - yearly(03/08)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
-    visible_home: range(02/01-03/07)
-    visible_shared: range(02/01-03/07)
+    visible_home: false
+    visible_shared: false
     visible_library: range(02/01-03/07)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner.jpg
 
@@ -482,8 +482,8 @@ collections:
       - yearly(06/10)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
-    visible_home: range(05/01-06/09)
-    visible_shared: range(05/01-06/09)
+    visible_home: false
+    visible_shared: false
     visible_library: range(05/01-06/09)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner.jpg
 
@@ -524,8 +524,8 @@ collections:
       - yearly(03/03)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
-    visible_home: range(02/01-03/02)
-    visible_shared: range(02/01-03/02)
+    visible_home: false
+    visible_shared: false
     visible_library: range(02/01-03/02)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner.jpg
 
@@ -566,8 +566,8 @@ collections:
       - yearly(02/13)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
-    visible_home: range(01/13-02/12)
-    visible_shared: range(01/13-02/12)
+    visible_home: false
+    visible_shared: false
     visible_library: range(01/13-02/12)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner.jpg
 
@@ -606,8 +606,8 @@ collections:
       - yearly(09/21)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
-    visible_home: range(08/21-09/20)
-    visible_shared: range(08/21-09/20)
+    visible_home: false
+    visible_shared: false
     visible_library: range(08/21-09/20)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
 
@@ -647,8 +647,8 @@ collections:
       - yearly(10/01)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
-    visible_home: range(09/01-09/30)
-    visible_shared: range(09/01-09/30)
+    visible_home: false
+    visible_shared: false
     visible_library: range(09/01-09/30)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/winner.jpg  # TODO: Does not exist yet
 
