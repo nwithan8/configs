@@ -286,7 +286,7 @@ collections:
     summary: "Who will take home the trophy?"
     imdb_award:
       event_id: ev0000003
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
       category_filter: Best Motion Picture of the Year
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
@@ -306,9 +306,11 @@ collections:
     summary: "The Academy Award for Best Picture is one of the Academy Awards presented annually by the Academy of Motion Picture Arts and Sciences since the awards debuted in 1929."
     template: { name: Award,
                 level: "++" }
-    imdb_list:
-      # TODO: Might need to change
-      - https://www.imdb.com/search/title/?title_type=feature&groups=best_picture_winner
+    imdb_award:
+      event_id: ev0000003
+      event_year: 1929-current
+      winning: true
+      category_filter: Best Motion Picture of the Year
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -328,7 +330,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000558
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
@@ -339,8 +341,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzies/nomination.jpg
-
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/nomination.jpg
 
   # All past Razzie-winning Worst Picture movies
   # Only visible on home screen during Razzie season
@@ -348,7 +349,10 @@ collections:
     template: { name: Award,
                 level: "++" }
     summary: "Previous Razzie Worst Picture winners"
-    mdblist_list: https://mdblist.com/lists/hdlists/razzie-awards-worst-picture-winners
+    imdb_award:
+      event_id: ev0000558
+      event_year: 1980-current
+      winning: true
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -358,7 +362,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: true # Always visible in library
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzies/winner.jpg
+    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/winner.jpg
 
   # This year's BAFTA nominees
   # Only visible on home screen during BAFTA season
@@ -368,7 +372,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000123
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # Usually February, but has been as late as April (one day)
       - yearly(02/01)
@@ -407,7 +411,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000091
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # February to early March (multiple days)
       - yearly(02/01)
@@ -426,7 +430,10 @@ collections:
     summary: "The Berlin International Film Festival, usually called the Berlinale, is a film festival held annually in Berlin, Germany."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    imdb_award:
+      event_id: ev0000091
+      event_year: 1951-current
+      winning: true
     schedule: # February to early March (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/07)]
@@ -446,7 +453,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000147
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # Usually May (multiple days)
       - yearly(05/01)
@@ -465,7 +472,10 @@ collections:
     summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+    imdb_award:
+      event_id: ev0000147
+      event_year: 1939-current
+      winning: true
     schedule: # Usually May (multiple days)
       - yearly(05/01)
       - all[weekly(friday),range(05/01-06/09)]
@@ -485,7 +495,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000157
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # February (multiple days)
       - yearly(02/01)
@@ -504,7 +514,10 @@ collections:
     summary: "The César Award is the national film award of France. It is delivered in the Nuit des César ceremony and was first awarded in 1976."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/fauxliege/lists/cesar-meilleur-film
+    imdb_award:
+      event_id: ev0000157
+      event_year: 1976-current
+      winning: true
     schedule: # February (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/02)]
@@ -524,7 +537,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000631
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
@@ -543,7 +556,10 @@ collections:
     summary: "Sundance is the largest independent film festival in the United States. Held in January, the festival is the premier showcase for new work from American and international independent filmmakers."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    imdb_award:
+      event_id: ev0000631
+      event_year: 1985-current
+      winning: true
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
       - all[weekly(friday),range(01/13-02/12)]
@@ -561,7 +577,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000681
-      event_year: 2023  # TODO: Change this every year
+      event_year: 2024  # TODO: Change this every year
       winning: false
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
@@ -580,7 +596,10 @@ collections:
     summary: "The Venice Film Festival or Venice International Film Festival (Italian: Mostra Internazionale d'Arte Cinematografica della Biennale di Venezia is the world's oldest film festival"
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    imdb_award:
+      event_id: ev0000681
+      event_year: 1932-current
+      winning: true
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
       - all[weekly(friday),range(08/21-09/20)]
@@ -599,9 +618,9 @@ collections:
     template: { name: Award,
                 level: "+++" }
     imdb_award:
-    event_id: ev0000659
-    event_year: 2023  # TODO: Change this every year
-    winning: false
+      event_id: ev0000659
+      event_year: 2024  # TODO: Change this every year
+      winning: false
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
       - all[weekly(friday),range(09/01-09/30)]
@@ -618,7 +637,10 @@ collections:
     summary: "The Toronto International Film Festival is one of the largest publicly attended film festivals in the world, attracting over 480,000 people annually."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/tiff-people-s-choice-award
+    imdb_award:
+      event_id: ev0000659
+      event_year: 1978-current
+      winning: true
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
       - all[weekly(friday),range(09/01-09/30)]
