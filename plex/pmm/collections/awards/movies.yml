@@ -243,7 +243,7 @@ collections:
   "🎖️This Year's Oscar Nominees":
     summary: "Who will take home the trophy?"
     template: { name: Award,
-                level: "++++" }
+                level: "+++" }
     imdb_award:
       event_id: ev0000003
       event_year: current
@@ -282,7 +282,7 @@ collections:
   # Only visible on home screen during Oscar season
   "🎬 This Year's Best Picture Nominees":
     template: { name: Award,
-                level: "++++++" }
+                level: "+++" }
     summary: "Who will take home the trophy?"
     imdb_award:
       event_id: ev0000003
