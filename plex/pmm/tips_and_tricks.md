@@ -98,6 +98,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
     - `collection_order: alpha` -> `sort_by: title.desc`
     - `collection_order: random` -> `sort_by: random`
     - `collection_order: custom` -> `sort_by: ??`
+    - https://metamanager.wiki/en/latest/files/builders/smart/#sort-options
 - Needs to be one level above `all`/`any` criteria list. Ex.:
   ```yaml
   smart_filter:
