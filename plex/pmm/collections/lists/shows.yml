@@ -18,7 +18,7 @@ collections:
   "📺️ Saturday Morning Cartoons":
     template: { name: Collection,
                 level: "+" }
-    summary: "Saturday Morning Cartoons"
+    summary: "Grab a bowl of sugary cereal and be a kid again."
     trakt_list:
       - https://trakt.tv/users/fiala06/lists/saturday-morning-cartoons
     collection_order: random
