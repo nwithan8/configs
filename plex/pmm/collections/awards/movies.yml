@@ -706,7 +706,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -720,7 +719,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -734,7 +732,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -748,7 +745,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -762,7 +758,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -783,7 +778,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -797,7 +791,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -811,7 +804,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -825,7 +817,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -839,7 +830,6 @@ collections:
       - all[weekly(friday),range(02/01-03/31)]
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    sort_by: release.desc
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
