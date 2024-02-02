@@ -267,6 +267,7 @@ collections:
                 level: "++" }
     imdb_search:
       event.winning: oscar
+      limit: 10000
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -289,7 +290,7 @@ collections:
       event_year: latest
       winning: false
       category_filter: Best Motion Picture of the Year
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
@@ -313,7 +314,7 @@ collections:
       event_year: all
       winning: true
       category_filter: Best Motion Picture of the Year
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
@@ -336,7 +337,7 @@ collections:
       event_id: ev0000558
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
@@ -359,7 +360,7 @@ collections:
       event_id: ev0000558
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
@@ -382,7 +383,7 @@ collections:
       event_id: ev0000123
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually February, but has been as late as April (one day)
       - yearly(02/01)
@@ -405,7 +406,7 @@ collections:
       event_id: ev0000123
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually February, but has been as late as April (one day)
       - yearly(02/01)
@@ -428,7 +429,7 @@ collections:
       event_id: ev0000091
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # February to early March (multiple days)
       - yearly(02/01)
@@ -451,7 +452,7 @@ collections:
       event_id: ev0000091
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # February to early March (multiple days)
       - yearly(02/01)
@@ -474,7 +475,7 @@ collections:
       event_id: ev0000147
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually May (multiple days)
       - yearly(05/01)
@@ -497,7 +498,7 @@ collections:
       event_id: ev0000147
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Usually May (multiple days)
       - yearly(05/01)
@@ -520,7 +521,7 @@ collections:
       event_id: ev0000157
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # February (multiple days)
       - yearly(02/01)
@@ -543,7 +544,7 @@ collections:
       event_id: ev0000157
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # February (multiple days)
       - yearly(02/01)
@@ -566,7 +567,7 @@ collections:
       event_id: ev0000631
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
@@ -589,7 +590,7 @@ collections:
       event_id: ev0000631
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
@@ -610,7 +611,7 @@ collections:
       event_id: ev0000681
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
@@ -633,7 +634,7 @@ collections:
       event_id: ev0000681
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
@@ -656,7 +657,7 @@ collections:
       event_id: ev0000659
       event_year: latest
       winning: false
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
@@ -678,7 +679,7 @@ collections:
       event_id: ev0000659
       event_year: all
       winning: true
-      limit: 1000
+      limit: 10000
       sort_by: release.desc
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
