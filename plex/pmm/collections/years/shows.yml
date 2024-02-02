@@ -13,7 +13,7 @@ templates:
     collection_order: release
     collection_minimum: 3
     delete_below_minimum: true
-    visible_library: true
+    visible_library: false
     visible_shared: false
     visible_home: false
     schedule: monthly(01)
