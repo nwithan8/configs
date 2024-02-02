@@ -86,9 +86,9 @@ templates:
       level: ""
       sort_title_name: <<collection_name>>
     smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
+      sort_by: release.desc
       all:
         actor: tmdb
-        sort_by: release.desc
     tmdb_person: <<tmdb>>
     sort_title: 052_+<<level>>_<<sort_title_name>>
     sync_mode: append
