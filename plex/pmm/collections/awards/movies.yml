@@ -265,9 +265,12 @@ collections:
     summary: "Oscar-winning Movies"
     template: { name: Award,
                 level: "++" }
-    imdb_search:
-      event.winning: oscar
+    imdb_award:
+      event_id: ev0000003
+      event_year: all
+      winning: true
       limit: 10000
+      sort_by: random
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
