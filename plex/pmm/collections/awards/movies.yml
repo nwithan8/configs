@@ -246,7 +246,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000003
-      event_year: current-current
+      event_year: latest
       winning: false
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
@@ -290,7 +290,7 @@ collections:
     summary: "Who will take home the trophy?"
     imdb_award:
       event_id: ev0000003
-      event_year: current-current
+      event_year: latest
       winning: false
       category_filter:
         - Best Motion Picture of the Year
@@ -340,7 +340,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000558
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -386,7 +386,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000123
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -432,7 +432,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000091
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -478,7 +478,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000147
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -524,7 +524,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000157
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -570,7 +570,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000631
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -614,7 +614,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000681
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
@@ -660,7 +660,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000659
-      event_year: current-current
+      event_year: latest
       winning: false
       limit: 10000
       sort_by: release.desc
