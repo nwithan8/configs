@@ -246,7 +246,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000003
-      event_year: current
+      event_year: latest
       winning: false
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
@@ -286,7 +286,7 @@ collections:
     summary: "Who will take home the trophy?"
     imdb_award:
       event_id: ev0000003
-      event_year: current
+      event_year: latest
       winning: false
       category_filter: Best Motion Picture of the Year
       limit: 1000
@@ -310,7 +310,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000003
-      event_year: 1929-current
+      event_year: all
       winning: true
       category_filter: Best Motion Picture of the Year
       limit: 1000
@@ -334,7 +334,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000558
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -357,7 +357,7 @@ collections:
     summary: "Previous Razzie Worst Picture winners"
     imdb_award:
       event_id: ev0000558
-      event_year: 1980-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -380,7 +380,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000123
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -403,7 +403,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000123
-      event_year: 1948-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -426,7 +426,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000091
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -449,7 +449,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000091
-      event_year: 1951-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -472,7 +472,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000147
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -495,7 +495,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000147
-      event_year: 1939-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -518,7 +518,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000157
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -541,7 +541,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000157
-      event_year: 1976-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -564,7 +564,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000631
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -587,7 +587,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000631
-      event_year: 1985-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -608,7 +608,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000681
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -631,7 +631,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000681
-      event_year: 1932-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
@@ -654,7 +654,7 @@ collections:
                 level: "+++" }
     imdb_award:
       event_id: ev0000659
-      event_year: current
+      event_year: latest
       winning: false
       limit: 1000
       sort_by: release.desc
@@ -676,7 +676,7 @@ collections:
                 level: "++" }
     imdb_award:
       event_id: ev0000659
-      event_year: 1978-current
+      event_year: all
       winning: true
       limit: 1000
       sort_by: release.desc
