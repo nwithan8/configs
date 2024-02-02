@@ -289,6 +289,8 @@ collections:
       event_year: current
       winning: false
       category_filter: Best Motion Picture of the Year
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -311,6 +313,8 @@ collections:
       event_year: 1929-current
       winning: true
       category_filter: Best Motion Picture of the Year
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -332,6 +336,8 @@ collections:
       event_id: ev0000558
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -353,6 +359,8 @@ collections:
       event_id: ev0000558
       event_year: 1980-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # Day before the Oscars (one day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -374,6 +382,8 @@ collections:
       event_id: ev0000123
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually February, but has been as late as April (one day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/05)]
@@ -391,7 +401,12 @@ collections:
     summary: "The EE British Academy Film Awards or BAFTA Film Awards are presented in an annual award show hosted by the British Academy of Film and Television Arts (BAFTA) to honour the best British and international contributions to film."
     template: { name: Award,
                 level: "++" }
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+    imdb_award:
+      event_id: ev0000123
+      event_year: 1948-current
+      winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually February, but has been as late as April (one day)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/05)]
@@ -413,6 +428,8 @@ collections:
       event_id: ev0000091
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # February to early March (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/07)]
@@ -434,6 +451,8 @@ collections:
       event_id: ev0000091
       event_year: 1951-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # February to early March (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/07)]
@@ -455,6 +474,8 @@ collections:
       event_id: ev0000147
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually May (multiple days)
       - yearly(05/01)
       - all[weekly(friday),range(05/01-06/09)]
@@ -466,16 +487,18 @@ collections:
     visible_library: range(05/01-06/09)
     url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/nomination.jpg
 
-  # All past Cannes winning movies (specifically Palme d'Or)
+  # All past Cannes winning movies
   # Only visible on home screen during Cannes season
-  "🕊️ Past Cannes Palme d'or Winners":
-    summary: "The Palme d'Or is the highest prize awarded at the Cannes Film Festival. It was introduced in 1955 by the organising committee."
+  "🕊️ Past Cannes Winners":
+    summary: "The Cannes Film Festival is an annual film festival held in Cannes, France, which previews new films of all genres, including documentaries, from all around the world."
     template: { name: Award,
                 level: "++" }
     imdb_award:
       event_id: ev0000147
       event_year: 1939-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # Usually May (multiple days)
       - yearly(05/01)
       - all[weekly(friday),range(05/01-06/09)]
@@ -497,6 +520,8 @@ collections:
       event_id: ev0000157
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # February (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/02)]
@@ -518,6 +543,8 @@ collections:
       event_id: ev0000157
       event_year: 1976-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # February (multiple days)
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/02)]
@@ -539,6 +566,8 @@ collections:
       event_id: ev0000631
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
       - all[weekly(friday),range(01/13-02/12)]
@@ -560,6 +589,8 @@ collections:
       event_id: ev0000631
       event_year: 1985-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # mid-to-late January (multiple days)
       - yearly(01/13)
       - all[weekly(friday),range(01/13-02/12)]
@@ -579,6 +610,8 @@ collections:
       event_id: ev0000681
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
       - all[weekly(friday),range(08/21-09/20)]
@@ -600,6 +633,8 @@ collections:
       event_id: ev0000681
       event_year: 1932-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # Late August to early September (multiple days)
       - yearly(08/21)
       - all[weekly(friday),range(08/21-09/20)]
@@ -621,6 +656,8 @@ collections:
       event_id: ev0000659
       event_year: current
       winning: false
+      limit: 1000
+      sort_by: release.desc
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
       - all[weekly(friday),range(09/01-09/30)]
@@ -641,6 +678,8 @@ collections:
       event_id: ev0000659
       event_year: 1978-current
       winning: true
+      limit: 1000
+      sort_by: release.desc
     schedule: # September (starts Thursday after the first Monday) (multiple days)
       - yearly(09/01)
       - all[weekly(friday),range(09/01-09/30)]
