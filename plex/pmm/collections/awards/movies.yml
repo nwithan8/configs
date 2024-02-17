@@ -318,7 +318,9 @@ collections:
       event_id: ev0000003
       event_year: all
       winning: true
-      category_filter: Best Motion Picture of the Year
+      category_filter:
+        - Best Motion Picture of the Year
+        - Best Picture
       limit: 10000
       sort_by: release.desc
     schedule: # Usually late February to mid-March, has been as late as April (one-day)
