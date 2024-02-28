@@ -172,7 +172,7 @@ collections:
     visible_home: false  # Not advertised on the home page
     visible_shared: false  # Not advertised on the home page
 
-  "🗎 Documentaries":
+  "📄 Documentaries":
     template: { name: Genre,
                 level: "++" }
     name_mapping: "Documentaries Collection"
