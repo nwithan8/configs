@@ -50,18 +50,18 @@ collections:
     visible_shared: true
 
     # Biggest box office bombs, according to Wikipedia, updated monthly
-    "💣 Box Office Bombs":
-      template: { name: Collection,
-                  sort_title: "Box Office Bombs",
-                  level: "++" }
-      name_mapping: "Box Office Bombs Collection"
-      summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
-      trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
-      collection_order: random
-      # default schedule
-      visible_library: true
-      visible_home: true
-      visible_shared: true
+  "💣 Box Office Bombs":
+    template: { name: Collection,
+                sort_title: "Box Office Bombs",
+                level: "++" }
+    name_mapping: "Box Office Bombs Collection"
+    summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
+    trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
+    collection_order: random
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
 
   ### PODCASTS ###
 
