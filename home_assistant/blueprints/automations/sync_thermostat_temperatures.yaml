@@ -1,0 +1,89 @@
+blueprint:
+  name: Sync Thermostat Temperatures
+  description: >
+    Sync multiple thermostat temperatures, so any change on one is reflected on others
+
+    NOTE: A change made to any master thermostat will update all the slave thermostat, but not other master thermostats due to potetial recursion.
+  domain: automation
+  input:
+    master_thermostats:
+      name: Master thermostats
+      description: >
+        A set of thermostats that can trigger changes on slave thermostats
+      selector:
+        entity:
+          domain:
+            - climate
+          multiple: true
+
+    slave_thermostats:
+      name: Slave thermostats
+      description: >
+        A set of thermostats that will be updated whenever a master thermostat is updated
+      selector:
+        entity:
+          domain:
+            - climate
+          multiple: true
+
+mode: single
+max_exceeded: silent
+
+variables:
+  master_thermostats: !input "master_thermostats"
+  slave_thermostats: !input "slave_thermostats"
+
+trigger:
+  - alias: Master thermostat single temperature updated
+    id: master_single_update
+    platform: state
+    entity_id: !input "master_thermostats"
+    attribute: temperature
+  - alias: Master thermostat max temperature updated
+    id: master_max_update
+    platform: state
+    entity_id: !input "master_thermostats"
+    attribute: target_temp_high
+  - alias: Master thermostat min temperature updated
+    id: master_min_update
+    platform: state
+    entity_id: !input "master_thermostats"
+    attribute: target_temp_low
+
+condition: []
+
+action:
+  - choose:
+      - conditions:
+          - alias: Change was to single set temperature
+            condition: trigger
+            id: "master_single_update"
+        sequence:
+          - alias: Update set temperature on all slave thermostats
+            repeat:
+              for_each: "{{ slave_thermostats }}"
+              sequence:
+                - alias: Update set temperature on slave thermostat
+                  service: climate.set_temperature
+                  data:
+                    temperature: "{{ trigger.to_state.attributes.temperature }}"
+                  target:
+                    entity_id: "{{ repeat.item }}"
+      - conditions:
+          - alias: Change was to min/max temperature
+            condition: trigger
+            id:
+              - master_min_update
+              - master_max_update
+        sequence:
+          - alias: Update min/max temperatures on all slave thermostats
+            repeat:
+              for_each: "{{ slave_thermostats }}"
+              sequence:
+                - alias: Update min/max temperatures on slave thermostat
+                  service: climate.set_temperature
+                  data:
+                    target_temp_high: "{{ trigger.to_state.attributes.target_temp_high }}"
+                    target_temp_low: "{{ trigger.to_state.attributes.target_temp_low }}"
+                  target:
+                    entity_id: "{{ repeat.item }}"
