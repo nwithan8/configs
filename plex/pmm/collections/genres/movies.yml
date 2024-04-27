@@ -92,7 +92,7 @@ collections:
                 level: "++" }
     summary: "Based on a true story"
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-true-stories
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-true-stories
     collection_order: random
     visible_library: true
     visible_home: true
@@ -104,7 +104,7 @@ collections:
     name_mapping: "Based On A Book Collection"
     summary: "Based on a book"
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-books
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-books
     collection_order: random
     visible_library: true
     visible_home: true
@@ -116,7 +116,7 @@ collections:
     name_mapping: "Video Game Movies Collection"
     summary: "Based on a video game"
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-video-games
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-video-games
     collection_order: random
     visible_library: true
     visible_home: true
@@ -128,7 +128,7 @@ collections:
     name_mapping: "With Great Power Collection"
     summary: "Based on a comic book"
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/movies-based-on-comics
+      - https://trakt.tv/users/k0meta/lists/movies-based-on-comics
     collection_order: random
     visible_library: true
     visible_home: true

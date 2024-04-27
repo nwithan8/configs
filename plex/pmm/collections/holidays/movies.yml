@@ -64,7 +64,7 @@ collections:
     summary: "Celebrate Black History Month with these movies!"
     collection_order: random
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/black-history-month
+      - https://trakt.tv/users/k0meta/lists/black-history-month
 
   "☘ St. Patrick's Day":
     schedule: range(03/01-03/19)
@@ -117,7 +117,7 @@ collections:
     summary: "Celebrate Asian American and Pacific Islander Heritage Month with these movies!"
     collection_order: random
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/asian-american-pacific-islander-heritage-month
+      - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
 
   "🤱 Mother's Day":
     schedule: range(05/05-05/11)
@@ -156,7 +156,7 @@ collections:
     summary: "Celebrate Pride Month with these movies!"
     collection_order: random
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/lgbtq-pride-month
+      - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
 
   "👨 Father's Day":
     schedule: range(06/15-06/21)
@@ -209,7 +209,7 @@ collections:
     summary: "Celebrate Hispanic Heritage Month with these movies!"
     collection_order: random
     trakt_list:
-      - https://trakt.tv/users/plexmetamanager/lists/hispanic-heritage-month
+      - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
 
   "🎃 Halloween":
     schedule: range(10/01-11/01)
