@@ -19,7 +19,7 @@ templates:
       event_year: <<key>>
       winning: true
       # Categories change too much year-to-year to attempt to filter
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/winner/<<key>>.jpg
     schedule: monthly(05)
 
   # TODO: Oscar Nominees?
@@ -32,7 +32,7 @@ templates:
       event_year: <<key>>
       winning: true
       # Categories change too much year-to-year to attempt to filter
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/golden/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/golden/winner/<<key>>.jpg
     schedule: monthly(09)
 
   # TODO: Golden Globe Nominees?
@@ -44,7 +44,7 @@ templates:
       event_id: ev0000558
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/winner/<<key>>.jpg
     schedule: monthly(13)
 
   Yearly_Razzie_Nominees:
@@ -54,7 +54,7 @@ templates:
       event_id: ev0000558
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/<<key>>.jpg
     schedule: monthly(13)
 
   Yearly_Cannes_Winners:
@@ -64,7 +64,7 @@ templates:
       event_id: ev0000147
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/winner/<<key>>.jpg
     schedule: monthly(07)
 
   Yearly_Cannes_Nominees:
@@ -74,7 +74,7 @@ templates:
       event_id: ev0000147
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/<<key>>.jpg
     schedule: monthly(07)
 
   Yearly_BAFTA_Winners:
@@ -84,7 +84,7 @@ templates:
       event_id: ev0000123
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/winner/<<key>>.jpg
     schedule: monthly(12)
 
   Yearly_BAFTA_Nominees:
@@ -94,7 +94,7 @@ templates:
       event_id: ev0000123
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/<<key>>.jpg
     schedule: monthly(12)
 
   Yearly_Berlinale_Winners:
@@ -104,7 +104,7 @@ templates:
       event_id: ev0000091
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/winner/<<key>>.jpg
     schedule: monthly(06)
 
   Yearly_Berlinale_Nominees:
@@ -114,7 +114,7 @@ templates:
       event_id: ev0000091
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/<<key>>.jpg
     schedule: monthly(06)
 
   Yearly_Critics_Choice_Awards_Winners:
@@ -124,7 +124,7 @@ templates:
       event_id: ev0000341
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/choice/winner/<<key>>.jpg
     schedule: monthly(11)
 
   Yearly_Critics_Choice_Awards_Nominees:
@@ -134,7 +134,7 @@ templates:
       event_id: ev0000341
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/choice/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/choice/<<key>>.jpg
     schedule: monthly(11)
 
   Yearly_Spirit_Awards_Winners:
@@ -144,7 +144,7 @@ templates:
       event_id: ev0000349
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/spirit/winner/<<key>>.jpg
     schedule: monthly(10)
 
   Yearly_Spirit_Awards_Nominees:
@@ -154,7 +154,7 @@ templates:
       event_id: ev0000349
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/spirit/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/spirit/<<key>>.jpg
     schedule: monthly(10)
 
   Yearly_Sundance_Winners:
@@ -164,7 +164,7 @@ templates:
       event_id: ev0000631
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/winner/<<key>>.jpg
     schedule: monthly(08)
 
   Yearly_Sundance_Nominees:
@@ -174,7 +174,7 @@ templates:
       event_id: ev0000631
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/<<key>>.jpg
     schedule: monthly(08)
 
   Yearly_Cesar_Awards_Winners:
@@ -184,7 +184,7 @@ templates:
       event_id: ev0000157
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/winner/<<key>>.jpg
     schedule: monthly(03)
 
   Yearly_Cesar_Awards_Nominees:
@@ -194,7 +194,7 @@ templates:
       event_id: ev0000157
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/<<key>>.jpg
     schedule: monthly(03)
 
   Yearly_Venice_Awards_Winners:
@@ -204,7 +204,7 @@ templates:
       event_id: ev0000681
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/winner/<<key>>.jpg
     schedule: monthly(09)
 
   Yearly_Venice_Awards_Nominees:
@@ -214,7 +214,7 @@ templates:
       event_id: ev0000681
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/<<key>>.jpg
     schedule: monthly(09)
 
   Yearly_Toronto_Awards_Winners:
@@ -224,7 +224,7 @@ templates:
       event_id: ev0000659
       event_year: <<key>>
       winning: true
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/winner/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/winner/<<key>>.jpg
     schedule: monthly(15)
 
   Yearly_Toronto_Awards_Nominees:
@@ -234,7 +234,7 @@ templates:
       event_id: ev0000659
       event_year: <<key>>
       winning: false
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/<<key>>.jpg
     schedule: monthly(15)
 
 collections:
@@ -257,7 +257,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/nomination.jpg
 
   # All past Oscar-winning movies
   # Only visible on home screen during Oscar season
@@ -280,7 +280,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/winner.jpg
 
   # This year's Best Picture Oscar nominees
   # Only visible on home screen during Oscar season
@@ -306,7 +306,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/nomination.jpg
 
   # All past Oscar Best Picture-winning movies
   # Only visible on home screen during Oscar season
@@ -332,7 +332,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/oscars/best_picture_winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/best_picture_winner.jpg
 
   # This year's Razzie nominees
   # Only visible on home screen during Razzie season
@@ -355,7 +355,7 @@ collections:
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/nomination.jpg
 
   # All past Razzie-winning Worst Picture movies
   # Only visible on home screen during Razzie season
@@ -378,7 +378,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/31)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/razzie/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/winner.jpg
 
   # This year's BAFTA nominees
   # Only visible on home screen during BAFTA season
@@ -401,7 +401,7 @@ collections:
     visible_home: range(02/01-03/05)
     visible_shared: range(02/01-03/05)
     visible_library: range(02/01-03/05)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/nomination.jpg
 
   # All past BAFTA Best Film-winning movies
   # Only visible on home screen during BAFTA season
@@ -424,7 +424,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/05)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/bafta/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/winner.jpg
 
   # This year's Berlinale nominees
   # Only visible on home screen during Berlinale season
@@ -447,7 +447,7 @@ collections:
     visible_home: range(02/01-03/07)
     visible_shared: range(02/01-03/07)
     visible_library: range(02/01-03/07)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/nomination.jpg
 
   # All past Berlinale-winning movies
   # Only visible on home screen during Berlinale season
@@ -470,7 +470,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/07)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/berlinale/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/winner.jpg
 
   # This year's Cannes nominees
   # Only visible on home screen during Cannes season
@@ -493,7 +493,7 @@ collections:
     visible_home: range(05/01-06/09)
     visible_shared: range(05/01-06/09)
     visible_library: range(05/01-06/09)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/nomination.jpg
 
   # All past Cannes winning movies
   # Only visible on home screen during Cannes season
@@ -516,7 +516,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(05/01-06/09)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cannes/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/winner.jpg
 
   # This year's Cesars nominees
   # Only visible on home screen during Cesars season
@@ -539,7 +539,7 @@ collections:
     visible_home: range(02/01-03/02)
     visible_shared: range(02/01-03/02)
     visible_library: range(02/01-03/02)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/nomination.jpg
 
   # All past Cesar Award-winning movies
   # Only visible on home screen during Cesar Award season
@@ -562,7 +562,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/02)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/cesar/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/winner.jpg
 
   # This year's Sundance nominees
   # Only visible on home screen during Sundance season
@@ -585,7 +585,7 @@ collections:
     visible_home: range(01/13-02/12)
     visible_shared: range(01/13-02/12)
     visible_library: range(01/13-02/12)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/nomination.jpg
 
   # All past Sundance-winning movies
   # Only visible on home screen during Sundance season
@@ -608,7 +608,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(01/13-02/12)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/sundance/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/winner.jpg
 
   "🇮🇹 This Year's Venice Film Festival Nominees":
     summary: "Who will take home the trophy?"
@@ -629,7 +629,7 @@ collections:
     visible_home: range(08/21-09/20)
     visible_shared: range(08/21-09/20)
     visible_library: range(08/21-09/20)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/nomination.jpg
 
   # All past Venice Film Festival-winning movies
   # Only visible on home screen during Venice Film Festival season
@@ -652,7 +652,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(08/21-09/20)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/venice/winner.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/winner.jpg
 
   # This year's Toronto Film Festival nominees
   # Only visible on home screen during Toronto Film Festival season
@@ -674,7 +674,7 @@ collections:
     visible_home: range(09/01-09/30)
     visible_shared: range(09/01-09/30)
     visible_library: range(09/01-09/30)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/nomination.jpg
 
   # All past Toronto Film Festival-winning movies (specifically People's Choice Award)
   # Only visible on home screen during Toronto Film Festival season
@@ -697,7 +697,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(09/01-09/30)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/award/toronto/winner.jpg  # TODO: Does not exist yet
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/winner.jpg  # TODO: Does not exist yet
 
   ### This year's Oscar Best Actor Collections
   # ---------------------------------

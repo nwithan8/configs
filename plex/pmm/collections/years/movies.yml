@@ -17,7 +17,7 @@ templates:
     visible_shared: false
     visible_home: false
     schedule: monthly(01)
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/year/best/<<key>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/year/best/<<key>>.jpg
 
 dynamic_collections:
   ## Use DC as suffix to avoid name conflicts with static collections

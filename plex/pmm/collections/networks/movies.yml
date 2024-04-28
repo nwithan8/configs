@@ -10,7 +10,7 @@ collections:
   "1492":
     template: { name: Studio,
                 studio: ["1492 Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/1492%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/1492%20Pictures.jpg }
     summary: "1492 Pictures"
     visible_library: false
     visible_home: false
@@ -19,7 +19,7 @@ collections:
   "20th Century Animation":
     template: { name: Studio,
                 studio: ["20th Century Fox Animation"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/20th%20Century%20Animation.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/20th%20Century%20Animation.jpg }
     summary: "20th Century Animation"
     visible_library: false
     visible_home: false
@@ -28,7 +28,7 @@ collections:
   "20th Century Studios":
     template: { name: Studio,
                 studio: ["20th Century Studios", "20th Century Fox"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/20th%20Century%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/20th%20Century%20Studios.jpg }
     summary: "20th Century Studios"
     visible_library: false
     visible_home: false
@@ -37,7 +37,7 @@ collections:
   "3 Arts":
     template: { name: Studio,
                 studio: ["3 Arts Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/3%20Arts%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/3%20Arts%20Entertainment.jpg }
     summary: "3 Arts Entertainment"
     visible_library: false
     visible_home: false
@@ -46,7 +46,7 @@ collections:
   A24:
     template: { name: Studio,
                 studio: ["A24"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/A24.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/A24.jpg }
     summary: "A24 Films"
     visible_library: false
     visible_home: false
@@ -55,7 +55,7 @@ collections:
   "Aardman":
     template: { name: Studio,
                 studio: ["Aardman"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Aardman.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Aardman.jpg }
     summary: "Aardman"
     visible_library: false
     visible_home: false
@@ -64,7 +64,7 @@ collections:
   "Amblin":
     template: { name: Studio,
                 studio: ["Amblin Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Amblin%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Amblin%20Entertainment.jpg }
     summary: "Amblin Entertainment"
     visible_library: false
     visible_home: false
@@ -73,7 +73,7 @@ collections:
   "Annapurna":
     template: { name: Studio,
                 studio: ["Annapurna Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Annapurna%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Annapurna%20Pictures.jpg }
     summary: "Annapurna Pictures"
     visible_library: false
     visible_home: false
@@ -82,7 +82,7 @@ collections:
   "Artisan":
     template: { name: Studio,
                 studio: ["Artisan Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Artisan%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Artisan%20Entertainment.jpg }
     summary: "Artisan Entertainment"
     visible_library: false
     visible_home: false
@@ -91,7 +91,7 @@ collections:
   "Atlas":
     template: { name: Studio,
                 studio: ["Atlas Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Atlas%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Atlas%20Entertainment.jpg }
     summary: "Atlas Entertainment"
     visible_library: false
     visible_home: false
@@ -100,7 +100,7 @@ collections:
   "Bad Robot":
     template: { name: Studio,
                 studio: ["Bad Robot"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bad%20Robot.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Bad%20Robot.jpg }
     summary: "Bad Robot Productions"
     visible_library: false
     visible_home: false
@@ -109,7 +109,7 @@ collections:
   "Bad Wolf":
     template: { name: Studio,
                 studio: ["Bad Wolf"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bad%20Wolf.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Bad%20Wolf.jpg }
     summary: "Bad Wolf"
     visible_library: false
     visible_home: false
@@ -118,7 +118,7 @@ collections:
   "BBC Studios":
     template: { name: Studio,
                 studio: ["BBC Studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/BBC%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/BBC%20Studios.jpg }
     summary: "BBC Studios"
     visible_library: false
     visible_home: false
@@ -127,7 +127,7 @@ collections:
   "Bleecker Street":
     template: { name: Studio,
                 studio: ["Bleecker Street"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Bleecker%20Street.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Bleecker%20Street.jpg }
     summary: "Bleecker Street"
     visible_library: false
     visible_home: false
@@ -136,7 +136,7 @@ collections:
   "Blue Sky":
     template: { name: Studio,
                 studio: ["Blue Sky Studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blue%20Sky%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Blue%20Sky%20Studios.jpg }
     summary: "Blue Sky Studios"
     visible_library: false
     visible_home: false
@@ -145,7 +145,7 @@ collections:
   "Blumhouse":
     template: { name: Studio,
                 studio: ["Blumhouse Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blumhouse%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Blumhouse%20Productions.jpg }
     summary: "Blumhouse Productions"
     visible_library: false
     visible_home: false
@@ -154,7 +154,7 @@ collections:
   "Blur":
     template: { name: Studio,
                 studio: ["Blur Studio"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Blur%20Studio.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Blur%20Studio.jpg }
     summary: "Blur Studio"
     visible_library: false
     visible_home: false
@@ -163,7 +163,7 @@ collections:
   "Castle Rock":
     template: { name: Studio,
                 studio: ["Castle Rock Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Castle%20Rock%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Castle%20Rock%20Entertainment.jpg }
     summary: "Castle Rock Entertainment"
     visible_library: false
     visible_home: false
@@ -172,7 +172,7 @@ collections:
   "Chernin":
     template: { name: Studio,
                 studio: ["Chernin Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Chernin%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Chernin%20Entertainment.jpg }
     summary: "Chernin Entertainment"
     visible_library: false
     visible_home: false
@@ -181,7 +181,7 @@ collections:
   "Columbia Pictures":
     template: { name: Studio,
                 studio: ["Columbia Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Columbia%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Columbia%20Pictures.jpg }
     summary: "Columbia Pictures"
     visible_library: false
     visible_home: false
@@ -190,7 +190,7 @@ collections:
   "DC Comics":
     template: { name: Studio,
                 studio: ["DC Comics"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/DC%20Comics.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/DC%20Comics.jpg }
     summary: "DC Comics"
     visible_library: false
     visible_home: false
@@ -199,7 +199,7 @@ collections:
   "DreamWorks":
     template: { name: Studio,
                 studio: ["DreamWorks Studio", "DreamWorks Animation", "DreamWorks Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/DreamWorks%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/DreamWorks%20Studios.jpg }
     summary: "DreamWorks"
     visible_library: false
     visible_home: false
@@ -208,7 +208,7 @@ collections:
   "e0ne":
     template: { name: Studio,
                 studio: ["Entertainment One"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Entertainment%20One.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Entertainment%20One.jpg }
     summary: "e0ne"
     visible_library: false
     visible_home: false
@@ -217,7 +217,7 @@ collections:
   "Everest":
     template: { name: Studio,
                 studio: ["Everest Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Everest%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Everest%20Entertainment.jpg }
     summary: "Everest Entertainment"
     visible_library: false
     visible_home: false
@@ -226,7 +226,7 @@ collections:
   "Focus Features":
     template: { name: Studio,
                 studio: ["Focus Features"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Focus%20Features.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Focus%20Features.jpg }
     summary: "Focus Features"
     visible_library: false
     visible_home: false
@@ -235,7 +235,7 @@ collections:
   "Gary Sanchez":
     template: { name: Studio,
                 studio: ["Gary Sanchez Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Gary%20Sanchez%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Gary%20Sanchez%20Productions.jpg }
     summary: "Gary Sanchez Productions"
     visible_library: false
     visible_home: false
@@ -244,7 +244,7 @@ collections:
   "Gracie Films":
     template: { name: Studio,
                 studio: ["Gracie Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Gracie%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Gracie%20Films.jpg }
     summary: "Gracie Films"
     visible_library: false
     visible_home: false
@@ -253,7 +253,7 @@ collections:
   "HBO":
     template: { name: Studio,
                 studio: ["HBO"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/HBO.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/HBO.jpg }
     summary: "HBO"
     visible_library: false
     visible_home: false
@@ -262,7 +262,7 @@ collections:
   "Hallmark":
     template: { name: Studio,
                 studio: ["Hallmark"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Hallmark.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Hallmark.jpg }
     summary: "Hallmark"
     visible_library: false
     visible_home: false
@@ -271,7 +271,7 @@ collections:
   "Hasbro":
     template: { name: Studio,
                 studio: ["Hasbro"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Hasbro.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Hasbro.jpg }
     summary: "Hasbro"
     visible_library: false
     visible_home: false
@@ -280,7 +280,7 @@ collections:
   "IFC Films":
     template: { name: Studio,
                 studio: ["IFC Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/IFC%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/IFC%20Films.jpg }
     summary: "IFC Films"
     visible_library: false
     visible_home: false
@@ -289,7 +289,7 @@ collections:
   "Illumination":
     template: { name: Studio,
                 studio: ["Illumination Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Illumination%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Illumination%20Entertainment.jpg }
     summary: "Illumination Entertainment"
     visible_library: false
     visible_home: false
@@ -298,7 +298,7 @@ collections:
   "Legendary":
     template: { name: Studio,
                 studio: ["Legendary Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Legendary%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Legendary%20Pictures.jpg }
     summary: "Legendary Pictures"
     visible_library: false
     visible_home: false
@@ -307,7 +307,7 @@ collections:
   "Lifetime":
     template: { name: Studio,
                 studio: ["Lifetime"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lifetime.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Lifetime.jpg }
     summary: "Lifetime"
     visible_library: false
     visible_home: false
@@ -316,7 +316,7 @@ collections:
   "Lionsgate":
     template: { name: Studio,
                 studio: ["Lionsgate"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lionsgate.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Lionsgate.jpg }
     summary: "Lionsgate"
     visible_library: false
     visible_home: false
@@ -325,7 +325,7 @@ collections:
   "Lord Miller":
     template: { name: Studio,
                 studio: ["Lord Miller"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lord%20Miller%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Lord%20Miller%20Productions.jpg }
     summary: "Lord Miller Productions"
     visible_library: false
     visible_home: false
@@ -334,7 +334,7 @@ collections:
   "Lucasfilm":
     template: { name: Studio,
                 studio: ["Lucasfilm Ltd"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Lucasfilm%20Ltd.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Lucasfilm%20Ltd.jpg }
     summary: "Lucasfilm Ltd"
     visible_library: false
     visible_home: false
@@ -343,7 +343,7 @@ collections:
   "Marv":
     template: { name: Studio,
                 studio: ["Marv Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marv%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Marv%20Films.jpg }
     summary: "Marv Films"
     visible_library: false
     visible_home: false
@@ -352,7 +352,7 @@ collections:
   "Marvel Animation":
     template: { name: Studio,
                 studio: ["Marvel Animation"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marvel%20Animation.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Marvel%20Animation.jpg }
     summary: "Marvel Animation"
     visible_library: false
     visible_home: false
@@ -361,7 +361,7 @@ collections:
   "Marvel Studios":
     template: { name: Studio,
                 studio: ["Marvel Studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Marvel%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Marvel%20Studios.jpg }
     summary: "Marvel Studios"
     visible_library: false
     visible_home: false
@@ -370,7 +370,7 @@ collections:
   "MGM":
     template: { name: Studio,
                 studio: ["Metro-Goldwyn-Mayer"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Metro-Goldwyn-Mayer.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Metro-Goldwyn-Mayer.jpg }
     summary: "Metro-Goldwyn-Mayer"
     visible_library: false
     visible_home: false
@@ -379,7 +379,7 @@ collections:
   "Millennium":
     template: { name: Studio,
                 studio: ["Millennium Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Millennium%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Millennium%20Films.jpg }
     summary: "Millennium Films"
     visible_library: false
     visible_home: false
@@ -388,7 +388,7 @@ collections:
   "Miramax":
     template: { name: Studio,
                 studio: ["Miramax"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Miramax.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Miramax.jpg }
     summary: "Miramax"
     visible_library: false
     visible_home: false
@@ -397,7 +397,7 @@ collections:
   "Neon":
     template: { name: Studio,
                 studio: ["Neon"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/NEON.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/NEON.jpg }
     summary: "Neon"
     visible_library: false
     visible_home: false
@@ -406,7 +406,7 @@ collections:
   "Netflix":
     template: { name: Studio,
                 studio: ["Netflix"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Netflix.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Netflix.jpg }
     summary: "Netflix"
     visible_library: false
     visible_home: false
@@ -415,7 +415,7 @@ collections:
   "New Line":
     template: { name: Studio,
                 studio: ["New Line Cinema"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/New%20Line%20Cinema.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/New%20Line%20Cinema.jpg }
     summary: "New Line Cinema"
     visible_library: false
     visible_home: false
@@ -424,7 +424,7 @@ collections:
   "Nickelodeon Animation":
     template: { name: Studio,
                 studio: ["Nickelodeon Animation Studio"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Nickelodeon%20Animation%20Studio.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Nickelodeon%20Animation%20Studio.jpg }
     summary: "Nickelodeon Animation Studio"
     visible_library: false
     visible_home: false
@@ -433,7 +433,7 @@ collections:
   "Open Road":
     template: { name: Studio,
                 studio: ["Open Road Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Open%20Road%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Open%20Road%20Films.jpg }
     summary: "Open Road Films"
     visible_library: false
     visible_home: false
@@ -442,7 +442,7 @@ collections:
   "Original Film":
     template: { name: Studio,
                 studio: ["Original Film"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Original%20Film.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Original%20Film.jpg }
     summary: "Original Film"
     visible_library: false
     visible_home: false
@@ -451,7 +451,7 @@ collections:
   "Orion":
     template: { name: Studio,
                 studio: ["Orion Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Orion%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Orion%20Pictures.jpg }
     summary: "Orion Pictures"
     visible_library: false
     visible_home: false
@@ -460,7 +460,7 @@ collections:
   "Paramount Animation":
     template: { name: Studio,
                 studio: ["Paramount Animation"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Paramount%20Animation.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Paramount%20Animation.jpg }
     summary: "Paramount Animation"
     visible_library: false
     visible_home: false
@@ -469,7 +469,7 @@ collections:
   "Paramount":
     template: { name: Studio,
                 studio: ["Paramount Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Paramount%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Paramount%20Pictures.jpg }
     summary: "Paramount Pictures"
     visible_library: false
     visible_home: false
@@ -478,7 +478,7 @@ collections:
   "Pixar":
     template: { name: Studio,
                 studio: ["Pixar"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Pixar.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Pixar.jpg }
     summary: "Pixar Animation Studios"
     visible_library: false
     visible_home: false
@@ -487,7 +487,7 @@ collections:
   "Plan B":
     template: { name: Studio,
                 studio: ["Plan B Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Plan%20B%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Plan%20B%20Entertainment.jpg }
     summary: "Plan B Entertainment"
     visible_library: false
     visible_home: false
@@ -496,7 +496,7 @@ collections:
   "PlayStation":
     template: { name: Studio,
                 studio: ["PlayStation Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/PlayStation%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/PlayStation%20Productions.jpg }
     summary: "PlayStation Productions"
     visible_library: false
     visible_home: false
@@ -505,7 +505,7 @@ collections:
   "Playtone":
     template: { name: Studio,
                 studio: ["Playtone"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Playtone.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Playtone.jpg }
     summary: "Playtone"
     visible_library: false
     visible_home: false
@@ -514,7 +514,7 @@ collections:
   "Rankin/Bass":
     template: { name: Studio,
                 studio: ["Rankin/Bass Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Rankin%20Bass%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Rankin%20Bass%20Productions.jpg }
     summary: "Rankin/Bass Productions"
     visible_library: false
     visible_home: false
@@ -523,7 +523,7 @@ collections:
   "RatPac":
     template: { name: Studio,
                 studio: ["RatPac Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/RatPac%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/RatPac%20Entertainment.jpg }
     summary: "RatPac Entertainment"
     visible_library: false
     visible_home: false
@@ -532,7 +532,7 @@ collections:
   "Regency":
     template: { name: Studio,
                 studio: ["Regency Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Regency%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Regency%20Pictures.jpg }
     summary: "Regency Pictures"
     visible_library: false
     visible_home: false
@@ -541,7 +541,7 @@ collections:
   "See-Saw":
     template: { name: Studio,
                 studio: ["See-Saw Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/See-Saw%20Films.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/See-Saw%20Films.jpg }
     summary: "See-Saw Films"
     visible_library: false
     visible_home: false
@@ -550,7 +550,7 @@ collections:
   "Showtime":
     template: { name: Studio,
                 studio: ["Showtime Networks"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Showtime%20Networks.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Showtime%20Networks.jpg }
     summary: "Showtime Networks"
     visible_library: false
     visible_home: false
@@ -559,7 +559,7 @@ collections:
   "Sky":
     template: { name: Studio,
                 studio: ["Sky studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sky%20studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Sky%20studios.jpg }
     summary: "Sky Studios"
     visible_library: false
     visible_home: false
@@ -568,7 +568,7 @@ collections:
   "Skydance":
     template: { name: Studio,
                 studio: ["Skydance"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Skydance.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Skydance.jpg }
     summary: "Skydance"
     visible_library: false
     visible_home: false
@@ -577,7 +577,7 @@ collections:
   "Sony Pictures Animation":
     template: { name: Studio,
                 studio: ["Sony Pictures Animation"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sony%20Pictures%20Animation.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Sony%20Pictures%20Animation.jpg }
     summary: "Sony Pictures Animation"
     visible_library: false
     visible_home: false
@@ -586,7 +586,7 @@ collections:
   "Sony Pictures":
     template: { name: Studio,
                 studio: ["Sony Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Sony%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Sony%20Pictures.jpg }
     summary: "Sony Pictures"
     visible_library: false
     visible_home: false
@@ -595,7 +595,7 @@ collections:
   "Spyglass":
     template: { name: Studio,
                 studio: ["Spyglass Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Spyglass%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Spyglass%20Entertainment.jpg }
     summary: "Spyglass Entertainment"
     visible_library: false
     visible_home: false
@@ -604,7 +604,7 @@ collections:
   "Square Enix":
     template: { name: Studio,
                 studio: ["Square Enix"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Square%20Enix.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Square%20Enix.jpg }
     summary: "Square Enix"
     visible_library: false
     visible_home: false
@@ -613,7 +613,7 @@ collections:
   "Studio Ghilbi":
     template: { name: Studio,
                 studio: ["Studio Ghibli"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Studio%20Ghibli.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Studio%20Ghibli.jpg }
     summary: "Studio Ghibli"
     visible_library: false
     visible_home: false
@@ -622,7 +622,7 @@ collections:
   "STX":
     template: { name: Studio,
                 studio: ["STX Entertainment", "STX Films"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/STX%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/STX%20Entertainment.jpg }
     summary: "STX Entertainment"
     visible_library: false
     visible_home: false
@@ -631,7 +631,7 @@ collections:
   "Summit":
     template: { name: Studio,
                 studio: ["Summit Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Summit%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Summit%20Entertainment.jpg }
     summary: "Summit Entertainment"
     visible_library: false
     visible_home: false
@@ -640,7 +640,7 @@ collections:
   "Syfy":
     template: { name: Studio,
                 studio: ["Syfy"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Syfy.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Syfy.jpg }
     summary: "Syfy"
     visible_library: false
     visible_home: false
@@ -649,7 +649,7 @@ collections:
   "Syncopy":
     template: { name: Studio,
                 studio: ["Syncopy"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Syncopy.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Syncopy.jpg }
     summary: "Syncopy"
     visible_library: false
     visible_home: false
@@ -658,7 +658,7 @@ collections:
   "The Cat in the Hat Productions":
     template: { name: Studio,
                 studio: ["The Cat in the Hat Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Cat%20in%20the%20Hat%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/The%20Cat%20in%20the%20Hat%20Productions.jpg }
     summary: "The Cat in the Hat Productions"
     visible_library: false
     visible_home: false
@@ -667,7 +667,7 @@ collections:
   "The Jim Henson Company":
     template: { name: Studio,
                 studio: ["The Jim Henson Company"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Jim%20Henson%20Company.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/The%20Jim%20Henson%20Company.jpg }
     summary: "The Jim Henson Company"
     visible_library: false
     visible_home: false
@@ -676,7 +676,7 @@ collections:
   "The Weinstein Company":
     template: { name: Studio,
                 studio: ["The Weinstein Company"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/The%20Weinstein%20Company.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/The%20Weinstein%20Company.jpg }
     summary: "The Weinstein Company"
     visible_library: false
     visible_home: false
@@ -685,7 +685,7 @@ collections:
   "Thunder Road":
     template: { name: Studio,
                 studio: ["Thunder Road"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Thunder%20Road.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Thunder%20Road.jpg }
     summary: "Thunder Road"
     visible_library: false
     visible_home: false
@@ -694,7 +694,7 @@ collections:
   "Tim Burton Productions":
     template: { name: Studio,
                 studio: ["Tim Burton Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Tim%20Burton%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Tim%20Burton%20Productions.jpg }
     summary: "Tim Burton Productions"
     visible_library: false
     visible_home: false
@@ -703,7 +703,7 @@ collections:
   "Toho":
     template: { name: Studio,
                 studio: ["Toho", "Toho Pictures", "Toho Pictures, Inc."],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TOHO.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/TOHO.jpg }
     summary: "Toho"
     visible_library: false
     visible_home: false
@@ -712,7 +712,7 @@ collections:
   "Touchstone":
     template: { name: Studio,
                 studio: ["Touchstone Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Touchstone%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Touchstone%20Pictures.jpg }
     summary: "Touchstone Pictures"
     visible_library: false
     visible_home: false
@@ -721,7 +721,7 @@ collections:
   "TriStar":
     template: { name: Studio,
                 studio: ["TriStar Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TriStar%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/TriStar%20Pictures.jpg }
     summary: "TriStar Pictures"
     visible_library: false
     visible_home: false
@@ -730,7 +730,7 @@ collections:
   "Tribeca":
     template: { name: Studio,
                 studio: ["Tribeca Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Tribeca%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Tribeca%20Productions.jpg }
     summary: "Tribeca Productions"
     visible_library: false
     visible_home: false
@@ -739,7 +739,7 @@ collections:
   "TSG Entertainment":
     template: { name: Studio,
                 studio: ["TSG Entertainment"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/TSG%20Entertainment.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/TSG%20Entertainment.jpg }
     summary: "TSG Entertainment"
     visible_library: false
     visible_home: false
@@ -748,7 +748,7 @@ collections:
   "Twisted Pictures":
     template: { name: Studio,
                 studio: ["Twisted Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Twisted%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Twisted%20Pictures.jpg }
     summary: "Twisted Pictures"
     visible_library: false
     visible_home: false
@@ -757,7 +757,7 @@ collections:
   "United Artists":
     template: { name: Studio,
                 studio: ["United Artists"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/United%20Artists.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/United%20Artists.jpg }
     summary: "United Artists"
     visible_library: false
     visible_home: false
@@ -766,7 +766,7 @@ collections:
   "Universal Animation":
     template: { name: Studio,
                 studio: ["Universal Animation Studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Universal%20Animation%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Universal%20Animation%20Studios.jpg }
     summary: "Universal Animation Studios"
     visible_library: false
     visible_home: false
@@ -775,7 +775,7 @@ collections:
   "Universal":
     template: { name: Studio,
                 studio: ["Universal Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Universal%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Universal%20Pictures.jpg }
     summary: "Universal Pictures"
     visible_library: false
     visible_home: false
@@ -784,7 +784,7 @@ collections:
   "Village Roadshow":
     template: { name: Studio,
                 studio: ["Village Roadshow Pictures"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Village%20Roadshow%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Village%20Roadshow%20Pictures.jpg }
     summary: "Village Roadshow Pictures"
     visible_library: false
     visible_home: false
@@ -793,7 +793,7 @@ collections:
   "Walden":
     template: { name: Studio,
                 studio: ["Walden Media"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walden%20Media.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Walden%20Media.jpg }
     summary: "Walden Media"
     visible_library: false
     visible_home: false
@@ -802,7 +802,7 @@ collections:
   "Walt Disney Animation":
     template: { name: Studio,
                 studio: ["Walt Disney Animation Studios"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walt%20Disney%20Animation%20Studios.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Walt%20Disney%20Animation%20Studios.jpg }
     summary: "Walt Disney Animation Studios"
     visible_library: false
     visible_home: false
@@ -811,7 +811,7 @@ collections:
   "Walt Disney":
     template: { name: Studio,
                 studio: ["Walt Disney Pictures", "Walt Disney Productions"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Walt%20Disney%20Productions.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Walt%20Disney%20Productions.jpg }
     summary: "Walt Disney Pictures"
     visible_library: false
     visible_home: false
@@ -820,7 +820,7 @@ collections:
   "Warner Animation Group":
     template: { name: Studio,
                 studio: ["Warner Bros. Animation", "Warner Bros. Cartoons"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Warner%20Animation%20Group.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Warner%20Animation%20Group.jpg }
     summary: "Warner Animation Group"
     visible_library: false
     visible_home: false
@@ -829,7 +829,7 @@ collections:
   "Warner Bros.":
     template: { name: Studio,
                 studio: ["Warner Bros. Pictures", "Warner Bros. Television", "Warner Premiere"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Warner%20Bros.%20Pictures.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Warner%20Bros.%20Pictures.jpg }
     summary: "Warner Bros. Pictures"
     visible_library: false
     visible_home: false
@@ -838,7 +838,7 @@ collections:
   "Williams Street":
     template: { name: Studio,
                 studio: ["Williams Street"],
-                poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/studio/Williams%20Street.jpg }
+                poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Williams%20Street.jpg }
     summary: "Williams Street"
     visible_library: false
     visible_home: false

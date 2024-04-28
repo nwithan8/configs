@@ -188,7 +188,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
   - For number-based DCs, these are the same.
 
 ## Posters
-- Posters available here: https://github.com/meisnate12/Plex-Meta-Manager-Images/tree/master/award
+- Posters available here: https://github.com/Kometa-Team/Default-Images/tree/master/award
   - Multi-word genres or countries won't URL-encode properly, so you may need to manually import posters for those collections
-- Placeholder posters generated using [this utility](https://github.com/bullmoose20/Plex-Stuff#create_poster) and [this font](https://github.com/meisnate12/Plex-Meta-Manager-Images/blob/master/Comfortaa-Bold.ttf)
+- Placeholder posters generated using [this utility](https://github.com/bullmoose20/Plex-Stuff#create_poster) and [this font](https://github.com/Kometa-Team/Default-Images/blob/master/Comfortaa-Bold.ttf)
   - Example: `./create_poster.ps1 -clean 1 -base_color "#5B5B5B" -gradient "1" -font "Comfortaa-Bold" -font_size "200" -text "NETWORKS"`

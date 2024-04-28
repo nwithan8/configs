@@ -28,7 +28,7 @@ templates:
     default:
       level: ""
       sort_title: 070_+<<level>>_<<key_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/genre/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -45,7 +45,7 @@ templates:
     default:
       level: ""
     sort_title: 110_+<<level>>_<<key_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/country/white/<<key_name>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/country/white/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
@@ -60,7 +60,7 @@ templates:
     default:
       level: ""
     sort_title: 115_+<<level>>_<<key_name>>
-    url_poster: https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager-Images/master/audio_language/<<value>>.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/audio_language/<<value>>.jpg
     visible_library: false
     visible_shared: false
     visible_home: false
