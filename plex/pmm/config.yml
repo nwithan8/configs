@@ -10,6 +10,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       - repo: collections/decades/movies
       - repo: collections/genres/movies
       - repo: collections/holidays/movies
+      - repo: collections/history/movies
       - repo: collections/lists/movies
       - repo: collections/memoriam/movies
       - repo: collections/networks/movies
@@ -47,6 +48,7 @@ libraries: # Library mappings must have a colon (:) placed after them
       - repo: collections/decades/shows
       - repo: collections/genres/shows
       - repo: collections/holidays/shows
+      - repo: collections/history/shows
       - repo: collections/lists/shows
       - repo: collections/memoriam/shows
       - repo: collections/networks/shows
