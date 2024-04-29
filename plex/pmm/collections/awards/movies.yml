@@ -674,7 +674,7 @@ collections:
     visible_home: range(09/01-09/30)
     visible_shared: range(09/01-09/30)
     visible_library: range(09/01-09/30)
-    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/nomination.jpg
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/tiff/nomination.jpg
 
   # All past Toronto Film Festival-winning movies (specifically People's Choice Award)
   # Only visible on home screen during Toronto Film Festival season
@@ -697,7 +697,7 @@ collections:
     visible_home: false
     visible_shared: false
     visible_library: range(09/01-09/30)
-    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/winner.jpg  # TODO: Does not exist yet
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/tiff/winner.jpg  # TODO: Does not exist yet
 
   # This year's National Film Registry-inducted movies
   # Only visible on home screen during National Film Registry season
