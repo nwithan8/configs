@@ -699,6 +699,52 @@ collections:
     visible_library: range(09/01-09/30)
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/winner.jpg  # TODO: Does not exist yet
 
+  # This year's National Film Registry-inducted movies
+  # Only visible on home screen during National Film Registry season
+  "🏛️ This Year's National Film Registry Inductees":
+    summary: "Who has been inducted into the National Film Registry this year?"
+    template: { name: Award,
+                level: "+++" }
+    imdb_award:
+      event_id: ev0000468
+      event_year: latest
+      winning: true
+      limit: 10000
+      sort_by: release.desc
+    schedule: # December to early January (multiple days)
+      - yearly(12/01)
+      - all[weekly(friday),range(12/01-01/07)]
+      - yearly(01/08)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: random
+    visible_home: range(12/01-01/07)
+    visible_shared: range(12/01-01/07)
+    visible_library: range(12/01-01/07)
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/nfr/NFR.jpg
+
+  # All past National Film Registry-inducted movies
+  # Only visible on home screen during National Film Registry season
+  "🏛️ Past National Film Registry Inductees":
+    summary: "The National Film Registry (NFR) is the United States National Film Preservation Board's selection of films for preservation in the Library of Congress."
+    template: { name: Award,
+                level: "++" }
+    imdb_award:
+      event_id: ev0000468
+      event_year: all
+      winning: true
+      limit: 10000
+      sort_by: release.desc
+    schedule: # December to early January (multiple days)
+      - yearly(12/01)
+      - all[weekly(friday),range(12/01-01/07)]
+      - yearly(01/08)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    collection_order: release.desc
+    visible_home: false
+    visible_shared: false
+    visible_library: range(12/01-01/07)
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/nfr/all_time.jpg
+
   ### This year's Oscar Best Actor Collections
   # ---------------------------------
 
