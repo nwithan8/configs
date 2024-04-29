@@ -56,3 +56,55 @@ templates:
 
   # TODO: This year's Golden Globe nominees
 
+  # This year's People's Choice Awards nominees
+  # Only visible on home screen during People's Choice Awards season
+  "✅ This Year's People's Choice Awards Nominees":
+    summary: "Who will take home the trophy?"
+    template: { name: Award,
+                level: "+++" }
+    imdb_award:
+      event_id: ev0000530
+      event_year: latest
+      category_filter:
+        - all-time favorite tv program
+        - favorite tv show
+        - the show of 2021
+      winning: false
+      limit: 10000
+      sort_by: release.desc
+    schedule: # February (as of 2023) (multiple days)
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-02/28)]
+      - yearly(03/01)
+    collection_order: random
+    visible_home: range(02/01-02/29)
+    visible_shared: range(02/01-02/29)
+    visible_library: range(02/01-02/29)
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/pca/nomination.jpg
+
+  # All past People's Choice Awards-winning movies
+  # Only visible on home screen during People's Choice Awards season
+  "✅ Past People's Choice Awards Winners":
+    summary: "The People's Choice Awards is an American awards show, recognizing the people and the work of popular culture."
+    template: { name: Award,
+                level: "++" }
+    imdb_award:
+      event_id: ev0000530
+      event_year: all
+      category_filter:
+        - all-time favorite tv program
+        - favorite tv show
+        - the show of 2021
+      winning: true
+      limit: 10000
+      sort_by: release.desc
+    schedule: # February (as of 2023) (multiple days)
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-02/28)]
+      - yearly(03/01)
+      # You have to schedule it to run again after visibility timeframe for visibility to switch back
+    collection_order: release.desc
+    visible_home: false
+    visible_shared: false
+    visible_library: range(02/01-02/29)
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/pca/winner.jpg
