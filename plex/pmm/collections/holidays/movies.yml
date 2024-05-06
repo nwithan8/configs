@@ -132,11 +132,24 @@ collections:
     imdb_list:
       - https://www.imdb.com/list/ls072551197/
 
+  "🎓 Graduation":
+    schedule: range(05/15-06/15)
+    visible_home: range(05/15-06/14)
+    visible_shared: range(05/15-06/14)
+    visible_library: range(05/15-06/14)
+    template: { name: Holiday,
+                level: "++"}
+    summary: "Congratulations, graduates!"
+    name_mapping: "Graduation"
+    collection_order: random
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/high-school?sort=rank,asc
+
   "🪖 Memorial Day":
-    schedule: range(5/18-6/8)
-    visible_home: range(5/18-6/7)
-    visible_shared: range(5/18-6/7)
-    visible_library: range(5/18-6/7)
+    schedule: range(5/18-6/08)
+    visible_home: range(5/18-6/07)
+    visible_shared: range(5/18-6/07)
+    visible_library: range(5/18-6/07)
     template: { name: Holiday,
                 level: "+++",
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/memorial.jpg }
