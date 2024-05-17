@@ -9,6 +9,7 @@ collections:
     template: { name: New,
                 level: "++" }
     summary: "Let's try something new"
+    url_poster: https://i.imgur.com/CcWfSte.png
     smart_filter:
       type: movies
       all:
@@ -26,6 +27,7 @@ collections:
     template: { name: New,
                 level: "+" }
     summary: "New releases for you to take a chance on!"
+    url_poster: https://i.imgur.com/6iWNpJJ.png
     smart_filter:
       type: movies
       all:

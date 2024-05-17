@@ -8,6 +8,7 @@ collections:
     template: { name: New,
                 level: "++++" }
     summary: "Episodes added this week on Plex"
+    url_poster: https://i.imgur.com/jUMSikZ.png
     smart_filter:
       type: episode
       sort_by: release.desc

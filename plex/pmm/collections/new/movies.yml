@@ -8,6 +8,7 @@ collections:
     template: { name: New,
                 level: "++" }
     summary: "Movies now playing on Plex"
+    url_poster: https://i.imgur.com/jUMSikZ.png
     smart_filter:
       type: movies
       sort_by: release.desc
