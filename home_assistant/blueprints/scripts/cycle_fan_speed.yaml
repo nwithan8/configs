@@ -1,0 +1,88 @@
+blueprint:
+  name: "Cycle fan speed"
+  description: >-
+    A script that increments or decrements the speed of a fan.
+  domain: script
+  source_url: https://github.com/nwithan8/configs/blob/main/home_assistant/blueprints/scripts/cycle_fan_speed.yaml
+  input:
+    fan:
+      name: "Fan"
+      description: "The fan entity to change the speed of"
+      selector:
+        entity:
+          domain:
+            - fan
+            - group
+          multiple: false
+    start_high:
+      name: "Start on high"
+      description: "Start with the highest speed from off (off -> 3 -> 2 -> 1 instead of off -> 1 -> 2 -> 3)"
+      selector:
+        boolean:
+
+# Only single, otherwise could flood with attempts
+mode: single
+
+fields: {}
+
+variables:
+  fan: !input "fan"
+  start_high: !input "start_high"
+
+sequence:
+  - variables:
+      current_speed: '{{ state_attr(fan, "percentage") }}'
+
+  - choose:
+      - conditions:
+          - alias: "Fan is off"
+            condition: template
+            value_template: "{{ current_speed <= 0 }}"
+        sequence:
+          - if:
+              - alias: "Should start on highest speed"
+                condition: template
+                value_template: "{{ start_high }}"
+            then:
+              - service: fan.set_percentage
+                data:
+                  percentage: 100
+                target:
+                  entity_id: "{{ fan }}"
+            else:
+              - service: fan.increase_speed
+                target:
+                  entity_id: "{{ fan }}"
+      - conditions:
+          - alias: "Fan is at max speed"
+            condition: template
+            value_template: "{{ current_speed >= 100 }}"
+        sequence:
+          - if:
+              - alias: "Started on highest speed"
+                condition: template
+                value_template: "{{ start_high }}"
+            then:
+              - service: fan.decrease_speed
+                target:
+                  entity_id: "{{ fan }}"
+            else:
+              - service: fan.set_percentage
+                data:
+                  percentage: 0
+                target:
+                  entity_id: "{{ fan }}"
+    default:
+      - if:
+          - alias: "Started on highest speed"
+            condition: template
+            value_template: "{{ start_high }}"
+        then:
+          - service: fan.decrease_speed
+            target:
+              entity_id: "{{ fan }}"
+        else:
+          - service: fan.increase_speed
+            target:
+              entity_id: "{{ fan }}"
+
