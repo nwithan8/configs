@@ -115,6 +115,19 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "🎙️ Nate Reviews":
+    template: { name: Collection,
+                sort_title: "Nate Reviews",
+                level: "++" }
+    summary: "Every movie from the Nate Reviews YouTube series"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
+    collection_order: custom
+    schedule: daily
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   ### LISTS ###
 
   "🎩 1001 Movies You Must See Before You Die":
