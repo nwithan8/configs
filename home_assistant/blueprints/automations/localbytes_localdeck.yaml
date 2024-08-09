@@ -1,0 +1,1086 @@
+# This blueprint allows you to individually map each button on the LocalBytes LocalDeck to an action, on both press and release.
+#
+# Note: If you press a key too quickly, the press event may not be recognized and only the release event will be triggered.
+
+blueprint:
+  name: LocalBytes LocalDeck
+
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/automations/localbytes_localdeck.yaml
+
+  description: >-
+    This automation allows using a LocalBytes LocalDeck (24-button) device to trigger actions.
+
+  domain: automation
+
+  input:
+    button_1:
+      name: Button 1
+      description: Select Button 1 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_1_press:
+      name: Button 1 - On Press
+      description: The action to perform on a press on Button 1
+      selector:
+        action:
+      default: [ ]
+    button_1_release:
+      name: Button 1 - On Release
+      description: The action to perform on release of Button 1
+      selector:
+        action:
+      default: [ ]
+    button_2:
+      name: Button 2
+      description: Select Button 2 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_2_press:
+      name: Button 2 - On Press
+      description: The action to perform on a press on Button 2
+      selector:
+        action:
+      default: [ ]
+    button_2_release:
+      name: Button 2 - On Release
+      description: The action to perform on release of Button 2
+      selector:
+        action:
+      default: [ ]
+    button_3:
+      name: Button 3
+      description: Select Button 3 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_3_press:
+      name: Button 3 - On Press
+      description: The action to perform on a press on Button 3
+      selector:
+        action:
+      default: [ ]
+    button_3_release:
+      name: Button 3 - On Release
+      description: The action to perform on release of Button 3
+      selector:
+        action:
+      default: [ ]
+    button_4:
+      name: Button 4
+      description: Select Button 4 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_4_press:
+      name: Button 4 - On Press
+      description: The action to perform on a press on Button 4
+      selector:
+        action:
+      default: [ ]
+    button_4_release:
+      name: Button 4 - On Release
+      description: The action to perform on release of Button 4
+      selector:
+        action:
+      default: [ ]
+    button_5:
+      name: Button 5
+      description: Select Button 5 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_5_press:
+      name: Button 5 - On Press
+      description: The action to perform on a press on Button 5
+      selector:
+        action:
+      default: [ ]
+    button_5_release:
+      name: Button 5 - On Release
+      description: The action to perform on release of Button 5
+      selector:
+        action:
+      default: [ ]
+    button_6:
+      name: Button 6
+      description: Select Button 6 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_6_press:
+      name: Button 6 - On Press
+      description: The action to perform on a press on Button 6
+      selector:
+        action:
+      default: [ ]
+    button_6_release:
+      name: Button 6 - On Release
+      description: The action to perform on release of Button 6
+      selector:
+        action:
+      default: [ ]
+    button_7:
+      name: Button 7
+      description: Select Button 7 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_7_press:
+      name: Button 7 - On Press
+      description: The action to perform on a press on Button 7
+      selector:
+        action:
+      default: [ ]
+    button_7_release:
+      name: Button 7 - On Release
+      description: The action to perform on release of Button 7
+      selector:
+        action:
+      default: [ ]
+    button_8:
+      name: Button 8
+      description: Select Button 8 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_8_press:
+      name: Button 8 - On Press
+      description: The action to perform on a press on Button 8
+      selector:
+        action:
+      default: [ ]
+    button_8_release:
+      name: Button 8 - On Release
+      description: The action to perform on release of Button 8
+      selector:
+        action:
+      default: [ ]
+    button_9:
+      name: Button 9
+      description: Select Button 9 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_9_press:
+      name: Button 9 - On Press
+      description: The action to perform on a press on Button 9
+      selector:
+        action:
+      default: [ ]
+    button_9_release:
+      name: Button 9 - On Release
+      description: The action to perform on release of Button 9
+      selector:
+        action:
+      default: [ ]
+    button_10:
+      name: Button 10
+      description: Select Button 10 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_10_press:
+      name: Button 10 - On Press
+      description: The action to perform on a press on Button 10
+      selector:
+        action:
+      default: [ ]
+    button_10_release:
+      name: Button 10 - On Release
+      description: The action to perform on release of Button 10
+      selector:
+        action:
+      default: [ ]
+    button_11:
+      name: Button 11
+      description: Select Button 11 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_11_press:
+      name: Button 11 - On Press
+      description: The action to perform on a press on Button 11
+      selector:
+        action:
+      default: [ ]
+    button_11_release:
+      name: Button 11 - On Release
+      description: The action to perform on release of Button 11
+      selector:
+        action:
+      default: [ ]
+    button_12:
+      name: Button 12
+      description: Select Button 12 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_12_press:
+      name: Button 12 - On Press
+      description: The action to perform on a press on Button 12
+      selector:
+        action:
+      default: [ ]
+    button_12_release:
+      name: Button 12 - On Release
+      description: The action to perform on release of Button 12
+      selector:
+        action:
+      default: [ ]
+    button_13:
+      name: Button 13
+      description: Select Button 13 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_13_press:
+      name: Button 13 - On Press
+      description: The action to perform on a press on Button 13
+      selector:
+        action:
+      default: [ ]
+    button_13_release:
+      name: Button 13 - On Release
+      description: The action to perform on release of Button 13
+      selector:
+        action:
+      default: [ ]
+    button_14:
+      name: Button 14
+      description: Select Button 14 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_14_press:
+      name: Button 14 - On Press
+      description: The action to perform on a press on Button 14
+      selector:
+        action:
+      default: [ ]
+    button_14_release:
+      name: Button 14 - On Release
+      description: The action to perform on release of Button 14
+      selector:
+        action:
+      default: [ ]
+    button_15:
+      name: Button 15
+      description: Select Button 15 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_15_press:
+      name: Button 15 - On Press
+      description: The action to perform on a press on Button 15
+      selector:
+        action:
+      default: [ ]
+    button_15_release:
+      name: Button 15 - On Release
+      description: The action to perform on release of Button 15
+      selector:
+        action:
+      default: [ ]
+    button_16:
+      name: Button 16
+      description: Select Button 16 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_16_press:
+      name: Button 16 - On Press
+      description: The action to perform on a press on Button 16
+      selector:
+        action:
+      default: [ ]
+    button_16_release:
+      name: Button 16 - On Release
+      description: The action to perform on release of Button 16
+      selector:
+        action:
+      default: [ ]
+    button_17:
+      name: Button 17
+      description: Select Button 17 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_17_press:
+      name: Button 17 - On Press
+      description: The action to perform on a press on Button 17
+      selector:
+        action:
+      default: [ ]
+    button_17_release:
+      name: Button 17 - On Release
+      description: The action to perform on release of Button 17
+      selector:
+        action:
+      default: [ ]
+    button_18:
+      name: Button 18
+      description: Select Button 18 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_18_press:
+      name: Button 18 - On Press
+      description: The action to perform on a press on Button 18
+      selector:
+        action:
+      default: [ ]
+    button_18_release:
+      name: Button 18 - On Release
+      description: The action to perform on release of Button 18
+      selector:
+        action:
+      default: [ ]
+    button_19:
+      name: Button 19
+      description: Select Button 19 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_19_press:
+      name: Button 19 - On Press
+      description: The action to perform on a press on Button 19
+      selector:
+        action:
+      default: [ ]
+    button_19_release:
+      name: Button 19 - On Release
+      description: The action to perform on release of Button 19
+      selector:
+        action:
+      default: [ ]
+    button_20:
+      name: Button 20
+      description: Select Button 20 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_20_press:
+      name: Button 20 - On Press
+      description: The action to perform on a press on Button 20
+      selector:
+        action:
+      default: [ ]
+    button_20_release:
+      name: Button 20 - On Release
+      description: The action to perform on release of Button 20
+      selector:
+        action:
+      default: [ ]
+    button_21:
+      name: Button 21
+      description: Select Button 21 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_21_press:
+      name: Button 21 - On Press
+      description: The action to perform on a press on Button 21
+      selector:
+        action:
+      default: [ ]
+    button_21_release:
+      name: Button 21 - On Release
+      description: The action to perform on release of Button 21
+      selector:
+        action:
+      default: [ ]
+    button_22:
+      name: Button 22
+      description: Select Button 22 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_22_press:
+      name: Button 22 - On Press
+      description: The action to perform on a press on Button 22
+      selector:
+        action:
+      default: [ ]
+    button_22_release:
+      name: Button 22 - On Release
+      description: The action to perform on release of Button 22
+      selector:
+        action:
+      default: [ ]
+    button_23:
+      name: Button 23
+      description: Select Button 23 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_23_press:
+      name: Button 23 - On Press
+      description: The action to perform on a press on Button 23
+      selector:
+        action:
+      default: [ ]
+    button_23_release:
+      name: Button 23 - On Release
+      description: The action to perform on release of Button 23
+      selector:
+        action:
+      default: [ ]
+    button_24:
+      name: Button 24
+      description: Select Button 24 on the LocalDeck
+      selector:
+        entity:
+          multiple: false
+          filter:
+            - integration: esphome
+              domain: binary_sensor
+    button_24_press:
+      name: Button 24 - On Press
+      description: The action to perform on a press on Button 24
+      selector:
+        action:
+      default: [ ]
+    button_24_release:
+      name: Button 24 - On Release
+      description: The action to perform on release of Button 24
+      selector:
+        action:
+      default: [ ]
+
+
+mode: restart
+max_exceeded: silent
+
+variables:
+  button_1_id: !input button_1
+  button_2_id: !input button_2
+  button_3_id: !input button_3
+  button_4_id: !input button_4
+  button_5_id: !input button_5
+  button_6_id: !input button_6
+  button_7_id: !input button_7
+  button_8_id: !input button_8
+  button_9_id: !input button_9
+  button_10_id: !input button_10
+  button_11_id: !input button_11
+  button_12_id: !input button_12
+  button_13_id: !input button_13
+  button_14_id: !input button_14
+  button_15_id: !input button_15
+  button_16_id: !input button_16
+  button_17_id: !input button_17
+  button_18_id: !input button_18
+  button_19_id: !input button_19
+  button_20_id: !input button_20
+  button_21_id: !input button_21
+  button_22_id: !input button_22
+  button_23_id: !input button_23
+  button_24_id: !input button_24
+
+trigger:
+  - platform: state
+    entity_id: !input button_1
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_1
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_2
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_2
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_3
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_3
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_4
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_4
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_5
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_5
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_6
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_6
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_7
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_7
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_8
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_8
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_9
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_9
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_10
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_10
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_11
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_11
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_12
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_12
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_13
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_13
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_14
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_14
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_15
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_15
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_16
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_16
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_17
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_17
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_18
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_18
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_19
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_19
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_20
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_20
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_21
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_21
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_22
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_22
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_23
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_23
+    from: "on"
+    to: "off"
+  - platform: state
+    entity_id: !input button_24
+    from: "off"
+    to: "on"
+  - platform: state
+    entity_id: !input button_24
+    from: "on"
+    to: "off"
+
+
+action:
+  - choose:
+      # Button 1
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_1_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_1_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_1_release
+      # Button 2
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_2_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_2_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_2_release
+      # Button 3
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_3_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_3_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_3_release
+      # Button 4
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_4_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_4_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_4_release
+      # Button 5
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_5_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_5_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_5_release
+      # Button 6
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_6_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_6_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_6_release
+      # Button 7
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_7_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_7_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_7_release
+      # Button 8
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_8_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_8_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_8_release
+      # Button 9
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_9_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_9_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_9_release
+      # Button 10
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_10_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_10_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_10_release
+      # Button 11
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_11_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_11_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_11_release
+      # Button 12
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_12_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_12_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_12_release
+      # Button 13
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_13_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_13_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_13_release
+      # Button 14
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_14_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_14_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_14_release
+      # Button 15
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_15_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_15_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_15_release
+      # Button 16
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_16_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_16_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_16_release
+      # Button 17
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_17_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_17_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_17_release
+      # Button 18
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_18_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_18_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_18_release
+      # Button 19
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_19_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_19_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_19_release
+      # Button 20
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_20_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_20_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_20_release
+      # Button 21
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_21_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_21_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_21_release
+      # Button 22
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_22_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_22_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_22_release
+      # Button 23
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_23_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_23_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_23_release
+      # Button 24
+      - conditions:
+          - condition: template
+            value_template: "{{ trigger.entity_id == button_24_id }}"
+        sequence:
+          - choose:
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'on' }}"
+                sequence: !input button_24_press
+              - conditions:
+                  - condition: template
+                    value_template: "{{ trigger.to_state.state == 'off' }}"
+                sequence: !input button_24_release
+    
+    # Any other event will cancel the repeat loops.
+    default: [ ]
