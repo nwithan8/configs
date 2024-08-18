@@ -122,7 +122,7 @@ collections:
     summary: "Every movie from the Nate Reviews YouTube series"
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
-    collection_order: custom
+    collection_order: release.desc
     schedule: daily
     visible_library: true
     visible_home: true
