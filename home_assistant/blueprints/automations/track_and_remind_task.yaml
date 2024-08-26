@@ -8,7 +8,7 @@ blueprint:
 
 
     NOTE: This automation only checks task completion status once a day, and therefore is not useful for tasks that need to be completed multiple times in a 24-hour period.
-  
+    
     
     PRE-REQUISITES:
     
@@ -72,14 +72,16 @@ blueprint:
 
         The following variables are available to the action:
           - "task_name": The name of the task (string)
-          - "task_due_date": The date the task was originally due (string)
+          - "task_due_date": The date the task was originally due (would be today) (string)
+          - "last_completed_date": The date the task was last completed (string)
           - "days_since_last_completed": How many days since the task was last completed (integer)
+          - "time_until_next_due": How many days until the task is due (would be 0) (integer)
           - "task_interval": How often the task is due (integer)
           - "task_is_due": Whether the task is due today (boolean)
           - "task_is_overdue": Whether the task is overdue (boolean)
       selector:
         action:
-      default: []
+      default: [ ]
 
     overdue_action:
       name: Overdue reminder action
@@ -93,14 +95,16 @@ blueprint:
 
         The following variables are available to the action:
           - "task_name": The name of the task (string)
-          - "task_due_date": The date the task was originally due (string)
+          - "task_due_date": The date the task was originally due (would be in the past) (string)
+          - "last_completed_date": The date the task was last completed (string)
           - "days_since_last_completed": How many days since the task was last completed (integer)
+          - "time_until_next_due": How many days until the task is due (would be < 0) (integer)
           - "task_interval": How often the task is due (integer)
           - "task_is_due": Whether the task is due today (boolean) (always false)
           - "task_is_overdue": Whether the task is overdue (boolean) (always true)
       selector:
         action:
-      default: []
+      default: [ ]
 
     skip_days_of_week:
       name: Days of the week to skip
@@ -126,7 +130,7 @@ blueprint:
               value: "5"
             - label: Sunday
               value: "6"
-      default: []
+      default: [ ]
 
     rolling_completion:
       name: Use rolling completion
@@ -152,7 +156,7 @@ blueprint:
         An optional additional action to take when the task has been completed.
         
         For example, send a notification to a mobile device, turn on a light, change a binary sensor, etc.
-      default: []
+      default: [ ]
       selector:
         action:
 
@@ -162,18 +166,26 @@ max_exceeded: silent
 variables:
   task_name: !input "task_name"
   task_interval: !input "task_interval"
+  # date_tracker stores the date the task was last completed
   date_tracker: !input "date_tracker"
   rolling_completion: !input "rolling_completion"
   overdue_action: !input "overdue_action"
   skip_days_of_week: !input "skip_days_of_week"
-  days_since_last_completed: >
-    {% set last_date = states(date_tracker) | as_datetime %}
-    {{ (now().date() - last_date.date()).days }}
+  last_completed_date: >
+    {{ states(date_tracker) | as_datetime }}
+  next_due_date: >
+    {{ last_completed_date.date() + timedelta(days=task_interval) }}
+  # Legacy variable, alias, kept for backwards compatibility with existing automations
   task_due_date: >
-    {% set last_date = states(date_tracker) | as_datetime %}  
-    {{ last_date.date() + timedelta(days=task_interval) }}
-  task_is_due: "{{ days_since_last_completed == task_interval }}"
-  task_is_overdue: "{{ days_since_last_completed > task_interval }}"
+    {{ next_due_date }}
+  days_since_last_completed: >
+    {{ (now().date() - last_completed_date.date()).days }}
+  time_until_next_due: >
+    {{ next_due_date - now().date() }}
+  task_is_due: >
+    {{ time_until_next_due.days == 0 }}
+  task_is_overdue: >
+    {{ time_until_next_due.days < 0 }}
 
 trigger:
   - alias: On schedule
@@ -192,7 +204,7 @@ action:
             condition: trigger
             id: tag_scan
         sequence:
-          - alias: Update date tracker to next due date
+          - alias: Update date tracker to completion date
             service: input_datetime.set_datetime
             entity_id: !input date_tracker
             data:
@@ -201,7 +213,7 @@ action:
                   {% set last_date = states(date_tracker) | as_datetime %}
                   {{ last_date.date() + timedelta(days=task_interval) }}
                 {% else %}
-                  {{ now().date() + timedelta(days=task_interval) }}
+                  {{ now().date() }}
                 {% endif %}
           - alias: Execute "on completion" action if set
             choose:
