@@ -174,12 +174,12 @@ variables:
   last_completed_date: >
     {{ states(date_tracker) | as_datetime }}
   next_due_date: >
-    {{ last_completed_date.date() + timedelta(days=task_interval) }}
+    {{ (last_completed_date | as_datetime).date() + timedelta(days=task_interval) }}
   # Legacy variable, alias, kept for backwards compatibility with existing automations
   task_due_date: >
     {{ next_due_date }}
   days_since_last_completed: >
-    {{ (now().date() - last_completed_date.date()).days }}
+    {{ (now().date() - (last_completed_date | as_datetime).date()).days }}
   time_until_next_due: >
     {{ next_due_date - now().date() }}
   task_is_due: >
@@ -210,8 +210,7 @@ action:
             data:
               datetime: >
                 {% if rolling_completion %}
-                  {% set last_date = states(date_tracker) | as_datetime %}
-                  {{ last_date.date() + timedelta(days=task_interval) }}
+                  {{ next_due_date }}
                 {% else %}
                   {{ now().date() }}
                 {% endif %}
