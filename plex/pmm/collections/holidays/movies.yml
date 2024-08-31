@@ -138,7 +138,8 @@ collections:
     visible_shared: range(05/15-06/14)
     visible_library: range(05/15-06/14)
     template: { name: Holiday,
-                level: "++"}
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/School.jpg }
     summary: "Congratulations, graduates!"
     name_mapping: "Graduation"
     collection_order: random

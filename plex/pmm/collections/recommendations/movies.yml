@@ -7,6 +7,7 @@ collections:
     template: { name: Chart,
                 level: "++" }
     summary: "Our top picks"
+    name_mapping: "Editors Choice Collection"
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
     collection_order: release.desc
