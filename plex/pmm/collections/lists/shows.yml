@@ -19,6 +19,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Grab a bowl of sugary cereal and be a kid again."
+    name_mapping: "Saturday Morning Cartoons Collection"
     trakt_list:
       - https://trakt.tv/users/fiala06/lists/saturday-morning-cartoons
     collection_order: random
@@ -31,6 +32,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Cartoon Network's original programming block"
+    name_mapping: "Cartoon Cartoon Collection"
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
     collection_order: random
@@ -43,6 +45,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Fox Kids original programming"
+    name_mapping: "Fox Kids Collection"
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
     collection_order: random
@@ -55,6 +58,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Saturday Night Nickelodeon"
+    name_mapping: "SNICK Collection"
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/snick
     collection_order: random
@@ -67,6 +71,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Kids WB original programming"
+    name_mapping: "Kids WB Collection"
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
     collection_order: random
@@ -79,6 +84,7 @@ collections:
     template: { name: Collection,
                 level: "+" }
     summary: "Disney Afternoon original programming"
+    name_mapping: "Disney Afternoon Collection"
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
     collection_order: random
