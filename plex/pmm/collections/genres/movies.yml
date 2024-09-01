@@ -256,7 +256,12 @@ collections:
       - https://trakt.tv/users/benfranklin/lists/sport-nfl-movies
     collection_order: random
     schedule:
-      - weekly(saturday|sunday|monday)
+      - yearly(08/20)
+      - all[weekly(saturday|sunday|monday), range(08/20-09/30)]
+      - yearly(10/01)
+      - yearly(12/10)
+      - all[weekly(saturday|sunday), range(12/10-02/08)]
+      - yearly(02/09)
     # Only visible during on weekends during early football season, and all college bowls/NFL playoffs
     visible_library:
       - all[weekly(saturday|sunday), range(08/20-09/30)]
@@ -267,6 +272,33 @@ collections:
     visible_shared:
       - all[weekly(saturday|sunday), range(08/20-09/30)]
       - range(12/10-02/08)
+
+  "⚾ Knock It Out Of The Park":
+    template: { name: Genre,
+                level: "++" }
+    name_mapping: "Baseball Movies Collection"
+    summary: "The best baseball movies of all time"
+    trakt_list:
+      - https://trakt.tv/users/tony_baseball_/lists/baseball-baseball
+      - https://trakt.tv/users/pterisaur/lists/baseball-24253132
+    collection_order: random
+    schedule:
+      - yearly(03/25)
+      - all[weekly(saturday|sunday), range(03/26-04/16)]
+      - yearly(04/16)
+      - yearly(09/25)
+      - all[weekly(saturday|sunday), range(09/25-11/07)]
+      - yearly(11/07)
+    # Only visible during opening day and the World Series
+    visible_library:
+      - range(03/25-04/15)
+      - range(09/25-11/06)
+    visible_home:
+      - range(03/25-04/15)
+      - range(09/25-11/06)
+    visible_shared:
+      - range(03/25-04/15)
+      - range(09/25-11/06)
 
   "🙂 Feel-Good Movies":
     template: { name: Genre,
