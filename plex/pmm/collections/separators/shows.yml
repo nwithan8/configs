@@ -12,7 +12,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/awards.jpg
     tvdb_show:
@@ -25,7 +26,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/holidays.jpg
@@ -39,7 +41,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/collections.jpg
@@ -53,7 +56,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/franchises.jpg
@@ -67,7 +71,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/genres.jpg
@@ -81,7 +86,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
     url_poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/decades.jpg
@@ -97,7 +103,8 @@ collections:
     visible_library: false
     visible_home: false
     visible_shared: false
-    schedule: daily
+    schedule:
+      - daily
     minimum_items: 1
     delete_below_minimum: false # Don't delete the placeholder
 

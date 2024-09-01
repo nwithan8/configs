@@ -20,7 +20,8 @@ templates:
       winning: true
       # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/emmys/winner/<<key>>.jpg
-    schedule: monthly(14)
+    schedule:
+      - monthly(14)
 
   Yearly_Emmy_Nominees:
     allowed_library_types: show
@@ -32,7 +33,8 @@ templates:
       winning: false
       # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/emmys/<<key>>.jpg
-    schedule: monthly(14)
+    schedule:
+      - monthly(14)
 
   Yearly_Golden_Globes_Winners:
     default:
@@ -46,7 +48,8 @@ templates:
       winning: true
       # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/golden/winner/<<key>>.jpg
-    schedule: monthly(09)
+    schedule:
+      - monthly(09)
 
     # TODO: Golden Globe Nominees?
 

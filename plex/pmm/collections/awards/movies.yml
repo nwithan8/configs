@@ -20,7 +20,8 @@ templates:
       winning: true
       # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/oscars/winner/<<key>>.jpg
-    schedule: monthly(05)
+    schedule:
+      - monthly(05)
 
   # TODO: Oscar Nominees?
 
@@ -33,7 +34,8 @@ templates:
       winning: true
       # Categories change too much year-to-year to attempt to filter
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/golden/winner/<<key>>.jpg
-    schedule: monthly(09)
+    schedule:
+      - monthly(09)
 
   # TODO: Golden Globe Nominees?
 
@@ -45,7 +47,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/winner/<<key>>.jpg
-    schedule: monthly(13)
+    schedule:
+      - monthly(13)
 
   Yearly_Razzie_Nominees:
     summary: <<key>> Golden Raspberry Nominees
@@ -55,7 +58,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/razzie/<<key>>.jpg
-    schedule: monthly(13)
+    schedule:
+      - monthly(13)
 
   Yearly_Cannes_Winners:
     summary: <<key>> Cannes Film Festival Winners
@@ -65,7 +69,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/winner/<<key>>.jpg
-    schedule: monthly(07)
+    schedule:
+      - monthly(07)
 
   Yearly_Cannes_Nominees:
     summary: <<key>> Cannes Film Festival Nominees
@@ -75,7 +80,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cannes/<<key>>.jpg
-    schedule: monthly(07)
+    schedule:
+      - monthly(07)
 
   Yearly_BAFTA_Winners:
     summary: <<key>> BAFTA Winners
@@ -85,7 +91,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/winner/<<key>>.jpg
-    schedule: monthly(12)
+    schedule:
+      - monthly(12)
 
   Yearly_BAFTA_Nominees:
     summary: <<key>> BAFTA Nominees
@@ -95,7 +102,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/bafta/<<key>>.jpg
-    schedule: monthly(12)
+    schedule:
+      - monthly(12)
 
   Yearly_Berlinale_Winners:
     summary: <<key>> Berlinale International Film Festival Winners
@@ -105,7 +113,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/winner/<<key>>.jpg
-    schedule: monthly(06)
+    schedule:
+      - monthly(06)
 
   Yearly_Berlinale_Nominees:
     summary: <<key>> Berlinale International Film Festival Nominees
@@ -115,7 +124,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/berlinale/<<key>>.jpg
-    schedule: monthly(06)
+    schedule:
+      - monthly(06)
 
   Yearly_Critics_Choice_Awards_Winners:
     summary: <<key>> Critics Choice Awards Winners
@@ -125,7 +135,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/choice/winner/<<key>>.jpg
-    schedule: monthly(11)
+    schedule:
+      - monthly(11)
 
   Yearly_Critics_Choice_Awards_Nominees:
     summary: <<key>> Critics Choice Awards Nominees
@@ -135,7 +146,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/choice/<<key>>.jpg
-    schedule: monthly(11)
+    schedule:
+      - monthly(11)
 
   Yearly_Spirit_Awards_Winners:
     summary: <<key>> Independent Spirit Awards Winners
@@ -145,7 +157,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/spirit/winner/<<key>>.jpg
-    schedule: monthly(10)
+    schedule:
+      - monthly(10)
 
   Yearly_Spirit_Awards_Nominees:
     summary: <<key>> Independent Spirit Awards Nominees
@@ -155,7 +168,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/spirit/<<key>>.jpg
-    schedule: monthly(10)
+    schedule:
+      - monthly(10)
 
   Yearly_Sundance_Winners:
     summary: <<key>> Sundance Film Festival Winners
@@ -165,7 +179,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/winner/<<key>>.jpg
-    schedule: monthly(08)
+    schedule:
+      - monthly(08)
 
   Yearly_Sundance_Nominees:
     summary: <<key>> Sundance Film Festival Nominees
@@ -175,7 +190,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/sundance/<<key>>.jpg
-    schedule: monthly(08)
+    schedule:
+      - monthly(08)
 
   Yearly_Cesar_Awards_Winners:
     summary: <<key>> Cesar Awards Winners
@@ -185,7 +201,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/winner/<<key>>.jpg
-    schedule: monthly(03)
+    schedule:
+      - monthly(03)
 
   Yearly_Cesar_Awards_Nominees:
     summary: <<key>> Cesar Awards Nominees
@@ -195,7 +212,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/cesar/<<key>>.jpg
-    schedule: monthly(03)
+    schedule:
+      - monthly(03)
 
   Yearly_Venice_Awards_Winners:
     summary: <<key>> Venice Film Festival Winners
@@ -205,7 +223,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/winner/<<key>>.jpg
-    schedule: monthly(09)
+    schedule:
+      - monthly(09)
 
   Yearly_Venice_Awards_Nominees:
     summary: <<key>> Venice Film Festival Nominees
@@ -215,7 +234,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/venice/<<key>>.jpg
-    schedule: monthly(09)
+    schedule:
+      - monthly(09)
 
   Yearly_Toronto_Awards_Winners:
     summary: <<key>> Toronto Film Festival Winners
@@ -225,7 +245,8 @@ templates:
       event_year: <<key>>
       winning: true
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/winner/<<key>>.jpg
-    schedule: monthly(15)
+    schedule:
+      - monthly(15)
 
   Yearly_Toronto_Awards_Nominees:
     summary: <<key>> Toronto Film Festival Nominees
@@ -235,7 +256,8 @@ templates:
       event_year: <<key>>
       winning: false
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/award/toronto/<<key>>.jpg
-    schedule: monthly(15)
+    schedule:
+      - monthly(15)
 
 collections:
   # This year's Oscar nominees (all)

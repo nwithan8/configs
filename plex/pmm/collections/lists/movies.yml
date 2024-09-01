@@ -85,7 +85,8 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
     collection_order: random
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -97,7 +98,8 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
     collection_order: random
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -110,7 +112,8 @@ collections:
       - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
     summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
     collection_order: custom
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -123,7 +126,8 @@ collections:
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
     collection_order: release.desc
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -139,7 +143,8 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
     collection_order: random
-    schedule: monthly(03)
+    schedule:
+      - monthly(03)
     visible_library: true
     visible_home: true
     visible_shared: true
@@ -153,7 +158,8 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
     collection_order: custom
-    schedule: monthly(04)
+    schedule:
+      - monthly(04)
     visible_library: true
     visible_home: true
     visible_shared: true

@@ -10,7 +10,8 @@ templates:
       - poster_url
     sort_title: 000_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: daily  # Override this in the collection
+    schedule:
+      - daily  # Override this in the collection
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -52,7 +53,8 @@ templates:
       - poster_url
     sort_title: 010_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -64,7 +66,8 @@ templates:
       - poster_url
     sort_title: 040_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
     url_poster: <<poster_url>>
 
@@ -274,9 +277,11 @@ templates:
       sort_title_name: <<collection_name>>
     sort_title: 120_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: daily
+    schedule:
+      - daily
     visible_library: true
 
   PreRoll:
-    schedule: daily
+    schedule:
+      - daily
     build_collection: false

@@ -17,7 +17,8 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: monthly(16)
+    schedule:
+      - monthly(16)
 
   Per_Genre:
     smart_filter:

@@ -16,7 +16,8 @@ templates:
     visible_library: false
     visible_shared: false
     visible_home: false
-    schedule: monthly(01)
+    schedule:
+      - monthly(01)
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/year/best/<<key>>.jpg
 
 dynamic_collections:

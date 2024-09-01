@@ -10,7 +10,8 @@ collections:
   # + - Lesser holidays
 
   "✊🏿 Black History Month":
-    schedule: range(02/01-03/01)
+    schedule:
+      - range(02/01-03/01)
     visible_home: range(02/01-02/29)
     visible_shared: range(02/01-02/29)
     visible_library: range(02/01-02/29)
@@ -23,7 +24,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/black-history-month
 
   "🌏 AAPI Heritage Month":
-    schedule: range(05/01-06/01)
+    schedule:
+      - range(05/01-06/01)
     visible_home: range(05/01-05/31)
     visible_shared: range(05/01-05/31)
     visible_library: range(05/01-05/31)
@@ -36,7 +38,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
 
   "🏳️‍🌈 LGBTQ+ Pride Month":
-    schedule: range(06/01-07/01)
+    schedule:
+      - range(06/01-07/01)
     visible_home: range(06/01-06/30)
     visible_shared: range(06/01-06/30)
     visible_library: range(06/01-06/30)
@@ -49,7 +52,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
 
   "🇪🇸 Hispanic Heritage Month":
-    schedule: range(09/15-10/16)
+    schedule:
+      - range(09/15-10/16)
     visible_home: range(09/15-10/15)
     visible_shared: range(09/15-10/15)
     visible_library: range(09/15-10/15)
@@ -62,7 +66,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
 
   "🗳️ Election Day":
-    schedule: range(10/25-11/12)
+    schedule:
+      - range(10/25-11/12)
     visible_home: range(10/25-11/11)
     visible_shared: range(10/25-11/11)
     visible_library: range(10/25-11/11)

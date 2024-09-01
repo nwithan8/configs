@@ -60,7 +60,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 ## Scheduling
 
 - Save time by updating lesser-important collections and playlists less frequently:
-    - ex. `schedule: weekly(wednesday), weekly(sunday)`
+    - ex. `schedule: weekly(wednesday|sunday)`
 - Don't need to schedule a `smart_filter` because Plex auto-updates the list itself
 - Scheduling can take multiple criteria
   - Ex. yearly(02/21), all[weekly(friday),range(02/21-03/31)], yearly(04/01)

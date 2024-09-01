@@ -243,6 +243,31 @@ collections:
     visible_home: false  # Not advertised on the home page
     visible_shared: false  # Not advertised on the home page
 
+  "🏈 Are You Ready For Some Football?":
+    template: { name: Genre,
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Football.jpg }
+    name_mapping: "Football Movies Collection"
+    summary: "The best football movies of all time"
+    trakt_list:
+      - https://trakt.tv/users/jbergenudd/lists/american-football
+      - https://trakt.tv/users/kingkearney/lists/american-football
+      - https://trakt.tv/users/minusha97/lists/favorite-football-films-according-to-imdb-picks
+      - https://trakt.tv/users/benfranklin/lists/sport-nfl-movies
+    collection_order: random
+    schedule:
+      - weekly(saturday|sunday|monday)
+    # Only visible during on weekends during early football season, and all college bowls/NFL playoffs
+    visible_library:
+      - all[weekly(saturday|sunday), range(08/20-09/30)]
+      - range(12/10-02/08)
+    visible_home:
+      - all[weekly(saturday|sunday), range(08/20-09/30)]
+      - range(12/10-02/08)
+    visible_shared:
+      - all[weekly(saturday|sunday), range(08/20-09/30)]
+      - range(12/10-02/08)
+
   "🙂 Feel-Good Movies":
     template: { name: Genre,
                 level: "++" }
@@ -263,10 +288,14 @@ collections:
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/sunday-afternoon-movies?sort=rank,asc
     collection_order: random
-    schedule: weekly(saturday), weekly(sunday), weekly(monday)
-    visible_home: weekly(saturday), weekly(sunday)
-    visible_shared: weekly(saturday), weekly(sunday)
-    visible_library: weekly(saturday), weekly(sunday)
+    schedule:
+      - weekly(saturday|sunday|monday)
+    visible_home:
+      - weekly(saturday|sunday)
+    visible_shared:
+      - weekly(saturday|sunday)
+    visible_library:
+      - weekly(saturday|sunday)
 
   "🤪 The Weirdo's Videostore":
     template: { name: Genre,

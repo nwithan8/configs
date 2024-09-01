@@ -11,10 +11,14 @@ templates:
       - https://trakt.tv/users/pierredurrr/lists/advent-calendar
     limit: <<key>>
     collection_order: custom
-    schedule: range(12/01-12/26)
-    visible_home: yearly(12/<<key>>)
-    visible_shared: yearly(12/<<key>>)
-    visible_library: yearly(12/<<key>>)
+    schedule:
+      - range(12/01-12/26)
+    visible_home:
+      - yearly(12/<<key>>)
+    visible_shared:
+      - yearly(12/<<key>>)
+    visible_library:
+      - yearly(12/<<key>>)
     url_poster: https://as2.ftcdn.net/v2/jpg/03/05/39/41/1000_F_305394138_GiLwZEU9Fq7BG81bThTvkuzrJggyPc3W.jpg
     cache_builders: 1 # No need to reparse the list every time
 
@@ -26,7 +30,8 @@ collections:
   # + - Lesser holidays
 
   "🎊 New Year's Day":
-    schedule: range(12/26-01/05)
+    schedule:
+      - range(12/26-01/05)
     visible_home: range(12/26-01/04)
     visible_shared: range(12/26-01/04)
     visible_library: range(12/26-01/04)
@@ -39,7 +44,8 @@ collections:
       - https://www.imdb.com/list/ls066838460/
 
   "💘 Valentine's Day":
-    schedule: range(02/01-02/21)
+    schedule:
+      - range(02/01-02/21)
     visible_home: range(02/01-02/20)
     visible_shared: range(02/01-02/20)
     visible_library: range(02/01-02/20)
@@ -54,7 +60,8 @@ collections:
       - https://www.imdb.com/list/ls064427905/
 
   "✊🏿 Black History Month":
-    schedule: range(02/01-03/01)
+    schedule:
+      - range(02/01-03/01)
     visible_home: range(02/01-02/29)
     visible_shared: range(02/01-02/29)
     visible_library: range(02/01-02/29)
@@ -67,7 +74,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/black-history-month
 
   "☘ St. Patrick's Day":
-    schedule: range(03/01-03/19)
+    schedule:
+      - range(03/01-03/19)
     visible_home: range(03/01-03/18)
     visible_shared: range(03/01-03/18)
     visible_library: range(03/01-03/18)
@@ -80,7 +88,8 @@ collections:
       - https://www.imdb.com/list/ls063934595/
 
   "🥦 4/20":
-    schedule: range(04/15-04/23)
+    schedule:
+      - range(04/15-04/23)
     visible_home: range(04/15-04/22)
     visible_shared: range(04/15-04/22)
     visible_library: range(04/15-04/22)
@@ -93,7 +102,8 @@ collections:
       - https://www.imdb.com/list/ls075204988/
 
   "🐰 Easter":
-    schedule: range(03/20-05/01)
+    schedule:
+      - range(03/20-05/01)
     visible_home: range(03/20-04/30)
     visible_shared: range(03/20-04/30)
     visible_library: range(03/20-04/30)
@@ -107,7 +117,8 @@ collections:
       - https://www.imdb.com/list/ls051733651/
 
   "🌏 AAPI Heritage Month":
-    schedule: range(05/01-06/01)
+    schedule:
+      - range(05/01-06/01)
     visible_home: range(05/01-05/31)
     visible_shared: range(05/01-05/31)
     visible_library: range(05/01-05/31)
@@ -120,7 +131,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
 
   "🤱 Mother's Day":
-    schedule: range(05/05-05/11)
+    schedule:
+      - range(05/05-05/11)
     visible_home: range(05/05-05/10)
     visible_shared: range(05/05-05/10)
     visible_library: range(05/05-05/10)
@@ -133,7 +145,8 @@ collections:
       - https://www.imdb.com/list/ls072551197/
 
   "🎓 Graduation":
-    schedule: range(05/15-06/15)
+    schedule:
+      - range(05/15-06/15)
     visible_home: range(05/15-06/14)
     visible_shared: range(05/15-06/14)
     visible_library: range(05/15-06/14)
@@ -147,7 +160,8 @@ collections:
       - https://trakt.tv/users/nwithan8/lists/high-school?sort=rank,asc
 
   "🪖 Memorial Day":
-    schedule: range(5/18-6/08)
+    schedule:
+      - range(5/18-6/08)
     visible_home: range(5/18-6/07)
     visible_shared: range(5/18-6/07)
     visible_library: range(5/18-6/07)
@@ -160,7 +174,8 @@ collections:
       - https://www.imdb.com/list/ls002014923/
 
   "🏳️‍🌈 LGBTQ+ Pride Month":
-    schedule: range(06/01-07/01)
+    schedule:
+      - range(06/01-07/01)
     visible_home: range(06/01-06/30)
     visible_shared: range(06/01-06/30)
     visible_library: range(06/01-06/30)
@@ -173,7 +188,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
 
   "👨 Father's Day":
-    schedule: range(06/15-06/21)
+    schedule:
+      - range(06/15-06/21)
     visible_home: range(06/15-06/20)
     visible_shared: range(06/15-06/20)
     visible_library: range(06/15-06/20)
@@ -186,7 +202,8 @@ collections:
       - https://www.imdb.com/list/ls020471057/
 
   "🎆 Independence Day":
-    schedule: range(06/23-07/11)
+    schedule:
+      - range(06/23-07/11)
     visible_home: range(06/23-07/10)
     visible_shared: range(06/23-07/10)
     visible_library: range(06/23-07/10)
@@ -200,7 +217,8 @@ collections:
       - https://www.imdb.com/list/ls080925875/
 
   "⚒ Labor Day":
-    schedule: range(09/01-09/11)
+    schedule:
+      - range(09/01-09/11)
     visible_home: range(09/01-09/10)
     visible_shared: range(09/01-09/10)
     visible_library: range(09/01-09/10)
@@ -213,7 +231,8 @@ collections:
       - https://www.imdb.com/list/ls002014923/
 
   "🇪🇸 Hispanic Heritage Month":
-    schedule: range(09/15-10/16)
+    schedule:
+      - range(09/15-10/16)
     visible_home: range(09/15-10/15)
     visible_shared: range(09/15-10/15)
     visible_library: range(09/15-10/15)
@@ -226,7 +245,8 @@ collections:
       - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
 
   "🎃 Halloween":
-    schedule: range(10/01-11/01)
+    schedule:
+      - range(10/01-11/01)
     visible_home: range(10/01-10/31)
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
@@ -260,7 +280,8 @@ collections:
       - 23437    # A Nightmare on Elm Street (2010)
 
   "👻 Horror":
-    schedule: range(10/01-11/01)
+    schedule:
+      - range(10/01-11/01)
     visible_home: range(10/01-10/31)
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
@@ -272,7 +293,8 @@ collections:
       - https://trakt.tv/users/lish408/lists/31-days-of-horror-2023  # TODO: Change annually
 
   "🍬 Trick or Treat":
-    schedule: range(10/01-11/01)
+    schedule:
+      - range(10/01-11/01)
     visible_home: range(10/01-10/31)
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
@@ -284,7 +306,8 @@ collections:
       - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
 
   "🔪 Slasher":
-    schedule: range(10/01-11/01)
+    schedule:
+      - range(10/01-11/01)
     visible_home: range(10/01-10/31)
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
@@ -296,7 +319,8 @@ collections:
       - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
 
   "🗳️ Election Day":
-    schedule: range(10/25-11/12)
+    schedule:
+      - range(10/25-11/12)
     visible_home: range(10/25-11/11)
     visible_shared: range(10/25-11/11)
     visible_library: range(10/25-11/11)
@@ -308,7 +332,8 @@ collections:
       - https://trakt.tv/users/majeed_pk/lists/best-political-movies
 
   "🦃 Thanksgiving":
-    schedule: range(11/01-12/01)
+    schedule:
+      - range(11/01-12/01)
     visible_home: range(11/01-11/30)
     visible_shared: range(11/01-11/30)
     visible_library: range(11/01-11/30)
@@ -327,7 +352,8 @@ collections:
       - https://trakt.tv/users/padawan_seneca/lists/vibe-autumn-tv-series-movies
 
   "🎅 Christmas":
-    schedule: range(12/01-12/29)
+    schedule:
+      - range(12/01-12/29)
     visible_home: range(12/01-12/28)
     visible_shared: range(12/01-12/28)
     visible_library: range(12/01-12/28)
@@ -344,7 +370,8 @@ collections:
       - https://trakt.tv/users/littlestella3/lists/christmas
 
   "🎁 Hallmark Christmas":
-    schedule: range(12/01-12/29)
+    schedule:
+      - range(12/01-12/29)
     visible_home: range(12/01-12/28)
     visible_shared: range(12/01-12/28)
     visible_library: range(12/01-12/28)
