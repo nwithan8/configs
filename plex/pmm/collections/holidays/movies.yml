@@ -238,7 +238,7 @@ collections:
     visible_library: range(09/15-10/15)
     template: { name: Holiday,
                 level: "++",
-                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/hispanic.jpg }
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/latinx.jpg }
     summary: "Celebrate Hispanic Heritage Month with these movies!"
     collection_order: random
     trakt_list:
