@@ -21,6 +21,7 @@ collections:
     template: { name: Chart,
                 level: "++++" }
     summary: "Catch up on last week's episodes"
+    name_mapping: "Previously On Collection"
     smart_filter:
       type: episode
       sort_by: release.desc
