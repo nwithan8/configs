@@ -22,6 +22,9 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/black-history-month
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-anglo-american
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-caribbean
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent
 
   "🌏 AAPI Heritage Month":
     schedule:
@@ -36,6 +39,18 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-chinese
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-filipino-philippine
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-indigenous-minority
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-japanese
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-korean
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-south
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent-southeast
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-oceania-pacific-islander-descent
+      - https://trakt.tv/users/bangiras/lists/plot-media-featuring-china-and-chinese-culture
+      - https://trakt.tv/users/bangiras/lists/plot-media-featuring-japan-and-japanese-culture
+      - https://trakt.tv/users/bangiras/lists/plot-media-featuring-korea-and-korean-culture
 
   "🏳️‍🌈 LGBTQ+ Pride Month":
     schedule:
@@ -50,6 +65,11 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-bisexual-pansexual
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-crossdressers-drag-performers
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-gay-lesbian-homosexual
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-transgender-genderqueer-non-binary-etc
+      - https://trakt.tv/users/bangiras/lists/favorites-lgbtq
 
   "🇪🇸 Hispanic Heritage Month":
     schedule:
@@ -64,6 +84,12 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
+      - https://trakt.tv/users/janesmanytrades/lists/hispanic-latino-heritage-month-year
+      - https://trakt.tv/users/hurriedmilk/lists/hispanic-heritage-month
+      - https://trakt.tv/users/stephaniejmtanner-gmail-com/lists/latinx-heritage-month
+      - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-american-descent-latin-latino-latinx
+      - https://trakt.tv/users/bangiras/lists/plot-media-featuring-mexico-and-mexican-culture
+      - https://trakt.tv/users/bangiras/lists/plot-media-featuring-hispanic-latino-culture
 
   "🗳️ Election Day":
     schedule:

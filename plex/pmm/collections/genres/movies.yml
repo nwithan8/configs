@@ -179,6 +179,7 @@ collections:
     summary: "The top documentaries of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/documentaries
+      - https://trakt.tv/users/bangiras/lists/favorites-documentary
     collection_order: random
     visible_library: true
     visible_home: true
