@@ -317,7 +317,7 @@ collections:
     summary: "Don't be scared, it's just a movie."
     collection_order: random
     trakt_list:
-      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2023  # TODO: Change annually
+      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2024  # TODO: Change annually
 
   "🍬 Trick or Treat":
     schedule:
