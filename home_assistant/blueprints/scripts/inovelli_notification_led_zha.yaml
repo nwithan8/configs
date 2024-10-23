@@ -5,7 +5,7 @@ blueprint:
   name: Inovelli Notification LED (ZHA)
   description: >-
     A script that sets the notification LED bar of an Inovelli light switch.
-  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/inovelli_zha_notification_led_zha.yaml
+  source_url: https://raw.githubusercontent.com/nwithan8/configs/main/home_assistant/blueprints/scripts/inovelli_notification_led_zha.yaml
   domain: script
 fields:
   switch:
