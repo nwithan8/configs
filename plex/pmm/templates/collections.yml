@@ -108,7 +108,7 @@ templates:
     sort_title: 060_+<<level>>_<<sort_title_name>>
     sync_mode: sync
     url_poster: <<poster_url>>
-    minimum_items: 3
+    # minimum_items: 3  # cannot be used in combination with builder_level
     # delete_not_scheduled: true
     visible_home: false
     visible_shared: false

@@ -20,6 +20,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/black_history2.jpg }
     summary: "Celebrate Black History Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/black-history-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-anglo-american
@@ -37,6 +38,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/aapi.jpg }
     summary: "Celebrate Asian American and Pacific Islander Heritage Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent
@@ -63,6 +65,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/lgbtq.jpg }
     summary: "Celebrate Pride Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-bisexual-pansexual
@@ -82,6 +85,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/latinx.jpg }
     summary: "Celebrate Hispanic Heritage Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
       - https://trakt.tv/users/janesmanytrades/lists/hispanic-latino-heritage-month-year
@@ -101,6 +105,7 @@ collections:
                 level: "+++" }
     summary: "I like the noise of democracy."
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/political-tv-series
 
@@ -111,7 +116,7 @@ collections:
     visible_shared: range(11/01-11/30)
     visible_library: range(11/01-11/30)
     template: { name: Holiday,
-                level: "++",
+                level: "+++",
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/thanksgiving.jpg }
     summary: "Gobble gobble!"
     collection_order: random
@@ -132,7 +137,7 @@ collections:
     visible_shared: range(12/01-12/28)
     visible_library: range(12/01-12/28)
     template: { name: Holiday,
-                level: "++",
+                level: "+++",
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/christmas.jpg }
     summary: "Cozy up with some Christmas classics."
     collection_order: random

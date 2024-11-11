@@ -40,6 +40,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/years.jpg }
     summary: "Ring in the New Year with these movies!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls066838460/
 
@@ -54,6 +55,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/valentine.jpg }
     summary: "Love me tender, love me sweet, never let me go."
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/
@@ -70,6 +72,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/black_history2.jpg }
     summary: "Celebrate Black History Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/black-history-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-anglo-american
@@ -87,6 +90,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/patrick.jpg }
     summary: "Kiss Me, I'm Irish."
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls063934595/
 
@@ -101,6 +105,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/420.jpg }
     summary: "Blaze it!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls075204988/
 
@@ -115,6 +120,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/easter.jpg }
     summary: "Hoppy Easter!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls062665509/
       - https://www.imdb.com/list/ls051733651/
@@ -130,6 +136,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/aapi.jpg }
     summary: "Celebrate Asian American and Pacific Islander Heritage Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/asian-american-pacific-islander-heritage-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-asian-descent
@@ -156,6 +163,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/mother.jpg }
     summary: "Thanks Mom!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls072551197/
 
@@ -171,6 +179,7 @@ collections:
     summary: "Congratulations, graduates!"
     name_mapping: "Graduation"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/high-school?sort=rank,asc
       - https://trakt.tv/users/bangiras/lists/favorites-college-school
@@ -186,6 +195,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/memorial.jpg }
     summary: "Remembering those who gave their lives for our freedom."
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
 
@@ -200,6 +210,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/lgbtq.jpg }
     summary: "Celebrate Pride Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-bisexual-pansexual
@@ -219,6 +230,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/father.jpg }
     summary: "Thanks Dad!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls020471057/
 
@@ -233,6 +245,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/independence.jpg }
     summary: "Celebrate the 4th of July with these movies!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls068664510/
       - https://www.imdb.com/list/ls080925875/
@@ -248,6 +261,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/labor.jpg }
     summary: "Labor Day is a day off, but these movies are hard work."
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls002014923/
 
@@ -262,6 +276,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/latinx.jpg }
     summary: "Celebrate Hispanic Heritage Month with these movies!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/hispanic-heritage-month
       - https://trakt.tv/users/janesmanytrades/lists/hispanic-latino-heritage-month-year
@@ -282,6 +297,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/halloween.jpg }
     summary: "Boo!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls023118929/
       - https://www.imdb.com/list/ls000099714/
@@ -316,6 +332,7 @@ collections:
                 level: "+" }
     summary: "Don't be scared, it's just a movie."
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/lish408/lists/31-days-of-horror-2024  # TODO: Change annually
 
@@ -329,6 +346,7 @@ collections:
                 level: "+++" }
     summary: "Trick or Treat!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/halloween-movies-for-kids
 
@@ -342,6 +360,7 @@ collections:
                 level: "+" }
     summary: "He's right behind you!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/hdlists/lists/80s-slasher-movies
 
@@ -355,6 +374,7 @@ collections:
                 level: "+++" }
     summary: "I like the noise of democracy."
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/best-political-movies
 
@@ -369,6 +389,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/thanksgiving.jpg }
     summary: "Gobble gobble!"
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls000835734/
       - https://www.imdb.com/list/ls091597850/
@@ -390,6 +411,7 @@ collections:
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/christmas.jpg }
     summary: "Cozy up with some Christmas classics."
     collection_order: random
+    minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls000096828/
     trakt_list:
@@ -407,6 +429,7 @@ collections:
                 level: "+" }
     summary: "Christmas movies with extra-sap!"
     collection_order: random
+    minimum_items: 3
     trakt_list:
       - https://trakt.tv/users/mzdiobolik/lists/hallmark-christmas-movies
 
