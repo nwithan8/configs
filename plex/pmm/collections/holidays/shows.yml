@@ -103,3 +103,44 @@ collections:
     collection_order: random
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/political-tv-series
+
+  "🦃 Thanksgiving":
+    schedule:
+      - range(11/01-12/01)
+    visible_home: range(11/01-11/30)
+    visible_shared: range(11/01-11/30)
+    visible_library: range(11/01-11/30)
+    template: { name: Holiday,
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/thanksgiving.jpg }
+    summary: "Gobble gobble!"
+    collection_order: random
+    builder_level: episode # Collection is of specific episodes
+    trakt_list:
+      # Thanksgiving episodes of TV shows
+      - https://trakt.tv/users/martin216/lists/thanksgiving
+      - https://trakt.tv/users/roswellgeek/lists/thanksgiving
+      - https://trakt.tv/users/eeersbot/lists/thanksgiving
+      - https://trakt.tv/users/zombiemoses/lists/thanksgiving
+      - https://trakt.tv/users/rjay2690/lists/thanksgiving-episodes
+      - https://trakt.tv/users/ashleyangel/lists/thanksgiving-episodes
+
+  "🎅 Christmas":
+    schedule:
+      - range(12/01-12/29)
+    visible_home: range(12/01-12/28)
+    visible_shared: range(12/01-12/28)
+    visible_library: range(12/01-12/28)
+    template: { name: Holiday,
+                level: "++",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/christmas.jpg }
+    summary: "Cozy up with some Christmas classics."
+    collection_order: random
+    builder_level: episode # Collection is of specific episodes
+    trakt_list:
+      # Christmas episodes of TV shows
+      - https://trakt.tv/users/roswellgeek/lists/christmas
+      - https://trakt.tv/users/rjay2690/lists/christmas-episodes
+      - https://trakt.tv/users/ashleyangel/lists/christmas-episodes
+
+
