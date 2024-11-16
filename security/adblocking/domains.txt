@@ -1,3 +1,8 @@
 # Android TV ads
 androidtvwatsonfe-pa.googleapis.com
 androidtvwatsonfe-pa.googleapis.com.
+
+# TikTok is Chinese spyware
+tiktok.com
+www.tiktok.com
+# More available here: https://raw.githubusercontent.com/danhorton7/pihole-block-tiktok/refs/heads/main/tiktok.txt
