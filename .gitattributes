@@ -1,0 +1,5 @@
+# Make sure to exclude the .gitattributes file itself from encryption
+.gitattributes !filter !diff
+
+# Encrypt the following files
+plex/pmm/config.yml filter=git-crypt diff=git-crypt
