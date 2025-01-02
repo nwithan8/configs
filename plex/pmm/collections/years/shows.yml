@@ -13,11 +13,30 @@ templates:
     collection_order: release
     collection_minimum: 3
     delete_below_minimum: true
-    visible_library: false
-    visible_shared: false
-    visible_home: false
     schedule:
-      - monthly(01)
+      - monthly(01) # Will be made invisible on Jan 1st of next year
+      - date(12/26/<<key>>)  # Will be made visible on Dec 26th of given year
+    visible_home:
+      - date(12/26/<<key>>)
+      - date(12/27/<<key>>)
+      - date(12/28/<<key>>)
+      - date(12/29/<<key>>)
+      - date(12/30/<<key>>)
+      - date(12/31/<<key>>)
+    visible_shared:
+      - date(12/26/<<key>>)
+      - date(12/27/<<key>>)
+      - date(12/28/<<key>>)
+      - date(12/29/<<key>>)
+      - date(12/30/<<key>>)
+      - date(12/31/<<key>>)
+    visible_library:
+      - date(12/26/<<key>>)
+      - date(12/27/<<key>>)
+      - date(12/28/<<key>>)
+      - date(12/29/<<key>>)
+      - date(12/30/<<key>>)
+      - date(12/31/<<key>>)
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/year/best/<<key>>.jpg
 
 dynamic_collections:
