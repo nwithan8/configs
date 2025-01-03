@@ -3,4 +3,78 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
+  # Run schedule for full length of visibility (not +1 day of visibility)
+  # Need to list every day for run schedule (range for yearly repeat or each date for one time).
+  # Collection will be visible by default on all scheduled days.
+  # Collection will be automatically deleted on the day after the last scheduled day.
 
+  "🌎 Celebrating Jon Stewart":
+    template: {
+      name: Promoted,
+      level: "+",
+      poster_url: https://i.guim.co.uk/img/media/218cac37d914f0927a56b5f746cbe3295b5f507d/0_44_3658_2195/master/3658.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=88fd0aa25c5a2a36ef6abc1bd4042981,
+      run_schedule:
+        - date(01/01/2024)
+        - date(01/02/2024)
+        - date(01/03/2024)
+        - date(01/04/2024)
+        - date(01/05/2024)
+        - date(01/06/2024)
+        - date(01/07/2024)
+        - date(01/08/2024)
+        - date(01/09/2024)
+        - date(01/10/2024)
+        - date(01/11/2024)
+        - date(01/12/2024)
+        - date(01/13/2024)
+        - date(01/14/2024)
+        - date(01/15/2024)
+        - date(01/16/2024)
+        - date(01/17/2024)
+        - date(01/18/2024)
+        - date(01/19/2024)
+        - date(01/20/2024)
+        - date(01/21/2024)
+        - date(01/22/2024)
+        - date(01/23/2024)
+        - date(01/24/2024)
+        - date(01/25/2024)
+        - date(01/26/2024)
+        - date(01/27/2024)
+        - date(01/28/2024)
+        - date(01/29/2024)
+        - date(01/30/2024)
+        - date(01/31/2024)
+        - date(02/01/2024)
+        - date(02/02/2024)
+        - date(02/03/2024)
+        - date(02/04/2024)
+        - date(02/05/2024)
+        - date(02/06/2024)
+        - date(02/07/2024)
+        - date(02/08/2024)
+        - date(02/09/2024)
+        - date(02/10/2024)
+        - date(02/11/2024)
+        - date(02/12/2024)
+        - date(02/13/2024)
+        - date(02/14/2024)
+        - date(02/15/2024)
+        - date(02/16/2024)
+        - date(02/17/2024)
+        - date(02/18/2024)
+        - date(02/19/2024)
+        - date(02/20/2024)
+    }
+    summary: "Catch up with the comedian's work and influence before his return to The Daily Show"
+    tmdb_show:
+      - 2224      # The Daily Show
+      - 123149    # The Problem with Jon Stewart
+      - 10267     # The Jon Stewart Show
+      - 4385      # The Colbert Report
+      - 73606     # The Opposition with Jordan Klepper
+      - 61587     # The Nightly Show with Larry Wilmore
+      - 60694     # Last Week Tonight with John Oliver
+      - 83519     # Patriot Act with Hasan Minhaj
+      - 65592     # Full Frontal with Samantha Bee
+      - 30062     # Night of Too Many Stars

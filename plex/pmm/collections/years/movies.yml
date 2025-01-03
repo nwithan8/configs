@@ -11,8 +11,7 @@ templates:
     sync_mode: sync
     summary: Rotten Tomatoes Best Movies of <<key>>
     collection_order: release
-    collection_minimum: 3
-    delete_below_minimum: true
+    minimum_items: 3
     schedule:
       - monthly(01) # Will be made invisible on Jan 1st of next year
       - date(12/26/<<key>>)  # Will be made visible on Dec 26th of given year
