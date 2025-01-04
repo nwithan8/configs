@@ -3,80 +3,80 @@ external_templates:
   - repo: templates/dynamic_collections
 
 collections:
-  # Run schedule for full length of visibility (not +1 day of visibility)
-  # Need to list every day for run schedule (range for yearly repeat or each date for one time).
+  # Schedule for full length of visibility (not +1 day of visibility)
+  # Need to list every day for schedule (range for yearly repeat or each date for one time).
   # Collection will be visible by default on all scheduled days.
   # Collection will be automatically deleted on the day after the last scheduled day.
 
   "Remembering Kevin Conroy":
     template: {
       name: InMemoriamActor,
-      tmdb_id: 34947,
-      run_schedule:
-        - date(11/11/2021)
-        - date(11/12/2021)
-        - date(11/13/2021)
-        - date(11/14/2021)
-        - date(11/15/2021)
-        - date(11/16/2021)
-        - date(11/17/2021)
-        - date(11/18/2021)
-        - date(11/19/2021)
-        - date(11/20/2021)
-        - date(11/21/2021)
-        - date(11/22/2021)
-        - date(11/23/2021)
-        - date(11/24/2021)
-        - date(11/25/2021)
-        - date(11/26/2021)
-        - date(11/27/2021)
-        - date(11/28/2021)
-        - date(11/29/2021)
-        - date(11/30/2021)
-        - date(12/01/2021)
-        - date(12/02/2021)
-        - date(12/03/2021)
-        - date(12/04/2021)
-        - date(12/05/2021)
-        - date(12/06/2021)
-        - date(12/07/2021)
-        - date(12/08/2021)
-        - date(12/09/2021)
-        - date(12/10/2021)
-        - date(12/11/2021)
+      tmdb_id: 34947
     }
+    schedule:
+      - date(11/11/2021)
+      - date(11/12/2021)
+      - date(11/13/2021)
+      - date(11/14/2021)
+      - date(11/15/2021)
+      - date(11/16/2021)
+      - date(11/17/2021)
+      - date(11/18/2021)
+      - date(11/19/2021)
+      - date(11/20/2021)
+      - date(11/21/2021)
+      - date(11/22/2021)
+      - date(11/23/2021)
+      - date(11/24/2021)
+      - date(11/25/2021)
+      - date(11/26/2021)
+      - date(11/27/2021)
+      - date(11/28/2021)
+      - date(11/29/2021)
+      - date(11/30/2021)
+      - date(12/01/2021)
+      - date(12/02/2021)
+      - date(12/03/2021)
+      - date(12/04/2021)
+      - date(12/05/2021)
+      - date(12/06/2021)
+      - date(12/07/2021)
+      - date(12/08/2021)
+      - date(12/09/2021)
+      - date(12/10/2021)
+      - date(12/11/2021)
 
   "Remembering President Jimmy Carter":
     template: {
       name: InMemoriamActor,
-      tmdb_id: 50576,
-      run_schedule:
-        - date(12/30/2024)
-        - date(12/31/2024)
-        - date(01/01/2025)
-        - date(01/02/2025)
-        - date(01/03/2025)
-        - date(01/04/2025)
-        - date(01/05/2025)
-        - date(01/06/2025)
-        - date(01/07/2025)
-        - date(01/08/2025)
-        - date(01/09/2025)
-        - date(01/10/2025)
-        - date(01/11/2025)
-        - date(01/12/2025)
-        - date(01/13/2025)
-        - date(01/14/2025)
-        - date(01/15/2025)
-        - date(01/16/2025)
-        - date(01/17/2025)
-        - date(01/18/2025)
-        - date(01/19/2025)
-        - date(01/20/2025)
-        - date(01/21/2025)
-        - date(01/22/2025)
-        - date(01/23/2025)
-        - date(01/24/2025)
+      tmdb_id: 50576
     }
+    schedule:
+      - date(12/30/2024)
+      - date(12/31/2024)
+      - date(01/01/2025)
+      - date(01/02/2025)
+      - date(01/03/2025)
+      - date(01/04/2025)
+      - date(01/05/2025)
+      - date(01/06/2025)
+      - date(01/07/2025)
+      - date(01/08/2025)
+      - date(01/09/2025)
+      - date(01/10/2025)
+      - date(01/11/2025)
+      - date(01/12/2025)
+      - date(01/13/2025)
+      - date(01/14/2025)
+      - date(01/15/2025)
+      - date(01/16/2025)
+      - date(01/17/2025)
+      - date(01/18/2025)
+      - date(01/19/2025)
+      - date(01/20/2025)
+      - date(01/21/2025)
+      - date(01/22/2025)
+      - date(01/23/2025)
+      - date(01/24/2025)
 
 

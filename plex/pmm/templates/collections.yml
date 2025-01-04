@@ -10,7 +10,6 @@ templates:
       - poster_url
     sort_title: 000_+<<level>>_<<sort_title_name>>
     sync_mode: sync
-    schedule: <<run_schedule>>
     delete_not_scheduled: true
     visible_library: true
     visible_shared: true
@@ -28,7 +27,6 @@ templates:
         actor: tmdb
       sort_title: 001_+<<level>>_<<sort_title_name>>
       sync_mode: append
-    schedule: <<run_schedule>>
     delete_not_scheduled: true
     minimum_items: 3
     visible_library: true
@@ -46,7 +44,6 @@ templates:
         director: tmdb
       sort_title: 002_+<<level>>_<<sort_title_name>>
       sync_mode: append
-    schedule: <<run_schedule>>
     delete_not_scheduled: true
     minimum_items: 3
     visible_library: true
