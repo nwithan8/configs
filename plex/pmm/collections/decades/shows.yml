@@ -44,4 +44,4 @@ dynamic_collections:
         twenty_twenties: 2029
     title_format: 🗓️ Best of the <<key_name>>s
     template:
-      - Per_Decade
+      - Best_Of_Decade

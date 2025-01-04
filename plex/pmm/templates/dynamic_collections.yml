@@ -4,31 +4,14 @@ external_templates:
 templates:
   # Dynamic Collections Templates
   # -----------------------------
-  Per_Decade:
-    default:
-      level: ""
-    smart_filter:
-      sort_by: audience_rating.desc
-      all:
-        year.gte: <<key_name>>
-        year.lte: <<ending>>
-    sort_title: 080_+<<level>>_<<starting>>
-    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<starting>>.png
-    visible_library: false
-    visible_shared: false
-    visible_home: false
-    schedule:
-      - monthly(16)
-
   Per_Genre:
     smart_filter:
-      limit: 10000
       sort_by: critic_rating.desc
       all:
         genre: <<value>>
     default:
       level: ""
-      sort_title: 070_+<<level>>_<<key_name>>
+    sort_title: 070_+<<level>>_<<key_name>>
     url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/<<key_name>>.jpg
     visible_library: false
     visible_shared: false
@@ -37,9 +20,41 @@ templates:
       - weekly(monday)
       - weekly(thursday)
 
+  Best_Of_Decade:
+    smart_filter:
+      limit: 1000
+      sort_by: audience_rating.desc
+      all:
+        year.gte: <<key_name>>
+        year.lte: <<ending>>
+    default:
+      level: ""
+    sort_title: 080_+<<level>>_<<starting>>
+    url_poster: https://raw.githubusercontent.com/zluckytraveler/Plex-Meta-Manager-Configs/master/zluckytraveler/Posters/Decades/<<starting>>.png
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule:
+      - monthly(16)
+
+  Per_Decade:
+    smart_filter:
+      sort_by: audience_rating.desc
+      all:
+        year.gte: <<key_name>>
+        year.lte: <<ending>>
+    default:
+      level: ""
+    sort_title: 081_+<<level>>_<<starting>>
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/decade/<<starting>>.jpg
+    visible_library: false
+    visible_shared: false
+    visible_home: false
+    schedule:
+      - monthly(16)
+
   Per_Country:
     smart_filter:
-      limit: 10000
       sort_by: critic_rating.desc
       any:
         country: <<value>>
