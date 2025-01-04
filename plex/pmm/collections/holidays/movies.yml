@@ -334,7 +334,7 @@ collections:
     collection_order: random
     minimum_items: 3
     trakt_list:
-      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2024  # TODO: Change annually
+      - https://trakt.tv/users/lish408/lists/31-days-of-horror-2025  # TODO: Change annually
 
   "🍬 Trick or Treat":
     schedule:
