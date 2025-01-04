@@ -329,7 +329,8 @@ collections:
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
     template: { name: Holiday,
-                level: "+" }
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Horror.jpg }
     summary: "Don't be scared, it's just a movie."
     collection_order: random
     minimum_items: 3
@@ -345,6 +346,7 @@ collections:
     template: { name: Holiday,
                 level: "+++" }
     summary: "Trick or Treat!"
+    name_mapping: "Trick or Treat Collection"
     collection_order: random
     minimum_items: 3
     trakt_list:
@@ -357,7 +359,8 @@ collections:
     visible_shared: range(10/01-10/31)
     visible_library: range(10/01-10/31)
     template: { name: Holiday,
-                level: "+" }
+                level: "+",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Slasher.jpg }
     summary: "He's right behind you!"
     collection_order: random
     minimum_items: 3

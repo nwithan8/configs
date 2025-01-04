@@ -102,7 +102,8 @@ collections:
     visible_shared: range(10/25-11/11)
     visible_library: range(10/25-11/11)
     template: { name: Holiday,
-                level: "+++" }
+                level: "+++",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/genre/Politics.jpg }
     summary: "I like the noise of democracy."
     collection_order: random
     minimum_items: 3
