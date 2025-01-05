@@ -20,13 +20,9 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    tmdb_person: <<tmdb_id>>
-    smart_filter:
-      sort_by: release.desc
-      any:
-        actor: tmdb
-      sort_title: 001__<<level>>_<<sort_title_name>>
-      sync_mode: append
+    tmdb_actor_details: <<tmdb_id>>
+    sort_title: 001__<<level>>_<<sort_title_name>>
+    sync_mode: append
     delete_not_scheduled: true
     minimum_items: 3
     visible_library: true
@@ -37,13 +33,35 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    tmdb_person: <<tmdb_id>>
-    smart_filter:
-      sort_by: release.desc
-      any:
-        director: tmdb
-      sort_title: 002__<<level>>_<<sort_title_name>>
-      sync_mode: append
+    tmdb_director_details: <<tmdb_id>>
+    sort_title: 002__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    delete_not_scheduled: true
+    minimum_items: 3
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+
+  InMemoriamProducer:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_producer_details: <<tmdb_id>>
+    sort_title: 003__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    delete_not_scheduled: true
+    minimum_items: 3
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+
+  InMemoriamWriter:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_writer_details: <<tmdb_id>>
+    sort_title: 004__<<level>>_<<sort_title_name>>
+    sync_mode: append
     delete_not_scheduled: true
     minimum_items: 3
     visible_library: true
@@ -93,12 +111,41 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    smart_filter: # smart filter means Plex will automatically update the collection when new movies are added, rather than having to rerun the script
-      sort_by: release.desc
-      all:
-        actor: tmdb
-    tmdb_person: <<tmdb>>
+    tmdb_actor_details: <<tmdb_id>>
     sort_title: 052__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    schedule:
+      - weekly(sunday)
+    visible_library: false
+
+  DirectorAward:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_director_details: <<tmdb_id>>
+    sort_title: 053__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    schedule:
+      - weekly(sunday)
+    visible_library: false
+
+  ProducerAward:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_producer_details: <<tmdb_id>>
+    sort_title: 054__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    schedule:
+      - weekly(sunday)
+    visible_library: false
+
+  WriterAward:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_writer_details: <<tmdb_id>>
+    sort_title: 055__<<level>>_<<sort_title_name>>
     sync_mode: append
     schedule:
       - weekly(sunday)
@@ -186,7 +233,9 @@ templates:
         director: tmdb
         producer: tmdb
         writer: tmdb
-    tmdb_person: <<person>>
+    # Unlike other templates, which use TMDb as the source of media items, this simply uses the TMDb ID to find the corresponding person on Plex and use Plex's metadata as the source of media items.
+    # It is possible (likely) that TMDb reports a person being in a media item that Plex does not, up to and including Plex not having any media items for that person and therefore not recognizing the person as a valid actor/director/producer/writer.
+    tmdb_person: <<tmdb_id>>
     sort_title: 090__<<level>>_<<sort_title_name>>
     sync_mode: append
     visible_library: false
@@ -195,7 +244,7 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    tmdb_actor_details: <<person>>
+    tmdb_actor_details: <<tmdb_id>>
     sort_title: 090__<<level>>_<<sort_title_name>>
     sync_mode: append
     visible_library: false
@@ -204,7 +253,7 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    tmdb_director_details: <<person>>
+    tmdb_director_details: <<tmdb_id>>
     sort_title: 091__<<level>>_<<sort_title_name>>
     sync_mode: append
     visible_library: false
@@ -213,8 +262,17 @@ templates:
     default:
       level: ""
       sort_title_name: <<collection_name>>
-    tmdb_producer_details: <<person>>
+    tmdb_producer_details: <<tmdb_id>>
     sort_title: 092__<<level>>_<<sort_title_name>>
+    sync_mode: append
+    visible_library: false
+
+  Writer:
+    default:
+      level: ""
+      sort_title_name: <<collection_name>>
+    tmdb_writer_details: <<tmdb_id>>
+    sort_title: 093__<<level>>_<<sort_title_name>>
     sync_mode: append
     visible_library: false
 

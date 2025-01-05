@@ -837,7 +837,7 @@ collections:
   "🎭 2024 Best Actor Nominee - Bradley Cooper":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 51329 }
+                tmdb_id: 51329 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -850,7 +850,7 @@ collections:
   "🎭 2024 Best Actor Nominee - Colman Domingo":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 91671 }
+                tmdb_id: 91671 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -863,7 +863,7 @@ collections:
   "🎭 2024 Best Actor Nominee - Paul Giamatti":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 13242 }
+                tmdb_id: 13242 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -876,7 +876,7 @@ collections:
   "🎭 2024 Best Actor Nominee - Cillian Murphy":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 2037 }
+                tmdb_id: 2037 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -889,7 +889,7 @@ collections:
   "🎭 2024 Best Actor Nominee - Jeffrey Wright":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 2954 }
+                tmdb_id: 2954 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -909,7 +909,7 @@ collections:
   "🎭 2024 Best Actress Nominee - Annette Bening":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 516 }
+                tmdb_id: 516 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -922,7 +922,7 @@ collections:
   "🎭 2024 Best Actress Nominee - Lily Gladstone":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 1183917 }
+                tmdb_id: 1183917 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -935,7 +935,7 @@ collections:
   "🎭 2024 Best Actress Nominee - Sandra Hüller":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 7152 }
+                tmdb_id: 7152 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -948,7 +948,7 @@ collections:
   "🎭 2024 Best Actress Nominee - Carey Mulligan":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 36662 }
+                tmdb_id: 36662 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -961,7 +961,7 @@ collections:
   "🎭 2024 Best Actress Nominee - Emma Stone":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb: 54693 }
+                tmdb_id: 54693 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
