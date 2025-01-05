@@ -60,6 +60,10 @@ collections:
       - https://www.imdb.com/list/ls000094398/
       - https://www.imdb.com/list/ls057783436/
       - https://www.imdb.com/list/ls064427905/
+    trakt_list:
+      - https://trakt.tv/users/movie-pal/lists/valentine-s-day
+      - https://trakt.tv/users/barsaky/lists/den-svateho-valentina-valentine-s-day
+      - https://trakt.tv/users/abbelea/lists/movies-best-of-love
 
   "✊🏿 Black History Month":
     schedule:
@@ -93,6 +97,8 @@ collections:
     minimum_items: 3
     imdb_list:
       - https://www.imdb.com/list/ls063934595/
+    trakt_list:
+      - https://trakt.tv/users/sympli/lists/st-patricks-day-movies
 
   "🥦 4/20":
     schedule:
