@@ -1,0 +1,287 @@
+# Create a collection for each character in the ASCII table to view sorting behavior
+
+# Must be run on a movie library with Star Wars (1977) in it.
+
+collections:
+  ' - space':
+    sort_title: ' - space'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '! - bang':
+    sort_title: '! - bang'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '" - quote':
+    sort_title: '" - quote'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '# - pound':
+    sort_title: '# - pound'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '$ - dollar':
+    sort_title: '$ - dollar'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '% - percent':
+    sort_title: '% - percent'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  "' - apostrophe":
+    sort_title: "' - apostrophe"
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '( - open paren':
+    sort_title: '( - open paren'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  ') - closed paren':
+    sort_title: ') - closed paren'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '* - splat':
+    sort_title: '* - splat'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '+ - plus':
+    sort_title: '+ - plus'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  ',  - comma':
+    sort_title: ',  - comma'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '-  - hyphen':
+    sort_title: '-  - hyphen'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '. - period':
+    sort_title: '. - period'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '/ - slash':
+    sort_title: '/ - slash'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '0':
+    sort_title: '0'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '1':
+    sort_title: '1'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '2':
+    sort_title: '2'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '3':
+    sort_title: '3'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '4':
+    sort_title: '4'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '5':
+    sort_title: '5'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '6':
+    sort_title: '6'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '7':
+    sort_title: '7'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '8':
+    sort_title: '8'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '9':
+    sort_title: '9'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  ': - colon':
+    sort_title: ': - colon'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '; - semicolon':
+    sort_title: '; - semicolon'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '< - lessthan':
+    sort_title: '< - lessthan'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '= - equals':
+    sort_title: '= - equals'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '> - greaterthan':
+    sort_title: '> - greaterthan'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '? - question':
+    sort_title: '? - question'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '@ - AT':
+    sort_title: '@ - AT'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'A - upper':
+    sort_title: 'A - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'B - upper':
+    sort_title: 'B - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'C - upper':
+    sort_title: 'C - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'D - upper':
+    sort_title: 'D - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'E - upper':
+    sort_title: 'E - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'F - upper':
+    sort_title: 'F - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'G - upper':
+    sort_title: 'G - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'H - upper':
+    sort_title: 'H - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'I - upper':
+    sort_title: 'I - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'J - upper':
+    sort_title: 'J - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'K - upper':
+    sort_title: 'K - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'L - upper':
+    sort_title: 'L - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'M - upper':
+    sort_title: 'M - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'N - upper':
+    sort_title: 'N - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'O - upper':
+    sort_title: 'O - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'P - upper':
+    sort_title: 'P - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'Q - upper':
+    sort_title: 'Q - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'R - upper':
+    sort_title: 'R - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'S - upper':
+    sort_title: 'S - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'T - upper':
+    sort_title: 'T - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'U - upper':
+    sort_title: 'U - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'V - upper':
+    sort_title: 'V - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'W - upper':
+    sort_title: 'W - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'X - upper':
+    sort_title: 'X - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'Y - upper':
+    sort_title: 'Y - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'Z - upper':
+    sort_title: 'Z - upper'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '[ - openbrace':
+    sort_title: '[ - openbrace'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '\ - backslash':
+    sort_title: '\ - backslash'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '] - closebrace':
+    sort_title: '] - closebrace'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '^ - hat':
+    sort_title: '^ - hat'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '_ - underscore':
+    sort_title: '_ - underscore'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '` - backtick':
+    sort_title: '` - backtick'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'a - lower':
+    sort_title: 'a - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'b - lower':
+    sort_title: 'b - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'c - lower':
+    sort_title: 'c - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'd - lower':
+    sort_title: 'd - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'e - lower':
+    sort_title: 'e - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'f - lower':
+    sort_title: 'f - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'g - lower':
+    sort_title: 'g - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'h - lower':
+    sort_title: 'h - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'i - lower':
+    sort_title: 'i - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'j - lower':
+    sort_title: 'j - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'k - lower':
+    sort_title: 'k - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'l - lower':
+    sort_title: 'l - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'm - lower':
+    sort_title: 'm - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'n - lower':
+    sort_title: 'n - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'o - lower':
+    sort_title: 'o - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'p - lower':
+    sort_title: 'p - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'q - lower':
+    sort_title: 'q - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'r - lower':
+    sort_title: 'r - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  's - lower':
+    sort_title: 's - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  't - lower':
+    sort_title: 't - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'u - lower':
+    sort_title: 'u - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'v - lower':
+    sort_title: 'v - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'w - lower':
+    sort_title: 'w - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'x - lower':
+    sort_title: 'x - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'y - lower':
+    sort_title: 'y - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  'z - lower':
+    sort_title: 'z - lower'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '{ - openbracket':
+    sort_title: '{ - openbracket'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '| - vertical':
+    sort_title: '| - vertical'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '} - closebracket':
+    sort_title: '} - closebracket'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
+  '~ - tilde':
+    sort_title: '~ - tilde'
+    tmdb_movie: https://www.themoviedb.org/movie/11 # Star Wars (1977)
