@@ -5,7 +5,7 @@ external_templates:
 collections:
   "🎤 What's The Deal With Airplane Food?":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Stand-Up Comedy Collection"
     summary: "Some of the best stand-up you'll ever see."
     trakt_list:
@@ -17,7 +17,7 @@ collections:
 
   "😜 Spoofs and Parodies":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Spoof and Parody Films Collection"
     summary: "Imitation is the sincerest form of flattery"
     trakt_list:
@@ -29,7 +29,7 @@ collections:
 
   "👩‍❤️‍💋‍👨 Rom-com Central":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Romantic Comedies Collection"
     summary: "Rotten Tomatoes' best romantic comedies of all time"
     trakt_list:
@@ -41,7 +41,7 @@ collections:
 
   "🏀 Slam Dunk":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Sports Movies Collection"
     summary: "The best sports movies, ever."
     mdblist_list: https://mdblist.com/lists/hdlists/150-best-sports-movies-of-all-time
@@ -52,7 +52,7 @@ collections:
 
   "🚓 Get In Get Out":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Heist Movies Collection"
     summary: "Don't forget about the getaway driver out front"
     mdblist_list: https://mdblist.com/lists/hdlists/best-heist-movies-of-all-time
@@ -63,7 +63,7 @@ collections:
 
   "🎢 On The Edge Of Your Seat":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Thriller Movies Collection"
     summary: "The suspense is killing us!"
     imdb_search:
@@ -78,7 +78,7 @@ collections:
 
   "🤯 What a Twist!":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Plot Twist Movies Collection"
     summary: "Bet you didn't see THAT coming..."
     mdblist_list: https://mdblist.com/lists/hdlists/crazy-plot-twists
@@ -89,7 +89,7 @@ collections:
 
   "📗 Based On A True Story":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     summary: "Based on a true story"
     trakt_list:
       - https://trakt.tv/users/k0meta/lists/movies-based-on-true-stories
@@ -100,7 +100,7 @@ collections:
 
   "📖 The Book Was Better":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Based On A Book Collection"
     summary: "Based on a book"
     trakt_list:
@@ -112,7 +112,7 @@ collections:
 
   "🕹️ Arrow In The Knee":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Video Game Movies Collection"
     summary: "Based on a video game"
     trakt_list:
@@ -124,7 +124,7 @@ collections:
 
   "💬 With Great Power...":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "With Great Power Collection"
     summary: "Based on a comic book"
     trakt_list:
@@ -136,7 +136,7 @@ collections:
 
   "👾 Monsters vs. Aliens":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Monsters Vs Aliens Collection"
     summary: "Save the world from aliens and monsters!"
     trakt_list:
@@ -151,7 +151,7 @@ collections:
 
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "True Crime Collection"
     summary: "True crime documentaries"
     trakt_list:
@@ -163,7 +163,7 @@ collections:
 
   "👨‍🍳 Bon Appetit":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     summary: "Mouth-watering movies"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/bon-appetit
@@ -174,7 +174,7 @@ collections:
 
   "📄 Documentaries":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Documentaries Collection"
     summary: "The top documentaries of all time"
     trakt_list:
@@ -187,7 +187,7 @@ collections:
 
   "🧥 I'm Gonna Make Him an Offer":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     summary: "The best gangster movies of all time"
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/the-complete-list-of-mafia-gangsters-movies
@@ -199,7 +199,7 @@ collections:
   # TODO: Might time out due to size
   # "🧑 It Really Happened":
   #  template: { name: Genre,
-  #              level: "++" }
+  #              level: "__" }
   #  summary: "These people actually existed."
   #  trakt_list:
   #    - https://trakt.tv/users/majeed_pk/lists/biographies
@@ -210,7 +210,7 @@ collections:
 
   "🌿 What Is Life Anyway?":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Existentialist Films Collection"
     summary: "The best existential movies of all time"
     trakt_list:
@@ -222,7 +222,7 @@ collections:
 
   "⚖️ Order In The Court":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Courtroom Drama Collection"
     summary: "The best courtroom dramas of all time"
     trakt_list:
@@ -234,7 +234,7 @@ collections:
 
   "🪖 World War II, In Order":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "World War II Collection"
     summary: "Movies depicting World War II, in chronological order"
     trakt_list:
@@ -246,7 +246,7 @@ collections:
 
   "🏈 Are You Ready For Some Football?":
     template: { name: Genre,
-                level: "++",
+                level: "__",
                 poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Football.jpg }
     name_mapping: "Football Movies Collection"
     summary: "The best football movies of all time"
@@ -276,7 +276,7 @@ collections:
 
   "⚾ Knock It Out Of The Park":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Baseball Movies Collection"
     summary: "The best baseball movies of all time"
     trakt_list:
@@ -303,7 +303,7 @@ collections:
 
   "🙂 Feel-Good Movies":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Feel Good Movies Collection"
     summary: "The best feel-good movies of all time"
     trakt_list:
@@ -315,7 +315,7 @@ collections:
 
   "🧘 Enjoy The Weekend":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Chill Movies Collection"
     summary: "The best movies for a lazy weekend afternoon"
     trakt_list:
@@ -332,7 +332,7 @@ collections:
 
   "🤪 The Weirdo's Videostore":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Weirdo Videostore Collection"
     summary: "Cinema is strange."
     trakt_list:
@@ -344,7 +344,7 @@ collections:
 
   "⁉️ Controversial Cinema":
     template: { name: Genre,
-                level: "++" }
+                level: "__" }
     name_mapping: "Controversial Cinema Collection"
     summary: "The most edgy, crazy, disturbing, controversial, shocking, bizarre, scandalous and downright f***ed up films of all time!"
     trakt_list:

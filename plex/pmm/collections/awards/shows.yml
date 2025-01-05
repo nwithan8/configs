@@ -64,7 +64,7 @@ templates:
   "✅ This Year's People's Choice Awards Nominees":
     summary: "Who will take home the trophy?"
     template: { name: Award,
-                level: "+++" }
+                level: "___" }
     imdb_award:
       event_id: ev0000530
       event_year: latest
@@ -90,7 +90,7 @@ templates:
   "✅ Past People's Choice Awards Winners":
     summary: "The People's Choice Awards is an American awards show, recognizing the people and the work of popular culture."
     template: { name: Award,
-                level: "++" }
+                level: "__" }
     imdb_award:
       event_id: ev0000530
       event_year: all

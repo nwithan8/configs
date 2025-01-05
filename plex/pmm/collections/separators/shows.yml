@@ -7,7 +7,7 @@ collections:
   # Show be in the library, so try to use a popular show likely to be on any given server
   "Awards":
     template: { name: Award,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Awards"
     visible_library: false
     visible_home: false
@@ -21,7 +21,7 @@ collections:
 
   "Holidays":
     template: { name: Holiday,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Holidays"
     visible_library: false
     visible_home: false
@@ -36,7 +36,7 @@ collections:
 
   "Collections":
     template: { name: Collection,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Collections"
     visible_library: false
     visible_home: false
@@ -51,7 +51,7 @@ collections:
 
   "Franchises":
     template: { name: Franchise,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Franchises"
     visible_library: false
     visible_home: false
@@ -66,7 +66,7 @@ collections:
 
   "Genres":
     template: { name: Genre,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Genres"
     visible_library: false
     visible_home: false
@@ -81,7 +81,7 @@ collections:
 
   "Decades":
     template: { name: Decade,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Decades"
     visible_library: false
     visible_home: false
@@ -97,7 +97,7 @@ collections:
   "Networks":
     template: { name: Network,
                 network: "FOX",
-                level: "++++++++++",
+                level: "____________",
                 poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/networks.jpg }
     summary: "Networks"
     visible_library: false

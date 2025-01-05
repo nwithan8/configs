@@ -6,7 +6,7 @@ collections:
   ### New Content
   "➕ Added This Week":
     template: { name: New,
-                level: "++++" }
+                level: "____" }
     summary: "Episodes added this week on Plex"
     url_poster: https://i.imgur.com/jUMSikZ.png
     smart_filter:
@@ -22,7 +22,7 @@ collections:
 
   "📺 Now On Plex":
     template: { name: New,
-                level: "+++" }
+                level: "___" }
     summary: "Shows now playing on Plex"
     url_poster: https://i.imgur.com/CcWfSte.png
     smart_filter:

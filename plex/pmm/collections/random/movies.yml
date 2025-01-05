@@ -7,7 +7,7 @@ collections:
   # Regenerates every time the user visits the page
   "🥳 Something New":
     template: { name: New,
-                level: "++" }
+                level: "__" }
     summary: "Let's try something new"
     url_poster: https://i.imgur.com/CcWfSte.png
     smart_filter:
@@ -25,7 +25,7 @@ collections:
   # Regenerates every time the user visits the page
   "🎲 Spin The Wheel!":
     template: { name: New,
-                level: "+" }
+                level: "_" }
     summary: "New releases for you to take a chance on!"
     url_poster: https://i.imgur.com/6iWNpJJ.png
     smart_filter:

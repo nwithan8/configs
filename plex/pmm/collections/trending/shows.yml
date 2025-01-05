@@ -7,7 +7,7 @@ collections:
   # NOTE: Collection too stressful on server
   # "From The Top":
   #  template: { name: Chart,
-  #              level: "++" }
+  #              level: "__" }
   #  summary: "Let's start this from the beginning"
   #  collection_level: episode
   #  builder_level: episode
@@ -19,7 +19,7 @@ collections:
 
   "⏮️ Previously On...":
     template: { name: Chart,
-                level: "++++" }
+                level: "____" }
     summary: "Catch up on last week's episodes"
     name_mapping: "Previously On Collection"
     smart_filter:
@@ -35,7 +35,7 @@ collections:
 
   "👀 What Everyone Is Watching":
     template: { name: Chart,
-                level: "+++++" }
+                level: "_____" }
     summary: "What other subscribers are checking out"
     url_poster: https://i.imgur.com/vyFG5o7.png
     libraries: "TV Shows"
@@ -51,7 +51,7 @@ collections:
 
   "📈 Trending Now":
     template: { name: Chart,
-                level: "+++++" }
+                level: "_____" }
     summary: "The hottest shows right now"
     url_poster: https://i.imgur.com/6jZNd6W.png
     trakt_chart:

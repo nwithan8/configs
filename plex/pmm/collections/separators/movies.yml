@@ -7,7 +7,7 @@ collections:
   # Movie MUST be in the library, so try to use a popular movie likely to be on any given server
   "Awards":
     template: { name: Award,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Awards"
     visible_library: false
     visible_home: false
@@ -21,7 +21,7 @@ collections:
 
   "Holidays":
     template: { name: Holiday,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Holidays"
     visible_library: false
     visible_home: false
@@ -35,7 +35,7 @@ collections:
 
   "Collections":
     template: { name: Collection,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Collections"
     visible_library: false
     visible_home: false
@@ -49,7 +49,7 @@ collections:
 
   "Franchises":
     template: { name: Franchise,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Franchises"
     visible_library: false
     visible_home: false
@@ -63,7 +63,7 @@ collections:
 
   "Genres":
     template: { name: Genre,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Genres"
     visible_library: false
     visible_home: false
@@ -77,7 +77,7 @@ collections:
 
   "Decades":
     template: { name: Decade,
-                level: "++++++++++" }
+                level: "____________" }
     summary: "Decades"
     visible_library: false
     visible_home: false
@@ -91,7 +91,7 @@ collections:
 
   "Studios":
     template: { name: Studio,
-                level: "++++++++++",
+                level: "____________",
                 studio: "A24", # No single placeholder movie, will use studio
                 poster: https://raw.githubusercontent.com/nwithan8/configs/master/plex/pmm/images/separators/studios.jpg }
     summary: "Studios"

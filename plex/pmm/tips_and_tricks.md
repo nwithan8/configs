@@ -1,29 +1,29 @@
 ## Promotion
 
 - Use sort_title to promote and demote certain collections
-    - start with `+` to promote to top of library
-    - start with `~` to demote to bottom of a library
+    - start with `_` to promote to top of library
+    - start with `+` to demote to bottom of a library
     - can use A-Z to additionally organize collections via levels
 - Recommended to start with a number corresponding to a category
     - `1` above `2` above `3` etc.
-- Use `+` and `~` to promote and demote secondarily
-    - `1_++_` above `1_+_` above `1__` above `1_~_` above `1_~~_`
-    - `1_+_` above `1_~_` above `2_+_` above `3__`, etc.
+- Use `_` and `+` to promote and demote secondarily
+    - `1___` above `1__` above `1_` above `1_+_` above `1_++_`
+    - `1__` above `1_+` above `2__` above `3__`, etc.
 
 Prefix suggestions:
 
 ```
 # Prefixes for (Movie) Collections:
-#   010_+ = Charts
-#   020_+ = Holidays
-#   030_+ = Studios or Network
-#   040_+ = Genres
-#   050_+ = Countries
-#   060_+ = Awards
-#   070_+ = Collections
-#   080_+ = Decades
-#   090_+ = People
-#   100_+ = General
+#   010__ = Charts
+#   020__ = Holidays
+#   030__ = Studios or Network
+#   040__ = Genres
+#   050__ = Countries
+#   060__ = Awards
+#   070__ = Collections
+#   080__ = Decades
+#   090__ = People
+#   100__ = General
 ```
 
 This collection uses a combination of all these prefixes, and are always sorted in this order:
@@ -31,7 +31,7 @@ This collection uses a combination of all these prefixes, and are always sorted 
 - CATEGORY:
   - Ex. "New" collections (010) will always be above "Award" collections (060)
 - LEVEL:
-  - Ex. "+++" will always be above "+", "~~~" will always be below "~", "A" will always be above "B"
+  - Ex. "___" will always be above "_", "___" will always be below "_", "A" will always be above "B"
 - ALPHABETICAL:
   - After CATEGORY and LEVEL, collections are sorted alphabetically. If this is undesirable, use CATEGORY and LEVEL to override this default action.
 

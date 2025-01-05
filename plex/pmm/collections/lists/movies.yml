@@ -9,7 +9,7 @@ collections:
   "🙌 Best Of All Time":
     template: { name: Collection,
                 sort_title: "Best Of All Time",
-                level: "++++" }
+                level: "____" }
     name_mapping: "Best Of All Time Collection"
     summary: "Dive into the best films ever made"
     imdb_chart: top_movies
@@ -23,7 +23,7 @@ collections:
   "💯 The 100 Club":
     template: { name: Collection,
                 sort_title: "Best Movies Ever",
-                level: "+++" }
+                level: "___" }
     name_mapping: "The 100 Club Collection"
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
@@ -37,7 +37,7 @@ collections:
   "💩 Just the Worst":
     template: { name: Collection,
                 sort_title: "Worst Movies Ever",
-                level: "++" }
+                level: "__" }
     name_mapping: "Just the Worst Collection"
     summary: "The worst movies of all time."
     trakt_list:
@@ -53,7 +53,7 @@ collections:
   "💣 Box Office Bombs":
     template: { name: Collection,
                 sort_title: "Box Office Bombs",
-                level: "++" }
+                level: "__" }
     name_mapping: "Box Office Bombs Collection"
     summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
     trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
@@ -68,7 +68,7 @@ collections:
   "🤨 How Did This Get Made?":
     template: { name: Collection,
                 sort_title: "How Did This Get Made?",
-                level: "++" }
+                level: "__" }
     summary: "The films of the podcast 'How Did This Get Made?'"
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
@@ -81,7 +81,7 @@ collections:
   "👍 Best Movie Ever":
     template: { name: Collection,
                 sort_title: "Weekly Planet - Best Movie Ever",
-                level: "++" }
+                level: "__" }
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
     collection_order: random
@@ -94,7 +94,7 @@ collections:
   "👎 Worst Movie Ever":
     template: { name: Collection,
                 sort_title: "Weekly Planet - Worst Movie Ever",
-                level: "++" }
+                level: "__" }
     trakt_list_details:
       - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
     collection_order: random
@@ -107,7 +107,7 @@ collections:
   "📼 The Video Archives Podcast":
     template: { name: Collection,
                 sort_title: "The Video Archives Podcast",
-                level: "++" }
+                level: "__" }
     trakt_list_details:
       - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
     summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
@@ -121,7 +121,7 @@ collections:
   "🎙️ Nate Reviews":
     template: { name: Collection,
                 sort_title: "Nate Reviews",
-                level: "++" }
+                level: "__" }
     summary: "Every movie from the Nate Reviews YouTube series"
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
@@ -137,7 +137,7 @@ collections:
   "🎩 1001 Movies You Must See Before You Die":
     template: { name: Collection,
                 sort_title: "1001 Movies You Must See Before You Die",
-                level: "++" }
+                level: "__" }
     name_mapping: "1001 Movies You Must See Before You Die Collection"
     # summary provided by Trakt
     trakt_list_details:
@@ -152,7 +152,7 @@ collections:
   "🪣 100 Movies Bucket List":
     template: { name: Collection,
                 sort_title: "100 Movies Bucket List",
-                level: "++",
+                level: "__",
                 poster_url: https://m.media-amazon.com/images/I/81KZufVPTgL._AC_SL1500_.jpg }
     # summary provided by Trakt
     trakt_list_details:
@@ -167,7 +167,7 @@ collections:
   "📽️ The Criterion Collection":
     template: { name: Collection,
                 sort_title: "The Criterion Collection",
-                level: "++" }
+                level: "__" }
     # summary provided by Trakt
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
@@ -181,7 +181,7 @@ collections:
 
   "🏷️ A Blockbuster Night":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Make it a Blockbuster Night"
     trakt_list:
       - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
@@ -194,7 +194,7 @@ collections:
 
   "️❌ Cancelled":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     name_mapping: "Cancelled Collection"
     summary: "Actors, directors, and writers who have been cancelled"
     trakt_list:
@@ -210,7 +210,7 @@ collections:
   "🤵‍♂️ Bond. James Bond.":
     template: { name: Franchise,
                 sort_title: "James Bond",
-                level: "+" }
+                level: "_" }
     name_mapping: "James Bond Collection"
     summary: "007 forever"
     mdblist_list: https://mdblist.com/lists/hdlists/james-bond-movies
@@ -223,7 +223,7 @@ collections:
   "🦸 I Love You 3000":
     template: { name: Franchise,
                 sort_title: "Marvel Cinematic Universe",
-                level: "+" }
+                level: "_" }
     name_mapping: "Marvel Cinematic Universe Collection"
     summary: "The Marvel Cinematic Universe"
     trakt_list:
@@ -237,7 +237,7 @@ collections:
   "🦸 Tell Me, Do You Bleed?":
     template: { name: Franchise,
                 sort_title: "DC Cinematic Universe",
-                level: "+" }
+                level: "_" }
     name_mapping: "DC Cinematic Universe Collection"
     summary: "The DC Cinematic Universe"
     trakt_list:
@@ -251,7 +251,7 @@ collections:
   "🐭 Disney Channel Original Movies":
     template: { name: Franchise,
                 sort_title: "Disney Channel Original Movies",
-                level: "+" }
+                level: "_" }
     name_mapping: "Disney Channel Original Movies Collection"
     summary: "You're watching Disney Channel"
     imdb_list:
@@ -266,7 +266,7 @@ collections:
     summary: "The Star Trek collection"
     template: { name: Franchise,
                 sort_title: "Star Trek",
-                level: "+" }
+                level: "_" }
     trakt_list:
       - https://trakt.tv/users/dgw/lists/star-trek-canon
     url_background: https://i.redd.it/vz20prnp8v551.jpg
@@ -280,7 +280,7 @@ collections:
     summary: "The Star Wars collection"
     template: { name: Franchise,
                 sort_title: "Star Wars",
-                level: "+" }
+                level: "_" }
     trakt_list_details:
       - https://trakt.tv/users/sonicwarrior/lists/star-wars-canon-timeline
     url_background: https://images.unsplash.com/photo-1579566346927-c68383817a25
@@ -294,7 +294,7 @@ collections:
     summary: "The Battlestar Galactica collection"
     template: { name: Franchise,
                 sort_title: "Battlestar Galactica",
-                level: "+" }
+                level: "_" }
     name_mapping: "Battlestar Galactica Collection"
     trakt_list_details:
       - https://trakt.tv/users/mraniki/lists/battlestar-galactica-universe
@@ -309,7 +309,7 @@ collections:
     summary: "The Godzilla collection"
     template: { name: Franchise,
                 sort_title: "Godzilla",
-                level: "+" }
+                level: "_" }
     name_mapping: "Godzilla Collection"
     trakt_list_details:
       - https://trakt.tv/users/marcelocastanheira/lists/godzilla
@@ -324,7 +324,7 @@ collections:
     summary: "The Shakespeare collection"
     template: { name: Franchise,
                 sort_title: "Shakespeare",
-                level: "+" }
+                level: "_" }
     trakt_list_details:
       - https://trakt.tv/users/michaeldibben/lists/shakespeare-plays
     url_background: https://images.unsplash.com/photo-1598391990342-311775e3d374
@@ -339,7 +339,7 @@ collections:
     summary: "The Edgar Allan Poe collection"
     template: { name: Franchise,
                 sort_title: "Edgar Allan Poe",
-                level: "+" }
+                level: "_" }
     trakt_list_details:
       - https://trakt.tv/users/majeed_pk/lists/the-best-edgar-allan-poe-adaptations
     url_background: https://wallpapercave.com/wp/wp2328085.jpg
@@ -353,7 +353,7 @@ collections:
     summary: "The Stephen King collection"
     template: { name: Franchise,
                 sort_title: "Stephen King",
-                level: "+",
+                level: "_",
                 poster: "https://i.redd.it/sz63m6aex2g31.png" }
     smart_filter:
       all:

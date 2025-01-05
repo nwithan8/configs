@@ -5,7 +5,7 @@ external_templates:
 collections:
   "⭐️ Editor's Choice":
     template: { name: Chart,
-                level: "++" }
+                level: "__" }
     summary: "Our top picks"
     name_mapping: "Editors Choice Collection"
     trakt_list:

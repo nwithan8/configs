@@ -5,7 +5,7 @@ external_templates:
 collections:
   "️❌ Cancelled":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Actors, directors, and writers who have been cancelled"
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/cancelled
@@ -17,7 +17,7 @@ collections:
 
   "📺️ Saturday Morning Cartoons":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Grab a bowl of sugary cereal and be a kid again."
     name_mapping: "Saturday Morning Cartoons Collection"
     trakt_list:
@@ -34,7 +34,7 @@ collections:
 
   "🔳 Cartoon Cartoon":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Cartoon Network's original programming block"
     name_mapping: "Cartoon Cartoon Collection"
     trakt_list:
@@ -47,7 +47,7 @@ collections:
 
   "🦊 Fox Kids":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Fox Kids original programming"
     name_mapping: "Fox Kids Collection"
     trakt_list:
@@ -60,7 +60,7 @@ collections:
 
   "🟠 SNICK":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Saturday Night Nickelodeon"
     name_mapping: "SNICK Collection"
     trakt_list:
@@ -73,7 +73,7 @@ collections:
 
   "🛡️ Kids WB":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Kids WB original programming"
     name_mapping: "Kids WB Collection"
     trakt_list:
@@ -86,7 +86,7 @@ collections:
 
   "🐭 Disney Afternoon":
     template: { name: Collection,
-                level: "+" }
+                level: "_" }
     summary: "Disney Afternoon original programming"
     name_mapping: "Disney Afternoon Collection"
     trakt_list:

@@ -11,7 +11,7 @@ collections:
   "🌎 Celebrating Jon Stewart":
     template: {
       name: Promoted,
-      level: "+",
+      level: "_",
       poster_url: https://i.guim.co.uk/img/media/218cac37d914f0927a56b5f746cbe3295b5f507d/0_44_3658_2195/master/3658.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=88fd0aa25c5a2a36ef6abc1bd4042981
     }
     summary: "Catch up with the comedian's work and influence before his return to The Daily Show"
