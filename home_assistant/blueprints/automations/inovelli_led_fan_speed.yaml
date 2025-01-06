@@ -13,13 +13,17 @@ blueprint:
             - fan
           multiple: false
     switch:
-      name: Inovelli VZM35-SN
+      name: Inovelli Switch
       description: Which light switch to program
       selector:
         device:
-          integration: zha
-          manufacturer: Inovelli
-          model: VZM31-SN
+          filter:
+            - integration: zha
+              manufacturer: Inovelli
+              model: VZM31-SN
+            - integration: zha
+              manufacturer: Inovelli
+              model: VZM35-SN
     duration:
       name: Duration
       description: How long the effect should last, in seconds (1-254, 255 for indefinite)
