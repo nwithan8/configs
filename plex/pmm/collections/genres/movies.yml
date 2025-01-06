@@ -71,6 +71,7 @@ collections:
       # keyword.any: "Psychological%20Thriller"
       genre.any: thriller
       rating.gte: 5.0
+      limit: 100
     collection_order: random
     visible_library: true
     visible_home: false  # Not advertised on the home page

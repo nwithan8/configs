@@ -2,6 +2,8 @@ external_templates:
   - repo: templates/collections
   - repo: templates/dynamic_collections
 
+collections: {}
+
 templates:
   # TODO: Figure out year delay for awards (2023 awards given in 2024, so when collection runs in 2024, it needs to look up 2023)
   # This is not true for all awards (some are given in the same year)
