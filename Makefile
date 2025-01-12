@@ -1,0 +1,2 @@
+setup:
+	git-crypt unlock
