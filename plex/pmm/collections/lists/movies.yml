@@ -104,6 +104,20 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "🏁 The Game Is On":
+    template: { name: Collection,
+                sort_title: "The Game Is On",
+                level: "__" }
+    summary: "Weekly Planet - Movies with sequel bait endings that never went anywhere"
+    trakt_list:
+      - https://trakt.tv/users/nwithan8/lists/the-game-is-on
+    collection_order: custom
+    schedule:
+      - daily
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
   "📼 The Video Archives Podcast":
     template: { name: Collection,
                 sort_title: "The Video Archives Podcast",
