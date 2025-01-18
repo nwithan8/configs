@@ -6,3 +6,11 @@ androidtvwatsonfe-pa.googleapis.com.
 tiktok.com
 www.tiktok.com
 # More available here: https://raw.githubusercontent.com/danhorton7/pihole-block-tiktok/refs/heads/main/tiktok.txt
+
+# TP-Link
+tplinkcould.com
+api.tplinkra.com
+tp-link.com
+
+# Netflix
+logs.netflix.com
