@@ -834,10 +834,10 @@ collections:
   # This current year's Best Actor Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "🎭 2024 Best Actor Nominee - Bradley Cooper":
+  "🎭 2025 Best Actor Nominee - Adrian Brody":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 51329 }
+                tmdb_id: 3490 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -847,7 +847,20 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actor Nominee - Colman Domingo":
+  "🎭 2025 Best Actor Nominee - Timothée Chalamet":
+    template: { name: ActorAward,
+                level: "_____",
+                tmdb_id: 1190668 }
+    schedule:
+      - yearly(02/01)
+      - all[weekly(friday),range(02/01-03/31)]
+      - yearly(04/01)
+      # You have to schedule it to run before and after visibility timeframe for visibility to switch
+    visible_home: range(02/01-03/31)
+    visible_shared: range(02/01-03/31)
+    visible_library: range(02/01-03/31)
+
+  "🎭 2025 Best Actor Nominee - Colman Domingo":
     template: { name: ActorAward,
                 level: "_____",
                 tmdb_id: 91671 }
@@ -860,10 +873,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actor Nominee - Paul Giamatti":
+  "🎭 2025 Best Actor Nominee - Ralph Fiennes":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 13242 }
+                tmdb_id: 5469 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -873,23 +886,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actor Nominee - Cillian Murphy":
+  "🎭 2025 Best Actor Nominee - Sebastian Stan":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 2037 }
-    schedule:
-      - yearly(02/01)
-      - all[weekly(friday),range(02/01-03/31)]
-      - yearly(04/01)
-      # You have to schedule it to run before and after visibility timeframe for visibility to switch
-    visible_home: range(02/01-03/31)
-    visible_shared: range(02/01-03/31)
-    visible_library: range(02/01-03/31)
-
-  "🎭 2024 Best Actor Nominee - Jeffrey Wright":
-    template: { name: ActorAward,
-                level: "_____",
-                tmdb_id: 2954 }
+                tmdb_id: 60898 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -906,10 +906,10 @@ collections:
   # This current year's Best Actress Oscar nominees
   # Only visible on home screen during Oscar season
 
-  "🎭 2024 Best Actress Nominee - Annette Bening":
+  "🎭 2025 Best Actress Nominee - Cynthia Erivo":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 516 }
+                tmdb_id: 1765068 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -919,10 +919,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actress Nominee - Lily Gladstone":
+  "🎭 2025 Best Actress Nominee - Karla Sofía Gascón":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 1183917 }
+                tmdb_id: 1505938 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -932,10 +932,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actress Nominee - Sandra Hüller":
+  "🎭 2025 Best Actress Nominee - Mikey Madison":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 7152 }
+                tmdb_id: 1640439 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -945,10 +945,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actress Nominee - Carey Mulligan":
+  "🎭 2025 Best Actress Nominee - Demi Moore":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 36662 }
+                tmdb_id: 3416 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
@@ -958,10 +958,10 @@ collections:
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
 
-  "🎭 2024 Best Actress Nominee - Emma Stone":
+  "🎭 2025 Best Actress Nominee - Fernanda Torres":
     template: { name: ActorAward,
                 level: "_____",
-                tmdb_id: 54693 }
+                tmdb_id: 87335 }
     schedule:
       - yearly(02/01)
       - all[weekly(friday),range(02/01-03/31)]
