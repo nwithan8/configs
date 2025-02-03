@@ -8,8 +8,8 @@ collections:
                 level: "__" }
     summary: "Our top picks"
     name_mapping: "Editors Choice Collection"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
+    letterboxd_list:
+      - https://letterboxd.com/nwithan8/list/recommendations-plex-sync/share/TtfHuZRGvKEiQLhL/
     collection_order: release.desc
     visible_library: true
     visible_home: true

@@ -9,7 +9,7 @@ collections:
     summary: "Our top picks"
     name_mapping: "Editors Choice Collection"
     trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/recommendations-plex-sync?sort=popularity,asc
+      - https://trakt.tv/users/nwithan8/lists/tv-recommendations-plex-sync?sort=popularity,asc
     collection_order: release.desc
     visible_library: true
     visible_home: true

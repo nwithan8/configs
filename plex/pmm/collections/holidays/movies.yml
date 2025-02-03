@@ -186,8 +186,9 @@ collections:
     name_mapping: "Graduation"
     collection_order: random
     minimum_items: 3
+    letterboxd_list:
+      - https://letterboxd.com/nwithan8/list/high-school-graduation/
     trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/high-school?sort=rank,asc
       - https://trakt.tv/users/bangiras/lists/favorites-college-school
 
   "🪖 Memorial Day":

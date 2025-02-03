@@ -82,8 +82,8 @@ collections:
     template: { name: Collection,
                 sort_title: "Weekly Planet - Best Movie Ever",
                 level: "__" }
-    trakt_list_details:
-      - https://trakt.tv/users/nwithan8/lists/best-movie-ever?sort=added,asc
+    letterboxd_list_details:
+      - https://letterboxd.com/nwithan8/list/best-movie-ever-weekly-planet/
     collection_order: random
     schedule:
       - daily
@@ -95,8 +95,8 @@ collections:
     template: { name: Collection,
                 sort_title: "Weekly Planet - Worst Movie Ever",
                 level: "__" }
-    trakt_list_details:
-      - https://trakt.tv/users/nwithan8/lists/worst-movie-ever?sort=added,asc
+    letterboxd_list_details:
+      - https://letterboxd.com/nwithan8/list/worst-movie-ever-weekly-planet/
     collection_order: random
     schedule:
       - daily
@@ -108,9 +108,9 @@ collections:
     template: { name: Collection,
                 sort_title: "The Game Is On",
                 level: "__" }
-    summary: "Weekly Planet - Movies with sequel bait endings that never went anywhere"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/the-game-is-on
+    summary: "Weekly Planet - Movies with sequel bait endings that (probably) never went anywhere"
+    letterboxd_list:
+      - https://letterboxd.com/nwithan8/list/the-game-is-on/
     collection_order: custom
     schedule:
       - daily
@@ -137,8 +137,8 @@ collections:
                 sort_title: "Nate Reviews",
                 level: "__" }
     summary: "Every movie from the Nate Reviews YouTube series"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/nate-reviews?sort=my_rating,asc
+    letterboxd_list:
+      - https://letterboxd.com/nwithan8/list/nate-reviews/
     collection_order: release.desc
     schedule:
       - daily
@@ -200,19 +200,6 @@ collections:
     trakt_list:
       - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
       - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
-    collection_order: random
-    # default schedule
-    visible_library: true
-    visible_home: true
-    visible_shared: true
-
-  "️❌ Cancelled":
-    template: { name: Collection,
-                level: "_" }
-    name_mapping: "Cancelled Collection"
-    summary: "Actors, directors, and writers who have been cancelled"
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/cancelled
     collection_order: random
     # default schedule
     visible_library: true
