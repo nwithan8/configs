@@ -2,4 +2,18 @@ external_templates:
   - repo: templates/collections
   - repo: templates/dynamic_collections
 
-collections: {}
+collections:
+  "⌛ This Week In History":
+    template: { name: Collection,
+                sort_title: "This Week In History",
+                level: "__",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/refs/heads/master/chart/This%20Week%20in%20History.jpg }
+    summary: "A list of notable movies that premiered this week in history."
+    collection_order: custom
+    sync_mode: sync # Delete old items
+    tmdb_list: 8510388
+    schedule:
+      - daily
+    visible_library: true
+    visible_home: true
+    visible_shared: true
