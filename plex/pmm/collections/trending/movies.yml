@@ -12,6 +12,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/nwithan8/lists/in-cinemas-united-states
     collection_order: release.desc
+    sync_mode: sync
     visible_library: true
     visible_home: true
     visible_shared: true
