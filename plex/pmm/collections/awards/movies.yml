@@ -276,6 +276,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -299,6 +300,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/31)
@@ -325,6 +327,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -351,6 +354,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -374,6 +378,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/31)
     visible_shared: range(02/01-03/31)
     visible_library: range(02/01-03/31)
@@ -397,6 +402,7 @@ collections:
       - yearly(04/01)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/31)
@@ -420,6 +426,7 @@ collections:
       - yearly(03/06)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/05)
     visible_shared: range(02/01-03/05)
     visible_library: range(02/01-03/05)
@@ -443,6 +450,7 @@ collections:
       - yearly(03/06)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/05)
@@ -466,6 +474,7 @@ collections:
       - yearly(03/08)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/07)
     visible_shared: range(02/01-03/07)
     visible_library: range(02/01-03/07)
@@ -489,6 +498,7 @@ collections:
       - yearly(03/08)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/07)
@@ -512,6 +522,7 @@ collections:
       - yearly(06/10)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(05/01-06/09)
     visible_shared: range(05/01-06/09)
     visible_library: range(05/01-06/09)
@@ -535,6 +546,7 @@ collections:
       - yearly(06/10)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(05/01-06/09)
@@ -558,6 +570,7 @@ collections:
       - yearly(03/03)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-03/02)
     visible_shared: range(02/01-03/02)
     visible_library: range(02/01-03/02)
@@ -581,6 +594,7 @@ collections:
       - yearly(03/03)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-03/02)
@@ -604,6 +618,7 @@ collections:
       - yearly(02/13)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(01/13-02/12)
     visible_shared: range(01/13-02/12)
     visible_library: range(01/13-02/12)
@@ -627,6 +642,7 @@ collections:
       - yearly(02/13)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(01/13-02/12)
@@ -648,6 +664,7 @@ collections:
       - yearly(09/21)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(08/21-09/20)
     visible_shared: range(08/21-09/20)
     visible_library: range(08/21-09/20)
@@ -671,6 +688,7 @@ collections:
       - yearly(09/21)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(08/21-09/20)
@@ -693,6 +711,7 @@ collections:
       - all[weekly(friday),range(09/01-09/30)]
       - yearly(10/01)
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(09/01-09/30)
     visible_shared: range(09/01-09/30)
     visible_library: range(09/01-09/30)
@@ -716,6 +735,7 @@ collections:
       - yearly(10/01)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(09/01-09/30)
@@ -746,6 +766,7 @@ collections:
       - all[weekly(friday),range(02/01-02/28)]
       - yearly(03/01)
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(02/01-02/29)
     visible_shared: range(02/01-02/29)
     visible_library: range(02/01-02/29)
@@ -777,6 +798,7 @@ collections:
       - yearly(03/01)
       # You have to schedule it to run again after visibility timeframe for visibility to switch back
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(02/01-02/29)
@@ -800,6 +822,7 @@ collections:
       - yearly(01/08)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: random
+    sync_mode: sync # Delete old items
     visible_home: range(12/01-01/07)
     visible_shared: range(12/01-01/07)
     visible_library: range(12/01-01/07)
@@ -823,6 +846,7 @@ collections:
       - yearly(01/08)
       # You have to schedule it to run before and after visibility timeframe for visibility to switch
     collection_order: release.desc
+    sync_mode: append
     visible_home: false
     visible_shared: false
     visible_library: range(12/01-01/07)
