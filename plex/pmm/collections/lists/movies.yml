@@ -14,6 +14,7 @@ collections:
     summary: "Dive into the best films ever made"
     imdb_chart: top_movies
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true
@@ -28,6 +29,7 @@ collections:
     summary: "RottenTomatoes' movies with a perfect score"
     mdblist_list: https://mdblist.com/lists/hdlists/100-on-rottentomatoes-com
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true
@@ -44,6 +46,7 @@ collections:
       - https://trakt.tv/users/hdlists/lists/worst-movies-of-all-time
       - https://trakt.tv/users/nwithan8/lists/5-or-less-on-rotton-tomatoes?sort=rank,asc
     collection_order: random
+    sync_mode: append
     # default schedule
     visible_library: true
     visible_home: true
@@ -58,6 +61,7 @@ collections:
     summary: "Tired tropes, sky-high budgets, global pandemics or just plain bad? Either way, these movies bombed at the box office."
     trakt_list: https://trakt.tv/users/nwithan8/lists/biggest-box-office-bombs?sort=rank,asc
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true
@@ -73,6 +77,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/lish408/lists/how-did-this-get-made-podcast
     collection_order: custom
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true
@@ -85,6 +90,7 @@ collections:
     letterboxd_list_details:
       - https://letterboxd.com/nwithan8/list/best-movie-ever-weekly-planet/
     collection_order: random
+    sync_mode: append
     schedule:
       - daily
     visible_library: true
@@ -98,6 +104,7 @@ collections:
     letterboxd_list_details:
       - https://letterboxd.com/nwithan8/list/worst-movie-ever-weekly-planet/
     collection_order: random
+    sync_mode: append
     schedule:
       - daily
     visible_library: true
@@ -112,6 +119,7 @@ collections:
     letterboxd_list:
       - https://letterboxd.com/nwithan8/list/the-game-is-on/
     collection_order: custom
+    sync_mode: append
     schedule:
       - daily
     visible_library: true
@@ -126,6 +134,7 @@ collections:
       - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
     summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
     collection_order: custom
+    sync_mode: sync  # Match collection exactly
     schedule:
       - daily
     visible_library: true
@@ -140,6 +149,7 @@ collections:
     letterboxd_list:
       - https://letterboxd.com/nwithan8/list/nate-reviews/
     collection_order: release.desc
+    sync_mode: append
     schedule:
       - daily
     visible_library: true
@@ -157,6 +167,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/sp1ti/lists/1001-movies-you-must-see-before-you-die
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     schedule:
       - monthly(03)
     visible_library: true
@@ -172,6 +183,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/dildogarden/lists/100-movies-bucket-list
     collection_order: custom
+    sync_mode: sync  # Match collection exactly
     schedule:
       - monthly(04)
     visible_library: true
@@ -186,6 +198,7 @@ collections:
     trakt_list_details:
       - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
     collection_order: critic_rating.desc
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true
@@ -201,6 +214,7 @@ collections:
       - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
       - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: true

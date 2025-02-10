@@ -158,7 +158,7 @@ templates:
     optional:
       - poster_url
     sort_title: 060__<<level>>_<<sort_title_name>>
-    sync_mode: sync
+    sync_mode: append
     url_poster: <<poster_url>>
     # minimum_items: 3  # cannot be used in combination with builder_level
     # delete_not_scheduled: true
@@ -173,7 +173,7 @@ templates:
     optional:
       - poster_url
     sort_title: 065__<<level>>_<<sort_title_name>>
-    sync_mode: sync
+    sync_mode: append
     schedule:
       - weekly(tuesday)
       - weekly(friday)
@@ -187,7 +187,7 @@ templates:
     optional:
       - poster_url
     sort_title: 066__<<level>>_<<sort_title_name>>
-    sync_mode: sync
+    sync_mode: sync  # Match collection exactly
     schedule:
       - weekly(wednesday)
       - weekly(saturday)
@@ -215,7 +215,7 @@ templates:
     optional:
       - poster_url
     sort_title: 080__<<level>>_<<sort_title_name>>
-    sync_mode: sync
+    sync_mode: append
     schedule:
       - weekly(monday)
       - weekly(thursday)

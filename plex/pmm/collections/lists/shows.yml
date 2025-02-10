@@ -11,6 +11,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/fiala06/lists/saturday-morning-cartoons
     collection_order: random
+    sync_mode: append
     schedule:
       - weekly(saturday|sunday)
     visible_home:
@@ -28,6 +29,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/cartoon-cartoons
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: false
@@ -41,6 +43,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/fox-kids
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: false
@@ -54,6 +57,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/snick
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: false
@@ -67,6 +71,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/kids-wb
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: false
@@ -80,6 +85,7 @@ collections:
     trakt_list:
       - https://trakt.tv/users/jjjonesjr33/lists/disney-afternoon
     collection_order: random
+    sync_mode: sync  # Match collection exactly
     # default schedule
     visible_library: true
     visible_home: false
