@@ -115,10 +115,11 @@ collections:
     template: { name: Collection,
                 sort_title: "The Game Is On",
                 level: "__" }
+    name_mapping: "The Game Is On Collection"
     summary: "Weekly Planet - Movies with sequel bait endings that (probably) never went anywhere"
     letterboxd_list:
       - https://letterboxd.com/nwithan8/list/the-game-is-on/
-    collection_order: custom
+    collection_order: release.desc  # Newest to oldest
     sync_mode: append
     schedule:
       - daily
