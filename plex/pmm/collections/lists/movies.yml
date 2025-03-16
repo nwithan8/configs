@@ -242,7 +242,7 @@ collections:
     name_mapping: "Marvel Cinematic Universe Collection"
     summary: "The Marvel Cinematic Universe"
     trakt_list:
-      - https://trakt.tv/users/cybercelia/lists/mcu
+      - https://trakt.tv/users/cinhd/lists/mcu-7ec3e8ef-7474-434f-9a47-525ba6cb6bd0
     collection_order: release
     # default schedule
     visible_library: true
@@ -256,7 +256,21 @@ collections:
     name_mapping: "DC Cinematic Universe Collection"
     summary: "The DC Cinematic Universe"
     trakt_list:
-      - https://trakt.tv/users/maxrax/lists/dc-cinematics
+      - https://trakt.tv/users/ale-spatti06/lists/dc-entertainment-s-movies-dceu
+    collection_order: release
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
+  "🦇 I Am Vengeance! I Am The Night!":
+    template: { name: Franchise,
+                sort_title: "Batman",
+                level: "_" }
+    name_mapping: "Batman Collection"
+    summary: "I'm Batman."
+    trakt_list:
+      - https://trakt.tv/users/andersonwallacerj/lists/batman
     collection_order: release
     # default schedule
     visible_library: true
@@ -326,7 +340,8 @@ collections:
                 sort_title: "Godzilla",
                 level: "_" }
     name_mapping: "Godzilla Collection"
-    trakt_list_details:
+    trakt_list:
+      - https://trakt.tv/users/quentinz/lists/godzilla
       - https://trakt.tv/users/marcelocastanheira/lists/godzilla
     url_background: https://www.scified.com/media/versions_of_godzilla.jpg
     collection_order: release
