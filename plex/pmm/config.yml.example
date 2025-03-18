@@ -20,24 +20,24 @@ libraries: # Library mappings must have a colon (:) placed after them
       - repo: collections/trending/movies
       - repo: collections/years/movies
       - repo: collections/separators/movies
-#  4K Movies:
-#    library_name: Movies (4K)
-#    collection_files:
-#      - repo: collections/actors/movies
-#      - repo: collections/awards/movies
-#      - repo: collections/best/movies
-#      - repo: collections/countries/movies
-#      - repo: collections/decades/movies
-#      - repo: collections/genres/movies
-#      - repo: collections/holidays/movies
-#      - repo: collections/lists/movies
-#      - repo: collections/memoriam/movies
-#      - repo: collections/networks/movies
-#      - repo: collections/new/movies
-#      - repo: collections/random/movies
-#      - repo: collections/recommendations/movies
-#      - repo: collections/trending/movies
-#      - repo: collections/years/movies
+  #  4K Movies:
+  #    library_name: Movies (4K)
+  #    collection_files:
+  #      - repo: collections/actors/movies
+  #      - repo: collections/awards/movies
+  #      - repo: collections/best/movies
+  #      - repo: collections/countries/movies
+  #      - repo: collections/decades/movies
+  #      - repo: collections/genres/movies
+  #      - repo: collections/holidays/movies
+  #      - repo: collections/lists/movies
+  #      - repo: collections/memoriam/movies
+  #      - repo: collections/networks/movies
+  #      - repo: collections/new/movies
+  #      - repo: collections/random/movies
+  #      - repo: collections/recommendations/movies
+  #      - repo: collections/trending/movies
+  #      - repo: collections/years/movies
   TV Shows:
     library_name: TV Shows
     collection_files:
@@ -77,9 +77,9 @@ libraries: # Library mappings must have a colon (:) placed after them
 #      - repo: collections/trending/shows
 #      - repo: collections/years/shows
 playlist_files:
-- repo: playlists/general/movies_playlists_general
-- repo: playlists/general/shows_playlists_general
-settings:                                       # Can be individually specified per library as well
+  - repo: playlists/general/movies_playlists_general
+  - repo: playlists/general/shows_playlists_general
+settings: # Can be individually specified per library as well
   custom_repo: https://raw.githubusercontent.com/nwithan8/configs/main/plex/pmm/
   cache: true
   cache_expiration: 60
@@ -131,12 +131,12 @@ plex:
   clean_bundles: false
   empty_trash: false
   optimize: false
-tmdb:                                           # REQUIRED for the script to run
+tmdb: # REQUIRED for the script to run
   apikey: <REDACTED>
   language: en
   cache_expiration: 60
   region:
-tautulli:                                       # Can be individually specified per library as well
+tautulli: # Can be individually specified per library as well
   url: <REDACTED>
   apikey: <REDACTED>
 omdb:
