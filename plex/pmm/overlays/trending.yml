@@ -2,7 +2,7 @@ overlays:
   plex_trending:
     overlay:
       name: Plex Trending
-      file: config/overlays/plex_trending.png
+      repo: config/overlays/plex_trending
       horizontal_align: center
       vertical_align: bottom
     tautulli_popular:  # Match the "What Everyone Is Watching" collection rules
@@ -11,7 +11,7 @@ overlays:
   global_trending:
     overlay:
       name: Global Trending
-      repo: images/overlays/global_trending.png
+      repo: images/overlays/global_trending
       horizontal_align: right
       vertical_align: top
     trakt_chart:  # Match the "Trending Now" collection rules
