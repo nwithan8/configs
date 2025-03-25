@@ -7,3 +7,4 @@ plex/pmm/Makefile filter=git-crypt diff=git-crypt
 plex/retro-replay/config.yml filter=git-crypt diff=git-crypt
 plex/retro-replay/Makefile filter=git-crypt diff=git-crypt
 plex/tauticord/tauticord.yaml filter=git-crypt diff=git-crypt
+plex/tauticord/Makefile filter=git-crypt diff=git-crypt
