@@ -83,3 +83,28 @@ templates:
     schedule:
       - weekly(sunday)
 
+  Per_Memoriam_Actor:
+    allowed_library_types: <<library_type>>
+    sort_title: 001__<<level>>_<<key>>
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+    schedule:
+      - daily
+    delete_not_scheduled: true
+    style: bw
+    sort_by: audience_rating.desc
+    cache_builders: 1 # No need to reparse the list every time
+
+  Per_Memoriam_Director:
+    allowed_library_types: <<library_type>>
+    sort_title: 002__<<level>>_<<key>>
+    visible_library: true
+    visible_shared: true
+    visible_home: true
+    schedule:
+      - daily
+    delete_not_scheduled: true
+    style: bw
+    sort_by: audience_rating.desc
+    cache_builders: 1 # No need to reparse the list every time
