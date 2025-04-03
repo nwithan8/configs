@@ -85,7 +85,8 @@ templates:
 
   Per_Memoriam_Actor:
     allowed_library_types: <<library_type>>
-    sort_title: 001__<<level>>_<<key>>
+    sort_title: 001__<<level>>_<<key_name>>
+    title_format: "🕊️ Remembering <<key_name>>"
     visible_library: true
     visible_shared: true
     visible_home: true
@@ -98,7 +99,8 @@ templates:
 
   Per_Memoriam_Director:
     allowed_library_types: <<library_type>>
-    sort_title: 002__<<level>>_<<key>>
+    sort_title: 002__<<level>>_<<key_name>>
+    title_format: "🕊️ Remembering <<key_name>>"
     visible_library: true
     visible_shared: true
     visible_home: true
