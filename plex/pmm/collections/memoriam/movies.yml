@@ -174,5 +174,34 @@ collections:
       - date(03/19/2025)
       - date(03/20/2025)
 
+  "Remembering Val Kilmer":
+    template: {
+      name: InMemoriamActor,
+      tmdb_id: 5576
+    }
+    schedule:
+      - date(03/31/2025)
+      - date(04/01/2025)
+      - date(04/02/2025)
+      - date(04/03/2025)
+      - date(04/04/2025)
+      - date(04/05/2025)
+      - date(04/06/2025)
+      - date(04/07/2025)
+      - date(04/08/2025)
+      - date(04/09/2025)
+      - date(04/10/2025)
+      - date(04/11/2025)
+      - date(04/12/2025)
+      - date(04/13/2025)
+      - date(04/14/2025)
+      - date(04/15/2025)
+      - date(04/16/2025)
+      - date(04/17/2025)
+      - date(04/18/2025)
+      - date(04/19/2025)
+      - date(04/20/2025)
+      - date(04/21/2025)
+
 dynamic_collections: [ ]
 
