@@ -4,6 +4,7 @@
 # Encrypt the following files
 plex/pmm/config.yml filter=git-crypt diff=git-crypt
 plex/pmm/Makefile filter=git-crypt diff=git-crypt
+plex/pmm/copy_kometa_logs.sh filter=git-crypt diff=git-crypt
 plex/retro-replay/config.yml filter=git-crypt diff=git-crypt
 plex/retro-replay/Makefile filter=git-crypt diff=git-crypt
 plex/tauticord/tauticord.yaml filter=git-crypt diff=git-crypt
