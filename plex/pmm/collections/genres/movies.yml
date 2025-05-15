@@ -88,16 +88,17 @@ collections:
     visible_home: false  # Not advertised on the home page
     visible_shared: false  # Not advertised on the home page
 
-  "📗 Based On A True Story":
-    template: { name: Genre,
-                level: "__" }
-    summary: "Based on a true story"
-    trakt_list:
-      - https://trakt.tv/users/k0meta/lists/movies-based-on-true-stories
-    collection_order: random
-    visible_library: true
-    visible_home: true
-    visible_shared: true
+  # TODO: Might time out due to size
+  # "📗 Based On A True Story":
+  #  template: { name: Genre,
+  #              level: "__" }
+  #  summary: "Based on a true story"
+  #  trakt_list:
+  #    - https://trakt.tv/users/k0meta/lists/movies-based-on-true-stories
+  #  collection_order: random
+  #  visible_library: true
+  #  visible_home: true
+  #  visible_shared: true
 
   "📖 The Book Was Better":
     template: { name: Genre,
