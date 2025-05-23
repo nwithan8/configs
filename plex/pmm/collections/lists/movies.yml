@@ -213,7 +213,6 @@ collections:
     summary: "Make it a Blockbuster Night"
     trakt_list:
       - https://trakt.tv/users/padawan_seneca/lists/childhood-vhs-movies
-      - https://trakt.tv/users/steffe73/lists/filmer-som-jag-har-pa-vhs
     collection_order: random
     sync_mode: sync  # Match collection exactly
     # default schedule
