@@ -252,7 +252,7 @@ collections:
 
   "HBO":
     template: { name: Studio,
-                studio: ["HBO"],
+                studio: ["HBO", "HBO Max"],
                 poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/HBO.jpg }
     summary: "HBO"
     visible_library: false
@@ -828,7 +828,7 @@ collections:
 
   "Warner Bros.":
     template: { name: Studio,
-                studio: ["Warner Bros. Pictures", "Warner Bros. Television", "Warner Premiere"],
+                studio: ["Warner Bros. Pictures", "Warner Bros. Television", "Warner Premiere", "Warner Media", "Warner Brothers Discovery"],
                 poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/studio/Warner%20Bros.%20Pictures.jpg }
     summary: "Warner Bros. Pictures"
     visible_library: false

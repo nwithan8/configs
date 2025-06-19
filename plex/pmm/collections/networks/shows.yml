@@ -363,7 +363,7 @@ collections:
 
   HBO Max:
     template: { name: Network,
-                network: ["HBO Max"],
+                network: ["HBO Max", "Max"],
                 poster: https://theposterdb.com/api/assets/115226 }
     summary: "HBO Max Original Shows"
     visible_library: false
