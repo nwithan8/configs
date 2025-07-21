@@ -151,6 +151,18 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "🧑‍💻 Hack The Planet":
+    template: { name: Genre,
+                level: "__" }
+    name_mapping: "Hacker Movies Collection"
+    summary: "Hack the planet!"
+    trakt_list:
+      - https://trakt.tv/users/rendom/lists/hack-the-planet-compilation
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   "🔍 A Real-Life Whodunnit":
     template: { name: Genre,
                 level: "__" }

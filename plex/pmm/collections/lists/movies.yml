@@ -242,7 +242,7 @@ collections:
     name_mapping: "Marvel Cinematic Universe Collection"
     summary: "The Marvel Cinematic Universe"
     trakt_list:
-      - https://trakt.tv/users/cinhd/lists/mcu-7ec3e8ef-7474-434f-9a47-525ba6cb6bd0
+      - https://trakt.tv/users/cinhd/lists/marvel-cinematic-universe?sort=rank%2Casc
     collection_order: release
     # default schedule
     visible_library: true
