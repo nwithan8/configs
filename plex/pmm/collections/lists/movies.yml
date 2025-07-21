@@ -131,8 +131,7 @@ collections:
     template: { name: Collection,
                 sort_title: "The Video Archives Podcast",
                 level: "__" }
-    trakt_list_details:
-      - https://trakt.tv/users/elpresidente-52a653dc-2f83-4f53-8715-2988556e7d63/lists/the-video-archives-podcast
+    letterboxd_list_details: https://letterboxd.com/doperle/list/video-archives-podcast-canon/
     summary: "The podcast features discussion on films from the VHS library of Quentin Tarantino, the bulk of which is the original stock from Video Archives, which Quentin purchased when the store closed."
     collection_order: custom
     sync_mode: sync  # Match collection exactly
