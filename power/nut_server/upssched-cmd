@@ -1,0 +1,46 @@
+#! /bin/sh
+#
+# This script should be called by upssched via the CMDSCRIPT directive.
+#
+# Here is a quick example to show how to handle a bunch of possible
+# timer names with the help of the case structure.
+#
+# This script may be replaced with another program without harm.
+#
+# The first argument passed to your CMDSCRIPT is the name of the timer
+# from your AT lines.
+
+case $1 in
+  onbatt)
+    # Log the event
+    logger -t upssched-cmd "The UPS is on battery"
+    ;;
+  onpower)
+    # Log the event
+    logger -t upssched-cmd "The UPS is on mains power"
+    ;;
+  lowbatt)
+    logger -t upssched-cmd "UPS on battery low, initiating shutdown"
+    upsmon -c fsd
+    ;;
+  shutdown)
+    logger -t upssched-cmd "System is shutting down"
+    ;;
+  forceshutdown)
+    # Only log, since this was already triggered by upsmon -c fsd at this point
+    logger -t upssched-cmd "System is being forced to shutdown"
+    ;;
+  upsgone)
+    logger -t upssched-cmd "UPS communication lost"
+    ;;
+  upshere)
+    logger -t upssched-cmd "UPS communication restored"
+    ;;
+  replbatt)
+    # Log the event
+    logger -t upssched-cmd "UPS battery replacement requested"
+    ;;
+  *)
+    logger -t upssched-cmd "Unrecognized command: $1"
+    ;;
+esac
