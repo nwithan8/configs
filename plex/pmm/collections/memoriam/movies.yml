@@ -228,7 +228,7 @@ collections:
   "Remembering Hulk Hogan":
     template: {
       name: InMemoriamActor,
-      tmdb_id: 12208
+      tmdb_id: 16620
     }
     schedule:
       - date(07/24/2025)
