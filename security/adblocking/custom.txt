@@ -7,6 +7,16 @@ tiktok.com
 www.tiktok.com
 # More available here: https://raw.githubusercontent.com/danhorton7/pihole-block-tiktok/refs/heads/main/tiktok.txt
 
+# X is a Nazi hellscape
+x.com
+www.x.com
+twitter.com
+www.twitter.com
+
+# Instagram is bad for your health
+instagram.com
+www.instagram.com
+
 # TP-Link
 tplinkcould.com
 api.tplinkra.com
