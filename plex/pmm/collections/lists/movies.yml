@@ -196,7 +196,7 @@ collections:
                 level: "__" }
     # summary provided by Trakt
     trakt_list_details:
-      - https://trakt.tv/users/maxwelldeux/lists/the-criterion-collection
+      - https://trakt.tv/users/i-really-am-maxwell-gmail-com/lists/the-criterion-collection
     collection_order: critic_rating.desc
     sync_mode: sync  # Match collection exactly
     # default schedule
