@@ -329,20 +329,23 @@ collections:
     tmdb_movie:
       - 23437    # A Nightmare on Elm Street (2010)
 
-  "👻 Horror":
-    schedule:
-      - range(10/01-11/01)
-    visible_home: range(10/01-10/31)
-    visible_shared: range(10/01-10/31)
-    visible_library: range(10/01-10/31)
-    template: { name: Holiday,
-                level: "_",
-                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Horror.jpg }
+  "👻 31 Days of Horror":
     summary: "Don't be scared, it's just a movie."
-    collection_order: random
-    minimum_items: 3
+    sort_title: 061_31_Days_of_Horror  # 061_ is after 060_ for Holiday templates, before 065_ for Collection templates
+    collection_order: custom
+    minimum_items: 1
+    # One movie added each day to list, have to parse the list every day
     trakt_list:
       - https://trakt.tv/users/lish408/lists/31-days-of-horror-2025  # TODO: Change annually
+    url_poster: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/genre/Horror.jpg
+    schedule:
+      - range(10/01-11/01)
+    visible_home:
+      - range(10/01-10/31)
+    visible_shared:
+      - range(10/01-10/31)
+    visible_library:
+      - range(10/01-10/31)
 
   "🍬 Trick or Treat":
     schedule:
