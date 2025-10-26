@@ -94,6 +94,26 @@ collections:
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-american-descent-latin-latino-latinx
       - https://trakt.tv/users/bangiras/lists/plot-media-featuring-mexico-and-mexican-culture
       - https://trakt.tv/users/bangiras/lists/plot-media-featuring-hispanic-latino-culture
+      -
+
+  "🎃 Halloween":
+    schedule:
+      - range(10/01-11/01)
+    visible_home: range(10/01-10/31)
+    visible_shared: range(10/01-10/31)
+    visible_library: range(10/01-10/31)
+    template: { name: Holiday,
+                level: "___",
+                poster_url: https://raw.githubusercontent.com/Kometa-Team/Default-Images/master/seasonal/halloween.jpg }
+    summary: "Boo!"
+    collection_order: random
+    builder_level: episode # Collection is of specific episodes
+    trakt_list:
+      # Halloween episodes of TV shows
+      - https://trakt.tv/users/pj97/lists/halloween-tv-episodes
+      - https://trakt.tv/users/goneplaid22/lists/halloween-episodes-kids
+      - https://trakt.tv/users/thatguyty/lists/the-ultimate-halloween-tv-spooktacular-specials
+      - https://trakt.tv/users/philrivers/lists/halloween-tv-episodes
 
   "🗳️ Election Day":
     schedule:
