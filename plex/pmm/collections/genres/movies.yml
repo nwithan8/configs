@@ -243,8 +243,8 @@ collections:
       - https://trakt.tv/users/majeed_pk/lists/courtroom-dramas
     collection_order: random
     visible_library: true
-    visible_home: false  # Not advertised on the home page
-    visible_shared: false  # Not advertised on the home page
+    visible_home: true
+    visible_shared: true
 
   "🪖 World War II, In Order":
     template: { name: Genre,
