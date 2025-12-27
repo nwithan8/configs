@@ -7,8 +7,8 @@ templates:
     allowed_library_types: movie
     summary: Day <<key>> of the Christmas Advent Calendar
     sort_title: 061_Christmas_Advent_Calendar_<<key>> # 061_ is after 060_ for Holiday templates, before 065_ for Collection templates
-    trakt_list:
-      - https://trakt.tv/users/pierredurrr/lists/advent-calendar
+    letterboxd_list:
+      - https://letterboxd.com/nwithan8/list/christmas-advent-calendar
     limit: <<key>>
     collection_order: custom
     schedule:

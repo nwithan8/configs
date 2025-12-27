@@ -9,8 +9,7 @@ collections:
                 level: "___" }
     summary: "Now playing on a screen near you"
     url_poster: https://i.imgur.com/LRH1tFr.png
-    trakt_list:
-      - https://trakt.tv/users/nwithan8/lists/in-cinemas-united-states
+    mdblist_list: https://mdblist.com/lists/fs-corrupt/in-cinemas
     collection_order: release.desc
     sync_mode: sync
     visible_library: true
