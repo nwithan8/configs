@@ -5,6 +5,20 @@ external_templates:
 collections:
   ### RATINGS ###
 
+  "📅 Best of the Last 12 Months":
+    template: { name: Collection,
+                sort_title: "Best of the Last 12 Months",
+                level: "____" }
+    name_mapping: "Best of the Last 12 Months Collection"
+    summary: "Top rated movies released in the last 12 months"
+    mdblist_list: https://mdblist.com/lists/nwithan8/best-of-the-last-12-months
+    collection_order: random
+    sync_mode: sync  # Match collection exactly
+    # default schedule
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   # Top movies via IMDB, updated monthly
   "🙌 Best Of All Time":
     template: { name: Collection,
