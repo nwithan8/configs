@@ -251,3 +251,35 @@ collections:
       - date(10/03/2025)
       - date(10/04/2025)
       - date(10/05/2025)
+
+  "Remembering Rob Reiner":
+    template: {
+      name: InMemoriamDirector,
+      tmdb_id: 3026
+    }
+    schedule:
+      - date(12/14/2025)
+      - date(12/15/2025)
+      - date(12/16/2025)
+      - date(12/17/2025)
+      - date(12/18/2025)
+      - date(12/19/2025)
+      - date(12/20/2025)
+      - date(12/21/2025)
+      - date(12/22/2025)
+      - date(12/23/2025)
+      - date(12/24/2025)
+      - date(12/25/2025)
+      - date(12/26/2025)
+      - date(12/27/2025)
+      - date(12/28/2025)
+      - date(12/29/2025)
+      - date(12/30/2025)
+      - date(12/31/2025)
+      - date(01/01/2026)
+      - date(01/02/2026)
+      - date(01/03/2026)
+      - date(01/04/2026)
+      - date(01/05/2026)
+      - date(01/06/2026)
+      - date(01/07/2026)
