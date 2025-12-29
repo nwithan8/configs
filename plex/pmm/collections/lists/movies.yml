@@ -208,9 +208,9 @@ collections:
     template: { name: Collection,
                 sort_title: "The Criterion Collection",
                 level: "__" }
-    # summary provided by Trakt
-    trakt_list_details:
-      - https://trakt.tv/users/i-really-am-maxwell-gmail-com/lists/the-criterion-collection
+    # summary provided by Letterboxd
+    letterboxd_list_details:
+      - https://letterboxd.com/jbutts15/list/the-complete-criterion-collection/
     collection_order: critic_rating.desc
     sync_mode: sync  # Match collection exactly
     # default schedule
