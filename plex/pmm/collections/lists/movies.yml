@@ -218,6 +218,20 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "🟢 Letterboxd Video Store":
+    template: { name: Collection,
+                sort_title: "Letterboxd Video Store",
+                level: "_" }
+    # summary provided by Letterboxd
+    letterboxd_list:
+      - https://letterboxd.com/crew/list/every-film-available-on-video-store/
+    collection_order: random
+    sync_mode: sync  # Match collection exactly
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
   ### GENERAL ###
 
   "🏷️ A Blockbuster Night":
