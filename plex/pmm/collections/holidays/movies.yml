@@ -82,6 +82,10 @@ collections:
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-anglo-american
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent-caribbean
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-of-african-black-descent
+    letterboxd_list:
+      - https://letterboxd.com/crew/list/civil-rights-and-black-liberation-in-cinema/
+    mdblist_list:
+      - https://mdblist.com/lists/chilly164/the-154-best-black-movies-of-the-21st-century-the-greatest-new-african-american-films
 
   "☘ St. Patrick's Day":
     schedule:
@@ -219,12 +223,13 @@ collections:
     collection_order: random
     minimum_items: 3
     trakt_list:
-      - https://trakt.tv/users/k0meta/lists/lgbtq-pride-month
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-bisexual-pansexual
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-crossdressers-drag-performers
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-gay-lesbian-homosexual
       - https://trakt.tv/users/bangiras/lists/diversity-main-characters-who-are-transgender-genderqueer-non-binary-etc
       - https://trakt.tv/users/bangiras/lists/favorites-lgbtq
+    letterboxd_list:
+      - https://letterboxd.com/mundof/list/pride-a-chronological-history-of-queer-interest/
 
   "👨 Father's Day":
     schedule:

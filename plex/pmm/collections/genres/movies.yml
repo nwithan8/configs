@@ -100,6 +100,18 @@ collections:
   #  visible_home: true
   #  visible_shared: true
 
+  "🎀 Chick Flicks":
+    template: { name: Genre,
+                level: "__" }
+    name_mapping: "Chick Flicks Collection"
+    summary: "A woman standing in front of a white background"
+    letterboxd_list:
+      - https://letterboxd.com/kaitienk/list/chick-flicks/
+    collection_order: random
+    visible_library: true
+    visible_home: true
+    visible_shared: true
+
   "📖 The Book Was Better":
     template: { name: Genre,
                 level: "__" }
@@ -123,6 +135,18 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  "🟢 360 No Scope":
+    template: { name: Genre,
+                level: "__" }
+    name_mapping: "Xbox Movies Collection"
+    summary: "Movies with the asthetics of an Xbox 360 game"
+    letterboxd_list:
+      - https://letterboxd.com/lcdneworder/list/movies-that-feel-like-an-xbox-360-game/
+    collection_order: random
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   "💬 With Great Power...":
     template: { name: Genre,
@@ -194,6 +218,8 @@ collections:
     trakt_list:
       - https://trakt.tv/users/majeed_pk/lists/documentaries
       - https://trakt.tv/users/bangiras/lists/favorites-documentary
+    letterboxd_list:
+      - https://letterboxd.com/jack/list/official-top-250-documentary-films/
     collection_order: random
     visible_library: true
     visible_home: true

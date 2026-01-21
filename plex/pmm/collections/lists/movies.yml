@@ -262,6 +262,22 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "⌚ Cinematic Quickie":
+    template: { name: Collection,
+                sort_title: "Cinematic Quickie",
+                level: "_" }
+    name_mapping: "Cinematic Quickie Collection"
+    summary: "When you just don't have time for a full-length movie"
+    letterboxd_list:
+      - https://letterboxd.com/stautis/list/good-films-90-minutes-or-less/
+      - https://letterboxd.com/leumon/list/under-100-minutes/
+    collection_order: random
+    sync_mode: sync  # Match collection exactly
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
   "👓 Put Your Glasses On":
     template: { name: Collection,
                 sort_title: "3D Movies Collection",
