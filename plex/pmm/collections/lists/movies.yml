@@ -204,6 +204,21 @@ collections:
     visible_home: true
     visible_shared: true
 
+  "📽️ Classic Movies for Beginners":
+    template: { name: Collection,
+                sort_title: "Classic Movies for Beginners",
+                level: "__", }
+    # summary provided by Letterboxd
+    letterboxd_list_details:
+      - https://letterboxd.com/hepburnluv/list/classic-movies-for-beginners/
+    collection_order: custom
+    sync_mode: sync  # Match collection exactly
+    schedule:
+      - monthly(04)
+    visible_library: true
+    visible_home: false
+    visible_shared: false
+
   "📽️ The Criterion Collection":
     template: { name: Collection,
                 sort_title: "The Criterion Collection",
@@ -246,6 +261,24 @@ collections:
     visible_library: true
     visible_home: true
     visible_shared: true
+
+  "👓 Put Your Glasses On":
+    template: { name: Collection,
+                sort_title: "3D Movies Collection",
+                level: "_" }
+    name_mapping: "3D Movies Collection"
+    summary: "A history of classic and modern 3D movies"
+    letterboxd_list:
+      - https://letterboxd.com/carlosrossi/list/golden-age-3d-movies-1952-1962/
+      - https://letterboxd.com/carlosrossi/list/silver-age-3d-movies-1966-2002/
+      - https://letterboxd.com/carlosrossi/list/3-d-horror-movies-1953-current/
+      - https://letterboxd.com/shrekatswamp/list/3d-collection-another-dimension-in-physical/
+    collection_order: release.asc
+    sync_mode: sync  # Match collection exactly
+    # default schedule
+    visible_library: true
+    visible_home: false
+    visible_shared: false
 
   ### FRANCHISES ###
 

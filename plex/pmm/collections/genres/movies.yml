@@ -251,8 +251,8 @@ collections:
                 level: "__" }
     name_mapping: "World War II Collection"
     summary: "Movies depicting World War II, in chronological order"
-    trakt_list:
-      - https://trakt.tv/users/majeed_pk/lists/world-war-ii-in-chronological-order
+    letterboxd_list:
+      - https://letterboxd.com/bigbosskhan/list/world-war-ii/
     collection_order: custom  # Maintain the order of the list
     visible_library: true
     visible_home: false  # Not advertised on the home page
