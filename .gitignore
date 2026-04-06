@@ -1,0 +1,4 @@
+.idea
+
+# Ignore download Kometa logs
+plex/pmm/*.log

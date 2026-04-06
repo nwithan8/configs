@@ -1,0 +1,3 @@
+home_assistant submodule -> https://github.com/nwithan8/home-assistant-contributions -> read-only mirror of https://codeberg.org/nwithan8/home_assistant_contributions
+
+plex/pmm submodule -> https://github.com/nwithan8/pmm_config -> read-only mirror of https://codeberg.org/nwithan8/pmm_config <- submoduled into https://codeberg.org/nwithan8/configs

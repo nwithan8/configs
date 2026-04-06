@@ -1,0 +1,2 @@
+# Make sure to exclude the .gitattributes file itself from encryption
+.gitattributes !filter !diff

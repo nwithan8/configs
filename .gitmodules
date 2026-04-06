@@ -1,0 +1,7 @@
+[submodule "home_assistant"]
+	path = home_assistant
+	url = git@github.com:nwithan8/home-assistant-contributions.git
+
+[submodule "plex/pmm"]
+	path = plex/pmm
+	url = git@github.com:nwithan8/pmm-config.git
